@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "zombie-apocalypse",
+  "name": "Zombie Apocalypse",
+  "description": "A survival project with custom gameplay, a matching world, datapack, and resource pack.",
+  "minecraft": {"edition": "java", "version": "USER_SELECTED_VERSION", "loader": "USER_SELECTED_LOADER", "java_runtime": null},
+  "workflow": {"mode": "guided", "status": "awaiting_approval", "approval_required": true, "approved_revision": null},
+  "world_strategy": "hybrid",
+  "components": {"mod": true, "world": true, "datapack": true, "resource_pack": true, "quests": true, "server_plugin": false, "bedrock_addon": false},
+  "requirements": [
+    {"id": "survival_hunger", "description": "Custom hunger survival system", "category": "gameplay", "status": "proposed", "target_component": "mod"},
+    {"id": "military_sites", "description": "Military bases placed in the world", "category": "world", "status": "proposed", "target_component": "world"},
+    {"id": "military_loot", "description": "Loot tables for military locations", "category": "loot", "status": "proposed", "target_component": "datapack"}
+  ],
+  "dependencies": [
+    {"from": "world:military_sites", "to": "mod:military_zombie", "kind": "references"},
+    {"from": "datapack:military_loot", "to": "mod:weapon_items", "kind": "references"}
+  ],
+  "open_questions": ["Which exact Minecraft version?", "Which Java mod loader?", "What world size and starting region are desired?"],
+  "revision": 1
+}
