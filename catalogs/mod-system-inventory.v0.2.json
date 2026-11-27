@@ -1,0 +1,1333 @@
+{
+  "catalog_version": "0.2.0",
+  "source_document": "docs/MOD_SYSTEM_INVENTORY.md",
+  "generated_at": "2026-11-27",
+  "status": "draft_not_approved_for_production",
+  "status_vocabulary": [
+    "planned",
+    "needs_scope",
+    "designed",
+    "awaiting_approval",
+    "approved",
+    "in_progress",
+    "implemented",
+    "built",
+    "tested",
+    "blocked",
+    "not_applicable"
+  ],
+  "item_record_required_fields": [
+    "id",
+    "name",
+    "user_facing_behavior",
+    "requirements",
+    "technical_owner",
+    "dependencies",
+    "version_constraints",
+    "assets",
+    "configuration",
+    "multiplayer_behavior",
+    "security_implications",
+    "acceptance_criteria",
+    "test_cases",
+    "status",
+    "known_limitations"
+  ],
+  "sections": [
+    {
+      "number": 1,
+      "title": "Purpose and tracking rules",
+      "items": []
+    },
+    {
+      "number": 2,
+      "title": "Project foundation and compatibility",
+      "items": [
+        {
+          "id": "BASE-001",
+          "name": "Edition selection: Java / Bedrock",
+          "status": "planned"
+        },
+        {
+          "id": "BASE-002",
+          "name": "Minecraft version and supported version range",
+          "status": "planned"
+        },
+        {
+          "id": "BASE-003",
+          "name": "Runtime platform: client, dedicated server, integrated server, Realm, or hosted server",
+          "status": "planned"
+        },
+        {
+          "id": "BASE-004",
+          "name": "Loader/platform selection: NeoForge, Forge, Fabric, Paper, Spigot, Bukkit, Bedrock Add-on, datapack-only, or vanilla",
+          "status": "planned"
+        },
+        {
+          "id": "BASE-005",
+          "name": "Required and optional dependencies",
+          "status": "planned"
+        },
+        {
+          "id": "BASE-006",
+          "name": "Dependency version resolution and conflict detection",
+          "status": "planned"
+        },
+        {
+          "id": "BASE-007",
+          "name": "Project namespace, identifiers, naming rules",
+          "status": "planned"
+        },
+        {
+          "id": "BASE-008",
+          "name": "Configuration format, defaults, validation, migration",
+          "status": "planned"
+        },
+        {
+          "id": "BASE-009",
+          "name": "Save compatibility, upgrades, downgrade policy",
+          "status": "planned"
+        },
+        {
+          "id": "BASE-010",
+          "name": "Client/server feature split and distribution",
+          "status": "planned"
+        },
+        {
+          "id": "BASE-011",
+          "name": "Environment detection and unsupported-platform warnings",
+          "status": "planned"
+        },
+        {
+          "id": "BASE-012",
+          "name": "Licensing, attribution, third-party asset register",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Player, character, and progression",
+      "items": [
+        {
+          "id": "PLY-001",
+          "name": "Player attributes and attribute modifiers",
+          "status": "planned"
+        },
+        {
+          "id": "PLY-002",
+          "name": "Health, absorption, regeneration, damage resistance",
+          "status": "planned"
+        },
+        {
+          "id": "PLY-003",
+          "name": "Stamina/energy and recovery",
+          "status": "planned"
+        },
+        {
+          "id": "PLY-004",
+          "name": "Hunger, thirst, temperature, fatigue, hygiene (optional survival modules)",
+          "status": "planned"
+        },
+        {
+          "id": "PLY-005",
+          "name": "Movement: sprint, crouch, crawl, climb, slide, dodge",
+          "status": "planned"
+        },
+        {
+          "id": "PLY-006",
+          "name": "Jumping, falling, swimming, diving, drowning",
+          "status": "planned"
+        },
+        {
+          "id": "PLY-007",
+          "name": "Carry weight, inventory capacity, encumbrance",
+          "status": "planned"
+        },
+        {
+          "id": "PLY-008",
+          "name": "Skills, levels, experience, skill trees",
+          "status": "planned"
+        },
+        {
+          "id": "PLY-009",
+          "name": "Character creation, appearance, classes, origins",
+          "status": "planned"
+        },
+        {
+          "id": "PLY-010",
+          "name": "Character death, respawn, recovery, permadeath rules",
+          "status": "planned"
+        },
+        {
+          "id": "PLY-011",
+          "name": "Status effects, injuries, illnesses, cures",
+          "status": "planned"
+        },
+        {
+          "id": "PLY-012",
+          "name": "Player statistics, milestones, achievements",
+          "status": "planned"
+        },
+        {
+          "id": "PLY-013",
+          "name": "Progression gates and unlock conditions",
+          "status": "planned"
+        },
+        {
+          "id": "PLY-014",
+          "name": "Player profile persistence and data migration",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Items, materials, blocks, and equipment",
+      "items": [
+        {
+          "id": "ITEM-001",
+          "name": "Item registry, identifiers, rarity, stack limits",
+          "status": "planned"
+        },
+        {
+          "id": "ITEM-002",
+          "name": "Raw materials, ores, drops, processed materials",
+          "status": "planned"
+        },
+        {
+          "id": "ITEM-003",
+          "name": "Food, drinks, consumables, medicine",
+          "status": "planned"
+        },
+        {
+          "id": "ITEM-004",
+          "name": "Tools and tool tiers",
+          "status": "planned"
+        },
+        {
+          "id": "ITEM-005",
+          "name": "Weapons and ammunition",
+          "status": "planned"
+        },
+        {
+          "id": "ITEM-006",
+          "name": "Armor, clothing, protective equipment",
+          "status": "planned"
+        },
+        {
+          "id": "ITEM-007",
+          "name": "Backpacks, containers, storage items",
+          "status": "planned"
+        },
+        {
+          "id": "ITEM-008",
+          "name": "Utility, quest, key, currency, and collectible items",
+          "status": "planned"
+        },
+        {
+          "id": "ITEM-009",
+          "name": "Durability, repair, degradation, quality",
+          "status": "planned"
+        },
+        {
+          "id": "ITEM-010",
+          "name": "Enchantments, modifiers, affixes, upgrades",
+          "status": "planned"
+        },
+        {
+          "id": "ITEM-011",
+          "name": "Custom block families and block states",
+          "status": "planned"
+        },
+        {
+          "id": "ITEM-012",
+          "name": "Block hardness, resistance, mining tools, drops",
+          "status": "planned"
+        },
+        {
+          "id": "ITEM-013",
+          "name": "Functional blocks with inventories or interfaces",
+          "status": "planned"
+        },
+        {
+          "id": "ITEM-014",
+          "name": "Fluids, gases, fuel, temperature interactions",
+          "status": "planned"
+        },
+        {
+          "id": "ITEM-015",
+          "name": "Placement, rotation, orientation, multiblock rules",
+          "status": "planned"
+        },
+        {
+          "id": "ITEM-016",
+          "name": "Item/block model, texture, sound, localization references",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Crafting, processing, and resource loops",
+      "items": [
+        {
+          "id": "CRAFT-001",
+          "name": "Crafting recipes and recipe categories",
+          "status": "planned"
+        },
+        {
+          "id": "CRAFT-002",
+          "name": "Furnace, smelting, blasting, smoking",
+          "status": "planned"
+        },
+        {
+          "id": "CRAFT-003",
+          "name": "Machines and processing chains",
+          "status": "planned"
+        },
+        {
+          "id": "CRAFT-004",
+          "name": "Custom workstations and interfaces",
+          "status": "planned"
+        },
+        {
+          "id": "CRAFT-005",
+          "name": "Fuel types, consumption, efficiency",
+          "status": "planned"
+        },
+        {
+          "id": "CRAFT-006",
+          "name": "Repair, dismantling, recycling",
+          "status": "planned"
+        },
+        {
+          "id": "CRAFT-007",
+          "name": "Farming, harvesting, animal products",
+          "status": "planned"
+        },
+        {
+          "id": "CRAFT-008",
+          "name": "Resource regeneration and depletion",
+          "status": "planned"
+        },
+        {
+          "id": "CRAFT-009",
+          "name": "Recipe unlocks, research, progression requirements",
+          "status": "planned"
+        },
+        {
+          "id": "CRAFT-010",
+          "name": "Loot tables, drops, rewards, weighted outcomes",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Entities, mobs, NPCs, and AI",
+      "items": [
+        {
+          "id": "ENT-001",
+          "name": "Custom entity registration and attributes",
+          "status": "planned"
+        },
+        {
+          "id": "ENT-002",
+          "name": "Passive wildlife and ambient creatures",
+          "status": "planned"
+        },
+        {
+          "id": "ENT-003",
+          "name": "Hostile mobs and enemy archetypes",
+          "status": "planned"
+        },
+        {
+          "id": "ENT-004",
+          "name": "Friendly, neutral, and recruitable NPCs",
+          "status": "planned"
+        },
+        {
+          "id": "ENT-005",
+          "name": "Bosses, mini-bosses, elite variants",
+          "status": "planned"
+        },
+        {
+          "id": "ENT-006",
+          "name": "Entity health, armor, damage, resistances",
+          "status": "planned"
+        },
+        {
+          "id": "ENT-007",
+          "name": "Navigation, pathfinding, obstacle handling",
+          "status": "planned"
+        },
+        {
+          "id": "ENT-008",
+          "name": "Target selection, threat, aggro, retreat",
+          "status": "planned"
+        },
+        {
+          "id": "ENT-009",
+          "name": "Patrol, guard, follow, flee, escort behaviors",
+          "status": "planned"
+        },
+        {
+          "id": "ENT-010",
+          "name": "Group tactics, formations, territory",
+          "status": "planned"
+        },
+        {
+          "id": "ENT-011",
+          "name": "Day/night, weather, biome, and event reactions",
+          "status": "planned"
+        },
+        {
+          "id": "ENT-012",
+          "name": "Spawning rules, caps, density, despawning",
+          "status": "planned"
+        },
+        {
+          "id": "ENT-013",
+          "name": "Breeding, taming, domestication, mounts",
+          "status": "planned"
+        },
+        {
+          "id": "ENT-014",
+          "name": "NPC dialogue, schedules, relationships, reputation",
+          "status": "planned"
+        },
+        {
+          "id": "ENT-015",
+          "name": "Trading and service interactions",
+          "status": "planned"
+        },
+        {
+          "id": "ENT-016",
+          "name": "Entity animation, sounds, particles, hitboxes",
+          "status": "planned"
+        },
+        {
+          "id": "ENT-017",
+          "name": "Persistence, chunk unload/reload, entity data",
+          "status": "planned"
+        },
+        {
+          "id": "ENT-018",
+          "name": "AI performance limits and multiplayer authority",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Combat, weapons, and damage",
+      "items": [
+        {
+          "id": "COM-001",
+          "name": "Damage types and damage calculation",
+          "status": "planned"
+        },
+        {
+          "id": "COM-002",
+          "name": "Melee weapons, reach, attack speed, combos",
+          "status": "planned"
+        },
+        {
+          "id": "COM-003",
+          "name": "Ranged weapons, projectiles, trajectory",
+          "status": "planned"
+        },
+        {
+          "id": "COM-004",
+          "name": "Firearms, ammunition, reload, recoil (if in scope)",
+          "status": "planned"
+        },
+        {
+          "id": "COM-005",
+          "name": "Explosives and area damage (if in scope)",
+          "status": "planned"
+        },
+        {
+          "id": "COM-006",
+          "name": "Armor penetration, resistance, hit zones",
+          "status": "planned"
+        },
+        {
+          "id": "COM-007",
+          "name": "Blocking, parrying, dodging",
+          "status": "planned"
+        },
+        {
+          "id": "COM-008",
+          "name": "Critical hits, status effects, knockback",
+          "status": "planned"
+        },
+        {
+          "id": "COM-009",
+          "name": "Friendly fire, PvP rules, team damage",
+          "status": "planned"
+        },
+        {
+          "id": "COM-010",
+          "name": "Combat feedback, indicators, logs",
+          "status": "planned"
+        },
+        {
+          "id": "COM-011",
+          "name": "Loot, death drops, durability and repair rules",
+          "status": "planned"
+        },
+        {
+          "id": "COM-012",
+          "name": "Balance configuration and difficulty scaling",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Vehicles, mounts, and machinery",
+      "items": [
+        {
+          "id": "VEH-001",
+          "name": "Vehicle base framework and ownership",
+          "status": "planned"
+        },
+        {
+          "id": "VEH-002",
+          "name": "Ground vehicles: cars, trucks, motorcycles",
+          "status": "planned"
+        },
+        {
+          "id": "VEH-003",
+          "name": "Tracked vehicles and heavy transport",
+          "status": "planned"
+        },
+        {
+          "id": "VEH-004",
+          "name": "Aircraft and helicopters",
+          "status": "planned"
+        },
+        {
+          "id": "VEH-005",
+          "name": "Watercraft and submarines",
+          "status": "planned"
+        },
+        {
+          "id": "VEH-006",
+          "name": "Seats, passengers, driver controls",
+          "status": "planned"
+        },
+        {
+          "id": "VEH-007",
+          "name": "Fuel, energy, battery, refueling",
+          "status": "planned"
+        },
+        {
+          "id": "VEH-008",
+          "name": "Health, damage, repair, destruction",
+          "status": "planned"
+        },
+        {
+          "id": "VEH-009",
+          "name": "Storage, cargo, towing, trailers",
+          "status": "planned"
+        },
+        {
+          "id": "VEH-010",
+          "name": "Physics, handling, collision, terrain response",
+          "status": "planned"
+        },
+        {
+          "id": "VEH-011",
+          "name": "Weapons or utility modules, if permitted by project scope",
+          "status": "planned"
+        },
+        {
+          "id": "VEH-012",
+          "name": "Vehicle crafting, purchase, permissions, persistence",
+          "status": "planned"
+        },
+        {
+          "id": "VEH-013",
+          "name": "Multiplayer synchronization and anti-desync",
+          "status": "planned"
+        },
+        {
+          "id": "VEH-014",
+          "name": "Machines, generators, power networks, automation",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "World, biomes, terrain, and environment",
+      "items": [
+        {
+          "id": "WORLD-001",
+          "name": "World type and dimension plan",
+          "status": "planned"
+        },
+        {
+          "id": "WORLD-002",
+          "name": "Biome registry and biome distribution",
+          "status": "planned"
+        },
+        {
+          "id": "WORLD-003",
+          "name": "Terrain height, shapes, noise, erosion",
+          "status": "planned"
+        },
+        {
+          "id": "WORLD-004",
+          "name": "Surface materials, strata, caves",
+          "status": "planned"
+        },
+        {
+          "id": "WORLD-005",
+          "name": "Rivers, lakes, oceans, water systems",
+          "status": "planned"
+        },
+        {
+          "id": "WORLD-006",
+          "name": "Vegetation, flora, crops, trees",
+          "status": "planned"
+        },
+        {
+          "id": "WORLD-007",
+          "name": "Ore and resource distribution",
+          "status": "planned"
+        },
+        {
+          "id": "WORLD-008",
+          "name": "Climate, temperature, humidity",
+          "status": "planned"
+        },
+        {
+          "id": "WORLD-009",
+          "name": "Weather, storms, environmental hazards",
+          "status": "planned"
+        },
+        {
+          "id": "WORLD-010",
+          "name": "Day/night cycle and time rules",
+          "status": "planned"
+        },
+        {
+          "id": "WORLD-011",
+          "name": "Dimension travel, portals, boundaries",
+          "status": "planned"
+        },
+        {
+          "id": "WORLD-012",
+          "name": "World border, safe zones, protected areas",
+          "status": "planned"
+        },
+        {
+          "id": "WORLD-013",
+          "name": "Prepared map integration and spawn placement",
+          "status": "planned"
+        },
+        {
+          "id": "WORLD-014",
+          "name": "Procedural generation settings and seeds",
+          "status": "planned"
+        },
+        {
+          "id": "WORLD-015",
+          "name": "Hybrid prepared-world plus procedural-generation rules",
+          "status": "planned"
+        },
+        {
+          "id": "WORLD-016",
+          "name": "Chunk generation, loading, tickets, performance",
+          "status": "planned"
+        },
+        {
+          "id": "WORLD-017",
+          "name": "Existing-world conversion and compatibility",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Structures, buildings, and points of interest",
+      "items": [
+        {
+          "id": "STRUCT-001",
+          "name": "Structure templates and placement rules",
+          "status": "planned"
+        },
+        {
+          "id": "STRUCT-002",
+          "name": "Villages, settlements, towns, cities",
+          "status": "planned"
+        },
+        {
+          "id": "STRUCT-003",
+          "name": "Houses, shops, workshops, public buildings",
+          "status": "planned"
+        },
+        {
+          "id": "STRUCT-004",
+          "name": "Dungeons, ruins, bunkers, underground sites",
+          "status": "planned"
+        },
+        {
+          "id": "STRUCT-005",
+          "name": "Military, industrial, research, and transport sites",
+          "status": "planned"
+        },
+        {
+          "id": "STRUCT-006",
+          "name": "Roads, bridges, tunnels, railways",
+          "status": "planned"
+        },
+        {
+          "id": "STRUCT-007",
+          "name": "Randomized variants and procedural layout",
+          "status": "planned"
+        },
+        {
+          "id": "STRUCT-008",
+          "name": "Loot, spawners, traps, secrets",
+          "status": "planned"
+        },
+        {
+          "id": "STRUCT-009",
+          "name": "Structure integrity and regeneration",
+          "status": "planned"
+        },
+        {
+          "id": "STRUCT-010",
+          "name": "POI discovery, map markers, exploration rewards",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Quests, narrative, and events",
+      "items": [
+        {
+          "id": "QUEST-001",
+          "name": "Quest data model and objectives",
+          "status": "planned"
+        },
+        {
+          "id": "QUEST-002",
+          "name": "Main storyline and chapters",
+          "status": "planned"
+        },
+        {
+          "id": "QUEST-003",
+          "name": "Side quests and repeatable tasks",
+          "status": "planned"
+        },
+        {
+          "id": "QUEST-004",
+          "name": "Dialogue, choices, branching outcomes",
+          "status": "planned"
+        },
+        {
+          "id": "QUEST-005",
+          "name": "Collect, craft, explore, defeat, escort objectives",
+          "status": "planned"
+        },
+        {
+          "id": "QUEST-006",
+          "name": "Quest prerequisites and progression flags",
+          "status": "planned"
+        },
+        {
+          "id": "QUEST-007",
+          "name": "Rewards, reputation, unlocks",
+          "status": "planned"
+        },
+        {
+          "id": "QUEST-008",
+          "name": "Quest journal, tracking, map guidance",
+          "status": "planned"
+        },
+        {
+          "id": "QUEST-009",
+          "name": "Timed missions and world events",
+          "status": "planned"
+        },
+        {
+          "id": "QUEST-010",
+          "name": "Dynamic events, waves, invasions, emergencies",
+          "status": "planned"
+        },
+        {
+          "id": "QUEST-011",
+          "name": "Narrative triggers and world-state changes",
+          "status": "planned"
+        },
+        {
+          "id": "QUEST-012",
+          "name": "Multiplayer party/shared quest rules",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Economy, trade, and ownership",
+      "items": [
+        {
+          "id": "ECON-001",
+          "name": "Currency types and balances",
+          "status": "planned"
+        },
+        {
+          "id": "ECON-002",
+          "name": "NPC shops and price lists",
+          "status": "planned"
+        },
+        {
+          "id": "ECON-003",
+          "name": "Player-to-player trading",
+          "status": "planned"
+        },
+        {
+          "id": "ECON-004",
+          "name": "Buy/sell orders and market listings",
+          "status": "planned"
+        },
+        {
+          "id": "ECON-005",
+          "name": "Dynamic pricing and supply/demand",
+          "status": "planned"
+        },
+        {
+          "id": "ECON-006",
+          "name": "Loot and reward economy sinks/sources",
+          "status": "planned"
+        },
+        {
+          "id": "ECON-007",
+          "name": "Land, claims, property, ownership",
+          "status": "planned"
+        },
+        {
+          "id": "ECON-008",
+          "name": "Rent, upkeep, taxes, profit sharing",
+          "status": "planned"
+        },
+        {
+          "id": "ECON-009",
+          "name": "Factions, reputation, licenses",
+          "status": "planned"
+        },
+        {
+          "id": "ECON-010",
+          "name": "Transaction history, audit trail, anti-duplication",
+          "status": "planned"
+        },
+        {
+          "id": "ECON-011",
+          "name": "Permissions, escrow, trade confirmation",
+          "status": "planned"
+        },
+        {
+          "id": "ECON-012",
+          "name": "Offline player and market consistency",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Factions, teams, and social systems",
+      "items": [
+        {
+          "id": "SOC-001",
+          "name": "Teams, parties, groups",
+          "status": "planned"
+        },
+        {
+          "id": "SOC-002",
+          "name": "Factions, alliances, rivalries",
+          "status": "planned"
+        },
+        {
+          "id": "SOC-003",
+          "name": "Reputation and relationship scores",
+          "status": "planned"
+        },
+        {
+          "id": "SOC-004",
+          "name": "Ranks, roles, permissions",
+          "status": "planned"
+        },
+        {
+          "id": "SOC-005",
+          "name": "Chat channels and communication",
+          "status": "planned"
+        },
+        {
+          "id": "SOC-006",
+          "name": "Friend, invite, block, and ignore lists",
+          "status": "planned"
+        },
+        {
+          "id": "SOC-007",
+          "name": "Shared bases, claims, access lists",
+          "status": "planned"
+        },
+        {
+          "id": "SOC-008",
+          "name": "Group objectives and rewards",
+          "status": "planned"
+        },
+        {
+          "id": "SOC-009",
+          "name": "Faction conflict and territory rules",
+          "status": "planned"
+        },
+        {
+          "id": "SOC-010",
+          "name": "Moderation, reporting, sanctions",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "title": "Multiplayer and server operations",
+      "items": [
+        {
+          "id": "MP-001",
+          "name": "Client/server packet contracts",
+          "status": "planned"
+        },
+        {
+          "id": "MP-002",
+          "name": "Server-authoritative gameplay rules",
+          "status": "planned"
+        },
+        {
+          "id": "MP-003",
+          "name": "State synchronization and persistence",
+          "status": "planned"
+        },
+        {
+          "id": "MP-004",
+          "name": "Dedicated server startup and configuration",
+          "status": "planned"
+        },
+        {
+          "id": "MP-005",
+          "name": "Permissions and command access",
+          "status": "planned"
+        },
+        {
+          "id": "MP-006",
+          "name": "Server list, discovery, connection flow (where supported)",
+          "status": "planned"
+        },
+        {
+          "id": "MP-007",
+          "name": "Latency, retries, reconnect, timeout handling",
+          "status": "planned"
+        },
+        {
+          "id": "MP-008",
+          "name": "Anti-cheat and server-side validation",
+          "status": "planned"
+        },
+        {
+          "id": "MP-009",
+          "name": "Data backups and restore",
+          "status": "planned"
+        },
+        {
+          "id": "MP-010",
+          "name": "Admin, moderator, operator tools",
+          "status": "planned"
+        },
+        {
+          "id": "MP-011",
+          "name": "Logs, metrics, diagnostics",
+          "status": "planned"
+        },
+        {
+          "id": "MP-012",
+          "name": "Cross-play or cross-platform limits, if applicable",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "title": "Interface, controls, and accessibility",
+      "items": [
+        {
+          "id": "UI-001",
+          "name": "HUD layout and information hierarchy",
+          "status": "planned"
+        },
+        {
+          "id": "UI-002",
+          "name": "Menus, screens, tabs, navigation",
+          "status": "planned"
+        },
+        {
+          "id": "UI-003",
+          "name": "Inventory and container interfaces",
+          "status": "planned"
+        },
+        {
+          "id": "UI-004",
+          "name": "Crafting, machine, vehicle interfaces",
+          "status": "planned"
+        },
+        {
+          "id": "UI-005",
+          "name": "Quest, map, journal, profile interfaces",
+          "status": "planned"
+        },
+        {
+          "id": "UI-006",
+          "name": "Settings and configuration screens",
+          "status": "planned"
+        },
+        {
+          "id": "UI-007",
+          "name": "Keybinds, controller, touch input",
+          "status": "planned"
+        },
+        {
+          "id": "UI-008",
+          "name": "Tooltips, prompts, contextual help",
+          "status": "planned"
+        },
+        {
+          "id": "UI-009",
+          "name": "Scaling, safe areas, resolution handling",
+          "status": "planned"
+        },
+        {
+          "id": "UI-010",
+          "name": "Color contrast, text size, reduced motion",
+          "status": "planned"
+        },
+        {
+          "id": "UI-011",
+          "name": "Screen-reader-friendly labels where supported",
+          "status": "planned"
+        },
+        {
+          "id": "UI-012",
+          "name": "Localization and language fallback",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "title": "Visual, audio, and animation assets",
+      "items": [
+        {
+          "id": "ASSET-001",
+          "name": "Art direction and visual style guide",
+          "status": "planned"
+        },
+        {
+          "id": "ASSET-002",
+          "name": "Item and block textures/models",
+          "status": "planned"
+        },
+        {
+          "id": "ASSET-003",
+          "name": "Entity models, rigs, animations",
+          "status": "planned"
+        },
+        {
+          "id": "ASSET-004",
+          "name": "Vehicle and machine models/animations",
+          "status": "planned"
+        },
+        {
+          "id": "ASSET-005",
+          "name": "GUI textures, icons, fonts",
+          "status": "planned"
+        },
+        {
+          "id": "ASSET-006",
+          "name": "Particles, visual effects, shaders (platform permitting)",
+          "status": "planned"
+        },
+        {
+          "id": "ASSET-007",
+          "name": "Ambient, biome, and event audio",
+          "status": "planned"
+        },
+        {
+          "id": "ASSET-008",
+          "name": "Item, block, entity, weapon, vehicle sounds",
+          "status": "planned"
+        },
+        {
+          "id": "ASSET-009",
+          "name": "Music and adaptive audio rules",
+          "status": "planned"
+        },
+        {
+          "id": "ASSET-010",
+          "name": "Subtitle and sound accessibility",
+          "status": "planned"
+        },
+        {
+          "id": "ASSET-011",
+          "name": "Asset attribution, formats, optimization",
+          "status": "planned"
+        },
+        {
+          "id": "ASSET-012",
+          "name": "Resource-pack compatibility and fallback",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "title": "Commands, admin, and configuration",
+      "items": [
+        {
+          "id": "ADMIN-001",
+          "name": "Player-facing commands",
+          "status": "planned"
+        },
+        {
+          "id": "ADMIN-002",
+          "name": "Operator/admin commands",
+          "status": "planned"
+        },
+        {
+          "id": "ADMIN-003",
+          "name": "Permission nodes and role mapping",
+          "status": "planned"
+        },
+        {
+          "id": "ADMIN-004",
+          "name": "Runtime configuration reload",
+          "status": "planned"
+        },
+        {
+          "id": "ADMIN-005",
+          "name": "Spawn, event, entity, and world management",
+          "status": "planned"
+        },
+        {
+          "id": "ADMIN-006",
+          "name": "Economy and player data moderation",
+          "status": "planned"
+        },
+        {
+          "id": "ADMIN-007",
+          "name": "Debug tools and diagnostics",
+          "status": "planned"
+        },
+        {
+          "id": "ADMIN-008",
+          "name": "Audit logs and privileged action records",
+          "status": "planned"
+        },
+        {
+          "id": "ADMIN-009",
+          "name": "Safe defaults and destructive-action confirmation",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "title": "Technical quality, security, and testing",
+      "items": [
+        {
+          "id": "QA-001",
+          "name": "Schema and manifest validation",
+          "status": "planned"
+        },
+        {
+          "id": "QA-002",
+          "name": "Identifier, registry, and reference validation",
+          "status": "planned"
+        },
+        {
+          "id": "QA-003",
+          "name": "Dependency graph and cycle detection",
+          "status": "planned"
+        },
+        {
+          "id": "QA-004",
+          "name": "Version and loader compatibility checks",
+          "status": "planned"
+        },
+        {
+          "id": "QA-005",
+          "name": "Static analysis and code quality",
+          "status": "planned"
+        },
+        {
+          "id": "QA-006",
+          "name": "Unit tests for isolated logic",
+          "status": "planned"
+        },
+        {
+          "id": "QA-007",
+          "name": "Integration tests across components",
+          "status": "planned"
+        },
+        {
+          "id": "QA-008",
+          "name": "Build tests for each deliverable",
+          "status": "planned"
+        },
+        {
+          "id": "QA-009",
+          "name": "Dedicated server startup test",
+          "status": "planned"
+        },
+        {
+          "id": "QA-010",
+          "name": "World creation/load test",
+          "status": "planned"
+        },
+        {
+          "id": "QA-011",
+          "name": "In-game feature acceptance tests",
+          "status": "planned"
+        },
+        {
+          "id": "QA-012",
+          "name": "Multiplayer and synchronization tests",
+          "status": "planned"
+        },
+        {
+          "id": "QA-013",
+          "name": "Save/reload and migration tests",
+          "status": "planned"
+        },
+        {
+          "id": "QA-014",
+          "name": "Performance profiling and memory tests",
+          "status": "planned"
+        },
+        {
+          "id": "QA-015",
+          "name": "Crash, exploit, duplication, and abuse tests",
+          "status": "planned"
+        },
+        {
+          "id": "QA-016",
+          "name": "Accessibility and localization checks",
+          "status": "planned"
+        },
+        {
+          "id": "QA-017",
+          "name": "Test evidence, logs, reproducibility",
+          "status": "planned"
+        },
+        {
+          "id": "QA-018",
+          "name": "Known limitations and untested areas register",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "title": "Build, packaging, and delivery",
+      "items": [
+        {
+          "id": "SHIP-001",
+          "name": "Source project folder structure",
+          "status": "planned"
+        },
+        {
+          "id": "SHIP-002",
+          "name": "Reproducible build configuration",
+          "status": "planned"
+        },
+        {
+          "id": "SHIP-003",
+          "name": "Mod JAR / plugin JAR / add-on package",
+          "status": "planned"
+        },
+        {
+          "id": "SHIP-004",
+          "name": "Datapack and resource-pack exports",
+          "status": "planned"
+        },
+        {
+          "id": "SHIP-005",
+          "name": "World/map export and required metadata",
+          "status": "planned"
+        },
+        {
+          "id": "SHIP-006",
+          "name": "Dependency and installation instructions",
+          "status": "planned"
+        },
+        {
+          "id": "SHIP-007",
+          "name": "Server and client installation profiles",
+          "status": "planned"
+        },
+        {
+          "id": "SHIP-008",
+          "name": "ZIP bundle with editable sources",
+          "status": "planned"
+        },
+        {
+          "id": "SHIP-009",
+          "name": "Versioning, changelog, release notes",
+          "status": "planned"
+        },
+        {
+          "id": "SHIP-010",
+          "name": "Checksums and artifact manifest",
+          "status": "planned"
+        },
+        {
+          "id": "SHIP-011",
+          "name": "Clean-install verification",
+          "status": "planned"
+        },
+        {
+          "id": "SHIP-012",
+          "name": "Final playable acceptance checklist",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "title": "Cross-component ownership rules",
+      "items": []
+    },
+    {
+      "number": 21,
+      "title": "Project-specific applicability and approval gate",
+      "items": []
+    },
+    {
+      "number": 22,
+      "title": "Current baseline",
+      "items": []
+    }
+  ],
+  "rules": {
+    "initial_item_status": "planned",
+    "no_implementation_without_explicit_user_approval": true,
+    "compile_success_does_not_prove_playability": true,
+    "stable_feature_ids": true,
+    "cross_component_features_keep_one_feature_id": true
+  }
+}
