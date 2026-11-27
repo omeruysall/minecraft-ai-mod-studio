@@ -269,3 +269,52 @@ The following remain to be specified before implementation:
 ## 12. Current status
 
 This document records the requested product direction and proposed UX behavior. It is not a working UI implementation. Authentication, live voice, publishing, community discussions, and responsive UI are not yet implemented.
+
+
+## 13. Approved main workspace visual direction — v1.2
+
+Status: Main workspace design decisions approved by the product owner on 2026-11-27. This approval covers the design direction and interaction model only; it does not authorize implementation or production code.
+
+### 13.1 Visual identity
+- Hybrid visual identity: modern professional software workspace with restrained Minecraft-inspired visual details.
+- Dark-first interface direction with legible contrast and restrained green accents.
+- Minecraft textures and voxel imagery are used as contextual accents and content previews, not as a distracting full-screen background.
+- The interface must remain suitable for both Minecraft players and technically advanced creators.
+
+### 13.2 Workspace layout
+- Desktop: left navigation, central creation workspace, right project controller, compact global header.
+- The central conversation remains the primary interaction surface.
+- The right project controller is a contextual panel with Project, Plan, and Files views.
+- The left navigation can collapse or open as a drawer.
+- Mobile: conversation-first layout; navigation and project controller open as drawers or sheets. No forced three-column layout.
+
+### 13.3 Conversation and voice
+- Text and live voice are first-class interaction modes.
+- Both modes share one project context, conversation history, and requirement state.
+- Voice UI must expose connection, listening, speaking, muted, and disconnected states.
+- Transcript visibility is supported; recording is not enabled by default and requires explicit consent.
+
+### 13.4 Live content preview
+- A preview workspace is part of the main design, not an optional future add-on.
+- Preview content adapts to the artifact type: world/map, 3D model or item, datapack structures, resource-pack assets, and other supported formats.
+- Planned controls include zoom, camera/orbit where applicable, previous/next revision comparison, file inspection, and change review.
+- Preview must distinguish illustrative placeholders from actual generated artifacts.
+- Unsupported formats must show a clear file/detail view rather than pretending to provide an interactive preview.
+
+### 13.5 Hybrid project controller
+- The AI may recommend components, settings, dependencies, and plan changes.
+- Recommendations are visibly marked as suggestions and are not silently applied.
+- The user can accept, reject, or edit each recommendation.
+- Changes affecting the approved project scope create a new plan revision and require approval before production.
+- The user remains the final decision-maker.
+
+### 13.6 Main workspace acceptance criteria
+1. Desktop layout presents navigation, conversation, preview, and project controller without obscuring the chat.
+2. The preview area is present in the workspace and accurately identifies placeholder versus generated content.
+3. The controller supports Project, Plan, and Files views.
+4. AI recommendations never silently alter project scope or approved requirements.
+5. Text and voice share project context.
+6. Mobile uses responsive drawers/sheets and preserves access to chat, preview, and project controls.
+
+### 13.7 Implementation boundary
+The decisions in this section are design specifications only. They do not indicate that the preview renderer, voice system, responsive UI, project controller, or any other frontend feature has been implemented.
