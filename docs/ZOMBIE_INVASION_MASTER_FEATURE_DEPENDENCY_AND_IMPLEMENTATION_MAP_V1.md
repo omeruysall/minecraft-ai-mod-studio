@@ -311,3 +311,18 @@ The specification defines REQ-BASE-001..012, 32 proposed dependency edges, 55 fe
 
 This closes a detailed design-documentation gap for BASE-001..BASE-012; it does not automatically advance the source matrix statuses. The matrix remains unchanged until its machine-readable edge vocabulary and target status semantics are formally validated. No implementation, build, load or gameplay test is claimed.
 ## 17. Foundation traceability matrix v1.2.0
+
+## 18. QA, build and delivery feature mapping
+
+A second traceability batch has been added in `docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md`, covering QA-001..QA-018 and SHIP-001..SHIP-012.
+
+The current matrix v1.2.0 now records:
+- 42 mapped features (BASE 12 + QA 18 + SHIP 12).
+- 190 features still requiring traceability review.
+- 115 feature-specific acceptance criteria and 110 unique test case IDs.
+- 95 proposed feature-to-feature dependency edges.
+- A static topological check of the 232-node feature graph found no cycle in this revision.
+- Java, Bedrock and parity remain `not_assessed` for all 232 features.
+- All 232 implementation statuses remain `not_implemented_verified`; no runtime evidence was added.
+
+The DAG check verifies only the recorded graph structure. It does not test generated code, Minecraft runtime behavior, target compatibility or actual builds. Dedicated-server and multiplayer test definitions remain future/conditional gates, not first-playable scope.
