@@ -294,3 +294,10 @@ A test not run is recorded as not run, not passed.
 ## 14. Implementation boundary
 
 This is a planning and architecture map only. It does not implement the mod, Studio engines, Java/Bedrock packs, world generation, assets, recipes, NPCs, AI, network systems or tests. All 232 catalog entries remain individually subject to traceability review; no blanket approval or implementation status is inferred.
+
+
+## 15. Feature-level traceability gap report
+
+The family-level map is supplemented by `docs/ZOMBIE_INVASION_FEATURE_TRACEABILITY_GAP_ASSESSMENT_V1.md`, based on the current 232-entry matrix. The assessment records 232/232 features as planned and requiring review, with 0 explicit dependency edges, 0 acceptance criteria marked defined, 0 test cases marked defined, and no Java/Bedrock/parity assessment for any entry.
+
+The L0–L12 layers and family-level matrix in this document must not be mistaken for feature-level dependency closure. Each feature ID still requires applicability, requirement provenance, exact specification mapping, owner confirmation, dependency edges, target-specific acceptance criteria and evidence.
