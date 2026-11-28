@@ -160,3 +160,12 @@ No custom boss, complex NPC dialogue, procedural dungeon generation, economy, mu
 ## 10. Implementation boundary
 
 This document is a gameplay design proposal only. It does not generate code, assets, maps or playable artifacts. The chosen loop must be added to the manifest, feature traceability matrix and acceptance tests after user confirmation.
+
+
+## 11. User-selected direction — Zombie Invasion (2026-11-28)
+
+The user selected **Zombie Invasion** and requested the most detailed treatment. This selection supersedes the three earlier candidate options in this document. The Lost Temple, Outpost Defense and Survival Expedition are no longer the active first-slice selection.
+
+The authoritative gameplay design is now `docs/ZOMBIE_INVASION_GAMEPLAY_DESIGN_V1.md`. It defines the survival/scavenging/base-defence loop, staged attacks, zombie archetype roadmap, target-specific implementation boundaries, test strategy, expansion roadmap and unresolved decisions.
+
+The first playable scope is a compact settlement with a safehouse, scavenging, limited repairs, a basic zombie archetype and three escalating attacks. Advanced survival, survivor NPCs, vehicles, complex special zombies and multiplayer remain later-stage systems unless the user explicitly promotes them into the first slice.
