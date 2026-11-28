@@ -340,3 +340,41 @@ The roadmap is revised through versioned changes. A phase scope change updates d
 ## 22. Implementation boundary
 
 This roadmap is a proposed sequence, not a delivery guarantee or evidence of implementation. Existing prototype functionality must be audited and either retained, replaced or migrated during the relevant phase. No application code changes are authorized by this document alone.
+
+
+## 23. User-selected first playable scope update (2026-11-28)
+
+The first playable milestone is now defined as **both Java Edition and Bedrock Edition**, with a **mod/world bundle**.
+
+The milestone is split into two target-specific vertical slices sharing one product workflow and project manifest:
+
+### 23.1 Java vertical slice
+- Java mod.
+- Playable Java world/map.
+- Datapack.
+- Resource pack.
+- One exact Minecraft version and one loader to be selected before implementation.
+- Produce editable source plus the appropriate runnable/distributable artifacts.
+
+### 23.2 Bedrock vertical slice
+- Behavior-pack/add-on implementation of the agreed gameplay feature.
+- Playable Bedrock world/map.
+- Resource pack.
+- Script API use only when required and verified for the selected version.
+- Produce editable source plus importable Bedrock package(s).
+
+### 23.3 Shared workflow
+Conversation → requirements → one shared project manifest → separate Java/Bedrock compatibility and dependency graphs → explicit scope approval → target-specific generation → integration → target-specific validation → separate playable bundles and a combined project export.
+
+### 23.4 Revised phase sequencing
+- Phase 0 must now define a cross-platform feature parity table and approve both target profiles.
+- Phase 5 must resolve Java and Bedrock compatibility independently.
+- Phase 6 becomes two vertical-slice tracks. They may be developed sequentially if the user approves the schedule, but both must pass their own playable acceptance gates before the milestone is declared complete.
+- Phase 7 must verify shared intent and asset references without merging incompatible runtime artifacts.
+- CI/test infrastructure must distinguish Java build/load/gameplay tests from Bedrock import/load/gameplay tests.
+
+### 23.5 Scope guard
+The first slice does not include all 232 catalog features. It includes a small, explicit set of gameplay requirements selected during design closure. Advanced simulation systems remain later phases unless required by that approved gameplay slice.
+
+### 23.6 Remaining blockers
+Exact Java version/loader, Bedrock version/API policy, common gameplay feature set, test environments, local/cloud execution and provider policy remain unresolved. No source-code implementation begins until these are resolved or explicitly deferred and the master baseline is approved.
