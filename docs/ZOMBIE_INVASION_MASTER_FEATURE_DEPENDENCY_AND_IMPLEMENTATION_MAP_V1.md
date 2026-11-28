@@ -398,3 +398,10 @@ The implementation gate is defined in `docs/ZOMBIE_INVASION_IMPLEMENTATION_READI
 It records the current state as design traceability complete but not ready for full playable implementation. The remaining blockers are: (1) freeze exact first-playable feature IDs in a revisioned manifest; (2) revalidate/pin Fabric and Bedrock toolchains; (3) identify actual test runtimes/devices for both editions; (4) select local/cloud/hybrid build execution and sandbox workflow; and (5) resolve gameplay policies only if they are included in the first slice.
 
 The document proposes W0–W7 for the first playable and W8–W9 for long-term expansions. It does not start source-code implementation or claim a playable mod. Existing user-approved targets and gameplay decisions remain unchanged.
+
+
+## 24. Manifest v2 draft linkage
+
+The draft manifest is `schemas/zombie-invasion.project-manifest.v2.draft.json`; its review and structural validation record is `docs/ZOMBIE_INVASION_PROJECT_MANIFEST_V2_DRAFT_REVIEW_V1.md`.
+
+The draft has 18 project requirements, 9 proposed components, 8 unresolved component dependency edges, 14 target-specific validation plans and 8 planned deliverable definitions. It contains 84 candidate first-slice feature IDs, all present in the 232-feature catalog. The candidate list is explicitly `proposed_not_approved`; the manifest has no approval records or test evidence. Production remains blocked until the user approves the exact feature-ID scope and remaining implementation prerequisites.
