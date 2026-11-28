@@ -1,6 +1,6 @@
 # Zombie Invasion — Combat and Weapon System Design V1
 
-Status: **DESIGN PROPOSAL — first-slice weapon scope awaiting user approval**
+Status: **USER-APPROVED FIRST-SLICE COMBAT SCOPE — design specification; not implemented**
 Date: 2026-11-28
 
 ## 1. Purpose
@@ -147,20 +147,32 @@ Run independently on Java and Bedrock:
 
 Tests not executed must be marked NOT_RUN. A successful build does not prove in-game combat correctness.
 
-## 12. User decisions required
+## 12. User-approved first-slice combat decisions (2026-11-28)
 
-The following must be explicitly decided before the combat scope is frozen:
+The user explicitly approved the following scope:
 
-1. First-slice weapon scope:
-   - A — melee only.
-   - B — melee + ranged non-firearm weapons.
-   - C — melee + firearms and finite ammunition.
-2. Should weapon noise attract or alert nearby zombies in the first slice?
-3. Should weapons use durability, or should balance rely on ammunition and cooldowns?
-4. Is limited, curated ammunition supply acceptable as the default?
+- **Weapon scope: Option C — melee weapons + firearms.**
+- **Weapon noise: enabled.** Firing creates a bounded noise event that can alert/investigate nearby zombies.
+- **Durability: enabled.** Weapons degrade through defined use; exact durability values and repair rules remain open for balance design.
+- **Ammunition: limited.** Ammunition is finite and must be scavenged or otherwise acquired through approved gameplay sources.
 
-Recommended starting point: Option C only if the user wants a stronger zombie-apocalypse combat identity; otherwise Option A or B reduces first-slice implementation and balance risk. No option is approved by this document.
+These decisions approve the system direction, not a final weapon catalogue or numeric balance. Weapon IDs, weapon count, damage, fire rate, magazine size, reload duration, durability values, noise radius/strength, ammo stack limits, loot quantities and repair mechanics remain to be specified and tested.
+
+### 12.1 Required gameplay safeguards
+
+- Firearms must not become an unlimited solution: ammunition remains finite.
+- Melee must remain a viable fallback when ammunition is depleted.
+- Weapon noise can attract or redirect existing eligible zombies, but must never create unlimited enemies or bypass Encounter Director budgets.
+- Noise propagation is bounded by radius, event lifetime, cooldown and per-event processing limits.
+- Durability loss must be deterministic and must not duplicate, unexpectedly destroy or restore items during death/restart or inventory operations.
+- A weapon reaching zero durability follows one explicit break/disable policy; no silent repair or free replacement.
+- Reloading moves ammunition from reserve to magazine exactly once and cannot duplicate rounds if interrupted, if the player dies or if the scenario resets.
+- Firearms, ammunition and damage behavior must be separately validated on Java and Bedrock. Equivalent player-facing outcomes are required; identical internal APIs are not.
+
+### 12.2 Technical compatibility note
+
+The selected Bedrock target is Minecraft 26.60 with stable `@minecraft/server` 2.11.0 and experimental APIs disabled. The official 26.60 changelog confirms release of the 2.11.0 module. Bedrock item durability is represented by documented item components; the exact firearm/projectile implementation must be verified against the stable target schema before coding. Java/Fabric and Bedrock implementations remain separate adapters behind the shared combat contract. [Official Bedrock 26.60 changelog](https://feedback.minecraft.net/hc/en-us/articles/49852828563853-Minecraft-Bedrock-Edition-26-60-Changelog) and [Bedrock item component reference](https://learn.microsoft.com/en-us/minecraft/creator/reference/content/itemreference/examples/itemcomponentlist?view=minecraft-bedrock-stable).
 
 ## 13. Implementation boundary
 
-This is a design proposal only. It does not implement weapons, damage logic, ammunition, inventory changes, entities, packs, mods or playable artifacts. Application source code remains unchanged.
+This is an approved design specification, not an implementation. It does not implement weapons, damage logic, ammunition, inventory changes, entities, packs, mods or playable artifacts. Application source code remains unchanged.
