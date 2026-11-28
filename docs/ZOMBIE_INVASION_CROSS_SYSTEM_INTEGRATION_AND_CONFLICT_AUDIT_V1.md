@@ -194,3 +194,20 @@ This is a design-level consolidation, not runtime validation.
 ## 15. Feature traceability completeness status
 
 The current 232-entry feature matrix was assessed in `docs/ZOMBIE_INVASION_FEATURE_TRACEABILITY_GAP_ASSESSMENT_V1.md`. At this snapshot all 232 entries remain planned / needs traceability review; no per-feature dependency edges, acceptance criteria or test cases are marked defined, and Java, Bedrock and parity statuses remain not assessed. The master dependency map is therefore an architecture-level guide only, not proof of completed feature-level mapping.
+
+
+## 16. Foundation compatibility and traceability controls
+
+The detailed BASE-001..BASE-012 specification is recorded in `docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md`.
+
+Integration constraints:
+- Edition selection precedes target version, loader/API, dependency and runtime resolution.
+- Java and Bedrock have independent dependency locks, component graphs, packaging and test evidence.
+- Stable logical IDs map to target-specific physical IDs; renames require migration aliases.
+- Configuration schema migration and world-save migration are separate concerns with explicit backup/recovery gates.
+- Client presentation state cannot become authoritative gameplay state.
+- Dependency and asset provenance/license checks gate redistribution.
+- First-slice local single-player evidence does not imply dedicated-server, Realm or hosted-runtime support.
+- The 32 dependency edges, 55 acceptance criteria and 51 tests in the new specification are design artifacts; they have not been executed.
+
+The feature traceability matrix remains at its prior review state pending formalization of machine-readable edge and target-status semantics. No implementation or compatibility test is claimed.
