@@ -334,3 +334,12 @@ For every shared requirement, the report must provide:
 - Parity classification: native, adapted, limited, unsupported or unverified.
 
 Java loader selection and Bedrock API/format selection remain independent. No cross-edition compatibility may be inferred from a common feature name or manifest requirement. The first milestone cannot be marked fully playable until both target profiles pass their own agreed gates.
+
+
+## 19. Dated first-slice compatibility research
+
+The 2026-11-28 research note proposes Java 26.3 + Fabric and Bedrock 26.60 + stable Script API 2.11.0 as candidate baselines. Bedrock 26.63 was announced as a platform-dependent hotfix rollout, so it must not be assumed available on every device.
+
+Reference: `docs/FIRST_SLICE_COMPATIBILITY_RECOMMENDATION_2026-11.md`.
+
+These values are dated recommendations, not universal compatibility declarations. The registry must revalidate exact game, loader, API and toolchain versions from authoritative sources at implementation start and bind test evidence to the actual target profile.
