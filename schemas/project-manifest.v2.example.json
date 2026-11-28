@@ -25,22 +25,28 @@
       "id": "java-target",
       "edition": "java",
       "version": {
-        "selection": "user_selected"
+        "selection": "exact",
+        "exact": "26.3"
       },
       "runtime": null,
-      "loader": null,
+      "loader": "fabric",
       "java_runtime": null,
       "deployment_roles": [
         "client",
         "singleplayer"
       ],
-      "constraints": []
+      "constraints": [
+        "Minecraft Java Edition 26.3",
+        "Fabric loader; exact loader patch version to be pinned after implementation-start verification.",
+        "Java runtime and build toolchain versions must be verified against official 26.3/Fabric metadata."
+      ]
     },
     {
       "id": "bedrock-target",
       "edition": "bedrock",
       "version": {
-        "selection": "user_selected"
+        "selection": "exact",
+        "exact": "26.60"
       },
       "runtime": null,
       "loader": "bedrock",
@@ -50,7 +56,9 @@
         "singleplayer"
       ],
       "constraints": [
-        "Use only APIs verified for the selected Bedrock version."
+        "Minecraft Bedrock Edition 26.60",
+        "Use stable @minecraft/server 2.11.0 only when scripting is required.",
+        "Experimental Bedrock APIs are disabled for this first playable target."
       ]
     }
   ],
