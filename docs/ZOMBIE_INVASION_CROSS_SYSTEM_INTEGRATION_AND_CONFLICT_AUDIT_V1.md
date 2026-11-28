@@ -174,3 +174,18 @@ Ownership and conflict rules:
 - First-playable scope remains protected; long-term campaign breadth does not imply first-slice delivery.
 
 This is a design-level audit. Quest soft-lock testing, save migration, reward idempotency, NPC availability and Java/Bedrock parity remain unvalidated implementation gates.
+
+
+## 14. Master dependency map and cross-system controls
+
+See `docs/ZOMBIE_INVASION_MASTER_FEATURE_DEPENDENCY_AND_IMPLEMENTATION_MAP_V1.md` for the integrated feature-family matrix and dependency layers L0–L12.
+
+Additional controls consolidated in that map:
+- No circular bootstrap dependency among power, fuel, water, factory, NPC labor, research, transport or prosthetics; each critical path must retain a valid bootstrap or alternate acquisition route.
+- Shared feature requirements map to distinct Java and Bedrock components, build jobs and evidence records.
+- First-playable feature IDs must be reconciled against the vertical-slice specification before scope freeze; long-term systems do not silently enter the first milestone.
+- The 232-entry traceability matrix must be assessed feature by feature; a master dependency document does not imply all features are designed or approved.
+- The project manifest remains the execution contract; discrepancies require an explicit revision rather than an implicit precedence decision.
+- Test gates cover transaction integrity, save migration, gameplay state, regional performance and independent target validation.
+
+This is a design-level consolidation, not runtime validation.
