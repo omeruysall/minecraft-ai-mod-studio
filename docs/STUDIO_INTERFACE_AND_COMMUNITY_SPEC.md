@@ -318,3 +318,22 @@ Status: Main workspace design decisions approved by the product owner on 2026-11
 
 ### 13.7 Implementation boundary
 The decisions in this section are design specifications only. They do not indicate that the preview renderer, voice system, responsive UI, project controller, or any other frontend feature has been implemented.
+
+
+## 2.5 Product boundary and real creation workflow
+
+This interface is the standalone Minecraft AI Mod Studio web application. The central conversation is an in-product project workspace, not an external ChatGPT conversation.
+
+The intended user journey is:
+1. Open the Studio website and sign in (or use the explicitly supported guest mode, if later approved).
+2. Create a project or open an existing project.
+3. Describe the mod, map, datapack, resource pack or complete project in the Studio chat.
+4. Review the AI-generated requirements summary, component creation table, target versions and dependency plan.
+5. Approve a specific plan revision.
+6. Monitor real generation, integration, build and test jobs with truthful status.
+7. Inspect previews, source files, logs and test evidence.
+8. Download the actual generated deliverables from the project workspace.
+
+The web application must not display simulated success as completed work. A chat response saying that an artifact was created is not a substitute for a persisted artifact record, a real file/package and corresponding validation evidence. If a capability is unavailable, show it as unavailable or not run.
+
+The present ChatGPT conversation is used only to design and plan this product; it is not the production authoring interface and does not itself generate the mod.
