@@ -490,3 +490,18 @@ Current matrix v1.2.0 state:
 - All implementation statuses remain `not_implemented_verified`; no world generation, pack import, runtime or gameplay evidence was created.
 
 The approved topology is a continuous regionally organized world with authored landmarks and deterministic procedural expansion. This does not prove that both editions expose equivalent runtime terrain-generation APIs. The design explicitly retains authored/prebuilt world bundles as a fallback, keeps first playable compact, and protects player-built/discovered state during expansion.
+
+
+## 47. Complete 232-feature traceability mapping (2026-11-28)
+
+The full 232-feature traceability pass is recorded in `catalogs/feature-traceability-matrix.v1.json` v1.3.0. All 232 feature IDs are now mapped to requirement IDs, feature-specific acceptance criteria and test case IDs.
+
+Verified matrix totals:
+- 232/232 features mapped for design traceability; 0 remain in `needs_traceability_review`.
+- 495 acceptance criteria and 490 unique test case IDs.
+- 486 proposed feature-to-feature dependency edges.
+- All 232 feature nodes passed static graph validation: unique edge IDs, valid endpoints, no self-edges, unique acceptance/test IDs and a successful topological sort with no dependency cycle.
+- Java coverage: 232 `not_assessed`; Bedrock coverage: 232 `not_assessed`; parity: 232 `not_assessed`.
+- Implementation: all 232 remain `not_implemented_verified`; evidence records: 0.
+
+This closes the feature-level design traceability gap, not implementation or compatibility. The 486 edges remain proposed, not approved. The test cases are specifications, not executed tests. Exact toolchains, target builds, imports, runtime gameplay and manual playtests are still required before any feature can advance to implemented/built/tested. The first playable scope remains separately bounded; long-term feature mapping does not put every feature into the first release.
