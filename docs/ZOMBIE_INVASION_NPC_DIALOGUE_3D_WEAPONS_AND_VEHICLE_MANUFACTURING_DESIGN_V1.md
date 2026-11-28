@@ -198,3 +198,35 @@ The bus must be a usable interior space, not merely a large vehicle model. The i
 ## 9. Implementation boundary
 
 Design only. This document does not implement NPC AI, dialogue services, 3D assets, vehicle physics, factories, recipes, interiors, Java mods, Bedrock add-ons or playable artifacts.
+
+
+## 2.6 Player identity and contextual address (explicit user clarification)
+
+The user clarified that NPCs should address the player by the player's chosen in-game name and speak naturally about live gameplay events. Example requested behavior: if the player name is Ömer, an NPC may say "Ömer, böyle olmaz" in response to a relevant action, or a medic may say "Ömer, kemiğin kırılmış" after detecting an in-game fracture.
+
+Requirements:
+- Ask for or allow the player to set a preferred character/player name at world or profile setup.
+- Use that name naturally in dialogue; avoid inserting it into every sentence.
+- NPC dialogue must be grounded in authoritative game-state facts such as injury state, ammunition, health, thirst, hunger, vehicle condition, quest progress and recent player actions.
+- A medic may identify a fracture only if the game injury system has actually recorded that fracture; NPCs must not invent diagnoses.
+- NPCs can express concern, frustration, encouragement, disagreement or urgency according to their personality and relationship with the player.
+- Dialogue should reflect recent events and prior interactions where relevant.
+- The player name is an in-game display choice. It must not be inferred from the player's real-world account identity or device data.
+- Provide a fallback when no preferred name is set.
+- Keep fourth-wall dialogue distinct: ordinary contextual NPC dialogue addresses the in-world player/avatar, while selected fourth-wall characters deliberately address the human player beyond the avatar.
+
+Example event-to-dialogue contracts:
+- Injury event: fracture recorded for left arm -> medic can say "Ömer, kolundaki kemik kırılmış. Önce sabitlememiz gerekiyor."
+- Resource event: player repeatedly wastes scarce ammunition -> companion may say "Ömer, böyle olmaz. Cephanemiz sınırlı."
+- Vehicle event: bus engine condition reaches critical threshold -> mechanic may warn the player by name.
+- Quest event: player breaks a promise -> the relevant NPC may confront the player based on the recorded choice.
+
+Acceptance tests:
+1. Player can set and change the in-game display name.
+2. NPC uses the selected name naturally and correctly.
+3. Injury dialogue matches actual injury/body-region state.
+4. Resource and vehicle warnings match actual game state.
+5. NPC does not claim a fracture, missing limb or other event that has not occurred.
+6. Dialogue varies by NPC personality and relationship state.
+7. Missing player name produces a graceful fallback.
+8. Fourth-wall dialogue remains an explicit authored behavior, not a side effect of ordinary name personalization.
