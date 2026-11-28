@@ -1,6 +1,6 @@
 # Zombie Invasion — Zombie Roster Design V1
 
-Status: **DESIGN PROPOSAL — awaiting user approval**
+Status: **USER-APPROVED FIRST-SLICE ROSTER — design specification; not implemented**
 Date: 2026-11-28
 
 This document proposes a staged enemy roster for the first playable Zombie Invasion slice. It does not authorize implementation and does not mark any proposed archetype as user-approved.
@@ -127,16 +127,18 @@ For each included archetype, test on both editions:
 
 A test not executed must be recorded as NOT_RUN. A successful package build is not evidence that the enemy works in-game.
 
-## 9. Open approval decisions
+## 9. User-approved first-slice roster (2026-11-28)
 
-The user must explicitly choose the first-slice roster:
+The user explicitly selected **Option C: Walker + Runner + Brute** for the first playable slice.
 
-- Option A: Walker only — smallest implementation and balance scope.
-- Option B: Walker + Runner — adds movement pressure with moderate complexity.
-- Option C: Walker + Runner + Brute — recommended for the requested detailed experience, with strict spawn limits and solo balance tests.
+- Walker is the baseline common enemy.
+- Runner adds controlled speed pressure.
+- Brute is a limited high-durability threat intended to pressure defence positions.
+- Encounter budgets, solo-player fairness, target parity and performance tests are mandatory.
+- Screamer, Exploder, Poisoner, Crawler and Armored variants remain deferred and are not first-slice requirements.
 
-The deferred archetypes remain outside the first-slice scope unless separately approved.
+This approval confirms the roster scope only. It does not approve exact health, speed, damage, spawn counts, timings or other balance values; those remain subject to tuning and test evidence.
 
 ## 10. Implementation boundary
 
-This is a design proposal only. No entity, AI, spawn director, animation, sound, pack, mod or playable artifact has been implemented by this document. Application source code remains unchanged.
+This is an approved design specification, not an implementation. No entity, AI, spawn director, animation, sound, pack, mod or playable artifact has been implemented by this document. Application source code remains unchanged.
