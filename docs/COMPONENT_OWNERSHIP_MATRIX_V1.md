@@ -188,3 +188,18 @@ A single shared feature ID may map to different target-specific implementations.
 The project-specific feature/dependency map is `docs/ZOMBIE_INVASION_MASTER_FEATURE_DEPENDENCY_AND_IMPLEMENTATION_MAP_V1.md`.
 
 The map specializes this ownership matrix for the Zombie Invasion project by mapping each gameplay family to one authoritative owner, prerequisite domains, consumers/integrations, platform-target evidence and open status. It preserves this matrix's rule that logical ownership does not require one microservice per feature. Java and Bedrock components remain separate, and the evidence registry must retain independent target-specific results.
+
+
+## 13. Complete feature-level mapping status
+
+The full 232-feature traceability pass is recorded in `catalogs/feature-traceability-matrix.v1.json` v1.3.0. All 232 feature IDs are now mapped to requirement IDs, feature-specific acceptance criteria and test case IDs.
+
+Verified matrix totals:
+- 232/232 features mapped for design traceability; 0 remain in `needs_traceability_review`.
+- 495 acceptance criteria and 490 unique test case IDs.
+- 486 proposed feature-to-feature dependency edges.
+- All 232 feature nodes passed static graph validation: unique edge IDs, valid endpoints, no self-edges, unique acceptance/test IDs and a successful topological sort with no dependency cycle.
+- Java coverage: 232 `not_assessed`; Bedrock coverage: 232 `not_assessed`; parity: 232 `not_assessed`.
+- Implementation: all 232 remain `not_implemented_verified`; evidence records: 0.
+
+This closes the feature-level design traceability gap, not implementation or compatibility. The 486 edges remain proposed, not approved. The test cases are specifications, not executed tests. Exact toolchains, target builds, imports, runtime gameplay and manual playtests are still required before any feature can advance to implemented/built/tested. The first playable scope remains separately bounded; long-term feature mapping does not put every feature into the first release.
