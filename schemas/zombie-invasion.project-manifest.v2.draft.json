@@ -19,7 +19,7 @@
     "number": 1,
     "id": "00000000-0000-4000-8000-000000000001",
     "parent_digest": null,
-    "digest": "9d79cedd95a57251658fbce7d7b08c2dea13c94394b3e5d543f122b2f25f15e6",
+    "digest": "99d8165b07479f502c770d863a6bca89bd667544e5088fc199475a03f11fedf6",
     "created_at": "2026-11-28T19:00:00+03:00",
     "migration": null
   },
@@ -40,7 +40,8 @@
       ],
       "constraints": [
         "Fabric Loader, Loom, mappings and Java runtime versions must be verified and pinned before generation.",
-        "Current Fabric documentation lists Loader 0.20.1, Loom 1.19-SNAPSHOT and Fabric API 0.166.0+26.3 for Minecraft 26.3; use as compatibility candidates, not as a successful build pin."
+        "Current Fabric documentation lists Loader 0.20.1, Loom 1.19-SNAPSHOT and Fabric API 0.166.0+26.3 for Minecraft 26.3; use as compatibility candidates, not as a successful build pin.",
+        "Minecraft 26.3 declares Java data pack format 121.0 and resource pack format 97.1; validate generated pack metadata against the official release."
       ]
     },
     {
@@ -571,7 +572,9 @@
         "java-fabric-mod"
       ],
       "configuration": {
-        "license_gate": true
+        "license_gate": true,
+        "resource_pack_format": "97.1",
+        "format_source": "https://www.minecraft.net/en-us/article/minecraft-java-edition-26-3"
       }
     },
     {
@@ -592,7 +595,9 @@
         "java-town-world"
       ],
       "configuration": {
-        "required_for_first_slice": false
+        "required_for_first_slice": false,
+        "data_pack_format": "121.0",
+        "format_source": "https://www.minecraft.net/en-us/article/minecraft-java-edition-26-3"
       }
     },
     {
@@ -1160,7 +1165,10 @@
         "fabric_api": "0.166.0+26.3",
         "gradle": "unresolved_pending_loom_resolution",
         "status": "current_documentation_recommendation_not_build_verified",
-        "source": "https://fabricmc.net/develop/"
+        "source": "https://fabricmc.net/develop/",
+        "data_pack_format": "121.0",
+        "resource_pack_format": "97.1",
+        "pack_format_source": "https://www.minecraft.net/en-us/article/minecraft-java-edition-26-3"
       },
       "bedrock": {
         "minecraft": "26.60",
