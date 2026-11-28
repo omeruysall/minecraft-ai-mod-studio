@@ -1,0 +1,1039 @@
+{
+  "manifest_version": "2.0.0",
+  "project": {
+    "id": "zombie-invasion",
+    "name": "Zombie Invasion",
+    "description": "Minecraft AI Mod Studio için Java ve Bedrock hedeflerinde ayrı uygulanacak, tek oyunculu, terk edilmiş kasaba temelli zombi istilası hayatta kalma projesi.",
+    "tags": [
+      "minecraft",
+      "zombie-invasion",
+      "survival",
+      "java",
+      "bedrock"
+    ],
+    "created_at": "2026-11-28T19:00:00+03:00",
+    "updated_at": "2026-11-28T19:00:00+03:00",
+    "origin": "studio"
+  },
+  "revision": {
+    "number": 1,
+    "id": "draft-revision-1",
+    "parent_digest": null,
+    "digest": "30e5b1cebde21239dabb1b84c0b2c00ff086149a7a849c29812c425aeee25e95",
+    "created_at": "2026-11-28T19:00:00+03:00",
+    "migration": null
+  },
+  "targets": [
+    {
+      "id": "java-26-3-fabric",
+      "edition": "java",
+      "version": {
+        "selection": "exact",
+        "exact": "26.3"
+      },
+      "runtime": null,
+      "loader": "fabric",
+      "java_runtime": null,
+      "deployment_roles": [
+        "client",
+        "singleplayer"
+      ],
+      "constraints": [
+        "Fabric Loader, Loom, mappings and Java runtime versions must be verified and pinned before generation."
+      ]
+    },
+    {
+      "id": "bedrock-26-60",
+      "edition": "bedrock",
+      "version": {
+        "selection": "exact",
+        "exact": "26.60"
+      },
+      "runtime": "Stable @minecraft/server 2.11.0 where scripting is required",
+      "loader": "bedrock",
+      "java_runtime": null,
+      "deployment_roles": [
+        "client",
+        "singleplayer"
+      ],
+      "constraints": [
+        "Experimental APIs disabled.",
+        "Pack format and stable API support must be verified on the actual target runtime."
+      ]
+    }
+  ],
+  "workflow": {
+    "status": "planning",
+    "stage": "planning",
+    "approval_required": true,
+    "active_plan_id": null,
+    "approved_revision_digest": null,
+    "blockers": [
+      {
+        "code": "FIRST_SLICE_SCOPE_NOT_FROZEN",
+        "message": "Exact first-playable feature IDs, recipes, item roster and survival values are not yet approved."
+      },
+      {
+        "code": "JAVA_TOOLCHAIN_NOT_PINNED",
+        "message": "Fabric Loader, Loom, mappings and Java runtime patch versions require compatibility verification."
+      },
+      {
+        "code": "BEDROCK_PACK_FORMAT_NOT_VERIFIED",
+        "message": "Bedrock 26.60 pack format and stable Script API support require runtime verification."
+      },
+      {
+        "code": "TEST_ENVIRONMENTS_NOT_CONFIRMED",
+        "message": "Actual Java and Bedrock test runtimes/devices and clean-install procedure are not recorded."
+      },
+      {
+        "code": "BUILD_EXECUTION_NOT_SELECTED",
+        "message": "Local/cloud/hybrid build execution, sandboxing and artifact storage remain undecided."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "REQ-JAVA",
+      "description": "Java 26.3 + Fabric target",
+      "category": "platform",
+      "priority": "critical",
+      "status": "confirmed",
+      "provenance": {
+        "kind": "user",
+        "reference_id": "user-confirmed-design",
+        "confidence": 1
+      },
+      "acceptance_criteria": [
+        "Separate Java build/load/gameplay evidence is required."
+      ],
+      "component_ids": [
+        "java-fabric-mod"
+      ]
+    },
+    {
+      "id": "REQ-BEDROCK",
+      "description": "Bedrock 26.60 + stable Script API 2.11.0 where required; experimental APIs off",
+      "category": "platform",
+      "priority": "critical",
+      "status": "confirmed",
+      "provenance": {
+        "kind": "user",
+        "reference_id": "user-confirmed-design",
+        "confidence": 1
+      },
+      "acceptance_criteria": [
+        "Separate Bedrock import/load/gameplay evidence is required."
+      ],
+      "component_ids": [
+        "bedrock-behavior-pack",
+        "bedrock-script-module"
+      ]
+    },
+    {
+      "id": "REQ-SOLO",
+      "description": "Single-player first playable",
+      "category": "scope",
+      "priority": "critical",
+      "status": "confirmed",
+      "provenance": {
+        "kind": "user",
+        "reference_id": "user-confirmed-design",
+        "confidence": 1
+      },
+      "acceptance_criteria": [
+        "All first-slice gameplay tests use one player."
+      ],
+      "component_ids": [
+        "shared-gameplay-contracts",
+        "java-fabric-mod",
+        "bedrock-behavior-pack"
+      ]
+    },
+    {
+      "id": "REQ-ZOMBIE",
+      "description": "Zombie-invasion survival concept",
+      "category": "gameplay",
+      "priority": "critical",
+      "status": "confirmed",
+      "provenance": {
+        "kind": "user",
+        "reference_id": "user-confirmed-design",
+        "confidence": 1
+      },
+      "acceptance_criteria": [
+        "Shared gameplay intent is represented in both target implementations."
+      ],
+      "component_ids": [
+        "shared-gameplay-contracts",
+        "java-fabric-mod",
+        "bedrock-behavior-pack"
+      ]
+    },
+    {
+      "id": "REQ-TOWN",
+      "description": "Compact authored abandoned expandable town",
+      "category": "world",
+      "priority": "critical",
+      "status": "confirmed",
+      "provenance": {
+        "kind": "user",
+        "reference_id": "user-confirmed-design",
+        "confidence": 1
+      },
+      "acceptance_criteria": [
+        "A navigable authored town is delivered in both target worlds."
+      ],
+      "component_ids": [
+        "shared-gameplay-contracts",
+        "java-town-world",
+        "java-datapack",
+        "bedrock-town-world"
+      ]
+    },
+    {
+      "id": "REQ-MARKET",
+      "description": "Functional Market location",
+      "category": "world",
+      "priority": "high",
+      "status": "confirmed",
+      "provenance": {
+        "kind": "user",
+        "reference_id": "user-confirmed-design",
+        "confidence": 1
+      },
+      "acceptance_criteria": [
+        "Enter, scavenge supplies and persist looted state."
+      ],
+      "component_ids": [
+        "shared-gameplay-contracts",
+        "java-town-world",
+        "bedrock-town-world"
+      ]
+    },
+    {
+      "id": "REQ-HOSPITAL",
+      "description": "Functional Hospital location",
+      "category": "world",
+      "priority": "high",
+      "status": "confirmed",
+      "provenance": {
+        "kind": "user",
+        "reference_id": "user-confirmed-design",
+        "confidence": 1
+      },
+      "acceptance_criteria": [
+        "Enter, scavenge medical supplies and use an approved recovery interaction."
+      ],
+      "component_ids": [
+        "shared-gameplay-contracts",
+        "java-town-world",
+        "bedrock-town-world"
+      ]
+    },
+    {
+      "id": "REQ-POLICE",
+      "description": "Functional Police Station location",
+      "category": "world",
+      "priority": "high",
+      "status": "confirmed",
+      "provenance": {
+        "kind": "user",
+        "reference_id": "user-confirmed-design",
+        "confidence": 1
+      },
+      "acceptance_criteria": [
+        "Enter and scavenge combat/defence supplies."
+      ],
+      "component_ids": [
+        "shared-gameplay-contracts",
+        "java-town-world",
+        "bedrock-town-world"
+      ]
+    },
+    {
+      "id": "REQ-ROSTER",
+      "description": "Walker, Runner and Brute zombie roster",
+      "category": "entities",
+      "priority": "critical",
+      "status": "confirmed",
+      "provenance": {
+        "kind": "user",
+        "reference_id": "user-confirmed-design",
+        "confidence": 1
+      },
+      "acceptance_criteria": [
+        "Each archetype has distinct documented behavior on both targets."
+      ],
+      "component_ids": [
+        "shared-gameplay-contracts",
+        "java-fabric-mod",
+        "java-resource-pack",
+        "bedrock-behavior-pack",
+        "bedrock-resource-pack"
+      ]
+    },
+    {
+      "id": "REQ-COMBAT",
+      "description": "Melee and firearms combat",
+      "category": "combat",
+      "priority": "critical",
+      "status": "confirmed",
+      "provenance": {
+        "kind": "user",
+        "reference_id": "user-confirmed-design",
+        "confidence": 1
+      },
+      "acceptance_criteria": [
+        "Both melee and firearm paths can damage valid targets."
+      ],
+      "component_ids": [
+        "shared-gameplay-contracts",
+        "java-fabric-mod",
+        "java-resource-pack",
+        "bedrock-behavior-pack",
+        "bedrock-resource-pack"
+      ]
+    },
+    {
+      "id": "REQ-NOISE",
+      "description": "Firearm noise attracts nearby zombies",
+      "category": "combat",
+      "priority": "high",
+      "status": "confirmed",
+      "provenance": {
+        "kind": "user",
+        "reference_id": "user-confirmed-design",
+        "confidence": 1
+      },
+      "acceptance_criteria": [
+        "Firearm event emits bounded noise and eligible zombies react."
+      ],
+      "component_ids": [
+        "shared-gameplay-contracts",
+        "java-fabric-mod",
+        "java-resource-pack",
+        "bedrock-behavior-pack",
+        "bedrock-resource-pack"
+      ]
+    },
+    {
+      "id": "REQ-DURABILITY",
+      "description": "Weapon durability enabled",
+      "category": "combat",
+      "priority": "high",
+      "status": "confirmed",
+      "provenance": {
+        "kind": "user",
+        "reference_id": "user-confirmed-design",
+        "confidence": 1
+      },
+      "acceptance_criteria": [
+        "Weapon use reduces durability and invalid states are rejected."
+      ],
+      "component_ids": [
+        "shared-gameplay-contracts",
+        "java-fabric-mod",
+        "bedrock-behavior-pack"
+      ]
+    },
+    {
+      "id": "REQ-AMMO",
+      "description": "Finite, limited ammunition",
+      "category": "combat",
+      "priority": "critical",
+      "status": "confirmed",
+      "provenance": {
+        "kind": "user",
+        "reference_id": "user-confirmed-design",
+        "confidence": 1
+      },
+      "acceptance_criteria": [
+        "Firing consumes ammunition; empty weapons cannot fire."
+      ],
+      "component_ids": [
+        "shared-gameplay-contracts",
+        "java-fabric-mod",
+        "bedrock-behavior-pack"
+      ]
+    },
+    {
+      "id": "REQ-BACKPACK",
+      "description": "Multiple backpack varieties",
+      "category": "inventory",
+      "priority": "high",
+      "status": "confirmed",
+      "provenance": {
+        "kind": "user",
+        "reference_id": "user-confirmed-design",
+        "confidence": 1
+      },
+      "acceptance_criteria": [
+        "Variants have distinct storage behavior; exact roster/capacities remain open."
+      ],
+      "component_ids": [
+        "shared-gameplay-contracts",
+        "java-fabric-mod",
+        "bedrock-behavior-pack"
+      ]
+    },
+    {
+      "id": "REQ-CRAFT",
+      "description": "Vanilla Crafting Table first; specialist stations progression-gated",
+      "category": "crafting",
+      "priority": "high",
+      "status": "confirmed",
+      "provenance": {
+        "kind": "user",
+        "reference_id": "user-confirmed-design",
+        "confidence": 1
+      },
+      "acceptance_criteria": [
+        "Basic recipes remain on vanilla table; specialist recipes require their station gate."
+      ],
+      "component_ids": [
+        "shared-gameplay-contracts",
+        "java-fabric-mod",
+        "bedrock-behavior-pack"
+      ]
+    },
+    {
+      "id": "REQ-FOOD-WATER",
+      "description": "Comprehensive food, drinks and thirst system in project scope",
+      "category": "survival",
+      "priority": "high",
+      "status": "confirmed",
+      "provenance": {
+        "kind": "user",
+        "reference_id": "user-confirmed-design",
+        "confidence": 1
+      },
+      "acceptance_criteria": [
+        "Exact first-slice roster and rates remain to be approved."
+      ],
+      "component_ids": [
+        "shared-gameplay-contracts"
+      ]
+    },
+    {
+      "id": "REQ-DAY-NIGHT",
+      "description": "Day/night cycle",
+      "category": "world",
+      "priority": "high",
+      "status": "confirmed",
+      "provenance": {
+        "kind": "user",
+        "reference_id": "user-confirmed-design",
+        "confidence": 1
+      },
+      "acceptance_criteria": [
+        "World time advances and relevant behaviors use authoritative time state."
+      ],
+      "component_ids": [
+        "shared-gameplay-contracts"
+      ]
+    },
+    {
+      "id": "REQ-SCOPE-FREEZE",
+      "description": "Freeze exact first-slice feature IDs before production",
+      "category": "workflow",
+      "priority": "critical",
+      "status": "proposed",
+      "provenance": {
+        "kind": "system",
+        "reference_id": "implementation-readiness-gate",
+        "confidence": 1
+      },
+      "acceptance_criteria": [
+        "Production remains blocked until exact scope and revision are approved."
+      ],
+      "component_ids": []
+    }
+  ],
+  "components": [
+    {
+      "id": "shared-gameplay-contracts",
+      "type": "shared_specification",
+      "name": "Shared gameplay contracts",
+      "description": "Edition-neutral intent and stable IDs; not a shared binary.",
+      "status": "proposed",
+      "revision": 1,
+      "target_ids": [
+        "java-26-3-fabric",
+        "bedrock-26-60"
+      ],
+      "engine_owner": "project-architect",
+      "requirement_ids": [
+        "REQ-SOLO",
+        "REQ-ZOMBIE",
+        "REQ-TOWN",
+        "REQ-MARKET",
+        "REQ-HOSPITAL",
+        "REQ-POLICE",
+        "REQ-ROSTER",
+        "REQ-COMBAT",
+        "REQ-NOISE",
+        "REQ-DURABILITY",
+        "REQ-AMMO",
+        "REQ-BACKPACK",
+        "REQ-CRAFT",
+        "REQ-FOOD-WATER",
+        "REQ-DAY-NIGHT"
+      ],
+      "dependency_ids": [],
+      "configuration": {
+        "catalog": "catalogs/feature-traceability-matrix.v1.json",
+        "catalog_version": "1.3.0",
+        "implementation_claim": false
+      }
+    },
+    {
+      "id": "java-fabric-mod",
+      "type": "java_mod",
+      "name": "Java Fabric gameplay mod",
+      "description": "Java-specific implementation of approved first-slice gameplay contracts.",
+      "status": "proposed",
+      "revision": 1,
+      "target_ids": [
+        "java-26-3-fabric"
+      ],
+      "engine_owner": "java-mod-engine",
+      "requirement_ids": [
+        "REQ-JAVA",
+        "REQ-SOLO",
+        "REQ-ZOMBIE",
+        "REQ-ROSTER",
+        "REQ-COMBAT",
+        "REQ-NOISE",
+        "REQ-DURABILITY",
+        "REQ-AMMO",
+        "REQ-BACKPACK",
+        "REQ-CRAFT"
+      ],
+      "dependency_ids": [
+        "shared-gameplay-contracts"
+      ],
+      "configuration": {
+        "minecraft": "26.3",
+        "loader": "fabric",
+        "loader_version": "UNRESOLVED",
+        "java_runtime": "UNRESOLVED"
+      }
+    },
+    {
+      "id": "java-town-world",
+      "type": "java_world",
+      "name": "Java abandoned town world",
+      "description": "Safehouse, residential area, Market, Hospital and Police Station.",
+      "status": "proposed",
+      "revision": 1,
+      "target_ids": [
+        "java-26-3-fabric"
+      ],
+      "engine_owner": "world-generation-engine",
+      "requirement_ids": [
+        "REQ-TOWN",
+        "REQ-MARKET",
+        "REQ-HOSPITAL",
+        "REQ-POLICE"
+      ],
+      "dependency_ids": [
+        "java-fabric-mod"
+      ],
+      "configuration": {
+        "authored_first_slice": true,
+        "procedural_expansion": "deferred"
+      }
+    },
+    {
+      "id": "java-resource-pack",
+      "type": "java_resource_pack",
+      "name": "Java resource pack",
+      "description": "Target-specific visuals and audio required by selected features.",
+      "status": "proposed",
+      "revision": 1,
+      "target_ids": [
+        "java-26-3-fabric"
+      ],
+      "engine_owner": "asset-generation-engine",
+      "requirement_ids": [
+        "REQ-ROSTER",
+        "REQ-COMBAT",
+        "REQ-NOISE"
+      ],
+      "dependency_ids": [
+        "java-fabric-mod"
+      ],
+      "configuration": {
+        "license_gate": true
+      }
+    },
+    {
+      "id": "java-datapack",
+      "type": "java_datapack",
+      "name": "Java datapack (conditional)",
+      "description": "Only generated if feature design proves a datapack is needed.",
+      "status": "proposed",
+      "revision": 1,
+      "target_ids": [
+        "java-26-3-fabric"
+      ],
+      "engine_owner": "datapack-engine",
+      "requirement_ids": [
+        "REQ-TOWN"
+      ],
+      "dependency_ids": [
+        "java-town-world"
+      ],
+      "configuration": {
+        "required_for_first_slice": false
+      }
+    },
+    {
+      "id": "bedrock-behavior-pack",
+      "type": "bedrock_behavior_pack",
+      "name": "Bedrock behavior pack",
+      "description": "Bedrock-specific gameplay and entity behavior using verified stable APIs.",
+      "status": "proposed",
+      "revision": 1,
+      "target_ids": [
+        "bedrock-26-60"
+      ],
+      "engine_owner": "bedrock-addon-engine",
+      "requirement_ids": [
+        "REQ-BEDROCK",
+        "REQ-SOLO",
+        "REQ-ZOMBIE",
+        "REQ-ROSTER",
+        "REQ-COMBAT",
+        "REQ-NOISE",
+        "REQ-DURABILITY",
+        "REQ-AMMO",
+        "REQ-BACKPACK",
+        "REQ-CRAFT"
+      ],
+      "dependency_ids": [
+        "shared-gameplay-contracts"
+      ],
+      "configuration": {
+        "experimental_apis": false,
+        "stable_script_api": "2.11.0_if_required",
+        "pack_format": "UNRESOLVED"
+      }
+    },
+    {
+      "id": "bedrock-town-world",
+      "type": "bedrock_world",
+      "name": "Bedrock abandoned town world",
+      "description": "Safehouse, residential area, Market, Hospital and Police Station.",
+      "status": "proposed",
+      "revision": 1,
+      "target_ids": [
+        "bedrock-26-60"
+      ],
+      "engine_owner": "world-generation-engine",
+      "requirement_ids": [
+        "REQ-TOWN",
+        "REQ-MARKET",
+        "REQ-HOSPITAL",
+        "REQ-POLICE"
+      ],
+      "dependency_ids": [
+        "bedrock-behavior-pack"
+      ],
+      "configuration": {
+        "authored_first_slice": true,
+        "procedural_expansion": "deferred"
+      }
+    },
+    {
+      "id": "bedrock-resource-pack",
+      "type": "bedrock_resource_pack",
+      "name": "Bedrock resource pack",
+      "description": "Bedrock-specific visuals and audio.",
+      "status": "proposed",
+      "revision": 1,
+      "target_ids": [
+        "bedrock-26-60"
+      ],
+      "engine_owner": "asset-generation-engine",
+      "requirement_ids": [
+        "REQ-ROSTER",
+        "REQ-COMBAT",
+        "REQ-NOISE"
+      ],
+      "dependency_ids": [
+        "bedrock-behavior-pack"
+      ],
+      "configuration": {
+        "license_gate": true
+      }
+    },
+    {
+      "id": "bedrock-script-module",
+      "type": "bedrock_script_module",
+      "name": "Bedrock stable Script API module (conditional)",
+      "description": "Use stable Script API 2.11.0 only where required and verified.",
+      "status": "proposed",
+      "revision": 1,
+      "target_ids": [
+        "bedrock-26-60"
+      ],
+      "engine_owner": "bedrock-script-engine",
+      "requirement_ids": [
+        "REQ-BEDROCK"
+      ],
+      "dependency_ids": [
+        "bedrock-behavior-pack"
+      ],
+      "configuration": {
+        "api": "@minecraft/server",
+        "version": "2.11.0",
+        "experimental_apis": false,
+        "required_for_first_slice": "TO_BE_ASSESSED"
+      }
+    }
+  ],
+  "dependency_graph": {
+    "edges": [
+      {
+        "id": "E1",
+        "from": "shared-gameplay-contracts",
+        "to": "java-fabric-mod",
+        "kind": "requires",
+        "status": "unresolved",
+        "optional": false,
+        "version_constraint": null,
+        "provenance": "Proposed component architecture; verify during target planning."
+      },
+      {
+        "id": "E2",
+        "from": "java-fabric-mod",
+        "to": "java-town-world",
+        "kind": "requires",
+        "status": "unresolved",
+        "optional": false,
+        "version_constraint": null,
+        "provenance": "Proposed component architecture; verify during target planning."
+      },
+      {
+        "id": "E3",
+        "from": "java-fabric-mod",
+        "to": "java-resource-pack",
+        "kind": "requires",
+        "status": "unresolved",
+        "optional": false,
+        "version_constraint": null,
+        "provenance": "Proposed component architecture; verify during target planning."
+      },
+      {
+        "id": "E4",
+        "from": "java-town-world",
+        "to": "java-datapack",
+        "kind": "requires",
+        "status": "unresolved",
+        "optional": true,
+        "version_constraint": null,
+        "provenance": "Proposed component architecture; verify during target planning."
+      },
+      {
+        "id": "E5",
+        "from": "shared-gameplay-contracts",
+        "to": "bedrock-behavior-pack",
+        "kind": "requires",
+        "status": "unresolved",
+        "optional": false,
+        "version_constraint": null,
+        "provenance": "Proposed component architecture; verify during target planning."
+      },
+      {
+        "id": "E6",
+        "from": "bedrock-behavior-pack",
+        "to": "bedrock-town-world",
+        "kind": "requires",
+        "status": "unresolved",
+        "optional": false,
+        "version_constraint": null,
+        "provenance": "Proposed component architecture; verify during target planning."
+      },
+      {
+        "id": "E7",
+        "from": "bedrock-behavior-pack",
+        "to": "bedrock-resource-pack",
+        "kind": "requires",
+        "status": "unresolved",
+        "optional": false,
+        "version_constraint": null,
+        "provenance": "Proposed component architecture; verify during target planning."
+      },
+      {
+        "id": "E8",
+        "from": "bedrock-behavior-pack",
+        "to": "bedrock-script-module",
+        "kind": "requires",
+        "status": "unresolved",
+        "optional": true,
+        "version_constraint": null,
+        "provenance": "Proposed component architecture; verify during target planning."
+      }
+    ]
+  },
+  "assets": [],
+  "generation": {
+    "plan_id": null,
+    "plan_digest": null,
+    "engine_versions": {
+      "manifest_schema": "2.0.0",
+      "feature_catalog": "1.3.0"
+    },
+    "profile": "first-playable-draft",
+    "seed": null,
+    "configuration_refs": [
+      "docs/FIRST_PLAYABLE_VERTICAL_SLICE_SPEC_V1.md",
+      "docs/ZOMBIE_INVASION_IMPLEMENTATION_READINESS_AND_CODE_ENTRY_GATE_V1.md"
+    ]
+  },
+  "approvals": [],
+  "validation": {
+    "plans": [
+      {
+        "id": "java-manifest_schema",
+        "test_type": "manifest_schema",
+        "target_id": "java-26-3-fabric",
+        "required": true
+      },
+      {
+        "id": "java-clean_build",
+        "test_type": "clean_build",
+        "target_id": "java-26-3-fabric",
+        "required": true
+      },
+      {
+        "id": "java-package_import",
+        "test_type": "package_import",
+        "target_id": "java-26-3-fabric",
+        "required": true
+      },
+      {
+        "id": "java-world_load",
+        "test_type": "world_load",
+        "target_id": "java-26-3-fabric",
+        "required": true
+      },
+      {
+        "id": "java-first_slice_gameplay",
+        "test_type": "first_slice_gameplay",
+        "target_id": "java-26-3-fabric",
+        "required": true
+      },
+      {
+        "id": "java-save_reload",
+        "test_type": "save_reload",
+        "target_id": "java-26-3-fabric",
+        "required": true
+      },
+      {
+        "id": "java-performance_and_duplication",
+        "test_type": "performance_and_duplication",
+        "target_id": "java-26-3-fabric",
+        "required": true
+      },
+      {
+        "id": "bedrock-manifest_schema",
+        "test_type": "manifest_schema",
+        "target_id": "bedrock-26-60",
+        "required": true
+      },
+      {
+        "id": "bedrock-clean_build",
+        "test_type": "clean_build",
+        "target_id": "bedrock-26-60",
+        "required": true
+      },
+      {
+        "id": "bedrock-package_import",
+        "test_type": "package_import",
+        "target_id": "bedrock-26-60",
+        "required": true
+      },
+      {
+        "id": "bedrock-world_load",
+        "test_type": "world_load",
+        "target_id": "bedrock-26-60",
+        "required": true
+      },
+      {
+        "id": "bedrock-first_slice_gameplay",
+        "test_type": "first_slice_gameplay",
+        "target_id": "bedrock-26-60",
+        "required": true
+      },
+      {
+        "id": "bedrock-save_reload",
+        "test_type": "save_reload",
+        "target_id": "bedrock-26-60",
+        "required": true
+      },
+      {
+        "id": "bedrock-performance_and_duplication",
+        "test_type": "performance_and_duplication",
+        "target_id": "bedrock-26-60",
+        "required": true
+      }
+    ],
+    "evidence": []
+  },
+  "deliverables": [
+    {
+      "id": "java-jar",
+      "format": "jar",
+      "status": "planned",
+      "artifact_id": null,
+      "sha256": null,
+      "source_component_ids": [
+        "java-fabric-mod"
+      ],
+      "target_id": "java-26-3-fabric"
+    },
+    {
+      "id": "java-world",
+      "format": "minecraft-world",
+      "status": "planned",
+      "artifact_id": null,
+      "sha256": null,
+      "source_component_ids": [
+        "java-town-world"
+      ],
+      "target_id": "java-26-3-fabric"
+    },
+    {
+      "id": "java-resource-pack",
+      "format": "resource-pack-zip",
+      "status": "planned",
+      "artifact_id": null,
+      "sha256": null,
+      "source_component_ids": [
+        "java-resource-pack"
+      ],
+      "target_id": "java-26-3-fabric"
+    },
+    {
+      "id": "java-datapack",
+      "format": "datapack-zip",
+      "status": "planned",
+      "artifact_id": null,
+      "sha256": null,
+      "source_component_ids": [
+        "java-datapack"
+      ],
+      "target_id": "java-26-3-fabric"
+    },
+    {
+      "id": "bedrock-addon",
+      "format": "mcaddon",
+      "status": "planned",
+      "artifact_id": null,
+      "sha256": null,
+      "source_component_ids": [
+        "bedrock-behavior-pack",
+        "bedrock-script-module"
+      ],
+      "target_id": "bedrock-26-60"
+    },
+    {
+      "id": "bedrock-world",
+      "format": "mcworld",
+      "status": "planned",
+      "artifact_id": null,
+      "sha256": null,
+      "source_component_ids": [
+        "bedrock-town-world"
+      ],
+      "target_id": "bedrock-26-60"
+    },
+    {
+      "id": "bedrock-resource-pack",
+      "format": "mcpack",
+      "status": "planned",
+      "artifact_id": null,
+      "sha256": null,
+      "source_component_ids": [
+        "bedrock-resource-pack"
+      ],
+      "target_id": "bedrock-26-60"
+    },
+    {
+      "id": "project-source-bundle",
+      "format": "zip",
+      "status": "planned",
+      "artifact_id": null,
+      "sha256": null,
+      "source_component_ids": [
+        "shared-gameplay-contracts",
+        "java-fabric-mod",
+        "java-town-world",
+        "java-resource-pack",
+        "java-datapack",
+        "bedrock-behavior-pack",
+        "bedrock-town-world",
+        "bedrock-resource-pack",
+        "bedrock-script-module"
+      ],
+      "target_id": null
+    }
+  ],
+  "extensions": {
+    "scope_classification": "draft_first_playable_candidate",
+    "user_approval_state": "not_approved",
+    "design_traceability": {
+      "feature_count": 232,
+      "acceptance_criteria_count": 495,
+      "test_case_id_count": 490,
+      "proposed_feature_dependency_edges": 486,
+      "source": "catalogs/feature-traceability-matrix.v1.json",
+      "version": "1.3.0"
+    },
+    "first_slice_inclusion": {
+      "confirmed_requirements": [
+        "REQ-JAVA",
+        "REQ-BEDROCK",
+        "REQ-SOLO",
+        "REQ-ZOMBIE",
+        "REQ-TOWN",
+        "REQ-MARKET",
+        "REQ-HOSPITAL",
+        "REQ-POLICE",
+        "REQ-ROSTER",
+        "REQ-COMBAT",
+        "REQ-NOISE",
+        "REQ-DURABILITY",
+        "REQ-AMMO",
+        "REQ-BACKPACK",
+        "REQ-CRAFT",
+        "REQ-FOOD-WATER",
+        "REQ-DAY-NIGHT"
+      ],
+      "proposed_requirements": [
+        "REQ-SCOPE-FREEZE",
+        "REQ-FOOD-WATER",
+        "REQ-DAY-NIGHT"
+      ],
+      "note": "Project-level confirmation does not automatically include every long-term feature in the first playable; exact inclusion requires user approval."
+    },
+    "deferred_or_unresolved": [
+      "death-and-restart-policy",
+      "exact-weapon-roster-and-balance",
+      "exact-backpack-variants-and-capacities",
+      "first-slice-injury-subset",
+      "food-drink-thirst-rates",
+      "first-slice-crafting-recipes-and-workstations",
+      "exact-loot-values",
+      "fabric-loader-loom-mappings-and-java-runtime",
+      "bedrock-pack-format-and-api-runtime-verification",
+      "test-devices-and-operating-systems",
+      "build-execution-and-sandbox-model"
+    ],
+    "long_term_scope_catalog": "catalogs/feature-traceability-matrix.v1.json",
+    "implementation_claim": false,
+    "no_approval_or_test_evidence_yet": true
+  }
+}
