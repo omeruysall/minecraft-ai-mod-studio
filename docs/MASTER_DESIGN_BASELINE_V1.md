@@ -312,3 +312,15 @@ The platform and broad component scope are now selected. The remaining implement
 7. First-release identity, team approval and community scope.
 
 The baseline remains pending explicit baseline approval. This user decision alone does not open the coding gate.
+
+
+## 18. User-approved first-slice compatibility targets (2026-11-28)
+
+The user approved:
+- Java Edition: Minecraft 26.3 + Fabric.
+- Bedrock Edition: Minecraft 26.60 + stable `@minecraft/server` 2.11.0 when scripting is needed.
+- Experimental Bedrock APIs are disabled for the first playable milestone.
+
+These selections close the earlier open questions about target game versions, Java loader and Bedrock API stability policy. The compatibility recommendation is now a confirmed target decision, not a proposal. Toolchain patch versions, runtime requirements and current official metadata still require verification immediately before implementation.
+
+Remaining major first-slice decisions include the common gameplay feature set, target-track development order, test environments, execution model and AI provider policy.
