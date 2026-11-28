@@ -174,3 +174,10 @@ Detailed map layout and acceptance criteria: `docs/ZOMBIE_INVASION_MAP_DESIGN_V1
 These are functional gameplay locations, not decorative shells. The first map scope therefore includes the safehouse, residential section and all three buildings, while remaining compact and authored. The gas station, military checkpoint and underground shelter may remain later-stage landmarks.
 
 Detailed roles, constraints and acceptance requirements: `docs/ZOMBIE_INVASION_MAP_DESIGN_V1.md`.
+
+
+## 18. Death and restart policy — recommendation only (2026-11-28)
+
+A separate proposal recommends that player death ends the current attempt with a DEFEAT result, then allows the player to manually restart the complete scenario from a clean authored baseline. Restart would reset scenario-owned wave state, zombies, defence points, fixed loot, objectives, radio progression and extraction state without deleting the world save or unrelated user content.
+
+This is **not a confirmed user decision**. The user has not yet approved the death/restart rule. Detailed requirements and acceptance tests: `docs/ZOMBIE_INVASION_DEATH_AND_RESTART_POLICY_V1.md`.
