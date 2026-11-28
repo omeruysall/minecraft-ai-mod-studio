@@ -142,3 +142,13 @@ The user selected **Zombie Invasion** and requested a highly detailed design. Th
 The selected concept is a survival, scavenging and base-defence experience with escalating zombie attacks. The proposed first playable slice is a compact settlement/safehouse scenario with supplies, limited defence repairs, a basic zombie archetype and three escalating attacks.
 
 The following are not yet confirmed by the user: first-map theme, single-player versus cooperative requirement, death/restart rules, exact victory objective, loot randomization, free-form building versus designated repair points, custom weapons in the first slice and target-track development order. Recommended defaults are documented as proposals, not decisions.
+
+
+## 15. User decision — first-slice player count (2026-11-28)
+
+**Decision: Single-player is sufficient for the first playable slice.**
+
+- First-slice acceptance target: one player.
+- Cooperative multiplayer and dedicated-server support: deferred to a later milestone.
+- This does not permanently exclude multiplayer from the product roadmap.
+- The first-slice architecture should remain reasonably extensible, without implementing multiplayer infrastructure prematurely.
