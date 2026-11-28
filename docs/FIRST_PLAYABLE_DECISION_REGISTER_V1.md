@@ -343,4 +343,20 @@ A world-scale design proposal has been added at `docs/ZOMBIE_INVASION_WORLD_MAP_
 
 The proposal uses a hybrid authored/procedural content model, stable region and point-of-interest identifiers, discoverable map knowledge, regional persistence, bounded distant simulation, dynamic world events, region-specific resource distribution and independent Java/Bedrock parity evidence. It also integrates the user's previously requested day/night cycle, seasons, weather, power/water infrastructure, factions, hordes and transport systems.
 
-**Status distinction:** the abandoned expandable town and its functional safehouse, residential section, Market, Hospital and Police Station remain confirmed for the first playable slice. The larger region catalogue, world topology, procedural generation model and full world-scale simulation are proposals awaiting user decisions. They do not expand the first playable milestone automatically. No world generation or game implementation is claimed.
+**User decision recorded in section 35:** the user selected "all" when presented with the three topology choices. The approved long-term architecture combines a large continuous open world, logically connected regional organization, hybrid authored/procedural generation and incremental expansion of existing saves. The region catalogue remains long-term scope; it does not expand the first playable milestone automatically. No world generation or game implementation is claimed.
+
+
+## 35. User-approved continuous, regional and expandable world architecture (2026-11-28)
+
+The user answered **"Hepsi"** to the three world-topology choices. This is recorded as approval to combine all three into one architecture rather than selecting only one:
+
+1. **Large continuous open world:** the intended experience is one connected world, not a set of unrelated arena maps.
+2. **Connected regions:** cities, towns, villages, wilderness, restricted sites and transport corridors are organized into logical geographic and simulation regions. Region boundaries do not inherently mean separate instances or loading screens.
+3. **Hybrid generation:** important story areas, major landmarks and critical progression sites are authored and validated; suitable secondary settlements, structures, road events, resource nodes and optional POIs may be deterministically generated.
+4. **Incremental expansion:** new regions and content can be added to an existing save while preserving stable identifiers, player construction, discovery, ownership and progression.
+
+The compact abandoned town remains the first playable map. The long-term world catalogue is approved as design scope, not as a requirement to implement every region in the first slice. Technical feasibility, world-size limits, chunk loading, persistence and independent Java/Bedrock validation must be proven before claiming an infinite or fully seamless world.
+
+Detailed architecture and constraints: `docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md`.
+
+This is a design decision only. No terrain generation, region streaming, world expansion or playable artifact has been implemented or tested.
