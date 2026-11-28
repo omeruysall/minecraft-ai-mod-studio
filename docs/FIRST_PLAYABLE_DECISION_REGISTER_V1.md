@@ -161,3 +161,16 @@ The following are not yet confirmed by the user: first-map theme, single-player 
 The planned town landmark set includes residential houses, hospital, police station, market, gas station, military checkpoint and underground shelter. The first playable build uses a compact authored subset centred on the safehouse; later districts and fully interactive landmarks are staged expansions.
 
 Detailed map layout and acceptance criteria: `docs/ZOMBIE_INVASION_MAP_DESIGN_V1.md`.
+
+
+## 17. User decision — Market + Hospital + Police Station (2026-11-28)
+
+**Decision: All three buildings must be functional in the first playable slice.**
+
+- Market: searchable food and general supplies.
+- Hospital: searchable medical supplies and at least one usable recovery/medical interaction.
+- Police Station: searchable tactical/combat/defence supplies within the approved first-slice combat scope.
+
+These are functional gameplay locations, not decorative shells. The first map scope therefore includes the safehouse, residential section and all three buildings, while remaining compact and authored. The gas station, military checkpoint and underground shelter may remain later-stage landmarks.
+
+Detailed roles, constraints and acceptance requirements: `docs/ZOMBIE_INVASION_MAP_DESIGN_V1.md`.
