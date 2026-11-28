@@ -383,3 +383,14 @@ It covers:
 - Active/near/distant simulation fidelity, persistence, shared event contracts, manifest fields and Java/Bedrock parity.
 
 The architecture is approved as the detailed design treatment of the already user-approved long-term wildlife/ecology scope. Exact species roster, balance values, environmental severity and first ecosystem vertical-slice content remain open for later design and testing. The first playable abandoned-town milestone is not automatically expanded. No code, mod, world, entity, asset or runtime test is claimed.
+
+
+## 37. Integrated dynamic world simulation and resource cycles — design baseline (2026-11-28)
+
+A comprehensive world-scale simulation specification has been added:
+
+`docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md`.
+
+It integrates the persistent world hierarchy and clock; region state; resource taxonomy and finite-flow accounting; renewable, finite, manufactured and recovered resources; production/consumption; supply chains and logistics; storage and spoilage; regional scarcity and markets; settlement population and needs; factions and diplomacy; regional zombie pressure; environmental feedback; infrastructure networks; player agency; information/radio knowledge; active/near/distant simulation; persistence and save migration; shared event/transaction contracts; and independent Java/Bedrock implementation evidence.
+
+This document consolidates existing user-approved long-term requirements into a world simulation architecture. It does not add every system to the first playable milestone. Calendar scale, resource rates, market curves, population demand, outbreak propagation, simulation budgets and milestone sequencing remain open design/balance decisions. No code, game artifact, runtime test or cross-edition validation is claimed.
