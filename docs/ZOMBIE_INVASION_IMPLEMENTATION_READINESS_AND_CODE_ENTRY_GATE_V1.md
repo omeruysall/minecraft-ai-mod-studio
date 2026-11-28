@@ -201,3 +201,10 @@ Current documentation research is recorded in `docs/ZOMBIE_INVASION_TARGET_TOOLC
 - The manifest records these candidates and keeps build verification false. Java and Bedrock runtime tests remain separate and not run.
 
 No implementation or compatibility pass is claimed.
+
+
+## 12. Project Manifest v2 draft
+
+The draft manifest is `schemas/zombie-invasion.project-manifest.v2.draft.json`; its review and structural validation record is `docs/ZOMBIE_INVASION_PROJECT_MANIFEST_V2_DRAFT_REVIEW_V1.md`.
+
+The draft has 18 project requirements, 9 proposed components, 8 unresolved component dependency edges, 14 target-specific validation plans and 8 planned deliverable definitions. It contains 84 candidate first-slice feature IDs, all present in the 232-feature catalog. The candidate list is explicitly `proposed_not_approved`; the manifest has no approval records or test evidence. Production remains blocked until the user approves the exact feature-ID scope and remaining implementation prerequisites.
