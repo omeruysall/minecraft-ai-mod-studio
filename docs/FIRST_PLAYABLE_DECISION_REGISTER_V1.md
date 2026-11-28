@@ -442,3 +442,19 @@ The current matrix v1.2.0 now records:
 - All 232 implementation statuses remain `not_implemented_verified`; no runtime evidence was added.
 
 The DAG check verifies only the recorded graph structure. It does not test generated code, Minecraft runtime behavior, target compatibility or actual builds. Dedicated-server and multiplayer test definitions remain future/conditional gates, not first-playable scope.
+
+
+## 44. Player, item and crafting feature traceability (2026-11-28)
+
+A third feature-mapping batch is recorded in `docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md`, covering PLY-001..PLY-014, ITEM-001..ITEM-016 and CRAFT-001..CRAFT-010.
+
+Current matrix v1.2.0 state:
+- 82 mapped features: BASE 12, QA 18, SHIP 12, PLY 14, ITEM 16 and CRAFT 10.
+- 150 features remain in traceability review.
+- 195 feature-specific acceptance criteria and 190 unique test case IDs are recorded.
+- 161 proposed feature-to-feature dependency edges are recorded.
+- The full 232-node graph passed a static topological cycle check in this revision.
+- Java, Bedrock and parity remain `not_assessed` for all 232 features.
+- All implementation statuses remain `not_implemented_verified`; no runtime/build/test evidence was created.
+
+The mapping preserves unresolved decisions: death/restart policy, encumbrance, exact hunger/thirst rates, character creation scope, item/recipe quantities, loot weights and first-slice farming scope. The graph check validates only the declared dependency DAG; it does not validate gameplay or Minecraft APIs. The 40 features are mapped for design traceability, not all automatically included in the first playable milestone.
