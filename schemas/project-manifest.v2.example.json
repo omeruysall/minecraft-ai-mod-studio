@@ -1,0 +1,103 @@
+{
+  "manifest_version": "2.0.0",
+  "project": {
+    "id": "zombie-apocalypse",
+    "name": "Zombie Apocalypse",
+    "description": "Java survival project with a custom world and coordinated gameplay systems.",
+    "tags": ["survival", "zombies"],
+    "created_at": "2026-11-28T00:00:00Z",
+    "updated_at": "2026-11-28T00:00:00Z",
+    "origin": "studio"
+  },
+  "revision": {
+    "number": 1,
+    "id": "8d9f7f1a-4ef4-4c80-a3f4-62d47c9e2a11",
+    "parent_digest": null,
+    "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "created_at": "2026-11-28T00:00:00Z",
+    "migration": null
+  },
+  "targets": [{
+    "id": "java-target",
+    "edition": "java",
+    "version": {"selection": "user_selected"},
+    "runtime": null,
+    "loader": null,
+    "java_runtime": null,
+    "deployment_roles": ["client", "singleplayer"],
+    "constraints": []
+  }],
+  "workflow": {
+    "status": "awaiting_approval",
+    "stage": "awaiting_approval",
+    "approval_required": true,
+    "active_plan_id": "plan-001",
+    "approved_revision_digest": null,
+    "blockers": []
+  },
+  "requirements": [
+    {
+      "id": "survival_hunger",
+      "description": "Add a custom hunger and survival system.",
+      "category": "gameplay",
+      "priority": "high",
+      "status": "proposed",
+      "provenance": {"kind": "user", "reference_id": null, "confidence": 1},
+      "acceptance_criteria": ["Survival values persist after relogging."],
+      "component_ids": ["survival-mod"]
+    }
+  ],
+  "components": [
+    {
+      "id": "survival-mod",
+      "type": "java_mod",
+      "name": "Survival Systems",
+      "description": "Custom survival gameplay.",
+      "status": "proposed",
+      "revision": 1,
+      "target_ids": ["java-target"],
+      "engine_owner": "java-mod-engine",
+      "requirement_ids": ["survival_hunger"],
+      "dependency_ids": [],
+      "source_artifact_ids": [],
+      "output_artifact_ids": [],
+      "configuration": {},
+      "validation_summary": null,
+      "supersedes": null,
+      "tags": ["gameplay"]
+    },
+    {
+      "id": "survival-world",
+      "type": "world",
+      "name": "Survival World",
+      "description": "A prepared and procedurally enhanced world.",
+      "status": "proposed",
+      "revision": 1,
+      "target_ids": ["java-target"],
+      "engine_owner": "map-world-engine",
+      "requirement_ids": [],
+      "dependency_ids": [],
+      "source_artifact_ids": [],
+      "output_artifact_ids": [],
+      "configuration": {"strategy": "hybrid"},
+      "validation_summary": null,
+      "supersedes": null,
+      "tags": ["world"]
+    }
+  ],
+  "dependency_graph": {"edges": []},
+  "assets": [],
+  "generation": {
+    "plan_id": "plan-001",
+    "plan_digest": null,
+    "engine_versions": {},
+    "profile": null,
+    "seed": null,
+    "configuration_refs": []
+  },
+  "approvals": [],
+  "validation": {"plans": [], "evidence": []},
+  "deliverables": [],
+  "collaboration": {"membership_refs": [], "visibility": "private"},
+  "extensions": {}
+}
