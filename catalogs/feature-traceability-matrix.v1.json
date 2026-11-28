@@ -10,7 +10,7 @@
     "source_status_counts": {
       "planned": 232
     },
-    "traceability_review_required": 120,
+    "traceability_review_required": 93,
     "implementation_claims": "none",
     "target_coverage_status_counts": {
       "java_edition": {
@@ -24,12 +24,12 @@
       }
     },
     "design_status_counts": {
-      "mapped": 112,
-      "needs_traceability_review": 120
+      "mapped": 139,
+      "needs_traceability_review": 93
     },
-    "feature_dependency_edge_count": 225,
-    "acceptance_criteria_defined_feature_count": 112,
-    "test_cases_defined_feature_count": 112,
+    "feature_dependency_edge_count": 277,
+    "acceptance_criteria_defined_feature_count": 139,
+    "test_cases_defined_feature_count": 139,
     "evidence_record_count": 0
   },
   "status_semantics": {
@@ -6680,27 +6680,38 @@
       "inventory_section": 9,
       "inventory_section_title": "World, biomes, terrain, and environment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Map / World Production Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md",
       "manifest_component_type": "world",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-WORLD-001"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-001-TO-WORLD-001",
+          "DEP-BASE-002-TO-WORLD-001"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-WORLD-001-01",
+          "AC-WORLD-001-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-WORLD-001-01",
+          "TC-WORLD-001-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -6710,7 +6721,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -6727,7 +6738,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ECOSYSTEM_BIOMES_WILDLIFE_AND_ENVIRONMENT_SIMULATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WATER_CYCLE_AND_SANITATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "WORLD-002",
@@ -6735,27 +6752,37 @@
       "inventory_section": 9,
       "inventory_section_title": "World, biomes, terrain, and environment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Map / World Production Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md",
       "manifest_component_type": "world",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-WORLD-002"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-WORLD-001-TO-WORLD-002"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-WORLD-002-01",
+          "AC-WORLD-002-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-WORLD-002-01",
+          "TC-WORLD-002-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -6765,7 +6792,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -6782,7 +6809,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ECOSYSTEM_BIOMES_WILDLIFE_AND_ENVIRONMENT_SIMULATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WATER_CYCLE_AND_SANITATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "WORLD-003",
@@ -6790,27 +6823,38 @@
       "inventory_section": 9,
       "inventory_section_title": "World, biomes, terrain, and environment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Map / World Production Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md",
       "manifest_component_type": "world",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-WORLD-003"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-WORLD-001-TO-WORLD-003",
+          "DEP-WORLD-014-TO-WORLD-003"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-WORLD-003-01",
+          "AC-WORLD-003-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-WORLD-003-01",
+          "TC-WORLD-003-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -6820,7 +6864,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -6837,7 +6881,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ECOSYSTEM_BIOMES_WILDLIFE_AND_ENVIRONMENT_SIMULATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WATER_CYCLE_AND_SANITATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "WORLD-004",
@@ -6845,27 +6895,38 @@
       "inventory_section": 9,
       "inventory_section_title": "World, biomes, terrain, and environment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Map / World Production Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md",
       "manifest_component_type": "world",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-WORLD-004"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-WORLD-003-TO-WORLD-004",
+          "DEP-ITEM-011-TO-WORLD-004"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-WORLD-004-01",
+          "AC-WORLD-004-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-WORLD-004-01",
+          "TC-WORLD-004-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -6875,7 +6936,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -6892,7 +6953,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ECOSYSTEM_BIOMES_WILDLIFE_AND_ENVIRONMENT_SIMULATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WATER_CYCLE_AND_SANITATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "WORLD-005",
@@ -6900,27 +6967,38 @@
       "inventory_section": 9,
       "inventory_section_title": "World, biomes, terrain, and environment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Map / World Production Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md",
       "manifest_component_type": "world",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-WORLD-005"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-WORLD-002-TO-WORLD-005",
+          "DEP-WORLD-003-TO-WORLD-005"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-WORLD-005-01",
+          "AC-WORLD-005-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-WORLD-005-01",
+          "TC-WORLD-005-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -6930,7 +7008,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -6947,7 +7025,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ECOSYSTEM_BIOMES_WILDLIFE_AND_ENVIRONMENT_SIMULATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WATER_CYCLE_AND_SANITATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "WORLD-006",
@@ -6955,27 +7039,38 @@
       "inventory_section": 9,
       "inventory_section_title": "World, biomes, terrain, and environment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Map / World Production Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md",
       "manifest_component_type": "world",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-WORLD-006"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-WORLD-002-TO-WORLD-006",
+          "DEP-WORLD-008-TO-WORLD-006"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-WORLD-006-01",
+          "AC-WORLD-006-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-WORLD-006-01",
+          "TC-WORLD-006-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -6985,7 +7080,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -7002,7 +7097,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ECOSYSTEM_BIOMES_WILDLIFE_AND_ENVIRONMENT_SIMULATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WATER_CYCLE_AND_SANITATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "WORLD-007",
@@ -7010,27 +7111,38 @@
       "inventory_section": 9,
       "inventory_section_title": "World, biomes, terrain, and environment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Map / World Production Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md",
       "manifest_component_type": "world",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-WORLD-007"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-WORLD-003-TO-WORLD-007",
+          "DEP-WORLD-004-TO-WORLD-007"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-WORLD-007-01",
+          "AC-WORLD-007-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-WORLD-007-01",
+          "TC-WORLD-007-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -7040,7 +7152,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -7057,7 +7169,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ECOSYSTEM_BIOMES_WILDLIFE_AND_ENVIRONMENT_SIMULATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WATER_CYCLE_AND_SANITATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "WORLD-008",
@@ -7065,27 +7183,37 @@
       "inventory_section": 9,
       "inventory_section_title": "World, biomes, terrain, and environment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Map / World Production Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md",
       "manifest_component_type": "world",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-WORLD-008"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-WORLD-002-TO-WORLD-008"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-WORLD-008-01",
+          "AC-WORLD-008-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-WORLD-008-01",
+          "TC-WORLD-008-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -7095,7 +7223,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -7112,7 +7240,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ECOSYSTEM_BIOMES_WILDLIFE_AND_ENVIRONMENT_SIMULATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WATER_CYCLE_AND_SANITATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "WORLD-009",
@@ -7120,27 +7254,38 @@
       "inventory_section": 9,
       "inventory_section_title": "World, biomes, terrain, and environment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Map / World Production Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md",
       "manifest_component_type": "world",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-WORLD-009"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-WORLD-008-TO-WORLD-009",
+          "DEP-WORLD-010-TO-WORLD-009"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-WORLD-009-01",
+          "AC-WORLD-009-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-WORLD-009-01",
+          "TC-WORLD-009-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -7150,7 +7295,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -7167,7 +7312,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ECOSYSTEM_BIOMES_WILDLIFE_AND_ENVIRONMENT_SIMULATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WATER_CYCLE_AND_SANITATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "WORLD-010",
@@ -7175,27 +7326,37 @@
       "inventory_section": 9,
       "inventory_section_title": "World, biomes, terrain, and environment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Map / World Production Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md",
       "manifest_component_type": "world",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-WORLD-010"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-WORLD-001-TO-WORLD-010"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-WORLD-010-01",
+          "AC-WORLD-010-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-WORLD-010-01",
+          "TC-WORLD-010-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -7205,7 +7366,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -7222,7 +7383,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ECOSYSTEM_BIOMES_WILDLIFE_AND_ENVIRONMENT_SIMULATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WATER_CYCLE_AND_SANITATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "WORLD-011",
@@ -7230,27 +7397,37 @@
       "inventory_section": 9,
       "inventory_section_title": "World, biomes, terrain, and environment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Map / World Production Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md",
       "manifest_component_type": "world",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-WORLD-011"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-WORLD-001-TO-WORLD-011"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-WORLD-011-01",
+          "AC-WORLD-011-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-WORLD-011-01",
+          "TC-WORLD-011-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -7260,7 +7437,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -7277,7 +7454,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ECOSYSTEM_BIOMES_WILDLIFE_AND_ENVIRONMENT_SIMULATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WATER_CYCLE_AND_SANITATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "WORLD-012",
@@ -7285,27 +7468,37 @@
       "inventory_section": 9,
       "inventory_section_title": "World, biomes, terrain, and environment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Map / World Production Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md",
       "manifest_component_type": "world",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-WORLD-012"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-WORLD-001-TO-WORLD-012"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-WORLD-012-01",
+          "AC-WORLD-012-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-WORLD-012-01",
+          "TC-WORLD-012-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -7315,7 +7508,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -7332,7 +7525,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ECOSYSTEM_BIOMES_WILDLIFE_AND_ENVIRONMENT_SIMULATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WATER_CYCLE_AND_SANITATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "WORLD-013",
@@ -7340,27 +7539,38 @@
       "inventory_section": 9,
       "inventory_section_title": "World, biomes, terrain, and environment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Map / World Production Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md",
       "manifest_component_type": "world",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-WORLD-013"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-WORLD-001-TO-WORLD-013",
+          "DEP-STRUCT-001-TO-WORLD-013"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-WORLD-013-01",
+          "AC-WORLD-013-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-WORLD-013-01",
+          "TC-WORLD-013-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -7370,7 +7580,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -7387,7 +7597,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ECOSYSTEM_BIOMES_WILDLIFE_AND_ENVIRONMENT_SIMULATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WATER_CYCLE_AND_SANITATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "WORLD-014",
@@ -7395,27 +7611,37 @@
       "inventory_section": 9,
       "inventory_section_title": "World, biomes, terrain, and environment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Map / World Production Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md",
       "manifest_component_type": "world",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-WORLD-014"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-WORLD-001-TO-WORLD-014"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-WORLD-014-01",
+          "AC-WORLD-014-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-WORLD-014-01",
+          "TC-WORLD-014-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -7425,7 +7651,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -7442,7 +7668,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ECOSYSTEM_BIOMES_WILDLIFE_AND_ENVIRONMENT_SIMULATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WATER_CYCLE_AND_SANITATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "WORLD-015",
@@ -7450,27 +7682,38 @@
       "inventory_section": 9,
       "inventory_section_title": "World, biomes, terrain, and environment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Map / World Production Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md",
       "manifest_component_type": "world",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-WORLD-015"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-WORLD-013-TO-WORLD-015",
+          "DEP-WORLD-014-TO-WORLD-015"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-WORLD-015-01",
+          "AC-WORLD-015-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-WORLD-015-01",
+          "TC-WORLD-015-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -7480,7 +7723,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -7497,7 +7740,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ECOSYSTEM_BIOMES_WILDLIFE_AND_ENVIRONMENT_SIMULATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WATER_CYCLE_AND_SANITATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "WORLD-016",
@@ -7505,27 +7754,38 @@
       "inventory_section": 9,
       "inventory_section_title": "World, biomes, terrain, and environment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Map / World Production Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md",
       "manifest_component_type": "world",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-WORLD-016"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-WORLD-003-TO-WORLD-016",
+          "DEP-WORLD-015-TO-WORLD-016"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-WORLD-016-01",
+          "AC-WORLD-016-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-WORLD-016-01",
+          "TC-WORLD-016-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -7535,7 +7795,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -7552,7 +7812,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ECOSYSTEM_BIOMES_WILDLIFE_AND_ENVIRONMENT_SIMULATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WATER_CYCLE_AND_SANITATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "WORLD-017",
@@ -7560,27 +7826,39 @@
       "inventory_section": 9,
       "inventory_section_title": "World, biomes, terrain, and environment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Map / World Production Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md",
       "manifest_component_type": "world",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-WORLD-017"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-WORLD-001-TO-WORLD-017",
+          "DEP-WORLD-016-TO-WORLD-017",
+          "DEP-BASE-009-TO-WORLD-017"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-WORLD-017-01",
+          "AC-WORLD-017-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-WORLD-017-01",
+          "TC-WORLD-017-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -7590,7 +7868,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -7607,7 +7885,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ECOSYSTEM_BIOMES_WILDLIFE_AND_ENVIRONMENT_SIMULATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WATER_CYCLE_AND_SANITATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "STRUCT-001",
@@ -7615,27 +7899,38 @@
       "inventory_section": 10,
       "inventory_section_title": "Structures, buildings, and points of interest",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Structure & Building Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_MAP_DESIGN_V1.md",
       "manifest_component_type": "structures",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-STRUCT-001"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-WORLD-001-TO-STRUCT-001",
+          "DEP-ITEM-011-TO-STRUCT-001"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-STRUCT-001-01",
+          "AC-STRUCT-001-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-STRUCT-001-01",
+          "TC-STRUCT-001-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -7645,7 +7940,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -7662,7 +7957,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "STRUCT-002",
@@ -7670,27 +7970,38 @@
       "inventory_section": 10,
       "inventory_section_title": "Structures, buildings, and points of interest",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Structure & Building Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_MAP_DESIGN_V1.md",
       "manifest_component_type": "structures",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-STRUCT-002"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-STRUCT-001-TO-STRUCT-002",
+          "DEP-WORLD-015-TO-STRUCT-002"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-STRUCT-002-01",
+          "AC-STRUCT-002-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-STRUCT-002-01",
+          "TC-STRUCT-002-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -7700,7 +8011,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -7717,7 +8028,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "STRUCT-003",
@@ -7725,27 +8041,38 @@
       "inventory_section": 10,
       "inventory_section_title": "Structures, buildings, and points of interest",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Structure & Building Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_MAP_DESIGN_V1.md",
       "manifest_component_type": "structures",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-STRUCT-003"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-STRUCT-001-TO-STRUCT-003",
+          "DEP-ITEM-011-TO-STRUCT-003"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-STRUCT-003-01",
+          "AC-STRUCT-003-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-STRUCT-003-01",
+          "TC-STRUCT-003-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -7755,7 +8082,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -7772,7 +8099,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "STRUCT-004",
@@ -7780,27 +8112,38 @@
       "inventory_section": 10,
       "inventory_section_title": "Structures, buildings, and points of interest",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Structure & Building Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_MAP_DESIGN_V1.md",
       "manifest_component_type": "structures",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-STRUCT-004"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-STRUCT-001-TO-STRUCT-004",
+          "DEP-WORLD-004-TO-STRUCT-004"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-STRUCT-004-01",
+          "AC-STRUCT-004-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-STRUCT-004-01",
+          "TC-STRUCT-004-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -7810,7 +8153,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -7827,7 +8170,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "STRUCT-005",
@@ -7835,27 +8183,38 @@
       "inventory_section": 10,
       "inventory_section_title": "Structures, buildings, and points of interest",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Structure & Building Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_MAP_DESIGN_V1.md",
       "manifest_component_type": "structures",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-STRUCT-005"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-STRUCT-001-TO-STRUCT-005",
+          "DEP-WORLD-007-TO-STRUCT-005"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-STRUCT-005-01",
+          "AC-STRUCT-005-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-STRUCT-005-01",
+          "TC-STRUCT-005-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -7865,7 +8224,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -7882,7 +8241,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "STRUCT-006",
@@ -7890,27 +8254,39 @@
       "inventory_section": 10,
       "inventory_section_title": "Structures, buildings, and points of interest",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Structure & Building Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_MAP_DESIGN_V1.md",
       "manifest_component_type": "structures",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-STRUCT-006"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-WORLD-003-TO-STRUCT-006",
+          "DEP-WORLD-005-TO-STRUCT-006",
+          "DEP-WORLD-015-TO-STRUCT-006"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-STRUCT-006-01",
+          "AC-STRUCT-006-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-STRUCT-006-01",
+          "TC-STRUCT-006-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -7920,7 +8296,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -7937,7 +8313,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "STRUCT-007",
@@ -7945,27 +8326,38 @@
       "inventory_section": 10,
       "inventory_section_title": "Structures, buildings, and points of interest",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Structure & Building Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_MAP_DESIGN_V1.md",
       "manifest_component_type": "structures",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-STRUCT-007"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-STRUCT-001-TO-STRUCT-007",
+          "DEP-WORLD-014-TO-STRUCT-007"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-STRUCT-007-01",
+          "AC-STRUCT-007-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-STRUCT-007-01",
+          "TC-STRUCT-007-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -7975,7 +8367,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -7992,7 +8384,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "STRUCT-008",
@@ -8000,27 +8397,39 @@
       "inventory_section": 10,
       "inventory_section_title": "Structures, buildings, and points of interest",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Structure & Building Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_MAP_DESIGN_V1.md",
       "manifest_component_type": "structures",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-STRUCT-008"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-STRUCT-001-TO-STRUCT-008",
+          "DEP-CRAFT-010-TO-STRUCT-008",
+          "DEP-ENT-012-TO-STRUCT-008"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-STRUCT-008-01",
+          "AC-STRUCT-008-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-STRUCT-008-01",
+          "TC-STRUCT-008-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -8030,7 +8439,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -8047,7 +8456,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "STRUCT-009",
@@ -8055,27 +8469,39 @@
       "inventory_section": 10,
       "inventory_section_title": "Structures, buildings, and points of interest",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Structure & Building Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_MAP_DESIGN_V1.md",
       "manifest_component_type": "structures",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-STRUCT-009"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-STRUCT-001-TO-STRUCT-009",
+          "DEP-ITEM-011-TO-STRUCT-009",
+          "DEP-ITEM-012-TO-STRUCT-009"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-STRUCT-009-01",
+          "AC-STRUCT-009-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-STRUCT-009-01",
+          "TC-STRUCT-009-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -8085,7 +8511,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -8102,7 +8528,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "STRUCT-010",
@@ -8110,27 +8541,38 @@
       "inventory_section": 10,
       "inventory_section_title": "Structures, buildings, and points of interest",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Structure & Building Engine",
-      "primary_specification": "docs/MAP_WORLD_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_MAP_DESIGN_V1.md",
       "manifest_component_type": "structures",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-STRUCT-010"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-STRUCT-002-TO-STRUCT-010",
+          "DEP-WORLD-013-TO-STRUCT-010"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-STRUCT-010-01",
+          "AC-STRUCT-010-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-STRUCT-010-01",
+          "TC-STRUCT-010-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -8140,7 +8582,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. World-generation/runtime capabilities remain target-unverified; first-slice map scope and long-term expansion are separately controlled.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -8157,7 +8599,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "QUEST-001",
@@ -17461,6 +17908,682 @@
         "java",
         "bedrock"
       ]
+    },
+    {
+      "edge_id": "DEP-BASE-001-TO-WORLD-001",
+      "source_feature_id": "BASE-001",
+      "target_feature_id": "WORLD-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-001 requires the canonical world/structure contract from BASE-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-002-TO-WORLD-001",
+      "source_feature_id": "BASE-002",
+      "target_feature_id": "WORLD-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-001 requires the canonical world/structure contract from BASE-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-001-TO-WORLD-002",
+      "source_feature_id": "WORLD-001",
+      "target_feature_id": "WORLD-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-002 requires the canonical world/structure contract from WORLD-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-001-TO-WORLD-003",
+      "source_feature_id": "WORLD-001",
+      "target_feature_id": "WORLD-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-003 requires the canonical world/structure contract from WORLD-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-014-TO-WORLD-003",
+      "source_feature_id": "WORLD-014",
+      "target_feature_id": "WORLD-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-003 requires the canonical world/structure contract from WORLD-014.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-003-TO-WORLD-004",
+      "source_feature_id": "WORLD-003",
+      "target_feature_id": "WORLD-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-004 requires the canonical world/structure contract from WORLD-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-011-TO-WORLD-004",
+      "source_feature_id": "ITEM-011",
+      "target_feature_id": "WORLD-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-004 requires the canonical world/structure contract from ITEM-011.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-002-TO-WORLD-005",
+      "source_feature_id": "WORLD-002",
+      "target_feature_id": "WORLD-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-005 requires the canonical world/structure contract from WORLD-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-003-TO-WORLD-005",
+      "source_feature_id": "WORLD-003",
+      "target_feature_id": "WORLD-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-005 requires the canonical world/structure contract from WORLD-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-002-TO-WORLD-006",
+      "source_feature_id": "WORLD-002",
+      "target_feature_id": "WORLD-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-006 requires the canonical world/structure contract from WORLD-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-008-TO-WORLD-006",
+      "source_feature_id": "WORLD-008",
+      "target_feature_id": "WORLD-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-006 requires the canonical world/structure contract from WORLD-008.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-003-TO-WORLD-007",
+      "source_feature_id": "WORLD-003",
+      "target_feature_id": "WORLD-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-007 requires the canonical world/structure contract from WORLD-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-004-TO-WORLD-007",
+      "source_feature_id": "WORLD-004",
+      "target_feature_id": "WORLD-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-007 requires the canonical world/structure contract from WORLD-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-002-TO-WORLD-008",
+      "source_feature_id": "WORLD-002",
+      "target_feature_id": "WORLD-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-008 requires the canonical world/structure contract from WORLD-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-008-TO-WORLD-009",
+      "source_feature_id": "WORLD-008",
+      "target_feature_id": "WORLD-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-009 requires the canonical world/structure contract from WORLD-008.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-010-TO-WORLD-009",
+      "source_feature_id": "WORLD-010",
+      "target_feature_id": "WORLD-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-009 requires the canonical world/structure contract from WORLD-010.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-001-TO-WORLD-010",
+      "source_feature_id": "WORLD-001",
+      "target_feature_id": "WORLD-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-010 requires the canonical world/structure contract from WORLD-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-001-TO-WORLD-011",
+      "source_feature_id": "WORLD-001",
+      "target_feature_id": "WORLD-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-011 requires the canonical world/structure contract from WORLD-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-001-TO-WORLD-012",
+      "source_feature_id": "WORLD-001",
+      "target_feature_id": "WORLD-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-012 requires the canonical world/structure contract from WORLD-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-001-TO-WORLD-013",
+      "source_feature_id": "WORLD-001",
+      "target_feature_id": "WORLD-013",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-013 requires the canonical world/structure contract from WORLD-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-STRUCT-001-TO-WORLD-013",
+      "source_feature_id": "STRUCT-001",
+      "target_feature_id": "WORLD-013",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-013 requires the canonical world/structure contract from STRUCT-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-001-TO-WORLD-014",
+      "source_feature_id": "WORLD-001",
+      "target_feature_id": "WORLD-014",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-014 requires the canonical world/structure contract from WORLD-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-013-TO-WORLD-015",
+      "source_feature_id": "WORLD-013",
+      "target_feature_id": "WORLD-015",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-015 requires the canonical world/structure contract from WORLD-013.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-014-TO-WORLD-015",
+      "source_feature_id": "WORLD-014",
+      "target_feature_id": "WORLD-015",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-015 requires the canonical world/structure contract from WORLD-014.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-003-TO-WORLD-016",
+      "source_feature_id": "WORLD-003",
+      "target_feature_id": "WORLD-016",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-016 requires the canonical world/structure contract from WORLD-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-015-TO-WORLD-016",
+      "source_feature_id": "WORLD-015",
+      "target_feature_id": "WORLD-016",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-016 requires the canonical world/structure contract from WORLD-015.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-001-TO-WORLD-017",
+      "source_feature_id": "WORLD-001",
+      "target_feature_id": "WORLD-017",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-017 requires the canonical world/structure contract from WORLD-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-016-TO-WORLD-017",
+      "source_feature_id": "WORLD-016",
+      "target_feature_id": "WORLD-017",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-017 requires the canonical world/structure contract from WORLD-016.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-009-TO-WORLD-017",
+      "source_feature_id": "BASE-009",
+      "target_feature_id": "WORLD-017",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "WORLD-017 requires the canonical world/structure contract from BASE-009.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-001-TO-STRUCT-001",
+      "source_feature_id": "WORLD-001",
+      "target_feature_id": "STRUCT-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "STRUCT-001 requires the canonical world/structure contract from WORLD-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-011-TO-STRUCT-001",
+      "source_feature_id": "ITEM-011",
+      "target_feature_id": "STRUCT-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "STRUCT-001 requires the canonical world/structure contract from ITEM-011.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-STRUCT-001-TO-STRUCT-002",
+      "source_feature_id": "STRUCT-001",
+      "target_feature_id": "STRUCT-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "STRUCT-002 requires the canonical world/structure contract from STRUCT-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-015-TO-STRUCT-002",
+      "source_feature_id": "WORLD-015",
+      "target_feature_id": "STRUCT-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "STRUCT-002 requires the canonical world/structure contract from WORLD-015.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-STRUCT-001-TO-STRUCT-003",
+      "source_feature_id": "STRUCT-001",
+      "target_feature_id": "STRUCT-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "STRUCT-003 requires the canonical world/structure contract from STRUCT-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-011-TO-STRUCT-003",
+      "source_feature_id": "ITEM-011",
+      "target_feature_id": "STRUCT-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "STRUCT-003 requires the canonical world/structure contract from ITEM-011.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-STRUCT-001-TO-STRUCT-004",
+      "source_feature_id": "STRUCT-001",
+      "target_feature_id": "STRUCT-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "STRUCT-004 requires the canonical world/structure contract from STRUCT-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-004-TO-STRUCT-004",
+      "source_feature_id": "WORLD-004",
+      "target_feature_id": "STRUCT-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "STRUCT-004 requires the canonical world/structure contract from WORLD-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-STRUCT-001-TO-STRUCT-005",
+      "source_feature_id": "STRUCT-001",
+      "target_feature_id": "STRUCT-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "STRUCT-005 requires the canonical world/structure contract from STRUCT-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-007-TO-STRUCT-005",
+      "source_feature_id": "WORLD-007",
+      "target_feature_id": "STRUCT-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "STRUCT-005 requires the canonical world/structure contract from WORLD-007.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-003-TO-STRUCT-006",
+      "source_feature_id": "WORLD-003",
+      "target_feature_id": "STRUCT-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "STRUCT-006 requires the canonical world/structure contract from WORLD-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-005-TO-STRUCT-006",
+      "source_feature_id": "WORLD-005",
+      "target_feature_id": "STRUCT-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "STRUCT-006 requires the canonical world/structure contract from WORLD-005.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-015-TO-STRUCT-006",
+      "source_feature_id": "WORLD-015",
+      "target_feature_id": "STRUCT-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "STRUCT-006 requires the canonical world/structure contract from WORLD-015.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-STRUCT-001-TO-STRUCT-007",
+      "source_feature_id": "STRUCT-001",
+      "target_feature_id": "STRUCT-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "STRUCT-007 requires the canonical world/structure contract from STRUCT-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-014-TO-STRUCT-007",
+      "source_feature_id": "WORLD-014",
+      "target_feature_id": "STRUCT-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "STRUCT-007 requires the canonical world/structure contract from WORLD-014.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-STRUCT-001-TO-STRUCT-008",
+      "source_feature_id": "STRUCT-001",
+      "target_feature_id": "STRUCT-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "STRUCT-008 requires the canonical world/structure contract from STRUCT-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-CRAFT-010-TO-STRUCT-008",
+      "source_feature_id": "CRAFT-010",
+      "target_feature_id": "STRUCT-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "STRUCT-008 requires the canonical world/structure contract from CRAFT-010.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-012-TO-STRUCT-008",
+      "source_feature_id": "ENT-012",
+      "target_feature_id": "STRUCT-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "STRUCT-008 requires the canonical world/structure contract from ENT-012.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-STRUCT-001-TO-STRUCT-009",
+      "source_feature_id": "STRUCT-001",
+      "target_feature_id": "STRUCT-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "STRUCT-009 requires the canonical world/structure contract from STRUCT-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-011-TO-STRUCT-009",
+      "source_feature_id": "ITEM-011",
+      "target_feature_id": "STRUCT-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "STRUCT-009 requires the canonical world/structure contract from ITEM-011.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-012-TO-STRUCT-009",
+      "source_feature_id": "ITEM-012",
+      "target_feature_id": "STRUCT-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "STRUCT-009 requires the canonical world/structure contract from ITEM-012.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-STRUCT-002-TO-STRUCT-010",
+      "source_feature_id": "STRUCT-002",
+      "target_feature_id": "STRUCT-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "STRUCT-010 requires the canonical world/structure contract from STRUCT-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-013-TO-STRUCT-010",
+      "source_feature_id": "WORLD-013",
+      "target_feature_id": "STRUCT-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "STRUCT-010 requires the canonical world/structure contract from WORLD-013.",
+      "specification_ref": "docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
     }
   ],
   "traceability_update_notes": [
@@ -17470,6 +18593,7 @@
     "All 232 implementation statuses remain not_implemented_verified; no evidence records were created by this documentation update.",
     "QA-001..QA-018 and SHIP-001..SHIP-012 are mapped to feature-specific requirements, acceptance criteria, test cases and proposed dependency edges in docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md.",
     "PLY-001..PLY-014, ITEM-001..ITEM-016 and CRAFT-001..CRAFT-010 are mapped in docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md. Their balance and first-playable applicability remain controlled by the decision register.",
-    "COM-001..COM-012 and ENT-001..ENT-018 are mapped in docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md. First-slice combat and zombie decisions remain distinct from optional explosives, bosses, PvP and future multiplayer scope."
+    "COM-001..COM-012 and ENT-001..ENT-018 are mapped in docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md. First-slice combat and zombie decisions remain distinct from optional explosives, bosses, PvP and future multiplayer scope.",
+    "WORLD-001..WORLD-017 and STRUCT-001..STRUCT-010 are mapped in docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md. The approved topology does not prove procedural world-generation feasibility on either target."
   ]
 }
