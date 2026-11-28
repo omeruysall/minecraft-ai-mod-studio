@@ -354,3 +354,7 @@ For Java 26.3, the current Fabric Develop selector lists Fabric Loader 0.20.1, F
 For Bedrock 26.60, the official 2026-10-27 changelog confirms `@minecraft/server` 2.11.0 as released stable and identifies 2.12.0-beta separately. The target pack format, peer dependencies and actual import/load behavior must still be verified.
 
 References and evidence boundaries are maintained in `docs/ZOMBIE_INVASION_TARGET_TOOLCHAIN_COMPATIBILITY_RESEARCH_2026-11.md`. These are current documentation recommendations, not build/runtime evidence.
+
+## Java 26.3 data and resource pack formats
+
+Mojang's official Java 26.3 release notes specify Data Pack version **121.0** and Resource Pack version **97.1**. Generated Java packs must use these target formats and be validated against Minecraft 26.3. Source: https://www.minecraft.net/en-us/article/minecraft-java-edition-26-3.
