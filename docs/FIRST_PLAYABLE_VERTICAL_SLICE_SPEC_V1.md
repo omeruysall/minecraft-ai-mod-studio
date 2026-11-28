@@ -265,3 +265,28 @@ Required acceptance:
 - No custom firearm system is implied or approved by the Police Station decision.
 
 The first-slice map now includes a functional safehouse, residential section, market, hospital and police station, plus two validated attack lanes. The gas station, military checkpoint and underground shelter remain planned expansion landmarks unless separately promoted.
+
+
+## 22. Consolidated user-approved Zombie Invasion first-slice requirements (2026-11-28)
+
+The following decisions were explicitly confirmed by the user and must be reflected in the first-slice manifest and both target plans:
+
+- **Targets:** Java Edition 26.3 + Fabric; Bedrock Edition 26.60 + stable `@minecraft/server` 2.11.0 where scripting is required; experimental Bedrock APIs disabled.
+- **Player count:** single-player is sufficient for the first playable slice.
+- **Game direction:** Zombie Invasion survival experience.
+- **Map:** compact, authored, abandoned and expandable town.
+- **Functional locations:** Market, Hospital and Police Station in both target worlds.
+- **Zombie roster:** Walker, Runner and Brute. Other special zombie variants remain deferred.
+- **Combat:** melee and firearms; gunfire noise attracts nearby zombies within bounded encounter rules; weapon durability is enabled; ammunition is limited and finite.
+- **Inventory:** multiple backpack varieties are a required feature, not a cosmetic-only option.
+- **Crafting progression:** the vanilla Crafting Table remains the first stage; specialist stations are introduced later through progression.
+
+These are user-approved design requirements, not implementation evidence. Exact weapon/item/loot values, first-slice recipes and station roster, injury subset, death/restart behavior, survival decay rates and the exact set of additional first-slice feature IDs remain to be frozen in a revisioned manifest. Long-term scope such as full seasons, the complete water/power grids, advanced prosthetics, all vehicles, full NPC/faction economy and world-scale procedural expansion is not automatically part of the first playable.
+
+## 23. Feature traceability and remaining implementation gate
+
+The 232-feature catalog is fully mapped in `catalogs/feature-traceability-matrix.v1.json` v1.3.0: 495 acceptance criteria, 490 test case IDs and 486 proposed dependency edges. This closes feature-level design traceability but does not close target feasibility or implementation.
+
+Before production, the project must still freeze exact first-slice feature IDs, revalidate and pin the Java/Bedrock toolchains, identify real test environments for both editions, define build execution/sandboxing and record a human gameplay acceptance procedure. See `docs/ZOMBIE_INVASION_IMPLEMENTATION_READINESS_AND_CODE_ENTRY_GATE_V1.md`.
+
+Java, Bedrock and parity statuses remain not assessed for all 232 features; all implementation statuses remain not implemented verified. No build, import, runtime or gameplay test is claimed.
