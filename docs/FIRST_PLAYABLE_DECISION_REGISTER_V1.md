@@ -133,3 +133,12 @@ The next unresolved decision is the shared gameplay loop. Three cross-edition ca
 - Candidate C — Survival Expedition: gather resources, overcome an obstacle and reach the final camp.
 
 The comparison, target-specific component outline and acceptance criteria are in `docs/FIRST_SHARED_GAMEPLAY_LOOP_DESIGN_V1.md`. No candidate is selected until the user explicitly chooses one.
+
+
+## 14. User-selected gameplay direction — Zombie Invasion (2026-11-28)
+
+The user selected **Zombie Invasion** and requested a highly detailed design. This resolves the first gameplay-concept choice. The detailed design is recorded in `docs/ZOMBIE_INVASION_GAMEPLAY_DESIGN_V1.md`.
+
+The selected concept is a survival, scavenging and base-defence experience with escalating zombie attacks. The proposed first playable slice is a compact settlement/safehouse scenario with supplies, limited defence repairs, a basic zombie archetype and three escalating attacks.
+
+The following are not yet confirmed by the user: first-map theme, single-player versus cooperative requirement, death/restart rules, exact victory objective, loot randomization, free-form building versus designated repair points, custom weapons in the first slice and target-track development order. Recommended defaults are documented as proposals, not decisions.
