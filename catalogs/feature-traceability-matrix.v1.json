@@ -10,7 +10,7 @@
     "source_status_counts": {
       "planned": 232
     },
-    "traceability_review_required": 220,
+    "traceability_review_required": 190,
     "implementation_claims": "none",
     "target_coverage_status_counts": {
       "java_edition": {
@@ -24,12 +24,12 @@
       }
     },
     "design_status_counts": {
-      "mapped": 12,
-      "needs_traceability_review": 220
+      "mapped": 42,
+      "needs_traceability_review": 190
     },
-    "feature_dependency_edge_count": 15,
-    "acceptance_criteria_defined_feature_count": 12,
-    "test_cases_defined_feature_count": 12,
+    "feature_dependency_edge_count": 95,
+    "acceptance_criteria_defined_feature_count": 42,
+    "test_cases_defined_feature_count": 42,
     "evidence_record_count": 0
   },
   "status_semantics": {
@@ -11366,7 +11366,7 @@
       "inventory_section": 18,
       "inventory_section_title": "Technical quality, security, and testing",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Validation & Test Evidence System",
@@ -11374,19 +11374,30 @@
       "manifest_component_type": "quality_assurance",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QA-001"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-001-TO-QA-001",
+          "DEP-BASE-008-TO-QA-001"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QA-001-01",
+          "AC-QA-001-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QA-001-01",
+          "TC-QA-001-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11396,7 +11407,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11413,7 +11424,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "QA-002",
@@ -11421,7 +11433,7 @@
       "inventory_section": 18,
       "inventory_section_title": "Technical quality, security, and testing",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Validation & Test Evidence System",
@@ -11429,19 +11441,29 @@
       "manifest_component_type": "quality_assurance",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QA-002"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-007-TO-QA-002"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QA-002-01",
+          "AC-QA-002-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QA-002-01",
+          "TC-QA-002-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11451,7 +11473,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11468,7 +11490,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "QA-003",
@@ -11476,7 +11499,7 @@
       "inventory_section": 18,
       "inventory_section_title": "Technical quality, security, and testing",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Validation & Test Evidence System",
@@ -11484,19 +11507,30 @@
       "manifest_component_type": "quality_assurance",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QA-003"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-005-TO-QA-003",
+          "DEP-BASE-006-TO-QA-003"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QA-003-01",
+          "AC-QA-003-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QA-003-01",
+          "TC-QA-003-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11506,7 +11540,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11523,7 +11557,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "QA-004",
@@ -11531,7 +11566,7 @@
       "inventory_section": 18,
       "inventory_section_title": "Technical quality, security, and testing",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Validation & Test Evidence System",
@@ -11539,19 +11574,31 @@
       "manifest_component_type": "quality_assurance",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QA-004"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-002-TO-QA-004",
+          "DEP-BASE-004-TO-QA-004",
+          "DEP-BASE-006-TO-QA-004"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QA-004-01",
+          "AC-QA-004-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QA-004-01",
+          "TC-QA-004-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11561,7 +11608,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11578,7 +11625,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "QA-005",
@@ -11586,7 +11634,7 @@
       "inventory_section": 18,
       "inventory_section_title": "Technical quality, security, and testing",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Validation & Test Evidence System",
@@ -11594,19 +11642,30 @@
       "manifest_component_type": "quality_assurance",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QA-005"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-010-TO-QA-005",
+          "DEP-BASE-012-TO-QA-005"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QA-005-01",
+          "AC-QA-005-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QA-005-01",
+          "TC-QA-005-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11616,7 +11675,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11633,7 +11692,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "QA-006",
@@ -11641,7 +11701,7 @@
       "inventory_section": 18,
       "inventory_section_title": "Technical quality, security, and testing",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Validation & Test Evidence System",
@@ -11649,19 +11709,29 @@
       "manifest_component_type": "quality_assurance",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QA-006"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-QA-001-TO-QA-006"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QA-006-01",
+          "AC-QA-006-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QA-006-01",
+          "TC-QA-006-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11671,7 +11741,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11688,7 +11758,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "QA-007",
@@ -11696,7 +11767,7 @@
       "inventory_section": 18,
       "inventory_section_title": "Technical quality, security, and testing",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Validation & Test Evidence System",
@@ -11704,19 +11775,29 @@
       "manifest_component_type": "quality_assurance",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QA-007"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-QA-006-TO-QA-007"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QA-007-01",
+          "AC-QA-007-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QA-007-01",
+          "TC-QA-007-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11726,7 +11807,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11743,7 +11824,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "QA-008",
@@ -11751,7 +11833,7 @@
       "inventory_section": 18,
       "inventory_section_title": "Technical quality, security, and testing",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Validation & Test Evidence System",
@@ -11759,19 +11841,31 @@
       "manifest_component_type": "quality_assurance",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QA-008"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-QA-004-TO-QA-008",
+          "DEP-QA-005-TO-QA-008",
+          "DEP-QA-007-TO-QA-008"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QA-008-01",
+          "AC-QA-008-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QA-008-01",
+          "TC-QA-008-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11781,7 +11875,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11798,7 +11892,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "QA-009",
@@ -11806,7 +11901,7 @@
       "inventory_section": 18,
       "inventory_section_title": "Technical quality, security, and testing",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Validation & Test Evidence System",
@@ -11814,19 +11909,31 @@
       "manifest_component_type": "quality_assurance",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QA-009"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-003-TO-QA-009",
+          "DEP-BASE-010-TO-QA-009",
+          "DEP-QA-008-TO-QA-009"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QA-009-01",
+          "AC-QA-009-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QA-009-01",
+          "TC-QA-009-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11836,7 +11943,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11853,7 +11960,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "QA-010",
@@ -11861,7 +11969,7 @@
       "inventory_section": 18,
       "inventory_section_title": "Technical quality, security, and testing",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Validation & Test Evidence System",
@@ -11869,19 +11977,30 @@
       "manifest_component_type": "quality_assurance",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QA-010"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-009-TO-QA-010",
+          "DEP-QA-008-TO-QA-010"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QA-010-01",
+          "AC-QA-010-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QA-010-01",
+          "TC-QA-010-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11891,7 +12010,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11908,7 +12027,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "QA-011",
@@ -11916,7 +12036,7 @@
       "inventory_section": 18,
       "inventory_section_title": "Technical quality, security, and testing",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Validation & Test Evidence System",
@@ -11924,19 +12044,30 @@
       "manifest_component_type": "quality_assurance",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QA-011"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-QA-007-TO-QA-011",
+          "DEP-QA-010-TO-QA-011"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QA-011-01",
+          "AC-QA-011-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QA-011-01",
+          "TC-QA-011-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11946,7 +12077,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11963,7 +12094,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "QA-012",
@@ -11971,7 +12103,7 @@
       "inventory_section": 18,
       "inventory_section_title": "Technical quality, security, and testing",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Validation & Test Evidence System",
@@ -11979,19 +12111,30 @@
       "manifest_component_type": "quality_assurance",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QA-012"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-010-TO-QA-012",
+          "DEP-QA-011-TO-QA-012"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QA-012-01",
+          "AC-QA-012-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QA-012-01",
+          "TC-QA-012-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12001,7 +12144,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12018,7 +12161,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "QA-013",
@@ -12026,7 +12170,7 @@
       "inventory_section": 18,
       "inventory_section_title": "Technical quality, security, and testing",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Validation & Test Evidence System",
@@ -12034,19 +12178,30 @@
       "manifest_component_type": "quality_assurance",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QA-013"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-009-TO-QA-013",
+          "DEP-QA-010-TO-QA-013"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QA-013-01",
+          "AC-QA-013-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QA-013-01",
+          "TC-QA-013-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12056,7 +12211,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12073,7 +12228,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "QA-014",
@@ -12081,7 +12237,7 @@
       "inventory_section": 18,
       "inventory_section_title": "Technical quality, security, and testing",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Validation & Test Evidence System",
@@ -12089,19 +12245,30 @@
       "manifest_component_type": "quality_assurance",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QA-014"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-QA-010-TO-QA-014",
+          "DEP-QA-011-TO-QA-014"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QA-014-01",
+          "AC-QA-014-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QA-014-01",
+          "TC-QA-014-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12111,7 +12278,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12128,7 +12295,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "QA-015",
@@ -12136,7 +12304,7 @@
       "inventory_section": 18,
       "inventory_section_title": "Technical quality, security, and testing",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Validation & Test Evidence System",
@@ -12144,19 +12312,30 @@
       "manifest_component_type": "quality_assurance",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QA-015"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-QA-011-TO-QA-015",
+          "DEP-QA-013-TO-QA-015"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QA-015-01",
+          "AC-QA-015-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QA-015-01",
+          "TC-QA-015-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12166,7 +12345,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12183,7 +12362,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "QA-016",
@@ -12191,7 +12371,7 @@
       "inventory_section": 18,
       "inventory_section_title": "Technical quality, security, and testing",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Validation & Test Evidence System",
@@ -12199,19 +12379,30 @@
       "manifest_component_type": "quality_assurance",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QA-016"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-008-TO-QA-016",
+          "DEP-QA-011-TO-QA-016"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QA-016-01",
+          "AC-QA-016-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QA-016-01",
+          "TC-QA-016-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12221,7 +12412,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12238,7 +12429,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "QA-017",
@@ -12246,7 +12438,7 @@
       "inventory_section": 18,
       "inventory_section_title": "Technical quality, security, and testing",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Validation & Test Evidence System",
@@ -12254,19 +12446,31 @@
       "manifest_component_type": "quality_assurance",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QA-017"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-QA-001-TO-QA-017",
+          "DEP-QA-008-TO-QA-017",
+          "DEP-QA-011-TO-QA-017"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QA-017-01",
+          "AC-QA-017-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QA-017-01",
+          "TC-QA-017-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12276,7 +12480,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12293,7 +12497,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "QA-018",
@@ -12301,7 +12506,7 @@
       "inventory_section": 18,
       "inventory_section_title": "Technical quality, security, and testing",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Validation & Test Evidence System",
@@ -12309,19 +12514,29 @@
       "manifest_component_type": "quality_assurance",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QA-018"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-QA-017-TO-QA-018"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QA-018-01",
+          "AC-QA-018-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QA-018-01",
+          "TC-QA-018-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12331,7 +12546,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12348,7 +12563,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "SHIP-001",
@@ -12356,7 +12572,7 @@
       "inventory_section": 19,
       "inventory_section_title": "Build, packaging, and delivery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Publishing & Versioning Engine",
@@ -12364,19 +12580,30 @@
       "manifest_component_type": "delivery",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-SHIP-001"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-004-TO-SHIP-001",
+          "DEP-BASE-007-TO-SHIP-001"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-SHIP-001-01",
+          "AC-SHIP-001-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-SHIP-001-01",
+          "TC-SHIP-001-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12386,7 +12613,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12403,7 +12630,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "SHIP-002",
@@ -12411,7 +12639,7 @@
       "inventory_section": 19,
       "inventory_section_title": "Build, packaging, and delivery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Publishing & Versioning Engine",
@@ -12419,19 +12647,30 @@
       "manifest_component_type": "delivery",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-SHIP-002"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-QA-004-TO-SHIP-002",
+          "DEP-QA-005-TO-SHIP-002"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-SHIP-002-01",
+          "AC-SHIP-002-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-SHIP-002-01",
+          "TC-SHIP-002-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12441,7 +12680,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12458,7 +12697,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "SHIP-003",
@@ -12466,7 +12706,7 @@
       "inventory_section": 19,
       "inventory_section_title": "Build, packaging, and delivery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Publishing & Versioning Engine",
@@ -12474,19 +12714,30 @@
       "manifest_component_type": "delivery",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-SHIP-003"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-004-TO-SHIP-003",
+          "DEP-QA-008-TO-SHIP-003"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-SHIP-003-01",
+          "AC-SHIP-003-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-SHIP-003-01",
+          "TC-SHIP-003-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12496,7 +12747,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12513,7 +12764,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "SHIP-004",
@@ -12521,7 +12773,7 @@
       "inventory_section": 19,
       "inventory_section_title": "Build, packaging, and delivery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Publishing & Versioning Engine",
@@ -12529,19 +12781,30 @@
       "manifest_component_type": "delivery",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-SHIP-004"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-004-TO-SHIP-004",
+          "DEP-QA-008-TO-SHIP-004"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-SHIP-004-01",
+          "AC-SHIP-004-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-SHIP-004-01",
+          "TC-SHIP-004-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12551,7 +12814,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12568,7 +12831,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "SHIP-005",
@@ -12576,7 +12840,7 @@
       "inventory_section": 19,
       "inventory_section_title": "Build, packaging, and delivery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Publishing & Versioning Engine",
@@ -12584,19 +12848,30 @@
       "manifest_component_type": "delivery",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-SHIP-005"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-009-TO-SHIP-005",
+          "DEP-QA-010-TO-SHIP-005"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-SHIP-005-01",
+          "AC-SHIP-005-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-SHIP-005-01",
+          "TC-SHIP-005-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12606,7 +12881,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12623,7 +12898,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "SHIP-006",
@@ -12631,7 +12907,7 @@
       "inventory_section": 19,
       "inventory_section_title": "Build, packaging, and delivery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Publishing & Versioning Engine",
@@ -12639,19 +12915,33 @@
       "manifest_component_type": "delivery",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-SHIP-006"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-005-TO-SHIP-006",
+          "DEP-BASE-012-TO-SHIP-006",
+          "DEP-SHIP-003-TO-SHIP-006",
+          "DEP-SHIP-004-TO-SHIP-006",
+          "DEP-SHIP-005-TO-SHIP-006"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-SHIP-006-01",
+          "AC-SHIP-006-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-SHIP-006-01",
+          "TC-SHIP-006-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12661,7 +12951,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12678,7 +12968,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "SHIP-007",
@@ -12686,7 +12977,7 @@
       "inventory_section": 19,
       "inventory_section_title": "Build, packaging, and delivery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Publishing & Versioning Engine",
@@ -12694,19 +12985,32 @@
       "manifest_component_type": "delivery",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-SHIP-007"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-003-TO-SHIP-007",
+          "DEP-BASE-010-TO-SHIP-007",
+          "DEP-QA-009-TO-SHIP-007",
+          "DEP-QA-012-TO-SHIP-007"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-SHIP-007-01",
+          "AC-SHIP-007-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-SHIP-007-01",
+          "TC-SHIP-007-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12716,7 +13020,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12733,7 +13037,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "SHIP-008",
@@ -12741,7 +13046,7 @@
       "inventory_section": 19,
       "inventory_section_title": "Build, packaging, and delivery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Publishing & Versioning Engine",
@@ -12749,19 +13054,34 @@
       "manifest_component_type": "delivery",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-SHIP-008"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-SHIP-001-TO-SHIP-008",
+          "DEP-SHIP-002-TO-SHIP-008",
+          "DEP-SHIP-003-TO-SHIP-008",
+          "DEP-SHIP-004-TO-SHIP-008",
+          "DEP-SHIP-005-TO-SHIP-008",
+          "DEP-BASE-012-TO-SHIP-008"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-SHIP-008-01",
+          "AC-SHIP-008-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-SHIP-008-01",
+          "TC-SHIP-008-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12771,7 +13091,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12788,7 +13108,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "SHIP-009",
@@ -12796,7 +13117,7 @@
       "inventory_section": 19,
       "inventory_section_title": "Build, packaging, and delivery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Publishing & Versioning Engine",
@@ -12804,19 +13125,31 @@
       "manifest_component_type": "delivery",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-SHIP-009"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-SHIP-003-TO-SHIP-009",
+          "DEP-SHIP-004-TO-SHIP-009",
+          "DEP-SHIP-005-TO-SHIP-009"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-SHIP-009-01",
+          "AC-SHIP-009-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-SHIP-009-01",
+          "TC-SHIP-009-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12826,7 +13159,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12843,7 +13176,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "SHIP-010",
@@ -12851,7 +13185,7 @@
       "inventory_section": 19,
       "inventory_section_title": "Build, packaging, and delivery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Publishing & Versioning Engine",
@@ -12859,19 +13193,32 @@
       "manifest_component_type": "delivery",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-SHIP-010"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-SHIP-003-TO-SHIP-010",
+          "DEP-SHIP-004-TO-SHIP-010",
+          "DEP-SHIP-005-TO-SHIP-010",
+          "DEP-SHIP-008-TO-SHIP-010"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-SHIP-010-01",
+          "AC-SHIP-010-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-SHIP-010-01",
+          "TC-SHIP-010-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12881,7 +13228,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12898,7 +13245,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "SHIP-011",
@@ -12906,7 +13254,7 @@
       "inventory_section": 19,
       "inventory_section_title": "Build, packaging, and delivery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Publishing & Versioning Engine",
@@ -12914,19 +13262,31 @@
       "manifest_component_type": "delivery",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-SHIP-011"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-QA-008-TO-SHIP-011",
+          "DEP-SHIP-006-TO-SHIP-011",
+          "DEP-SHIP-010-TO-SHIP-011"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-SHIP-011-01",
+          "AC-SHIP-011-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-SHIP-011-01",
+          "TC-SHIP-011-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12936,7 +13296,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12953,7 +13313,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "SHIP-012",
@@ -12961,7 +13322,7 @@
       "inventory_section": 19,
       "inventory_section_title": "Build, packaging, and delivery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Publishing & Versioning Engine",
@@ -12969,19 +13330,37 @@
       "manifest_component_type": "delivery",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-SHIP-012"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-QA-011-TO-SHIP-012",
+          "DEP-QA-017-TO-SHIP-012",
+          "DEP-QA-018-TO-SHIP-012",
+          "DEP-SHIP-003-TO-SHIP-012",
+          "DEP-SHIP-004-TO-SHIP-012",
+          "DEP-SHIP-005-TO-SHIP-012",
+          "DEP-SHIP-006-TO-SHIP-012",
+          "DEP-SHIP-010-TO-SHIP-012",
+          "DEP-SHIP-011-TO-SHIP-012"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-SHIP-012-01",
+          "AC-SHIP-012-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-SHIP-012-01",
+          "TC-SHIP-012-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12991,7 +13370,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping and target-aware acceptance/test definitions are documented. Dependency edges remain proposed. No implementation or test execution is claimed.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -13008,7 +13387,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md"
     }
   ],
   "first_playable_scope": {
@@ -13207,12 +13587,1053 @@
       "target_scope": [
         "shared"
       ]
+    },
+    {
+      "edge_id": "DEP-BASE-001-TO-QA-001",
+      "source_feature_id": "BASE-001",
+      "target_feature_id": "QA-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-001 depends on the declared prerequisite contract from BASE-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-008-TO-QA-001",
+      "source_feature_id": "BASE-008",
+      "target_feature_id": "QA-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-001 depends on the declared prerequisite contract from BASE-008.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-007-TO-QA-002",
+      "source_feature_id": "BASE-007",
+      "target_feature_id": "QA-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-002 depends on the declared prerequisite contract from BASE-007.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-005-TO-QA-003",
+      "source_feature_id": "BASE-005",
+      "target_feature_id": "QA-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-003 depends on the declared prerequisite contract from BASE-005.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-006-TO-QA-003",
+      "source_feature_id": "BASE-006",
+      "target_feature_id": "QA-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-003 depends on the declared prerequisite contract from BASE-006.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-002-TO-QA-004",
+      "source_feature_id": "BASE-002",
+      "target_feature_id": "QA-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-004 depends on the declared prerequisite contract from BASE-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-004-TO-QA-004",
+      "source_feature_id": "BASE-004",
+      "target_feature_id": "QA-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-004 depends on the declared prerequisite contract from BASE-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-006-TO-QA-004",
+      "source_feature_id": "BASE-006",
+      "target_feature_id": "QA-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-004 depends on the declared prerequisite contract from BASE-006.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-010-TO-QA-005",
+      "source_feature_id": "BASE-010",
+      "target_feature_id": "QA-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-005 depends on the declared prerequisite contract from BASE-010.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-012-TO-QA-005",
+      "source_feature_id": "BASE-012",
+      "target_feature_id": "QA-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-005 depends on the declared prerequisite contract from BASE-012.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-001-TO-QA-006",
+      "source_feature_id": "QA-001",
+      "target_feature_id": "QA-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-006 depends on the declared prerequisite contract from QA-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-006-TO-QA-007",
+      "source_feature_id": "QA-006",
+      "target_feature_id": "QA-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-007 depends on the declared prerequisite contract from QA-006.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-004-TO-QA-008",
+      "source_feature_id": "QA-004",
+      "target_feature_id": "QA-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-008 depends on the declared prerequisite contract from QA-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-005-TO-QA-008",
+      "source_feature_id": "QA-005",
+      "target_feature_id": "QA-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-008 depends on the declared prerequisite contract from QA-005.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-007-TO-QA-008",
+      "source_feature_id": "QA-007",
+      "target_feature_id": "QA-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-008 depends on the declared prerequisite contract from QA-007.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-003-TO-QA-009",
+      "source_feature_id": "BASE-003",
+      "target_feature_id": "QA-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-009 depends on the declared prerequisite contract from BASE-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-010-TO-QA-009",
+      "source_feature_id": "BASE-010",
+      "target_feature_id": "QA-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-009 depends on the declared prerequisite contract from BASE-010.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-008-TO-QA-009",
+      "source_feature_id": "QA-008",
+      "target_feature_id": "QA-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-009 depends on the declared prerequisite contract from QA-008.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-009-TO-QA-010",
+      "source_feature_id": "BASE-009",
+      "target_feature_id": "QA-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-010 depends on the declared prerequisite contract from BASE-009.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-008-TO-QA-010",
+      "source_feature_id": "QA-008",
+      "target_feature_id": "QA-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-010 depends on the declared prerequisite contract from QA-008.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-007-TO-QA-011",
+      "source_feature_id": "QA-007",
+      "target_feature_id": "QA-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-011 depends on the declared prerequisite contract from QA-007.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-010-TO-QA-011",
+      "source_feature_id": "QA-010",
+      "target_feature_id": "QA-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-011 depends on the declared prerequisite contract from QA-010.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-010-TO-QA-012",
+      "source_feature_id": "BASE-010",
+      "target_feature_id": "QA-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-012 depends on the declared prerequisite contract from BASE-010.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-011-TO-QA-012",
+      "source_feature_id": "QA-011",
+      "target_feature_id": "QA-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-012 depends on the declared prerequisite contract from QA-011.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-009-TO-QA-013",
+      "source_feature_id": "BASE-009",
+      "target_feature_id": "QA-013",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-013 depends on the declared prerequisite contract from BASE-009.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-010-TO-QA-013",
+      "source_feature_id": "QA-010",
+      "target_feature_id": "QA-013",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-013 depends on the declared prerequisite contract from QA-010.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-010-TO-QA-014",
+      "source_feature_id": "QA-010",
+      "target_feature_id": "QA-014",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-014 depends on the declared prerequisite contract from QA-010.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-011-TO-QA-014",
+      "source_feature_id": "QA-011",
+      "target_feature_id": "QA-014",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-014 depends on the declared prerequisite contract from QA-011.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-011-TO-QA-015",
+      "source_feature_id": "QA-011",
+      "target_feature_id": "QA-015",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-015 depends on the declared prerequisite contract from QA-011.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-013-TO-QA-015",
+      "source_feature_id": "QA-013",
+      "target_feature_id": "QA-015",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-015 depends on the declared prerequisite contract from QA-013.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-008-TO-QA-016",
+      "source_feature_id": "BASE-008",
+      "target_feature_id": "QA-016",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-016 depends on the declared prerequisite contract from BASE-008.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-011-TO-QA-016",
+      "source_feature_id": "QA-011",
+      "target_feature_id": "QA-016",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-016 depends on the declared prerequisite contract from QA-011.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-001-TO-QA-017",
+      "source_feature_id": "QA-001",
+      "target_feature_id": "QA-017",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-017 depends on the declared prerequisite contract from QA-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-008-TO-QA-017",
+      "source_feature_id": "QA-008",
+      "target_feature_id": "QA-017",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-017 depends on the declared prerequisite contract from QA-008.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-011-TO-QA-017",
+      "source_feature_id": "QA-011",
+      "target_feature_id": "QA-017",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-017 depends on the declared prerequisite contract from QA-011.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-017-TO-QA-018",
+      "source_feature_id": "QA-017",
+      "target_feature_id": "QA-018",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QA-018 depends on the declared prerequisite contract from QA-017.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-004-TO-SHIP-001",
+      "source_feature_id": "BASE-004",
+      "target_feature_id": "SHIP-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-001 depends on the declared prerequisite contract from BASE-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-007-TO-SHIP-001",
+      "source_feature_id": "BASE-007",
+      "target_feature_id": "SHIP-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-001 depends on the declared prerequisite contract from BASE-007.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-004-TO-SHIP-002",
+      "source_feature_id": "QA-004",
+      "target_feature_id": "SHIP-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-002 depends on the declared prerequisite contract from QA-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-005-TO-SHIP-002",
+      "source_feature_id": "QA-005",
+      "target_feature_id": "SHIP-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-002 depends on the declared prerequisite contract from QA-005.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-004-TO-SHIP-003",
+      "source_feature_id": "BASE-004",
+      "target_feature_id": "SHIP-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-003 depends on the declared prerequisite contract from BASE-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-008-TO-SHIP-003",
+      "source_feature_id": "QA-008",
+      "target_feature_id": "SHIP-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-003 depends on the declared prerequisite contract from QA-008.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-004-TO-SHIP-004",
+      "source_feature_id": "BASE-004",
+      "target_feature_id": "SHIP-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-004 depends on the declared prerequisite contract from BASE-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-008-TO-SHIP-004",
+      "source_feature_id": "QA-008",
+      "target_feature_id": "SHIP-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-004 depends on the declared prerequisite contract from QA-008.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-009-TO-SHIP-005",
+      "source_feature_id": "BASE-009",
+      "target_feature_id": "SHIP-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-005 depends on the declared prerequisite contract from BASE-009.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-010-TO-SHIP-005",
+      "source_feature_id": "QA-010",
+      "target_feature_id": "SHIP-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-005 depends on the declared prerequisite contract from QA-010.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-005-TO-SHIP-006",
+      "source_feature_id": "BASE-005",
+      "target_feature_id": "SHIP-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-006 depends on the declared prerequisite contract from BASE-005.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-012-TO-SHIP-006",
+      "source_feature_id": "BASE-012",
+      "target_feature_id": "SHIP-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-006 depends on the declared prerequisite contract from BASE-012.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-003-TO-SHIP-006",
+      "source_feature_id": "SHIP-003",
+      "target_feature_id": "SHIP-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-006 depends on the declared prerequisite contract from SHIP-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-004-TO-SHIP-006",
+      "source_feature_id": "SHIP-004",
+      "target_feature_id": "SHIP-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-006 depends on the declared prerequisite contract from SHIP-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-005-TO-SHIP-006",
+      "source_feature_id": "SHIP-005",
+      "target_feature_id": "SHIP-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-006 depends on the declared prerequisite contract from SHIP-005.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-003-TO-SHIP-007",
+      "source_feature_id": "BASE-003",
+      "target_feature_id": "SHIP-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-007 depends on the declared prerequisite contract from BASE-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-010-TO-SHIP-007",
+      "source_feature_id": "BASE-010",
+      "target_feature_id": "SHIP-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-007 depends on the declared prerequisite contract from BASE-010.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-009-TO-SHIP-007",
+      "source_feature_id": "QA-009",
+      "target_feature_id": "SHIP-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-007 depends on the declared prerequisite contract from QA-009.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-012-TO-SHIP-007",
+      "source_feature_id": "QA-012",
+      "target_feature_id": "SHIP-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-007 depends on the declared prerequisite contract from QA-012.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-001-TO-SHIP-008",
+      "source_feature_id": "SHIP-001",
+      "target_feature_id": "SHIP-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-008 depends on the declared prerequisite contract from SHIP-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-002-TO-SHIP-008",
+      "source_feature_id": "SHIP-002",
+      "target_feature_id": "SHIP-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-008 depends on the declared prerequisite contract from SHIP-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-003-TO-SHIP-008",
+      "source_feature_id": "SHIP-003",
+      "target_feature_id": "SHIP-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-008 depends on the declared prerequisite contract from SHIP-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-004-TO-SHIP-008",
+      "source_feature_id": "SHIP-004",
+      "target_feature_id": "SHIP-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-008 depends on the declared prerequisite contract from SHIP-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-005-TO-SHIP-008",
+      "source_feature_id": "SHIP-005",
+      "target_feature_id": "SHIP-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-008 depends on the declared prerequisite contract from SHIP-005.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-012-TO-SHIP-008",
+      "source_feature_id": "BASE-012",
+      "target_feature_id": "SHIP-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-008 depends on the declared prerequisite contract from BASE-012.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-003-TO-SHIP-009",
+      "source_feature_id": "SHIP-003",
+      "target_feature_id": "SHIP-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-009 depends on the declared prerequisite contract from SHIP-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-004-TO-SHIP-009",
+      "source_feature_id": "SHIP-004",
+      "target_feature_id": "SHIP-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-009 depends on the declared prerequisite contract from SHIP-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-005-TO-SHIP-009",
+      "source_feature_id": "SHIP-005",
+      "target_feature_id": "SHIP-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-009 depends on the declared prerequisite contract from SHIP-005.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-003-TO-SHIP-010",
+      "source_feature_id": "SHIP-003",
+      "target_feature_id": "SHIP-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-010 depends on the declared prerequisite contract from SHIP-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-004-TO-SHIP-010",
+      "source_feature_id": "SHIP-004",
+      "target_feature_id": "SHIP-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-010 depends on the declared prerequisite contract from SHIP-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-005-TO-SHIP-010",
+      "source_feature_id": "SHIP-005",
+      "target_feature_id": "SHIP-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-010 depends on the declared prerequisite contract from SHIP-005.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-008-TO-SHIP-010",
+      "source_feature_id": "SHIP-008",
+      "target_feature_id": "SHIP-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-010 depends on the declared prerequisite contract from SHIP-008.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-008-TO-SHIP-011",
+      "source_feature_id": "QA-008",
+      "target_feature_id": "SHIP-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-011 depends on the declared prerequisite contract from QA-008.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-006-TO-SHIP-011",
+      "source_feature_id": "SHIP-006",
+      "target_feature_id": "SHIP-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-011 depends on the declared prerequisite contract from SHIP-006.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-010-TO-SHIP-011",
+      "source_feature_id": "SHIP-010",
+      "target_feature_id": "SHIP-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-011 depends on the declared prerequisite contract from SHIP-010.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-011-TO-SHIP-012",
+      "source_feature_id": "QA-011",
+      "target_feature_id": "SHIP-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-012 depends on the declared prerequisite contract from QA-011.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-017-TO-SHIP-012",
+      "source_feature_id": "QA-017",
+      "target_feature_id": "SHIP-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-012 depends on the declared prerequisite contract from QA-017.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-018-TO-SHIP-012",
+      "source_feature_id": "QA-018",
+      "target_feature_id": "SHIP-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-012 depends on the declared prerequisite contract from QA-018.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-003-TO-SHIP-012",
+      "source_feature_id": "SHIP-003",
+      "target_feature_id": "SHIP-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-012 depends on the declared prerequisite contract from SHIP-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-004-TO-SHIP-012",
+      "source_feature_id": "SHIP-004",
+      "target_feature_id": "SHIP-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-012 depends on the declared prerequisite contract from SHIP-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-005-TO-SHIP-012",
+      "source_feature_id": "SHIP-005",
+      "target_feature_id": "SHIP-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-012 depends on the declared prerequisite contract from SHIP-005.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-006-TO-SHIP-012",
+      "source_feature_id": "SHIP-006",
+      "target_feature_id": "SHIP-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-012 depends on the declared prerequisite contract from SHIP-006.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-010-TO-SHIP-012",
+      "source_feature_id": "SHIP-010",
+      "target_feature_id": "SHIP-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-012 depends on the declared prerequisite contract from SHIP-010.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-011-TO-SHIP-012",
+      "source_feature_id": "SHIP-011",
+      "target_feature_id": "SHIP-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SHIP-012 depends on the declared prerequisite contract from SHIP-011.",
+      "specification_ref": "docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
     }
   ],
   "traceability_update_notes": [
     "BASE-001..BASE-012 are mapped to feature-specific requirements, acceptance criteria and test cases in the foundation compatibility specification.",
     "The 15 feature-to-feature dependency edges are proposed and require review; they do not constitute implementation dependencies verified in code.",
     "Java Edition, Bedrock Edition and parity remain not_assessed until target-specific builds, runtime tests and evidence exist.",
-    "All 232 implementation statuses remain not_implemented_verified; no evidence records were created by this documentation update."
+    "All 232 implementation statuses remain not_implemented_verified; no evidence records were created by this documentation update.",
+    "QA-001..QA-018 and SHIP-001..SHIP-012 are mapped to feature-specific requirements, acceptance criteria, test cases and proposed dependency edges in docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md."
   ]
 }
