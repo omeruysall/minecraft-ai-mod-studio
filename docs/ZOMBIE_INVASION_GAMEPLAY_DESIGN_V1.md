@@ -441,3 +441,10 @@ This is a scope decision, not a permanent prohibition: the architecture should a
 The user approved an **abandoned, expandable town** as the first map direction. Planned landmark vocabulary includes residential houses, hospital, police station, market, gas station, military checkpoint and underground shelter.
 
 The first playable map remains a compact authored district around the safehouse. The full landmark set is a long-term map plan; not every building must be fully functional in the first slice. Detailed layout, attack lanes, loot policy, target parity and map acceptance criteria are in `docs/ZOMBIE_INVASION_MAP_DESIGN_V1.md`.
+
+
+## 31. Death and restart policy proposal (2026-11-28)
+
+Recommended first-slice behavior: player death ends the current attempt with a DEFEAT result. The player may then manually restart the complete scenario from a clean authored baseline. Restart restores scenario-owned wave state, hostile entities, defence points, fixed loot, objectives, radio progression and extraction state. It must not delete the world save or modify unrelated user-created areas. Death detection and reset must be idempotent across Java and Bedrock.
+
+This remains a **proposal, not a user-confirmed decision**. Limited lives, permanent-death campaign mode, revive/spectator flow and persistent inventory retention are deferred. Detailed requirements and target-specific acceptance tests are in `docs/ZOMBIE_INVASION_DEATH_AND_RESTART_POLICY_V1.md`.
