@@ -238,3 +238,14 @@ Approved scope specification: `docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DES
 A detailed cross-edition proposal has been added in `docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md`. It defines the distinct loot identities of Market (food/general supplies), Hospital (medical supplies), Police Station (tactical/defence supplies), residential buildings and safehouse; it also covers finite ammunition, durability, reload integrity, container ownership, scenario reset and acceptance tests.
 
 Recommended first-slice defaults are native Minecraft inventory, no weight/encumbrance system, curated fixed loot, and no custom thirst/infection mechanics. These are recommendations only. Inventory UI, carry limits, safehouse storage, loot variation, hunger behavior and inventory persistence across attempts remain unresolved. No inventory or loot implementation is authorized by this proposal.
+
+
+## 24. Backpack variety — user-confirmed first-slice requirement (2026-11-28)
+
+The user explicitly stated that multiple backpack varieties must be included. Backpack variety is therefore a **confirmed first-playable requirement**, not an optional future feature or cosmetic-only idea.
+
+The inventory design now proposes distinct small daypack, hiking, tactical, medical and large expedition variants. Their exact capacity, rarity, appearance, loot placement and any specialist effects remain to be balanced. The current proposal uses one equipped backpack with separate slot-based storage, no nested backpacks and persistent contents across ordinary save/load; the final interaction and death/restart behavior still require decisions and tests.
+
+Updated specification: `docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md`.
+
+This decision authorizes design work only; it does not mean backpack items, storage UI or either edition's add-on/mod have been implemented.
