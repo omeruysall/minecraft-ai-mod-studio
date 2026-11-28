@@ -427,3 +427,10 @@ These are proposals, not user-confirmed decisions:
 ## 28. Implementation boundary
 
 This is a gameplay design specification. It does not implement zombie AI, wave scheduling, maps, loot, crafting, NPCs, packs or playable outputs. Application source code remains unchanged. The coding gate remains closed until the first-slice choices are resolved or explicitly deferred and the master design baseline is approved.
+
+
+## 29. User decision — single-player first release (2026-11-28)
+
+The user accepted a **single-player first playable experience**. The first-slice gameplay and acceptance tests therefore assume one player. Cooperative multiplayer and dedicated-server support are deferred to a later milestone and are not required to declare the first slice complete.
+
+This is a scope decision, not a permanent prohibition: the architecture should avoid unnecessary single-player-only assumptions where doing so is low-cost, but multiplayer must not delay or complicate the first playable release. No multiplayer support may be claimed until separately implemented and tested.
