@@ -200,3 +200,36 @@ The user has approved the abandoned expandable town direction and the proposed l
 ## 16. Implementation boundary
 
 This document defines map design only. It does not create a world file, structures, terrain, loot containers, spawn markers or playable map. Application source code remains unchanged until the design baseline and implementation gate are approved.
+
+
+## 17. User decision — all three core service buildings functional in first slice (2026-11-28)
+
+The user selected **all three**: Market, Hospital and Police Station. Each must be a genuinely functional, explorable and testable gameplay location in the first playable map, not merely a decorative exterior.
+
+### Required first-slice roles
+
+**Market**
+- Searchable supply containers.
+- Food and general survival supplies.
+- Clear looted/empty feedback.
+- A risk/reward expedition route from the safehouse.
+
+**Hospital**
+- Searchable medical supply points.
+- At least one usable recovery/medical item or interaction.
+- A distinct, more exposed or encounter-prone route.
+- Medical loot must be useful within the first-slice survival rules.
+
+**Police Station**
+- Searchable tactical supply points.
+- First-slice combat/defence supplies compatible with the chosen vanilla-baseline combat scope.
+- A distinct interior layout and defensible access points.
+- Do not introduce firearm systems solely because the location is a police station; custom weapons remain a separate decision.
+
+### Map scope impact
+
+The first playable map must now include a functional safehouse, residential section, market, hospital and police station, plus two validated attack lanes. The first slice is larger than the earlier minimum map proposal. Keep each building compact and focused; do not expand into full-scale interiors or add unrelated systems.
+
+Each building must have stable loot-point identifiers, accessible routes, clear interaction feedback and resettable state. The same gameplay role and intended supply value must be represented in both Java and Bedrock, with separate edition-specific implementations.
+
+This decision closes the earlier open question about which one of the three buildings would be functional: all three are required.
