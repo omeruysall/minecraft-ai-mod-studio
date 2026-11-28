@@ -403,3 +403,10 @@ A unified progression specification has been added at `docs/ZOMBIE_INVASION_PLAY
 It organizes the long-term player journey into survival, stable safehouse, self-sufficiency, community/regional influence, advanced capability/exploration and world-shaping endgame stages. It defines parallel skill/progression tracks, typed unlocks and prerequisite graphs, soft-lock prevention, quest and settlement-project boundaries, optional narrative structure, persistent player choices, endgame continuity, difficulty/accessibility, reward ownership, NPC work requirements, save migration and Java/Bedrock parity.
 
 This is a long-term design proposal, not user approval of a specific chapter list, ending list, XP model or death/restart policy. The previously proposed three-night extraction scenario remains unapproved as a full campaign structure. The first playable remains the existing bounded abandoned-town vertical slice. No campaign code or playable artifact is claimed.
+
+
+## 39. Master feature and dependency map added (2026-11-28)
+
+The cross-system map is recorded at `docs/ZOMBIE_INVASION_MASTER_FEATURE_DEPENDENCY_AND_IMPLEMENTATION_MAP_V1.md`. It consolidates feature families, logical dependency layers L0–L12, authoritative subsystem ownership, critical paths, circular-dependency hazards, first-playable versus long-term boundaries, manifest integration, proposed implementation waves and test gates.
+
+The existing 232-feature catalog and traceability matrix remain the granular source of feature IDs and per-feature status. This map does not bulk-mark features designed, approved, implemented or tested. Exact first-playable feature IDs, detailed roster/balance values, per-target feasibility and several milestone choices remain open. This is a design artifact only.
