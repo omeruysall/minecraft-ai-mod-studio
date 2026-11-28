@@ -100,3 +100,14 @@ Resolve in this order:
 ## 10. Implementation boundary
 
 This register records decisions and recommendations only. It does not implement platform adapters, generators, game artifacts or tests. The master coding gate remains closed until the first-slice decisions are resolved or explicitly deferred and the user approves the master baseline.
+
+
+## 11. Dated compatibility recommendation (not yet approved)
+
+Based on official release information checked on 2026-11-28:
+- Proposed Java baseline: Minecraft 26.3 + Fabric.
+- Proposed Bedrock baseline: Minecraft 26.60 + stable `@minecraft/server` 2.11.0 where scripting is required.
+- Default recommendation: exclude experimental Bedrock APIs from the first playable path.
+- Development may proceed sequentially by target, but both target tracks remain required for milestone completion.
+
+Sources and technical caveats are recorded in `docs/FIRST_SLICE_COMPATIBILITY_RECOMMENDATION_2026-11.md`. These are recommendations only. The user must confirm or change the target profiles before implementation.
