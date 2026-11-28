@@ -226,3 +226,20 @@ This document defines the v2 contract and migration requirements. It does not me
 ## 26. Related documents
 
 Component Ownership Matrix v1, Master Integration Audit v1, API Contract v2 Design, Project Architect Decision Engine, Minecraft Version Compatibility Engine, production engine specifications, Security/Permissions/Moderation and Backup/Recovery.
+
+
+## 27. Dual-edition first playable project
+
+The first user-selected milestone targets both Java and Bedrock. A single manifest must contain separate target records with independent edition, version selection, runtime, loader/API constraints and deployment roles.
+
+Rules:
+- Java target uses `edition: java`; Bedrock target uses `edition: bedrock`.
+- Every component lists the target IDs it belongs to.
+- A Java mod/JAR, Java datapack, Bedrock behavior pack and Bedrock resource pack are distinct component/artifact types.
+- A shared user requirement may link to multiple target-specific component implementations.
+- Java and Bedrock components must not share a build job or be treated as interchangeable binaries.
+- Target-specific dependency graphs and validation evidence must be preserved.
+- A project export may contain both target bundles, but each bundle remains independently installable and testable.
+- Datapack components are Java-specific. Bedrock behavior must be represented through Bedrock-native pack/API components, not a Java datapack flag.
+
+The updated example manifest demonstrates two target profiles and separate components. Exact versions and loader/API levels intentionally remain unresolved.
