@@ -137,3 +137,22 @@ Additional integration rules:
 - Stable IDs, event idempotency, save migrations and Java/Bedrock independent evidence are mandatory.
 
 This integration audit is architectural analysis only. No simulation, performance or compatibility test is claimed.
+
+
+## 12. Dynamic world simulation and resource-accounting integration
+
+The integrated specification is `docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md`.
+
+Additional conflict controls:
+- World time/weather is the only authoritative clock and weather snapshot; crops, NPC schedules, spoilage, power, water and hazards consume the same time basis.
+- Regional summaries are derived views, not duplicate inventories. Resource quantities remain owned by ecology, farming, item/inventory, water, fuel, power and economy domains as defined in their contracts.
+- Resource transactions reconcile opening stock, production/import/recovery, consumption/export, spoilage and loss. Negative stock and duplicate commits are invalid.
+- Production reserves inputs and commits outputs once; blueprint unlocks do not grant finished goods.
+- Logistics moves existing stock and records route capacity, cost, interruption and loss; it must not create resources.
+- Market transactions atomically validate stock, payment/barter, capacity, access and price to prevent duplication and buy/sell loops.
+- Settlement population changes only through explicit rescue, recruitment, departure, death or relocation events. NPC knowledge and faction reactions obey information boundaries.
+- Regional outbreak pressure is a bounded summary; Encounter Director owns horde events and Zombie AI owns individual behavior.
+- Distant simulation aggregates elapsed-time changes without loading remote chunks; activation/save/reload must conserve quantities and event order.
+- The shared manifest must bind stable IDs, event schemas, dependencies, platform capabilities and acceptance criteria. Java and Bedrock require separate evidence.
+
+These are architecture constraints, not test results. Resource reconciliation, transaction idempotency, distant simulation, save migration, market exploits and edition parity remain required validation work. First playable scope remains separately controlled.
