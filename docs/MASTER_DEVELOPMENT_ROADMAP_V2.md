@@ -401,3 +401,18 @@ Phase 0 no longer needs to ask the user to select these versions/loaders/API sta
 The project-specific feature/dependency and implementation map is `docs/ZOMBIE_INVASION_MASTER_FEATURE_DEPENDENCY_AND_IMPLEMENTATION_MAP_V1.md`. It provides L0–L12 dependency layers, feature-family ownership and prerequisite mapping, circular-dependency mitigations, first-playable/long-term boundaries, target-specific delivery rules and proposed implementation waves W0–W10.
 
 This is a planning refinement, not a change to the roadmap's implementation gate. The design baseline, exact first-playable feature mapping, test environments and per-feature Java/Bedrock feasibility still require review before coding begins. The user-approved platform baseline remains Java 26.3 + Fabric and Bedrock 26.60 + stable Script API 2.11.0, with experimental APIs disabled.
+
+
+## 26. Feature-level traceability closure
+
+The full 232-feature traceability pass is recorded in `catalogs/feature-traceability-matrix.v1.json` v1.3.0. All 232 feature IDs are now mapped to requirement IDs, feature-specific acceptance criteria and test case IDs.
+
+Verified matrix totals:
+- 232/232 features mapped for design traceability; 0 remain in `needs_traceability_review`.
+- 495 acceptance criteria and 490 unique test case IDs.
+- 486 proposed feature-to-feature dependency edges.
+- All 232 feature nodes passed static graph validation: unique edge IDs, valid endpoints, no self-edges, unique acceptance/test IDs and a successful topological sort with no dependency cycle.
+- Java coverage: 232 `not_assessed`; Bedrock coverage: 232 `not_assessed`; parity: 232 `not_assessed`.
+- Implementation: all 232 remain `not_implemented_verified`; evidence records: 0.
+
+This closes the feature-level design traceability gap, not implementation or compatibility. The 486 edges remain proposed, not approved. The test cases are specifications, not executed tests. Exact toolchains, target builds, imports, runtime gameplay and manual playtests are still required before any feature can advance to implemented/built/tested. The first playable scope remains separately bounded; long-term feature mapping does not put every feature into the first release.
