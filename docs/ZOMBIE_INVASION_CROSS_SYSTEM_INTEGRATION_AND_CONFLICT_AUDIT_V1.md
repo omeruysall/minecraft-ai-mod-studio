@@ -156,3 +156,21 @@ Additional conflict controls:
 - The shared manifest must bind stable IDs, event schemas, dependencies, platform capabilities and acceptance criteria. Java and Bedrock require separate evidence.
 
 These are architecture constraints, not test results. Resource reconciliation, transaction idempotency, distant simulation, save migration, market exploits and edition parity remain required validation work. First playable scope remains separately controlled.
+
+
+## 13. Player journey and progression ownership audit
+
+Integrated progression design: `docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md`.
+
+Ownership and conflict rules:
+- Quest/story service owns objectives, evidence and quest lifecycle; it reads committed events from combat, inventory, crafting, NPC, faction, research, transport and world services.
+- Settlement projects are persistent work plans, not duplicate quest inventories. Construction, materials, labor and completion remain owned by their respective domain services.
+- Research owns knowledge and blueprint unlock records; crafting/manufacturing owns actual production and item creation.
+- Faction service owns reputation, relations and access policy; dialogue and quest text may present outcomes but cannot mutate them independently.
+- NPC simulation owns recruitment, identity, needs, skills, availability and task completion; rewards cannot create duplicate NPCs or free labor.
+- Skill progression may improve valid actions but cannot bypass authoritative injury, station, material, tool, power or qualification requirements.
+- Campaign progress and player choices persist through stable IDs and idempotent events; migration must not duplicate rewards or reset completed objectives.
+- Sandbox continuation remains possible after major story milestones. No ending should force world deletion by default.
+- First-playable scope remains protected; long-term campaign breadth does not imply first-slice delivery.
+
+This is a design-level audit. Quest soft-lock testing, save migration, reward idempotency, NPC availability and Java/Bedrock parity remain unvalidated implementation gates.
