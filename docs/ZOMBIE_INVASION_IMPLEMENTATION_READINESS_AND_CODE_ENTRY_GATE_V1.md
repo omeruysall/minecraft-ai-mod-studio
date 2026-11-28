@@ -190,3 +190,14 @@ A minimal target project skeleton and schema/toolchain probes may be prepared af
 - `docs/PROJECT_MANIFEST_V2_DESIGN.md`
 - `schemas/project-manifest.v2.schema.json`
 - `docs/MINECRAFT_VERSION_COMPATIBILITY_ENGINE_SPEC.md`
+
+
+## 11. Current target toolchain research (2026-11-28)
+
+Current documentation research is recorded in `docs/ZOMBIE_INVASION_TARGET_TOOLCHAIN_COMPATIBILITY_RESEARCH_2026-11.md`.
+
+- Java 26.3: current Fabric Develop selector recommends Loader 0.20.1, Loom 1.19-SNAPSHOT and Fabric API 0.166.0+26.3; Java runtime baseline is 25+. Gradle wrapper version remains unresolved pending the chosen Loom build. These are compatibility candidates, not a completed project build.
+- Bedrock 26.60: the official 2026-10-27 changelog confirms stable `@minecraft/server` 2.11.0. Experimental APIs remain disabled. Pack format and actual import/load remain unverified.
+- The manifest records these candidates and keeps build verification false. Java and Bedrock runtime tests remain separate and not run.
+
+No implementation or compatibility pass is claimed.
