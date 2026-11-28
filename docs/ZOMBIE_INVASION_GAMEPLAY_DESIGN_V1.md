@@ -434,3 +434,10 @@ This is a gameplay design specification. It does not implement zombie AI, wave s
 The user accepted a **single-player first playable experience**. The first-slice gameplay and acceptance tests therefore assume one player. Cooperative multiplayer and dedicated-server support are deferred to a later milestone and are not required to declare the first slice complete.
 
 This is a scope decision, not a permanent prohibition: the architecture should avoid unnecessary single-player-only assumptions where doing so is low-cost, but multiplayer must not delay or complicate the first playable release. No multiplayer support may be claimed until separately implemented and tested.
+
+
+## 30. User decision — abandoned expandable town map (2026-11-28)
+
+The user approved an **abandoned, expandable town** as the first map direction. Planned landmark vocabulary includes residential houses, hospital, police station, market, gas station, military checkpoint and underground shelter.
+
+The first playable map remains a compact authored district around the safehouse. The full landmark set is a long-term map plan; not every building must be fully functional in the first slice. Detailed layout, attack lanes, loot policy, target parity and map acceptance criteria are in `docs/ZOMBIE_INVASION_MAP_DESIGN_V1.md`.
