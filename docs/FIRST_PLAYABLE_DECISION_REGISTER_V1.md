@@ -111,3 +111,15 @@ Based on official release information checked on 2026-11-28:
 - Development may proceed sequentially by target, but both target tracks remain required for milestone completion.
 
 Sources and technical caveats are recorded in `docs/FIRST_SLICE_COMPATIBILITY_RECOMMENDATION_2026-11.md`. These are recommendations only. The user must confirm or change the target profiles before implementation.
+
+
+## 12. User-approved compatibility targets (2026-11-28)
+
+The user explicitly approved the first-slice target profiles:
+- **Java Edition:** Minecraft 26.3 + Fabric.
+- **Bedrock Edition:** Minecraft 26.60 + stable `@minecraft/server` 2.11.0 where scripting is required.
+- **Experimental Bedrock APIs:** disabled for the first playable milestone.
+
+These are confirmed user decisions and supersede the pending recommendations in section 11. Exact toolchain patch versions and runtime prerequisites must still be revalidated at implementation start and pinned from official metadata.
+
+Both target tracks remain mandatory for milestone completion. A sequential development order is acceptable as a schedule proposal, but requires a separate explicit decision if it changes delivery timing.
