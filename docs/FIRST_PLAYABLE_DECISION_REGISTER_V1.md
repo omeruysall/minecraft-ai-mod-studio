@@ -123,3 +123,13 @@ The user explicitly approved the first-slice target profiles:
 These are confirmed user decisions and supersede the pending recommendations in section 11. Exact toolchain patch versions and runtime prerequisites must still be revalidated at implementation start and pinned from official metadata.
 
 Both target tracks remain mandatory for milestone completion. A sequential development order is acceptable as a schedule proposal, but requires a separate explicit decision if it changes delivery timing.
+
+
+## 13. Next gameplay decision
+
+The next unresolved decision is the shared gameplay loop. Three cross-edition candidates have been documented:
+- Candidate A — The Lost Temple (recommended): three-room dungeon, collect three relic fragments, unlock the central seal and complete the vault.
+- Candidate B — Outpost Defense: survive three waves and activate extraction.
+- Candidate C — Survival Expedition: gather resources, overcome an obstacle and reach the final camp.
+
+The comparison, target-specific component outline and acceptance criteria are in `docs/FIRST_SHARED_GAMEPLAY_LOOP_DESIGN_V1.md`. No candidate is selected until the user explicitly chooses one.
