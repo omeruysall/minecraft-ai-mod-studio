@@ -193,3 +193,18 @@ This is a proposed contract. Existing `/health` and `/v1` prototype endpoints ar
 
 ## 26. Related specifications
 Integrates with Master Integration Audit, Architecture, Project Manifest, Project Architect Decision Engine, Compatibility Engine, AI Gateway, Asset Pipeline, Production Engines, Security, Publishing, Backup/Recovery and Development Plan.
+
+## 27. Dual-edition first playable project contract
+
+The first playable milestone uses both Java and Bedrock target profiles under one project. API resources for planning, compatibility, generation, validation, artifacts and delivery must accept or return explicit `target_id` and target-specific component IDs.
+
+Required behavior:
+- Compatibility evaluation is independently addressable per target.
+- A plan may include several targets but each component and job is bound to one target unless an explicit shared, non-runtime asset task is declared.
+- Job input snapshots include target profile revision and manifest digest.
+- Validation evidence identifies target ID, game version, loader/API, runtime environment and test level.
+- Delivery endpoints return separate Java and Bedrock bundles and may additionally return a combined project export.
+- A failure in one target cannot be masked by success in the other. Project status summarizes both target results.
+- Feature parity reporting is per feature and per target; it is never inferred from shared requirement IDs.
+
+This is a contract requirement for future implementation, not an implemented endpoint.
