@@ -384,3 +384,13 @@ The first slice does not include all 232 catalog features. It includes a small, 
 
 ### 23.6 Remaining blockers
 Exact Java version/loader, Bedrock version/API policy, common gameplay feature set, test environments, local/cloud execution and provider policy remain unresolved. No source-code implementation begins until these are resolved or explicitly deferred and the master baseline is approved.
+
+
+## 24. User-approved platform baseline (2026-11-28)
+
+The first playable milestone target profiles are confirmed:
+- Java Edition 26.3 with Fabric.
+- Bedrock Edition 26.60 with stable `@minecraft/server` 2.11.0 when scripting is required.
+- Experimental Bedrock APIs disabled.
+
+Phase 0 no longer needs to ask the user to select these versions/loaders/API stability settings. It must instead verify the official toolchain metadata and pin tested patch versions before implementation. The common gameplay feature set and test environment decisions remain open.
