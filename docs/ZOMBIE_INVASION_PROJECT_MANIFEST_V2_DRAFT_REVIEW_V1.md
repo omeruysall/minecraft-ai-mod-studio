@@ -58,7 +58,7 @@ All components remain `proposed`. No component is marked approved, generating, b
 ## 5. Toolchain research captured
 
 The manifest and supporting research document record:
-- Java 26.3: current Fabric documentation candidates Loader 0.20.1, Loom 1.19-SNAPSHOT, Fabric API 0.166.0+26.3 and Java 25+. Gradle wrapper selection remains unresolved until the selected Loom build is resolved.
+- Java 26.3: current Fabric documentation candidates Loader 0.20.1, Loom 1.19-SNAPSHOT, Fabric API 0.166.0+26.3 and Java 25+. Official pack formats: data pack 121.0 and resource pack 97.1. Gradle wrapper selection remains unresolved until the selected Loom build is resolved.
 - Bedrock 26.60: official changelog confirms stable `@minecraft/server` 2.11.0. Pack format and actual import/load remain unverified.
 
 See `docs/ZOMBIE_INVASION_TARGET_TOOLCHAIN_COMPATIBILITY_RESEARCH_2026-11.md`.
