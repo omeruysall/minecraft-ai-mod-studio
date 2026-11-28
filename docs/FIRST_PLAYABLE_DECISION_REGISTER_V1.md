@@ -249,3 +249,20 @@ The inventory design now proposes distinct small daypack, hiking, tactical, medi
 Updated specification: `docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md`.
 
 This decision authorizes design work only; it does not mean backpack items, storage UI or either edition's add-on/mod have been implemented.
+
+
+## 25. User-requested injury, amputation and bionic prosthetics system (2026-11-28)
+
+The user requested a comprehensive injury system including bone fractures, cracks and other injuries, with possible limb loss. The user specifically described a progression path where a lost arm can eventually be replaced with a bionic arm, but only after a substantial staged process: finding components, producing required parts and completing assembly/installation. This is recorded as a required design scope; exact injury rules, limb-loss conditions, prosthetic tiers and first-slice availability remain unresolved.
+
+Design specification: `docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md`.
+
+No injury or prosthetic feature is implemented or approved for immediate production by this design entry.
+
+## 26. User-requested staged crafting and workstation progression (2026-11-28)
+
+The user requires broad crafting across the mod and explicitly requires the normal Minecraft Crafting Table to remain the first-stage crafting station. Specialist workstations such as a Weapon Workbench are introduced later through progression. Advanced equipment (including firearms, vehicle systems and bionic prostheses) must not be bypassable through the basic Crafting Table.
+
+Design specification: `docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md`.
+
+The full workstation list, unlocks, recipes, station placement and which stations are included in the first playable slice remain open for detailed design. This is a design requirement, not an implementation claim.
