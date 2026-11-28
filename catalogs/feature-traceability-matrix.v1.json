@@ -1,5 +1,5 @@
 {
-  "matrix_version": "1.1.0",
+  "matrix_version": "1.2.0",
   "status": "draft_not_approved",
   "source_catalog": "catalogs/mod-system-inventory.v0.2.json",
   "source_catalog_version": "0.2.0",
@@ -10,7 +10,7 @@
     "source_status_counts": {
       "planned": 232
     },
-    "traceability_review_required": 232,
+    "traceability_review_required": 220,
     "implementation_claims": "none",
     "target_coverage_status_counts": {
       "java_edition": {
@@ -22,7 +22,15 @@
       "parity_status": {
         "not_assessed": 232
       }
-    }
+    },
+    "design_status_counts": {
+      "mapped": 12,
+      "needs_traceability_review": 220
+    },
+    "feature_dependency_edge_count": 15,
+    "acceptance_criteria_defined_feature_count": 12,
+    "test_cases_defined_feature_count": 12,
+    "evidence_record_count": 0
   },
   "status_semantics": {
     "design_status": [
@@ -60,7 +68,7 @@
       "inventory_section": 2,
       "inventory_section_title": "Project foundation and compatibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Minecraft Compatibility Engine",
@@ -68,7 +76,7 @@
       "manifest_component_type": "project_foundation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-BASE-001"
       },
       "dependency_links": {
         "required": true,
@@ -76,11 +84,24 @@
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-BASE-001-01",
+          "AC-BASE-001-02",
+          "AC-BASE-001-03",
+          "AC-BASE-001-04",
+          "AC-BASE-001-05"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-BASE-001-01",
+          "TC-BASE-001-02",
+          "TC-BASE-001-03",
+          "TC-BASE-001-04"
+        ]
       },
       "evidence": {
         "required": true,
@@ -90,7 +111,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping, acceptance criteria and test cases are documented. Dependency edges are proposed, not approved. Java/Bedrock runtime compatibility and all implementation evidence remain unverified.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -107,7 +128,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "BASE-002",
@@ -115,7 +137,7 @@
       "inventory_section": 2,
       "inventory_section_title": "Project foundation and compatibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Minecraft Compatibility Engine",
@@ -123,19 +145,35 @@
       "manifest_component_type": "project_foundation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-BASE-002"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-001-002"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-BASE-002-01",
+          "AC-BASE-002-02",
+          "AC-BASE-002-03",
+          "AC-BASE-002-04",
+          "AC-BASE-002-05"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-BASE-002-01",
+          "TC-BASE-002-02",
+          "TC-BASE-002-03",
+          "TC-BASE-002-04",
+          "TC-BASE-002-05"
+        ]
       },
       "evidence": {
         "required": true,
@@ -145,7 +183,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping, acceptance criteria and test cases are documented. Dependency edges are proposed, not approved. Java/Bedrock runtime compatibility and all implementation evidence remain unverified.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -162,7 +200,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "BASE-003",
@@ -170,7 +209,7 @@
       "inventory_section": 2,
       "inventory_section_title": "Project foundation and compatibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Minecraft Compatibility Engine",
@@ -178,7 +217,7 @@
       "manifest_component_type": "project_foundation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-BASE-003"
       },
       "dependency_links": {
         "required": true,
@@ -186,11 +225,22 @@
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-BASE-003-01",
+          "AC-BASE-003-02",
+          "AC-BASE-003-03",
+          "AC-BASE-003-04"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-BASE-003-01",
+          "TC-BASE-003-02",
+          "TC-BASE-003-03"
+        ]
       },
       "evidence": {
         "required": true,
@@ -200,7 +250,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping, acceptance criteria and test cases are documented. Dependency edges are proposed, not approved. Java/Bedrock runtime compatibility and all implementation evidence remain unverified.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -217,7 +267,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "BASE-004",
@@ -225,7 +276,7 @@
       "inventory_section": 2,
       "inventory_section_title": "Project foundation and compatibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Minecraft Compatibility Engine",
@@ -233,19 +284,34 @@
       "manifest_component_type": "project_foundation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-BASE-004"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-001-004",
+          "DEP-BASE-002-004"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-BASE-004-01",
+          "AC-BASE-004-02",
+          "AC-BASE-004-03",
+          "AC-BASE-004-04"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-BASE-004-01",
+          "TC-BASE-004-02",
+          "TC-BASE-004-03",
+          "TC-BASE-004-04"
+        ]
       },
       "evidence": {
         "required": true,
@@ -255,7 +321,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping, acceptance criteria and test cases are documented. Dependency edges are proposed, not approved. Java/Bedrock runtime compatibility and all implementation evidence remain unverified.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -272,7 +338,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "BASE-005",
@@ -280,7 +347,7 @@
       "inventory_section": 2,
       "inventory_section_title": "Project foundation and compatibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Minecraft Compatibility Engine",
@@ -288,19 +355,35 @@
       "manifest_component_type": "project_foundation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-BASE-005"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-001-005",
+          "DEP-BASE-004-005"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-BASE-005-01",
+          "AC-BASE-005-02",
+          "AC-BASE-005-03",
+          "AC-BASE-005-04",
+          "AC-BASE-005-05"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-BASE-005-01",
+          "TC-BASE-005-02",
+          "TC-BASE-005-03",
+          "TC-BASE-005-04"
+        ]
       },
       "evidence": {
         "required": true,
@@ -310,7 +393,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping, acceptance criteria and test cases are documented. Dependency edges are proposed, not approved. Java/Bedrock runtime compatibility and all implementation evidence remain unverified.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -327,7 +410,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "BASE-006",
@@ -335,7 +419,7 @@
       "inventory_section": 2,
       "inventory_section_title": "Project foundation and compatibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Minecraft Compatibility Engine",
@@ -343,19 +427,36 @@
       "manifest_component_type": "project_foundation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-BASE-006"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-002-006",
+          "DEP-BASE-004-006",
+          "DEP-BASE-005-006"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-BASE-006-01",
+          "AC-BASE-006-02",
+          "AC-BASE-006-03",
+          "AC-BASE-006-04",
+          "AC-BASE-006-05"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-BASE-006-01",
+          "TC-BASE-006-02",
+          "TC-BASE-006-03",
+          "TC-BASE-006-04"
+        ]
       },
       "evidence": {
         "required": true,
@@ -365,7 +466,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping, acceptance criteria and test cases are documented. Dependency edges are proposed, not approved. Java/Bedrock runtime compatibility and all implementation evidence remain unverified.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -382,7 +483,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "BASE-007",
@@ -390,7 +492,7 @@
       "inventory_section": 2,
       "inventory_section_title": "Project foundation and compatibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Minecraft Compatibility Engine",
@@ -398,7 +500,7 @@
       "manifest_component_type": "project_foundation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-BASE-007"
       },
       "dependency_links": {
         "required": true,
@@ -406,11 +508,23 @@
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-BASE-007-01",
+          "AC-BASE-007-02",
+          "AC-BASE-007-03",
+          "AC-BASE-007-04"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-BASE-007-01",
+          "TC-BASE-007-02",
+          "TC-BASE-007-03",
+          "TC-BASE-007-04"
+        ]
       },
       "evidence": {
         "required": true,
@@ -420,7 +534,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping, acceptance criteria and test cases are documented. Dependency edges are proposed, not approved. Java/Bedrock runtime compatibility and all implementation evidence remain unverified.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -437,7 +551,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "BASE-008",
@@ -445,7 +560,7 @@
       "inventory_section": 2,
       "inventory_section_title": "Project foundation and compatibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Minecraft Compatibility Engine",
@@ -453,7 +568,7 @@
       "manifest_component_type": "project_foundation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-BASE-008"
       },
       "dependency_links": {
         "required": true,
@@ -461,11 +576,25 @@
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-BASE-008-01",
+          "AC-BASE-008-02",
+          "AC-BASE-008-03",
+          "AC-BASE-008-04",
+          "AC-BASE-008-05"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-BASE-008-01",
+          "TC-BASE-008-02",
+          "TC-BASE-008-03",
+          "TC-BASE-008-04",
+          "TC-BASE-008-05"
+        ]
       },
       "evidence": {
         "required": true,
@@ -475,7 +604,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping, acceptance criteria and test cases are documented. Dependency edges are proposed, not approved. Java/Bedrock runtime compatibility and all implementation evidence remain unverified.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -492,7 +621,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "BASE-009",
@@ -500,7 +630,7 @@
       "inventory_section": 2,
       "inventory_section_title": "Project foundation and compatibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Minecraft Compatibility Engine",
@@ -508,19 +638,35 @@
       "manifest_component_type": "project_foundation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-BASE-009"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-008-009"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-BASE-009-01",
+          "AC-BASE-009-02",
+          "AC-BASE-009-03",
+          "AC-BASE-009-04",
+          "AC-BASE-009-05"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-BASE-009-01",
+          "TC-BASE-009-02",
+          "TC-BASE-009-03",
+          "TC-BASE-009-04",
+          "TC-BASE-009-05"
+        ]
       },
       "evidence": {
         "required": true,
@@ -530,7 +676,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping, acceptance criteria and test cases are documented. Dependency edges are proposed, not approved. Java/Bedrock runtime compatibility and all implementation evidence remain unverified.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -547,7 +693,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "BASE-010",
@@ -555,7 +702,7 @@
       "inventory_section": 2,
       "inventory_section_title": "Project foundation and compatibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Minecraft Compatibility Engine",
@@ -563,19 +710,35 @@
       "manifest_component_type": "project_foundation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-BASE-010"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-003-010",
+          "DEP-BASE-004-010",
+          "DEP-BASE-005-010"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-BASE-010-01",
+          "AC-BASE-010-02",
+          "AC-BASE-010-03",
+          "AC-BASE-010-04"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-BASE-010-01",
+          "TC-BASE-010-02",
+          "TC-BASE-010-03",
+          "TC-BASE-010-04"
+        ]
       },
       "evidence": {
         "required": true,
@@ -585,7 +748,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping, acceptance criteria and test cases are documented. Dependency edges are proposed, not approved. Java/Bedrock runtime compatibility and all implementation evidence remain unverified.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -602,7 +765,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "BASE-011",
@@ -610,7 +774,7 @@
       "inventory_section": 2,
       "inventory_section_title": "Project foundation and compatibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Minecraft Compatibility Engine",
@@ -618,19 +782,34 @@
       "manifest_component_type": "project_foundation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-BASE-011"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-002-011",
+          "DEP-BASE-003-011"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-BASE-011-01",
+          "AC-BASE-011-02",
+          "AC-BASE-011-03",
+          "AC-BASE-011-04"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-BASE-011-01",
+          "TC-BASE-011-02",
+          "TC-BASE-011-03",
+          "TC-BASE-011-04"
+        ]
       },
       "evidence": {
         "required": true,
@@ -640,7 +819,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping, acceptance criteria and test cases are documented. Dependency edges are proposed, not approved. Java/Bedrock runtime compatibility and all implementation evidence remain unverified.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -657,7 +836,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "BASE-012",
@@ -665,7 +845,7 @@
       "inventory_section": 2,
       "inventory_section_title": "Project foundation and compatibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Minecraft Compatibility Engine",
@@ -673,19 +853,34 @@
       "manifest_component_type": "project_foundation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-BASE-012"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-005-012"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-BASE-012-01",
+          "AC-BASE-012-02",
+          "AC-BASE-012-03",
+          "AC-BASE-012-04",
+          "AC-BASE-012-05"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-BASE-012-01",
+          "TC-BASE-012-02",
+          "TC-BASE-012-03",
+          "TC-BASE-012-04"
+        ]
       },
       "evidence": {
         "required": true,
@@ -695,7 +890,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping, acceptance criteria and test cases are documented. Dependency edges are proposed, not approved. Java/Bedrock runtime compatibility and all implementation evidence remain unverified.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -712,7 +907,8 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md"
     },
     {
       "feature_id": "PLY-001",
@@ -12829,5 +13025,194 @@
     "specification": "docs/FIRST_PLAYABLE_VERTICAL_SLICE_SPEC_V1.md",
     "status": "scope_selected_feature_level_mapping_pending",
     "rule": "Every feature requires independent Java and Bedrock applicability, implementation mapping and acceptance evidence. Do not infer cross-platform parity."
-  }
+  },
+  "dependency_edge_schema": "schemas/feature-dependency-edge.v1.schema.json",
+  "dependency_edges": [
+    {
+      "edge_id": "DEP-BASE-001-002",
+      "source_feature_id": "BASE-001",
+      "target_feature_id": "BASE-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "Edition determines the version domains to resolve.",
+      "specification_ref": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "shared"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-001-004",
+      "source_feature_id": "BASE-001",
+      "target_feature_id": "BASE-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "Edition determines the valid loader and pack platform.",
+      "specification_ref": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "shared"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-001-005",
+      "source_feature_id": "BASE-001",
+      "target_feature_id": "BASE-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "Dependencies must be scoped to the selected edition.",
+      "specification_ref": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "shared"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-002-004",
+      "source_feature_id": "BASE-002",
+      "target_feature_id": "BASE-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "The game version constrains compatible loaders and pack formats.",
+      "specification_ref": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "shared"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-002-006",
+      "source_feature_id": "BASE-002",
+      "target_feature_id": "BASE-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "Version constraints are inputs to dependency resolution.",
+      "specification_ref": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "shared"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-002-011",
+      "source_feature_id": "BASE-002",
+      "target_feature_id": "BASE-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "Environment preflight must verify the selected game version.",
+      "specification_ref": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "shared"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-003-010",
+      "source_feature_id": "BASE-003",
+      "target_feature_id": "BASE-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "Runtime role determines component execution and distribution roles.",
+      "specification_ref": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "shared"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-003-011",
+      "source_feature_id": "BASE-003",
+      "target_feature_id": "BASE-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "Preflight requirements depend on the selected runtime.",
+      "specification_ref": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "shared"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-004-005",
+      "source_feature_id": "BASE-004",
+      "target_feature_id": "BASE-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "Loader and platform determine valid dependency families.",
+      "specification_ref": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "shared"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-004-006",
+      "source_feature_id": "BASE-004",
+      "target_feature_id": "BASE-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "Dependency resolution must enforce loader and platform compatibility.",
+      "specification_ref": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "shared"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-004-010",
+      "source_feature_id": "BASE-004",
+      "target_feature_id": "BASE-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "Loader/platform affects component packaging and runtime roles.",
+      "specification_ref": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "shared"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-005-006",
+      "source_feature_id": "BASE-005",
+      "target_feature_id": "BASE-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "Declared dependencies must be resolved and conflict-checked.",
+      "specification_ref": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "shared"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-005-010",
+      "source_feature_id": "BASE-005",
+      "target_feature_id": "BASE-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "Dependency roles affect distribution and runtime placement.",
+      "specification_ref": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "shared"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-005-012",
+      "source_feature_id": "BASE-005",
+      "target_feature_id": "BASE-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "Third-party dependencies require provenance and license records.",
+      "specification_ref": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "shared"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-008-009",
+      "source_feature_id": "BASE-008",
+      "target_feature_id": "BASE-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "Persistent configuration changes require versioned migration rules.",
+      "specification_ref": "docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "shared"
+      ]
+    }
+  ],
+  "traceability_update_notes": [
+    "BASE-001..BASE-012 are mapped to feature-specific requirements, acceptance criteria and test cases in the foundation compatibility specification.",
+    "The 15 feature-to-feature dependency edges are proposed and require review; they do not constitute implementation dependencies verified in code.",
+    "Java Edition, Bedrock Edition and parity remain not_assessed until target-specific builds, runtime tests and evidence exist.",
+    "All 232 implementation statuses remain not_implemented_verified; no evidence records were created by this documentation update."
+  ]
 }
