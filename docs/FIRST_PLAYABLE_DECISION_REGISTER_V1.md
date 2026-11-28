@@ -417,3 +417,12 @@ The existing 232-feature catalog and traceability matrix remain the granular sou
 A current-state assessment is recorded at `docs/ZOMBIE_INVASION_FEATURE_TRACEABILITY_GAP_ASSESSMENT_V1.md`. The source matrix contains 232 feature records across 18 inventory sections. All 232 remain planned and need traceability review; Java, Bedrock and parity are not assessed for all 232; no feature-level dependency edges, defined acceptance criteria, test cases or evidence records are present in the matrix.
 
 This is a gap report, not a change in approval or implementation status. Existing owner/spec assignments are proposed. Feature-by-feature applicability, requirement provenance, dependencies, acceptance criteria and target-specific mappings must be completed before any matrix status is advanced.
+
+
+## 41. Foundation compatibility traceability specification (2026-11-28)
+
+A detailed feature-level specification has been added at `docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md` for BASE-001 through BASE-012.
+
+It defines 12 requirement records, 32 proposed dependency edges, 55 acceptance criteria and 51 test cases, including independent Java 26.3 + Fabric and Bedrock 26.60 + stable Script API 2.11.0 mappings. It also records first-slice runtime boundaries, target-specific dependency resolution, namespaces, configuration/save migration, client/server roles, environment preflight and asset licensing.
+
+This is a detailed design proposal, not a claim that the 12 features are implemented or runtime-verified. Exact toolchain pins and target environment checks remain required at implementation start. The machine-readable feature matrix has not been advanced until dependency-edge and target-status semantics are formalized.
