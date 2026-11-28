@@ -151,7 +151,7 @@ Java 26.3 + Fabric and Bedrock 26.60 + stable Script API 2.11.0 are separate imp
 - TC-PLY-008-01: TC-PLY-008-01 idempotent experience award and skill unlock
 - TC-PLY-008-02: TC-PLY-008-02 skill modifiers respect prerequisite and cap rules
 
-**Prerequisite feature IDs:** PLY-001, PLY-013.
+**Prerequisite feature IDs:** PLY-001.
 
 ### PLY-009 — Character creation, appearance, classes, origins
 
@@ -279,7 +279,7 @@ Java 26.3 + Fabric and Bedrock 26.60 + stable Script API 2.11.0 are separate imp
 - TC-ITEM-002-01: TC-ITEM-002-01 material source and processing accounting
 - TC-ITEM-002-02: TC-ITEM-002-02 harvest/reload does not duplicate resource
 
-**Prerequisite feature IDs:** CRAFT-008.
+**Prerequisite feature IDs:** BASE-007.
 
 ### ITEM-003 — Food, drinks, consumables, medicine
 
@@ -295,7 +295,7 @@ Java 26.3 + Fabric and Bedrock 26.60 + stable Script API 2.11.0 are separate imp
 - TC-ITEM-003-01: TC-ITEM-003-01 consume food/drink/medicine once
 - TC-ITEM-003-02: TC-ITEM-003-02 spoiled or contaminated consumable applies defined effect
 
-**Prerequisite feature IDs:** PLY-004, CRAFT-001.
+**Prerequisite feature IDs:** ITEM-001, CRAFT-001.
 
 ### ITEM-004 — Tools and tool tiers
 
@@ -327,7 +327,7 @@ Java 26.3 + Fabric and Bedrock 26.60 + stable Script API 2.11.0 are separate imp
 - TC-ITEM-005-01: TC-ITEM-005-01 ammo type, magazine and reload integrity
 - TC-ITEM-005-02: TC-ITEM-005-02 weapon noise and durability state consistency
 
-**Prerequisite feature IDs:** CRAFT-001, COM-004.
+**Prerequisite feature IDs:** ITEM-001, CRAFT-001.
 
 ### ITEM-006 — Armor, clothing, protective equipment
 
@@ -359,7 +359,7 @@ Java 26.3 + Fabric and Bedrock 26.60 + stable Script API 2.11.0 are separate imp
 - TC-ITEM-007-01: TC-ITEM-007-01 backpack family and capacity differentiation
 - TC-ITEM-007-02: TC-ITEM-007-02 nested backpack rejection and content persistence
 
-**Prerequisite feature IDs:** PLY-007, ITEM-001.
+**Prerequisite feature IDs:** ITEM-001.
 
 ### ITEM-008 — Utility, quest, key, currency, and collectible items
 
@@ -391,7 +391,7 @@ Java 26.3 + Fabric and Bedrock 26.60 + stable Script API 2.11.0 are separate imp
 - TC-ITEM-009-01: TC-ITEM-009-01 durability loss and break transition
 - TC-ITEM-009-02: TC-ITEM-009-02 repair consumes materials and respects maximum
 
-**Prerequisite feature IDs:** CRAFT-006.
+**Prerequisite feature IDs:** ITEM-001.
 
 ### ITEM-010 — Enchantments, modifiers, affixes, upgrades
 
@@ -455,7 +455,7 @@ Java 26.3 + Fabric and Bedrock 26.60 + stable Script API 2.11.0 are separate imp
 - TC-ITEM-013-01: TC-ITEM-013-01 container transaction atomicity
 - TC-ITEM-013-02: TC-ITEM-013-02 functional block save/reload preserves contents
 
-**Prerequisite feature IDs:** ITEM-011, CRAFT-004.
+**Prerequisite feature IDs:** ITEM-011.
 
 ### ITEM-014 — Fluids, gases, fuel, temperature interactions
 
@@ -471,7 +471,7 @@ Java 26.3 + Fabric and Bedrock 26.60 + stable Script API 2.11.0 are separate imp
 - TC-ITEM-014-01: TC-ITEM-014-01 fluid/fuel transfer conservation
 - TC-ITEM-014-02: TC-ITEM-014-02 temperature and contamination interaction boundaries
 
-**Prerequisite feature IDs:** CRAFT-005.
+**Prerequisite feature IDs:** ITEM-001.
 
 ### ITEM-015 — Placement, rotation, orientation, multiblock rules
 
