@@ -326,16 +326,22 @@ The roadmap is revised through versioned changes. A phase scope change updates d
 
 ## 21. Open decisions
 
-1. First playable vertical slice and its exact game target.
-2. First supported loader/runtime and Minecraft version.
-3. First production engine and companion component set.
-4. First-release hosting/local execution split.
-5. Which AI provider capabilities are mandatory versus optional.
-6. Initial team collaboration and role scope.
-7. First release's publishing and moderation scope.
-8. Target performance and recovery objectives.
-9. Which advanced engines are first-release versus post-release.
-10. Delivery milestone definitions and release criteria.
+The following decisions remain for the first playable milestone:
+1. Exact Java version and mod loader.
+2. Exact Bedrock version and API stability policy.
+3. Shared gameplay feature family and acceptance loop.
+4. Sequential or parallel development of the Java and Bedrock tracks.
+5. Test devices and runtime environments for both editions.
+6. Local/cloud/hybrid generation and build execution.
+7. AI provider, privacy, budget and offline fallback policy.
+8. First-slice identity and approval policy.
+
+The platform and broad content scope are no longer open: both Java and Bedrock are selected, and the first bundle is mod/world with target-specific packs and data components as applicable.
+
+Detailed register: `docs/FIRST_PLAYABLE_DECISION_REGISTER_V1.md`.
+First playable scope: `docs/FIRST_PLAYABLE_VERTICAL_SLICE_SPEC_V1.md`.
+
+
 
 ## 22. Implementation boundary
 
