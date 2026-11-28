@@ -89,3 +89,13 @@ Recommended Bedrock baseline profile (pending confirmation):
 ## 7. Implementation boundary
 
 This document records a dated compatibility recommendation only. It does not claim that these targets, loaders, APIs or build tools are already supported by the application. All versions must be revalidated from official sources at implementation start.
+
+
+## 8. User decision — approved baseline
+
+On 2026-11-28 the user explicitly approved the recommended targets:
+- Java 26.3 + Fabric.
+- Bedrock 26.60 + stable `@minecraft/server` 2.11.0.
+- Experimental Bedrock APIs disabled for the first playable milestone.
+
+The above are now confirmed project decisions. This section supersedes the pending-user-confirmation status in section 1 and the open approval questions in section 6. The dated research and toolchain versions remain subject to revalidation before implementation.
