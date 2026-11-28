@@ -320,3 +320,17 @@ These decisions require a separate support policy and source registry. Do not gu
 ## 17. Implementation boundary
 
 This document defines intended compatibility behavior only. It does not assert that version resolution, loader detection, dependency solving, registry synchronization, migration, or in-game testing exists in the current application. Implementation begins only after the complete design baseline is reviewed and explicitly approved.
+
+
+## 18. Dual-edition first milestone
+
+The first playable milestone explicitly selects both Java and Bedrock. The resolver must create and evaluate two separate target profiles, even when they share the same user-facing gameplay requirements.
+
+For every shared requirement, the report must provide:
+- Java target support outcome and evidence.
+- Bedrock target support outcome and evidence.
+- Platform-specific implementation notes.
+- Dependency and runtime constraints for each target.
+- Parity classification: native, adapted, limited, unsupported or unverified.
+
+Java loader selection and Bedrock API/format selection remain independent. No cross-edition compatibility may be inferred from a common feature name or manifest requirement. The first milestone cannot be marked fully playable until both target profiles pass their own agreed gates.
