@@ -334,3 +334,13 @@ Following the user's instruction to continue after the recommendation, an option
 The proposal preserves single-player as a complete mode and defines invite-only co-op, LAN, dedicated servers and future public/community servers; server-authoritative world state; roles and permissions; shared settlements; configurable PvP (recommended default disabled); NPC/faction attribution; death/revival and disconnect handling; multiplayer vehicles/convoys; atomic trade; moderation/privacy; version compatibility; persistence and performance limits.
 
 Important status distinction: the user has not yet explicitly approved multiplayer as a feature requirement or selected its policies. The document is a proposal awaiting review. It does not add multiplayer to the approved feature baseline and does not change the first playable milestone, which remains single-player by default. Java/Bedrock cross-play is not assumed and would require a separate compatibility/bridge project.
+
+
+
+## 34. World, regions, biomes and exploration — long-term design proposal (2026-11-28)
+
+A world-scale design proposal has been added at `docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md`. It expands the existing abandoned-town concept into a connected survival world with urban districts, small towns, villages, farms, forests, mountains, caves, rivers, lakes, coastal areas, ports, transport corridors, airports, military/restricted zones, research facilities and underground complexes.
+
+The proposal uses a hybrid authored/procedural content model, stable region and point-of-interest identifiers, discoverable map knowledge, regional persistence, bounded distant simulation, dynamic world events, region-specific resource distribution and independent Java/Bedrock parity evidence. It also integrates the user's previously requested day/night cycle, seasons, weather, power/water infrastructure, factions, hordes and transport systems.
+
+**Status distinction:** the abandoned expandable town and its functional safehouse, residential section, Market, Hospital and Police Station remain confirmed for the first playable slice. The larger region catalogue, world topology, procedural generation model and full world-scale simulation are proposals awaiting user decisions. They do not expand the first playable milestone automatically. No world generation or game implementation is claimed.
