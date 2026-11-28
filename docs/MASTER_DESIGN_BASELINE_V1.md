@@ -256,3 +256,51 @@ No approval actor, timestamp or approval digest is pre-filled. Approval must be 
 ## 16. Implementation boundary
 
 This document consolidates proposed design decisions and records open issues. It does not create backend functionality, production engines, user-interface behavior, database migrations or working game artifacts.
+
+
+## 17. User decision update — first playable slice (2026-11-28)
+
+The user has selected:
+- **Platforms:** both Minecraft Java Edition and Minecraft Bedrock Edition.
+- **Scope:** mod/world bundle, meaning a mod or add-on together with a map/world, datapack where supported, and resource pack.
+
+This decision supersedes the earlier open questions asking the user to choose Java versus Bedrock and whether the first slice is a mod or broader bundle. It does not select exact Minecraft versions, Java loader, Bedrock API/format level, or test environments; those remain open until verified and explicitly selected.
+
+### 17.1 Two platform-specific production tracks
+
+The first playable milestone contains two independently buildable and testable target tracks under one shared project manifest:
+
+**Java Edition track**
+- Java mod.
+- Java world/map.
+- Datapack.
+- Resource pack.
+- Exact Minecraft version and one selected mod loader are still to be decided.
+- Loader-specific build, load, integration and gameplay evidence is mandatory.
+
+**Bedrock Edition track**
+- Behavior-pack/add-on equivalent of the requested gameplay modification.
+- Bedrock world/map.
+- Resource pack.
+- Script API only where required and verified for the selected target.
+- Exact game version and supported API/format level remain to be decided.
+- Bedrock import, world-load, runtime, integration and gameplay evidence is mandatory.
+
+A Bedrock project does not contain a Java JAR, and a Java project does not contain a Bedrock behavior pack unless an explicitly supported separate target is declared. Shared intent and project data do not imply shared binaries or identical feature parity.
+
+### 17.2 Shared manifest and separate artifacts
+
+One project identity and shared requirements/feature intent are used across both targets. Each target has its own compatibility profile, component graph, generation jobs, artifact set, validation evidence and delivery bundle. Cross-target feature parity is reported per feature as supported, adapted, unsupported or not verified.
+
+### 17.3 Updated blocking decisions
+
+The platform and broad component scope are now selected. The remaining implementation blockers are:
+1. Exact Java Minecraft version and loader.
+2. Exact Bedrock version and required stable/experimental API policy.
+3. A concrete small gameplay feature set common to both tracks.
+4. Whether the two tracks must reach playable acceptance in the same milestone or can be delivered sequentially under the same milestone.
+5. Execution model and available Java/Bedrock test environments.
+6. AI provider and local/offline fallback policy.
+7. First-release identity, team approval and community scope.
+
+The baseline remains pending explicit baseline approval. This user decision alone does not open the coding gate.
