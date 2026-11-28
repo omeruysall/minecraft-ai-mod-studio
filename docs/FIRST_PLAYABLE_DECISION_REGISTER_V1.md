@@ -410,3 +410,10 @@ This is a long-term design proposal, not user approval of a specific chapter lis
 The cross-system map is recorded at `docs/ZOMBIE_INVASION_MASTER_FEATURE_DEPENDENCY_AND_IMPLEMENTATION_MAP_V1.md`. It consolidates feature families, logical dependency layers L0–L12, authoritative subsystem ownership, critical paths, circular-dependency hazards, first-playable versus long-term boundaries, manifest integration, proposed implementation waves and test gates.
 
 The existing 232-feature catalog and traceability matrix remain the granular source of feature IDs and per-feature status. This map does not bulk-mark features designed, approved, implemented or tested. Exact first-playable feature IDs, detailed roster/balance values, per-target feasibility and several milestone choices remain open. This is a design artifact only.
+
+
+## 40. Feature-level traceability gap assessment (2026-11-28)
+
+A current-state assessment is recorded at `docs/ZOMBIE_INVASION_FEATURE_TRACEABILITY_GAP_ASSESSMENT_V1.md`. The source matrix contains 232 feature records across 18 inventory sections. All 232 remain planned and need traceability review; Java, Bedrock and parity are not assessed for all 232; no feature-level dependency edges, defined acceptance criteria, test cases or evidence records are present in the matrix.
+
+This is a gap report, not a change in approval or implementation status. Existing owner/spec assignments are proposed. Feature-by-feature applicability, requirement provenance, dependencies, acceptance criteria and target-specific mappings must be completed before any matrix status is advanced.
