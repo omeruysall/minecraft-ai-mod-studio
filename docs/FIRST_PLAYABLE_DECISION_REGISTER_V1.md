@@ -209,3 +209,10 @@ The next required decision is to select Option A (Walker only), Option B (Walker
 The roster scope is approved. Exact health, speed, damage, spawn counts, encounter timings and balance values remain open for implementation-time tuning and repeatable solo-player tests. The approved design is documented in `docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md`.
 
 This decision does not mean the roster has been implemented or tested in-game.
+
+
+## 21. Combat and weapon scope — proposal awaiting user approval (2026-11-28)
+
+A cross-edition combat design proposal is recorded in `docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md`. It covers melee and ranged weapon models, optional firearms, ammunition scarcity, reload behavior, damage resolution, zombie-specific counterplay, noise interaction, inventory integration, exploit prevention and Java/Bedrock acceptance tests.
+
+The user has not yet approved whether the first playable slice includes melee only, melee plus non-firearm ranged weapons, or melee plus firearms. Weapon noise, durability and ammunition policy also remain open. No weapon or combat implementation is authorized by the proposal.
