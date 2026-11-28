@@ -181,3 +181,17 @@ Detailed roles, constraints and acceptance requirements: `docs/ZOMBIE_INVASION_M
 A separate proposal recommends that player death ends the current attempt with a DEFEAT result, then allows the player to manually restart the complete scenario from a clean authored baseline. Restart would reset scenario-owned wave state, zombies, defence points, fixed loot, objectives, radio progression and extraction state without deleting the world save or unrelated user content.
 
 This is **not a confirmed user decision**. The user has not yet approved the death/restart rule. Detailed requirements and acceptance tests: `docs/ZOMBIE_INVASION_DEATH_AND_RESTART_POLICY_V1.md`.
+
+
+## 19. Zombie roster — proposal awaiting user approval (2026-11-28)
+
+A staged roster proposal has been added in `docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md`:
+
+- Walker: baseline enemy.
+- Runner: fast, less durable pressure enemy.
+- Brute: slow, durable breach-pressure enemy.
+- Screamer, Exploder, Poisoner, Crawler and Armored variants: deferred candidates.
+
+The proposed first-slice choice is Option C (Walker + Runner + Brute), with strict encounter-budget limits and solo-player balance tests. This is a recommendation only. The user has not yet approved the roster or the inclusion of special archetypes.
+
+The next required decision is to select Option A (Walker only), Option B (Walker + Runner) or Option C (Walker + Runner + Brute). No roster implementation is authorized by this proposal.
