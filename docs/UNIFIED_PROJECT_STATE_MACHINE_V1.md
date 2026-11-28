@@ -244,3 +244,16 @@ On restart, reconcile persisted project state against job records and evidence. 
 ## 22. Implementation boundary
 
 This is a proposed lifecycle contract. It does not mean the backend currently implements these states, transition guards, event contracts or reconciliation logic.
+
+
+## 23. Dual-edition first-slice completion gate
+
+For the user-selected first playable milestone, the project contains separate Java and Bedrock target workflows under one shared project revision. Each target has its own component states, jobs, compatibility report, validation evidence and delivery bundle.
+
+The overall milestone cannot enter READY_FOR_DELIVERY until:
+- The Java target passes its required build, loader/world load, integration and gameplay gates.
+- The Bedrock target passes its required pack import, world load, integration and gameplay gates.
+- Each required target-specific test is PASSED or has an explicitly authorized waiver.
+- The combined project export references both target bundles and their independent evidence.
+
+A successful Java target does not compensate for a failed or untested Bedrock target. A successful Bedrock target does not compensate for a failed or untested Java target. Partial delivery may be offered only as a clearly labeled partial result and does not mark the dual-edition milestone complete.
