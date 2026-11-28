@@ -294,3 +294,10 @@ The user clarified that NPCs should naturally use the player's chosen in-game na
 This is more specific than generic dialogue or fourth-wall breaking. NPCs must receive reliable game-state facts (injuries, resources, vehicle condition, actions and quest history), use the chosen in-game display name naturally, and never invent diagnoses or events. Ordinary NPC dialogue addresses the in-world player; selected fourth-wall characters may separately address the human player directly.
 
 Detailed requirements and acceptance tests are in `docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md`. This is a design requirement only; no conversational AI or in-game dialogue implementation is claimed.
+
+
+## 31. User requirement — renewable power, energy storage and fuel infrastructure (2026-11-28)
+
+The user requested a solar power system, wind turbine system, storable energy and gasoline storage. The design expands this into a coherent electricity and fuel infrastructure: solar panels, wind turbines, fuel-powered generators, portable and fixed battery storage, gasoline/diesel containers and tanks, pumps and transfer, electrical distribution, base consumers, power priorities, maintenance and safety risks. It must integrate with base infrastructure, vehicle fuel, the bus mobile base, weather/day-night/season systems, loot and NPC contextual dialogue.
+
+This is a recorded feature requirement. Numerical balance, exact recipes, capacities, rates and detailed implementation choices remain open. See `docs/ZOMBIE_INVASION_POWER_GENERATION_STORAGE_AND_FUEL_INFRASTRUCTURE_DESIGN_V1.md`.
