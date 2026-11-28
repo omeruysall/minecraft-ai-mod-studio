@@ -3,8 +3,11 @@
   "project": {
     "id": "zombie-apocalypse",
     "name": "Zombie Apocalypse",
-    "description": "Java survival project with a custom world and coordinated gameplay systems.",
-    "tags": ["survival", "zombies"],
+    "description": "Cross-edition survival project with Java and Bedrock target implementations and coordinated playable worlds.",
+    "tags": [
+      "survival",
+      "zombies"
+    ],
     "created_at": "2026-11-28T00:00:00Z",
     "updated_at": "2026-11-28T00:00:00Z",
     "origin": "studio"
@@ -17,16 +20,40 @@
     "created_at": "2026-11-28T00:00:00Z",
     "migration": null
   },
-  "targets": [{
-    "id": "java-target",
-    "edition": "java",
-    "version": {"selection": "user_selected"},
-    "runtime": null,
-    "loader": null,
-    "java_runtime": null,
-    "deployment_roles": ["client", "singleplayer"],
-    "constraints": []
-  }],
+  "targets": [
+    {
+      "id": "java-target",
+      "edition": "java",
+      "version": {
+        "selection": "user_selected"
+      },
+      "runtime": null,
+      "loader": null,
+      "java_runtime": null,
+      "deployment_roles": [
+        "client",
+        "singleplayer"
+      ],
+      "constraints": []
+    },
+    {
+      "id": "bedrock-target",
+      "edition": "bedrock",
+      "version": {
+        "selection": "user_selected"
+      },
+      "runtime": null,
+      "loader": "bedrock",
+      "java_runtime": null,
+      "deployment_roles": [
+        "client",
+        "singleplayer"
+      ],
+      "constraints": [
+        "Use only APIs verified for the selected Bedrock version."
+      ]
+    }
+  ],
   "workflow": {
     "status": "awaiting_approval",
     "stage": "awaiting_approval",
@@ -42,50 +69,213 @@
       "category": "gameplay",
       "priority": "high",
       "status": "proposed",
-      "provenance": {"kind": "user", "reference_id": null, "confidence": 1},
-      "acceptance_criteria": ["Survival values persist after relogging."],
-      "component_ids": ["survival-mod"]
+      "provenance": {
+        "kind": "user",
+        "reference_id": null,
+        "confidence": 1
+      },
+      "acceptance_criteria": [
+        "Survival values persist after relogging."
+      ],
+      "component_ids": [
+        "survival-mod",
+        "survival-addon",
+        "survival-world-java",
+        "survival-world-bedrock",
+        "survival-datapack",
+        "survival-resource-java",
+        "survival-resource-bedrock"
+      ]
     }
   ],
   "components": [
     {
       "id": "survival-mod",
       "type": "java_mod",
-      "name": "Survival Systems",
-      "description": "Custom survival gameplay.",
+      "name": "Java Survival Mod",
+      "description": "Java-specific gameplay implementation.",
       "status": "proposed",
       "revision": 1,
-      "target_ids": ["java-target"],
+      "target_ids": [
+        "java-target"
+      ],
       "engine_owner": "java-mod-engine",
-      "requirement_ids": ["survival_hunger"],
+      "requirement_ids": [
+        "survival_hunger"
+      ],
       "dependency_ids": [],
       "source_artifact_ids": [],
       "output_artifact_ids": [],
       "configuration": {},
       "validation_summary": null,
       "supersedes": null,
-      "tags": ["gameplay"]
+      "tags": [
+        "gameplay",
+        "java"
+      ]
     },
     {
-      "id": "survival-world",
-      "type": "world",
-      "name": "Survival World",
-      "description": "A prepared and procedurally enhanced world.",
+      "id": "survival-addon",
+      "type": "bedrock_addon",
+      "name": "Bedrock Survival Add-on",
+      "description": "Bedrock-specific behavior pack/add-on implementation.",
       "status": "proposed",
       "revision": 1,
-      "target_ids": ["java-target"],
+      "target_ids": [
+        "bedrock-target"
+      ],
+      "engine_owner": "bedrock-addon-engine",
+      "requirement_ids": [
+        "survival_hunger"
+      ],
+      "dependency_ids": [],
+      "source_artifact_ids": [],
+      "output_artifact_ids": [],
+      "configuration": {
+        "script_api_required": false
+      },
+      "validation_summary": null,
+      "supersedes": null,
+      "tags": [
+        "gameplay",
+        "bedrock"
+      ]
+    },
+    {
+      "id": "survival-world-java",
+      "type": "world",
+      "name": "Java Survival World",
+      "description": "Playable Java Edition world.",
+      "status": "proposed",
+      "revision": 1,
+      "target_ids": [
+        "java-target"
+      ],
       "engine_owner": "map-world-engine",
+      "requirement_ids": [],
+      "dependency_ids": [
+        "survival-mod"
+      ],
+      "source_artifact_ids": [],
+      "output_artifact_ids": [],
+      "configuration": {
+        "strategy": "hybrid"
+      },
+      "validation_summary": null,
+      "supersedes": null,
+      "tags": [
+        "world",
+        "java"
+      ]
+    },
+    {
+      "id": "survival-world-bedrock",
+      "type": "world",
+      "name": "Bedrock Survival World",
+      "description": "Playable Bedrock Edition world.",
+      "status": "proposed",
+      "revision": 1,
+      "target_ids": [
+        "bedrock-target"
+      ],
+      "engine_owner": "map-world-engine",
+      "requirement_ids": [],
+      "dependency_ids": [
+        "survival-addon"
+      ],
+      "source_artifact_ids": [],
+      "output_artifact_ids": [],
+      "configuration": {
+        "strategy": "hybrid"
+      },
+      "validation_summary": null,
+      "supersedes": null,
+      "tags": [
+        "world",
+        "bedrock"
+      ]
+    },
+    {
+      "id": "survival-datapack",
+      "type": "java_datapack",
+      "name": "Java Survival Datapack",
+      "description": "Java datapack component; not a Bedrock datapack.",
+      "status": "proposed",
+      "revision": 1,
+      "target_ids": [
+        "java-target"
+      ],
+      "engine_owner": "datapack-engine",
+      "requirement_ids": [
+        "survival_hunger"
+      ],
+      "dependency_ids": [
+        "survival-mod"
+      ],
+      "source_artifact_ids": [],
+      "output_artifact_ids": [],
+      "configuration": {},
+      "validation_summary": null,
+      "supersedes": null,
+      "tags": [
+        "datapack",
+        "java"
+      ]
+    },
+    {
+      "id": "survival-resource-java",
+      "type": "resource_pack",
+      "name": "Java Survival Resources",
+      "description": "Java-specific resource pack.",
+      "status": "proposed",
+      "revision": 1,
+      "target_ids": [
+        "java-target"
+      ],
+      "engine_owner": "resource-pack-engine",
       "requirement_ids": [],
       "dependency_ids": [],
       "source_artifact_ids": [],
       "output_artifact_ids": [],
-      "configuration": {"strategy": "hybrid"},
+      "configuration": {
+        "format": "java"
+      },
       "validation_summary": null,
       "supersedes": null,
-      "tags": ["world"]
+      "tags": [
+        "resource-pack",
+        "java"
+      ]
+    },
+    {
+      "id": "survival-resource-bedrock",
+      "type": "resource_pack",
+      "name": "Bedrock Survival Resources",
+      "description": "Bedrock-specific resource pack.",
+      "status": "proposed",
+      "revision": 1,
+      "target_ids": [
+        "bedrock-target"
+      ],
+      "engine_owner": "resource-pack-engine",
+      "requirement_ids": [],
+      "dependency_ids": [],
+      "source_artifact_ids": [],
+      "output_artifact_ids": [],
+      "configuration": {
+        "format": "bedrock"
+      },
+      "validation_summary": null,
+      "supersedes": null,
+      "tags": [
+        "resource-pack",
+        "bedrock"
+      ]
     }
   ],
-  "dependency_graph": {"edges": []},
+  "dependency_graph": {
+    "edges": []
+  },
   "assets": [],
   "generation": {
     "plan_id": "plan-001",
@@ -96,8 +286,14 @@
     "configuration_refs": []
   },
   "approvals": [],
-  "validation": {"plans": [], "evidence": []},
+  "validation": {
+    "plans": [],
+    "evidence": []
+  },
   "deliverables": [],
-  "collaboration": {"membership_refs": [], "visibility": "private"},
+  "collaboration": {
+    "membership_refs": [],
+    "visibility": "private"
+  },
   "extensions": {}
 }
