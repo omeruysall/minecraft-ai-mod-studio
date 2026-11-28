@@ -394,3 +394,10 @@ The first playable milestone target profiles are confirmed:
 - Experimental Bedrock APIs disabled.
 
 Phase 0 no longer needs to ask the user to select these versions/loaders/API stability settings. It must instead verify the official toolchain metadata and pin tested patch versions before implementation. The common gameplay feature set and test environment decisions remain open.
+
+
+## 25. Zombie Invasion dependency-map handoff
+
+The project-specific feature/dependency and implementation map is `docs/ZOMBIE_INVASION_MASTER_FEATURE_DEPENDENCY_AND_IMPLEMENTATION_MAP_V1.md`. It provides L0–L12 dependency layers, feature-family ownership and prerequisite mapping, circular-dependency mitigations, first-playable/long-term boundaries, target-specific delivery rules and proposed implementation waves W0–W10.
+
+This is a planning refinement, not a change to the roadmap's implementation gate. The design baseline, exact first-playable feature mapping, test environments and per-feature Java/Bedrock feasibility still require review before coding begins. The user-approved platform baseline remains Java 26.3 + Fabric and Bedrock 26.60 + stable Script API 2.11.0, with experimental APIs disabled.
