@@ -394,3 +394,12 @@ A comprehensive world-scale simulation specification has been added:
 It integrates the persistent world hierarchy and clock; region state; resource taxonomy and finite-flow accounting; renewable, finite, manufactured and recovered resources; production/consumption; supply chains and logistics; storage and spoilage; regional scarcity and markets; settlement population and needs; factions and diplomacy; regional zombie pressure; environmental feedback; infrastructure networks; player agency; information/radio knowledge; active/near/distant simulation; persistence and save migration; shared event/transaction contracts; and independent Java/Bedrock implementation evidence.
 
 This document consolidates existing user-approved long-term requirements into a world simulation architecture. It does not add every system to the first playable milestone. Calendar scale, resource rates, market curves, population demand, outbreak propagation, simulation budgets and milestone sequencing remain open design/balance decisions. No code, game artifact, runtime test or cross-edition validation is claimed.
+
+
+## 38. Player journey, campaign and long-term progression — integrated design added (2026-11-28)
+
+A unified progression specification has been added at `docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md`.
+
+It organizes the long-term player journey into survival, stable safehouse, self-sufficiency, community/regional influence, advanced capability/exploration and world-shaping endgame stages. It defines parallel skill/progression tracks, typed unlocks and prerequisite graphs, soft-lock prevention, quest and settlement-project boundaries, optional narrative structure, persistent player choices, endgame continuity, difficulty/accessibility, reward ownership, NPC work requirements, save migration and Java/Bedrock parity.
+
+This is a long-term design proposal, not user approval of a specific chapter list, ending list, XP model or death/restart policy. The previously proposed three-night extraction scenario remains unapproved as a full campaign structure. The first playable remains the existing bounded abandoned-town vertical slice. No campaign code or playable artifact is claimed.
