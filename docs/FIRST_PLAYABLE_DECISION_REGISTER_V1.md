@@ -521,3 +521,14 @@ The document proposes W0–W7 for the first playable and W8–W9 for long-term e
 The first-playable specification now consolidates the explicit user-approved Zombie Invasion requirements: Java 26.3 + Fabric, Bedrock 26.60 + stable Script API 2.11.0, experimental APIs off, single-player, abandoned expandable town, functional Market/Hospital/Police Station, Walker/Runner/Brute, melee + firearms, bounded gunfire noise, durability, finite ammunition, backpack variety and staged crafting with vanilla Crafting Table first.
 
 The consolidated scope is in `docs/FIRST_PLAYABLE_VERTICAL_SLICE_SPEC_V1.md` sections 22–23. Exact first-slice feature IDs and additional survival/medical/crafting details still need a revisioned manifest freeze; long-term systems do not automatically enter the first release.
+
+
+## 50. Current target toolchain research (2026-11-28)
+
+Current documentation research is recorded in `docs/ZOMBIE_INVASION_TARGET_TOOLCHAIN_COMPATIBILITY_RESEARCH_2026-11.md`.
+
+- Java 26.3: current Fabric Develop selector recommends Loader 0.20.1, Loom 1.19-SNAPSHOT and Fabric API 0.166.0+26.3; Java runtime baseline is 25+. Gradle wrapper version remains unresolved pending the chosen Loom build. These are compatibility candidates, not a completed project build.
+- Bedrock 26.60: the official 2026-10-27 changelog confirms stable `@minecraft/server` 2.11.0. Experimental APIs remain disabled. Pack format and actual import/load remain unverified.
+- The manifest records these candidates and keeps build verification false. Java and Bedrock runtime tests remain separate and not run.
+
+No implementation or compatibility pass is claimed.
