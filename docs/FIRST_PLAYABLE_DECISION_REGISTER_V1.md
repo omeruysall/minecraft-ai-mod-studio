@@ -325,3 +325,12 @@ Detailed design proposals and acceptance criteria are recorded in the following 
 - `docs/ZOMBIE_INVASION_CROSS_SYSTEM_INTEGRATION_AND_CONFLICT_AUDIT_V1.md`
 
 Approval applies to inclusion in the long-term design scope, not automatic inclusion in the first playable vertical slice. Detailed balance, feature sequencing, exact recipes, populations, simulation rates, and edition-specific implementation remain open. No implementation or playtest is claimed.
+
+
+## 33. Multiplayer and online world — design proposal for review (2026-11-28)
+
+Following the user's instruction to continue after the recommendation, an optional multiplayer design proposal was created at `docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md`.
+
+The proposal preserves single-player as a complete mode and defines invite-only co-op, LAN, dedicated servers and future public/community servers; server-authoritative world state; roles and permissions; shared settlements; configurable PvP (recommended default disabled); NPC/faction attribution; death/revival and disconnect handling; multiplayer vehicles/convoys; atomic trade; moderation/privacy; version compatibility; persistence and performance limits.
+
+Important status distinction: the user has not yet explicitly approved multiplayer as a feature requirement or selected its policies. The document is a proposal awaiting review. It does not add multiplayer to the approved feature baseline and does not change the first playable milestone, which remains single-player by default. Java/Bedrock cross-play is not assumed and would require a separate compatibility/bridge project.
