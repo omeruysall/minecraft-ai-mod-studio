@@ -103,3 +103,17 @@ The long-term feature scope is now broad, but it does not mean every system ente
 4. Profile water/power network updates and entity/event budgets.
 5. Test save/reload idempotency for resource transactions, horde events, fires and NPC tasks.
 6. Run cross-system integration tests before any production claim.
+
+
+## 10. Multiplayer authority extension (proposal; pending user approval)
+
+If optional multiplayer is approved, the server becomes the authoritative writer for shared world state. Existing domain owners remain unchanged:
+- Inventory, loot, crafting and trade remain owned by their existing services; multiplayer adds server validation and atomic commit, not duplicate ownership.
+- Base claims and permissions remain owned by the base/authorization contract; client UI is never the security boundary.
+- NPC, faction, quest, horde, zombie, fire, disease, ecology and transport services each retain their single authoritative world owner.
+- Replication distributes committed state; it must not replay gameplay side effects on clients.
+- Event and transaction IDs are idempotent across reconnect, retry and server recovery.
+- Java and Bedrock server adapters remain separate. Cross-edition play is not assumed.
+- The single-player path uses the same gameplay contracts without requiring a network server.
+
+Detailed multiplayer rules, proposed modes and open policy decisions are in `docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md`. This extension is a proposal only until the user approves multiplayer and its policies.
