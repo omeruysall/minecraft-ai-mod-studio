@@ -203,3 +203,12 @@ Verified matrix totals:
 - Implementation: all 232 remain `not_implemented_verified`; evidence records: 0.
 
 This closes the feature-level design traceability gap, not implementation or compatibility. The 486 edges remain proposed, not approved. The test cases are specifications, not executed tests. Exact toolchains, target builds, imports, runtime gameplay and manual playtests are still required before any feature can advance to implemented/built/tested. The first playable scope remains separately bounded; long-term feature mapping does not put every feature into the first release.
+
+
+## 14. Implementation readiness gate
+
+The implementation gate is defined in `docs/ZOMBIE_INVASION_IMPLEMENTATION_READINESS_AND_CODE_ENTRY_GATE_V1.md`.
+
+It records the current state as design traceability complete but not ready for full playable implementation. The remaining blockers are: (1) freeze exact first-playable feature IDs in a revisioned manifest; (2) revalidate/pin Fabric and Bedrock toolchains; (3) identify actual test runtimes/devices for both editions; (4) select local/cloud/hybrid build execution and sandbox workflow; and (5) resolve gameplay policies only if they are included in the first slice.
+
+The document proposes W0–W7 for the first playable and W8–W9 for long-term expansions. It does not start source-code implementation or claim a playable mod. Existing user-approved targets and gameplay decisions remain unchanged.
