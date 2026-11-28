@@ -222,3 +222,19 @@ The user approved the following first-slice compatibility targets:
 - Experimental Bedrock APIs are disabled.
 
 These target selections are confirmed. Exact build tool/runtime patch versions must be revalidated and pinned before implementation. The target-specific acceptance gates in this specification remain independent and mandatory.
+
+
+## 18. User-selected gameplay direction — Zombie Invasion (2026-11-28)
+
+The user selected Zombie Invasion as the shared gameplay concept. The detailed authoritative gameplay specification is `docs/ZOMBIE_INVASION_GAMEPLAY_DESIGN_V1.md`.
+
+Proposed first-slice acceptance scope:
+- One compact settlement map and one safehouse defence objective per edition.
+- Scavenging from a small set of authored supply points.
+- A limited, testable defence repair/reinforcement mechanic.
+- One basic zombie archetype.
+- Three escalating invasion phases with warnings and recovery transitions.
+- Clear victory/defeat conditions and reliable replay/reset.
+- Independent Java and Bedrock build, import/load, gameplay and performance evidence.
+
+This is the selected direction, but detailed first-slice parameters remain subject to user confirmation. The full long-term zombie roster, survivor simulation, advanced survival needs, vehicles, procedural open world and multiplayer are not automatically included in the first playable milestone.
