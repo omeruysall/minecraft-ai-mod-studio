@@ -10,7 +10,7 @@
     "source_status_counts": {
       "planned": 232
     },
-    "traceability_review_required": 150,
+    "traceability_review_required": 120,
     "implementation_claims": "none",
     "target_coverage_status_counts": {
       "java_edition": {
@@ -24,12 +24,12 @@
       }
     },
     "design_status_counts": {
-      "mapped": 82,
-      "needs_traceability_review": 150
+      "mapped": 112,
+      "needs_traceability_review": 120
     },
-    "feature_dependency_edge_count": 161,
-    "acceptance_criteria_defined_feature_count": 82,
-    "test_cases_defined_feature_count": 82,
+    "feature_dependency_edge_count": 225,
+    "acceptance_criteria_defined_feature_count": 112,
+    "test_cases_defined_feature_count": 112,
     "evidence_record_count": 0
   },
   "status_semantics": {
@@ -3758,27 +3758,38 @@
       "inventory_section": 6,
       "inventory_section_title": "Entities, mobs, NPCs, and AI",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "NPC & Character Production Engine",
-      "primary_specification": "docs/NPC_CHARACTER_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "npc_character",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ENT-001"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-001-TO-ENT-001",
+          "DEP-BASE-007-TO-ENT-001"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ENT-001-01",
+          "AC-ENT-001-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ENT-001-01",
+          "TC-ENT-001-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -3788,7 +3799,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -3805,7 +3816,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ENT-002",
@@ -3813,27 +3830,38 @@
       "inventory_section": 6,
       "inventory_section_title": "Entities, mobs, NPCs, and AI",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "NPC & Character Production Engine",
-      "primary_specification": "docs/NPC_CHARACTER_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "npc_character",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ENT-002"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-002-TO-ENT-002",
+          "DEP-CRAFT-007-TO-ENT-002"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ENT-002-01",
+          "AC-ENT-002-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ENT-002-01",
+          "TC-ENT-002-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -3843,7 +3871,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -3860,7 +3888,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ENT-003",
@@ -3868,27 +3902,38 @@
       "inventory_section": 6,
       "inventory_section_title": "Entities, mobs, NPCs, and AI",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "NPC & Character Production Engine",
-      "primary_specification": "docs/NPC_CHARACTER_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "npc_character",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ENT-003"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-COM-001-TO-ENT-003",
+          "DEP-ENT-001-TO-ENT-003"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ENT-003-01",
+          "AC-ENT-003-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ENT-003-01",
+          "TC-ENT-003-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -3898,7 +3943,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -3915,7 +3960,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ENT-004",
@@ -3923,27 +3974,38 @@
       "inventory_section": 6,
       "inventory_section_title": "Entities, mobs, NPCs, and AI",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "NPC & Character Production Engine",
-      "primary_specification": "docs/NPC_CHARACTER_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "npc_character",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ENT-004"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-PLY-014-TO-ENT-004",
+          "DEP-ENT-001-TO-ENT-004"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ENT-004-01",
+          "AC-ENT-004-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ENT-004-01",
+          "TC-ENT-004-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -3953,7 +4015,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -3970,7 +4032,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ENT-005",
@@ -3978,27 +4046,38 @@
       "inventory_section": 6,
       "inventory_section_title": "Entities, mobs, NPCs, and AI",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "NPC & Character Production Engine",
-      "primary_specification": "docs/NPC_CHARACTER_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "npc_character",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ENT-005"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ENT-003-TO-ENT-005",
+          "DEP-COM-001-TO-ENT-005"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ENT-005-01",
+          "AC-ENT-005-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ENT-005-01",
+          "TC-ENT-005-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -4008,7 +4087,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -4025,7 +4104,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ENT-006",
@@ -4033,27 +4118,37 @@
       "inventory_section": 6,
       "inventory_section_title": "Entities, mobs, NPCs, and AI",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "NPC & Character Production Engine",
-      "primary_specification": "docs/NPC_CHARACTER_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "npc_character",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ENT-006"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-COM-001-TO-ENT-006"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ENT-006-01",
+          "AC-ENT-006-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ENT-006-01",
+          "TC-ENT-006-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -4063,7 +4158,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -4080,7 +4175,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ENT-007",
@@ -4088,27 +4189,38 @@
       "inventory_section": 6,
       "inventory_section_title": "Entities, mobs, NPCs, and AI",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "NPC & Character Production Engine",
-      "primary_specification": "docs/NPC_CHARACTER_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "npc_character",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ENT-007"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ENT-001-TO-ENT-007",
+          "DEP-BASE-003-TO-ENT-007"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ENT-007-01",
+          "AC-ENT-007-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ENT-007-01",
+          "TC-ENT-007-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -4118,7 +4230,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -4135,7 +4247,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ENT-008",
@@ -4143,27 +4261,38 @@
       "inventory_section": 6,
       "inventory_section_title": "Entities, mobs, NPCs, and AI",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "NPC & Character Production Engine",
-      "primary_specification": "docs/NPC_CHARACTER_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "npc_character",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ENT-008"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ENT-007-TO-ENT-008",
+          "DEP-COM-001-TO-ENT-008"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ENT-008-01",
+          "AC-ENT-008-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ENT-008-01",
+          "TC-ENT-008-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -4173,7 +4302,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -4190,7 +4319,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ENT-009",
@@ -4198,27 +4333,38 @@
       "inventory_section": 6,
       "inventory_section_title": "Entities, mobs, NPCs, and AI",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "NPC & Character Production Engine",
-      "primary_specification": "docs/NPC_CHARACTER_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "npc_character",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ENT-009"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ENT-007-TO-ENT-009",
+          "DEP-ENT-004-TO-ENT-009"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ENT-009-01",
+          "AC-ENT-009-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ENT-009-01",
+          "TC-ENT-009-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -4228,7 +4374,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -4245,7 +4391,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ENT-010",
@@ -4253,27 +4405,38 @@
       "inventory_section": 6,
       "inventory_section_title": "Entities, mobs, NPCs, and AI",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "NPC & Character Production Engine",
-      "primary_specification": "docs/NPC_CHARACTER_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "npc_character",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ENT-010"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ENT-008-TO-ENT-010",
+          "DEP-ENT-003-TO-ENT-010"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ENT-010-01",
+          "AC-ENT-010-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ENT-010-01",
+          "TC-ENT-010-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -4283,7 +4446,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -4300,7 +4463,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ENT-011",
@@ -4308,27 +4477,37 @@
       "inventory_section": 6,
       "inventory_section_title": "Entities, mobs, NPCs, and AI",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "NPC & Character Production Engine",
-      "primary_specification": "docs/NPC_CHARACTER_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "npc_character",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ENT-011"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-PLY-004-TO-ENT-011"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ENT-011-01",
+          "AC-ENT-011-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ENT-011-01",
+          "TC-ENT-011-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -4338,7 +4517,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -4355,7 +4534,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ENT-012",
@@ -4363,27 +4548,38 @@
       "inventory_section": 6,
       "inventory_section_title": "Entities, mobs, NPCs, and AI",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "NPC & Character Production Engine",
-      "primary_specification": "docs/NPC_CHARACTER_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "npc_character",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ENT-012"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ENT-001-TO-ENT-012",
+          "DEP-ENT-003-TO-ENT-012"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ENT-012-01",
+          "AC-ENT-012-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ENT-012-01",
+          "TC-ENT-012-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -4393,7 +4589,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -4410,7 +4606,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ENT-013",
@@ -4418,27 +4620,39 @@
       "inventory_section": 6,
       "inventory_section_title": "Entities, mobs, NPCs, and AI",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "NPC & Character Production Engine",
-      "primary_specification": "docs/NPC_CHARACTER_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "npc_character",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ENT-013"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ENT-002-TO-ENT-013",
+          "DEP-ITEM-003-TO-ENT-013",
+          "DEP-CRAFT-007-TO-ENT-013"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ENT-013-01",
+          "AC-ENT-013-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ENT-013-01",
+          "TC-ENT-013-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -4448,7 +4662,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -4465,7 +4679,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ENT-014",
@@ -4473,27 +4693,39 @@
       "inventory_section": 6,
       "inventory_section_title": "Entities, mobs, NPCs, and AI",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "NPC & Character Production Engine",
-      "primary_specification": "docs/NPC_CHARACTER_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "npc_character",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ENT-014"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ENT-004-TO-ENT-014",
+          "DEP-PLY-014-TO-ENT-014",
+          "DEP-PLY-011-TO-ENT-014"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ENT-014-01",
+          "AC-ENT-014-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ENT-014-01",
+          "TC-ENT-014-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -4503,7 +4735,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -4520,7 +4752,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ENT-015",
@@ -4528,27 +4766,38 @@
       "inventory_section": 6,
       "inventory_section_title": "Entities, mobs, NPCs, and AI",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "NPC & Character Production Engine",
-      "primary_specification": "docs/NPC_CHARACTER_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "npc_character",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ENT-015"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ENT-014-TO-ENT-015",
+          "DEP-ITEM-008-TO-ENT-015"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ENT-015-01",
+          "AC-ENT-015-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ENT-015-01",
+          "TC-ENT-015-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -4558,7 +4807,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -4575,7 +4824,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ENT-016",
@@ -4583,27 +4838,38 @@
       "inventory_section": 6,
       "inventory_section_title": "Entities, mobs, NPCs, and AI",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "NPC & Character Production Engine",
-      "primary_specification": "docs/NPC_CHARACTER_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "npc_character",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ENT-016"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ENT-001-TO-ENT-016",
+          "DEP-ITEM-016-TO-ENT-016"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ENT-016-01",
+          "AC-ENT-016-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ENT-016-01",
+          "TC-ENT-016-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -4613,7 +4879,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -4630,7 +4896,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ENT-017",
@@ -4638,27 +4910,38 @@
       "inventory_section": 6,
       "inventory_section_title": "Entities, mobs, NPCs, and AI",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "NPC & Character Production Engine",
-      "primary_specification": "docs/NPC_CHARACTER_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "npc_character",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ENT-017"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-009-TO-ENT-017",
+          "DEP-QA-013-TO-ENT-017"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ENT-017-01",
+          "AC-ENT-017-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ENT-017-01",
+          "TC-ENT-017-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -4668,7 +4951,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -4685,7 +4968,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ENT-018",
@@ -4693,27 +4982,39 @@
       "inventory_section": 6,
       "inventory_section_title": "Entities, mobs, NPCs, and AI",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "NPC & Character Production Engine",
-      "primary_specification": "docs/NPC_CHARACTER_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "npc_character",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ENT-018"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-QA-014-TO-ENT-018",
+          "DEP-BASE-003-TO-ENT-018",
+          "DEP-QA-012-TO-ENT-018"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ENT-018-01",
+          "AC-ENT-018-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ENT-018-01",
+          "TC-ENT-018-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -4723,7 +5024,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -4740,7 +5041,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "COM-001",
@@ -4748,27 +5055,38 @@
       "inventory_section": 7,
       "inventory_section_title": "Combat, weapons, and damage",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Combat & AI Behavior Engine",
-      "primary_specification": "docs/COMBAT_AI_BEHAVIOR_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
       "manifest_component_type": "combat_ai",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-COM-001"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-PLY-002-TO-COM-001",
+          "DEP-ITEM-001-TO-COM-001"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-COM-001-01",
+          "AC-COM-001-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-COM-001-01",
+          "TC-COM-001-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -4778,7 +5096,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -4795,7 +5113,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "COM-002",
@@ -4803,27 +5126,38 @@
       "inventory_section": 7,
       "inventory_section_title": "Combat, weapons, and damage",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Combat & AI Behavior Engine",
-      "primary_specification": "docs/COMBAT_AI_BEHAVIOR_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
       "manifest_component_type": "combat_ai",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-COM-002"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-005-TO-COM-002",
+          "DEP-PLY-003-TO-COM-002"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-COM-002-01",
+          "AC-COM-002-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-COM-002-01",
+          "TC-COM-002-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -4833,7 +5167,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -4850,7 +5184,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "COM-003",
@@ -4858,27 +5197,38 @@
       "inventory_section": 7,
       "inventory_section_title": "Combat, weapons, and damage",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Combat & AI Behavior Engine",
-      "primary_specification": "docs/COMBAT_AI_BEHAVIOR_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
       "manifest_component_type": "combat_ai",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-COM-003"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-005-TO-COM-003",
+          "DEP-ITEM-001-TO-COM-003"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-COM-003-01",
+          "AC-COM-003-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-COM-003-01",
+          "TC-COM-003-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -4888,7 +5238,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -4905,7 +5255,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "COM-004",
@@ -4913,27 +5268,39 @@
       "inventory_section": 7,
       "inventory_section_title": "Combat, weapons, and damage",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Combat & AI Behavior Engine",
-      "primary_specification": "docs/COMBAT_AI_BEHAVIOR_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
       "manifest_component_type": "combat_ai",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-COM-004"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-005-TO-COM-004",
+          "DEP-ITEM-009-TO-COM-004",
+          "DEP-CRAFT-001-TO-COM-004"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-COM-004-01",
+          "AC-COM-004-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-COM-004-01",
+          "TC-COM-004-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -4943,7 +5310,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -4960,7 +5327,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "COM-005",
@@ -4968,27 +5340,38 @@
       "inventory_section": 7,
       "inventory_section_title": "Combat, weapons, and damage",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Combat & AI Behavior Engine",
-      "primary_specification": "docs/COMBAT_AI_BEHAVIOR_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
       "manifest_component_type": "combat_ai",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-COM-005"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-014-TO-COM-005",
+          "DEP-ITEM-001-TO-COM-005"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-COM-005-01",
+          "AC-COM-005-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-COM-005-01",
+          "TC-COM-005-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -4998,7 +5381,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -5015,7 +5398,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "COM-006",
@@ -5023,27 +5411,38 @@
       "inventory_section": 7,
       "inventory_section_title": "Combat, weapons, and damage",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Combat & AI Behavior Engine",
-      "primary_specification": "docs/COMBAT_AI_BEHAVIOR_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
       "manifest_component_type": "combat_ai",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-COM-006"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-PLY-002-TO-COM-006",
+          "DEP-ITEM-006-TO-COM-006"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-COM-006-01",
+          "AC-COM-006-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-COM-006-01",
+          "TC-COM-006-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -5053,7 +5452,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -5070,7 +5469,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "COM-007",
@@ -5078,27 +5482,38 @@
       "inventory_section": 7,
       "inventory_section_title": "Combat, weapons, and damage",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Combat & AI Behavior Engine",
-      "primary_specification": "docs/COMBAT_AI_BEHAVIOR_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
       "manifest_component_type": "combat_ai",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-COM-007"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-PLY-003-TO-COM-007",
+          "DEP-PLY-005-TO-COM-007"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-COM-007-01",
+          "AC-COM-007-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-COM-007-01",
+          "TC-COM-007-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -5108,7 +5523,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -5125,7 +5540,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "COM-008",
@@ -5133,27 +5553,38 @@
       "inventory_section": 7,
       "inventory_section_title": "Combat, weapons, and damage",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Combat & AI Behavior Engine",
-      "primary_specification": "docs/COMBAT_AI_BEHAVIOR_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
       "manifest_component_type": "combat_ai",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-COM-008"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-PLY-002-TO-COM-008",
+          "DEP-PLY-011-TO-COM-008"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-COM-008-01",
+          "AC-COM-008-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-COM-008-01",
+          "TC-COM-008-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -5163,7 +5594,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -5180,7 +5611,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "COM-009",
@@ -5188,27 +5624,38 @@
       "inventory_section": 7,
       "inventory_section_title": "Combat, weapons, and damage",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Combat & AI Behavior Engine",
-      "primary_specification": "docs/COMBAT_AI_BEHAVIOR_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
       "manifest_component_type": "combat_ai",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-COM-009"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-003-TO-COM-009",
+          "DEP-QA-012-TO-COM-009"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-COM-009-01",
+          "AC-COM-009-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-COM-009-01",
+          "TC-COM-009-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -5218,7 +5665,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -5235,7 +5682,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "COM-010",
@@ -5243,27 +5695,38 @@
       "inventory_section": 7,
       "inventory_section_title": "Combat, weapons, and damage",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Combat & AI Behavior Engine",
-      "primary_specification": "docs/COMBAT_AI_BEHAVIOR_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
       "manifest_component_type": "combat_ai",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-COM-010"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-PLY-002-TO-COM-010",
+          "DEP-QA-017-TO-COM-010"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-COM-010-01",
+          "AC-COM-010-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-COM-010-01",
+          "TC-COM-010-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -5273,7 +5736,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -5290,7 +5753,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "COM-011",
@@ -5298,27 +5766,39 @@
       "inventory_section": 7,
       "inventory_section_title": "Combat, weapons, and damage",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Combat & AI Behavior Engine",
-      "primary_specification": "docs/COMBAT_AI_BEHAVIOR_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
       "manifest_component_type": "combat_ai",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-COM-011"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-009-TO-COM-011",
+          "DEP-ITEM-001-TO-COM-011",
+          "DEP-QA-015-TO-COM-011"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-COM-011-01",
+          "AC-COM-011-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-COM-011-01",
+          "TC-COM-011-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -5328,7 +5808,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -5345,7 +5825,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "COM-012",
@@ -5353,27 +5838,39 @@
       "inventory_section": 7,
       "inventory_section_title": "Combat, weapons, and damage",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Combat & AI Behavior Engine",
-      "primary_specification": "docs/COMBAT_AI_BEHAVIOR_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
       "manifest_component_type": "combat_ai",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-COM-012"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-PLY-008-TO-COM-012",
+          "DEP-QA-014-TO-COM-012",
+          "DEP-QA-011-TO-COM-012"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-COM-012-01",
+          "AC-COM-012-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-COM-012-01",
+          "TC-COM-012-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -5383,7 +5880,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level design mapping exists. First-slice applicability and balance remain separately controlled; target runtime implementation and evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -5400,7 +5897,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_ENCOUNTER_DIRECTOR_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "VEH-001",
@@ -16127,6 +16629,838 @@
         "java",
         "bedrock"
       ]
+    },
+    {
+      "edge_id": "DEP-ITEM-001-TO-ENT-001",
+      "source_feature_id": "ITEM-001",
+      "target_feature_id": "ENT-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-001 requires the canonical contract from ITEM-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-007-TO-ENT-001",
+      "source_feature_id": "BASE-007",
+      "target_feature_id": "ENT-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-001 requires the canonical contract from BASE-007.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-002-TO-ENT-002",
+      "source_feature_id": "ITEM-002",
+      "target_feature_id": "ENT-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-002 requires the canonical contract from ITEM-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-CRAFT-007-TO-ENT-002",
+      "source_feature_id": "CRAFT-007",
+      "target_feature_id": "ENT-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-002 requires the canonical contract from CRAFT-007.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-COM-001-TO-ENT-003",
+      "source_feature_id": "COM-001",
+      "target_feature_id": "ENT-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-003 requires the canonical contract from COM-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-001-TO-ENT-003",
+      "source_feature_id": "ENT-001",
+      "target_feature_id": "ENT-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-003 requires the canonical contract from ENT-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-014-TO-ENT-004",
+      "source_feature_id": "PLY-014",
+      "target_feature_id": "ENT-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-004 requires the canonical contract from PLY-014.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-001-TO-ENT-004",
+      "source_feature_id": "ENT-001",
+      "target_feature_id": "ENT-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-004 requires the canonical contract from ENT-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-003-TO-ENT-005",
+      "source_feature_id": "ENT-003",
+      "target_feature_id": "ENT-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-005 requires the canonical contract from ENT-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-COM-001-TO-ENT-005",
+      "source_feature_id": "COM-001",
+      "target_feature_id": "ENT-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-005 requires the canonical contract from COM-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-COM-001-TO-ENT-006",
+      "source_feature_id": "COM-001",
+      "target_feature_id": "ENT-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-006 requires the canonical contract from COM-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-001-TO-ENT-007",
+      "source_feature_id": "ENT-001",
+      "target_feature_id": "ENT-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-007 requires the canonical contract from ENT-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-003-TO-ENT-007",
+      "source_feature_id": "BASE-003",
+      "target_feature_id": "ENT-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-007 requires the canonical contract from BASE-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-007-TO-ENT-008",
+      "source_feature_id": "ENT-007",
+      "target_feature_id": "ENT-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-008 requires the canonical contract from ENT-007.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-COM-001-TO-ENT-008",
+      "source_feature_id": "COM-001",
+      "target_feature_id": "ENT-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-008 requires the canonical contract from COM-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-007-TO-ENT-009",
+      "source_feature_id": "ENT-007",
+      "target_feature_id": "ENT-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-009 requires the canonical contract from ENT-007.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-004-TO-ENT-009",
+      "source_feature_id": "ENT-004",
+      "target_feature_id": "ENT-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-009 requires the canonical contract from ENT-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-008-TO-ENT-010",
+      "source_feature_id": "ENT-008",
+      "target_feature_id": "ENT-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-010 requires the canonical contract from ENT-008.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-003-TO-ENT-010",
+      "source_feature_id": "ENT-003",
+      "target_feature_id": "ENT-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-010 requires the canonical contract from ENT-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-004-TO-ENT-011",
+      "source_feature_id": "PLY-004",
+      "target_feature_id": "ENT-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-011 requires the canonical contract from PLY-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-001-TO-ENT-012",
+      "source_feature_id": "ENT-001",
+      "target_feature_id": "ENT-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-012 requires the canonical contract from ENT-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-003-TO-ENT-012",
+      "source_feature_id": "ENT-003",
+      "target_feature_id": "ENT-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-012 requires the canonical contract from ENT-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-002-TO-ENT-013",
+      "source_feature_id": "ENT-002",
+      "target_feature_id": "ENT-013",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-013 requires the canonical contract from ENT-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-003-TO-ENT-013",
+      "source_feature_id": "ITEM-003",
+      "target_feature_id": "ENT-013",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-013 requires the canonical contract from ITEM-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-CRAFT-007-TO-ENT-013",
+      "source_feature_id": "CRAFT-007",
+      "target_feature_id": "ENT-013",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-013 requires the canonical contract from CRAFT-007.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-004-TO-ENT-014",
+      "source_feature_id": "ENT-004",
+      "target_feature_id": "ENT-014",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-014 requires the canonical contract from ENT-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-014-TO-ENT-014",
+      "source_feature_id": "PLY-014",
+      "target_feature_id": "ENT-014",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-014 requires the canonical contract from PLY-014.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-011-TO-ENT-014",
+      "source_feature_id": "PLY-011",
+      "target_feature_id": "ENT-014",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-014 requires the canonical contract from PLY-011.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-014-TO-ENT-015",
+      "source_feature_id": "ENT-014",
+      "target_feature_id": "ENT-015",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-015 requires the canonical contract from ENT-014.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-008-TO-ENT-015",
+      "source_feature_id": "ITEM-008",
+      "target_feature_id": "ENT-015",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-015 requires the canonical contract from ITEM-008.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-001-TO-ENT-016",
+      "source_feature_id": "ENT-001",
+      "target_feature_id": "ENT-016",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-016 requires the canonical contract from ENT-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-016-TO-ENT-016",
+      "source_feature_id": "ITEM-016",
+      "target_feature_id": "ENT-016",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-016 requires the canonical contract from ITEM-016.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-009-TO-ENT-017",
+      "source_feature_id": "BASE-009",
+      "target_feature_id": "ENT-017",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-017 requires the canonical contract from BASE-009.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-013-TO-ENT-017",
+      "source_feature_id": "QA-013",
+      "target_feature_id": "ENT-017",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-017 requires the canonical contract from QA-013.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-014-TO-ENT-018",
+      "source_feature_id": "QA-014",
+      "target_feature_id": "ENT-018",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-018 requires the canonical contract from QA-014.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-003-TO-ENT-018",
+      "source_feature_id": "BASE-003",
+      "target_feature_id": "ENT-018",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-018 requires the canonical contract from BASE-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-012-TO-ENT-018",
+      "source_feature_id": "QA-012",
+      "target_feature_id": "ENT-018",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ENT-018 requires the canonical contract from QA-012.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-002-TO-COM-001",
+      "source_feature_id": "PLY-002",
+      "target_feature_id": "COM-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-001 requires the canonical contract from PLY-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-001-TO-COM-001",
+      "source_feature_id": "ITEM-001",
+      "target_feature_id": "COM-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-001 requires the canonical contract from ITEM-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-005-TO-COM-002",
+      "source_feature_id": "ITEM-005",
+      "target_feature_id": "COM-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-002 requires the canonical contract from ITEM-005.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-003-TO-COM-002",
+      "source_feature_id": "PLY-003",
+      "target_feature_id": "COM-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-002 requires the canonical contract from PLY-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-005-TO-COM-003",
+      "source_feature_id": "ITEM-005",
+      "target_feature_id": "COM-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-003 requires the canonical contract from ITEM-005.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-001-TO-COM-003",
+      "source_feature_id": "ITEM-001",
+      "target_feature_id": "COM-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-003 requires the canonical contract from ITEM-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-005-TO-COM-004",
+      "source_feature_id": "ITEM-005",
+      "target_feature_id": "COM-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-004 requires the canonical contract from ITEM-005.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-009-TO-COM-004",
+      "source_feature_id": "ITEM-009",
+      "target_feature_id": "COM-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-004 requires the canonical contract from ITEM-009.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-CRAFT-001-TO-COM-004",
+      "source_feature_id": "CRAFT-001",
+      "target_feature_id": "COM-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-004 requires the canonical contract from CRAFT-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-014-TO-COM-005",
+      "source_feature_id": "ITEM-014",
+      "target_feature_id": "COM-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-005 requires the canonical contract from ITEM-014.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-001-TO-COM-005",
+      "source_feature_id": "ITEM-001",
+      "target_feature_id": "COM-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-005 requires the canonical contract from ITEM-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-002-TO-COM-006",
+      "source_feature_id": "PLY-002",
+      "target_feature_id": "COM-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-006 requires the canonical contract from PLY-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-006-TO-COM-006",
+      "source_feature_id": "ITEM-006",
+      "target_feature_id": "COM-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-006 requires the canonical contract from ITEM-006.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-003-TO-COM-007",
+      "source_feature_id": "PLY-003",
+      "target_feature_id": "COM-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-007 requires the canonical contract from PLY-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-005-TO-COM-007",
+      "source_feature_id": "PLY-005",
+      "target_feature_id": "COM-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-007 requires the canonical contract from PLY-005.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-002-TO-COM-008",
+      "source_feature_id": "PLY-002",
+      "target_feature_id": "COM-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-008 requires the canonical contract from PLY-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-011-TO-COM-008",
+      "source_feature_id": "PLY-011",
+      "target_feature_id": "COM-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-008 requires the canonical contract from PLY-011.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-003-TO-COM-009",
+      "source_feature_id": "BASE-003",
+      "target_feature_id": "COM-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-009 requires the canonical contract from BASE-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-012-TO-COM-009",
+      "source_feature_id": "QA-012",
+      "target_feature_id": "COM-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-009 requires the canonical contract from QA-012.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-002-TO-COM-010",
+      "source_feature_id": "PLY-002",
+      "target_feature_id": "COM-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-010 requires the canonical contract from PLY-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-017-TO-COM-010",
+      "source_feature_id": "QA-017",
+      "target_feature_id": "COM-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-010 requires the canonical contract from QA-017.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-009-TO-COM-011",
+      "source_feature_id": "ITEM-009",
+      "target_feature_id": "COM-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-011 requires the canonical contract from ITEM-009.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-001-TO-COM-011",
+      "source_feature_id": "ITEM-001",
+      "target_feature_id": "COM-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-011 requires the canonical contract from ITEM-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-015-TO-COM-011",
+      "source_feature_id": "QA-015",
+      "target_feature_id": "COM-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-011 requires the canonical contract from QA-015.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-008-TO-COM-012",
+      "source_feature_id": "PLY-008",
+      "target_feature_id": "COM-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-012 requires the canonical contract from PLY-008.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-014-TO-COM-012",
+      "source_feature_id": "QA-014",
+      "target_feature_id": "COM-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-012 requires the canonical contract from QA-014.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-011-TO-COM-012",
+      "source_feature_id": "QA-011",
+      "target_feature_id": "COM-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "COM-012 requires the canonical contract from QA-011.",
+      "specification_ref": "docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
     }
   ],
   "traceability_update_notes": [
@@ -16135,6 +17469,7 @@
     "Java Edition, Bedrock Edition and parity remain not_assessed until target-specific builds, runtime tests and evidence exist.",
     "All 232 implementation statuses remain not_implemented_verified; no evidence records were created by this documentation update.",
     "QA-001..QA-018 and SHIP-001..SHIP-012 are mapped to feature-specific requirements, acceptance criteria, test cases and proposed dependency edges in docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md.",
-    "PLY-001..PLY-014, ITEM-001..ITEM-016 and CRAFT-001..CRAFT-010 are mapped in docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md. Their balance and first-playable applicability remain controlled by the decision register."
+    "PLY-001..PLY-014, ITEM-001..ITEM-016 and CRAFT-001..CRAFT-010 are mapped in docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md. Their balance and first-playable applicability remain controlled by the decision register.",
+    "COM-001..COM-012 and ENT-001..ENT-018 are mapped in docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md. First-slice combat and zombie decisions remain distinct from optional explosives, bosses, PvP and future multiplayer scope."
   ]
 }
