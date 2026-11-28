@@ -39,3 +39,14 @@ A project is only labelled playable after the supported launch and integration t
 - in-game or automated game-test validation.
 
 Unsupported tests must be marked “not run”, never silently treated as passed.
+
+
+## 2.1 Product delivery surface — standalone web application
+
+The creation experience is delivered through the Minecraft AI Mod Studio website, not through the ChatGPT conversation used to plan this product.
+
+The user opens the Studio website, signs in, creates or opens a project, and describes the desired Minecraft content in the Studio's own chat workspace. The Studio then analyzes the request, presents a structured creation plan and component table, waits for explicit approval, runs the approved generation/build/test workflow, and presents downloadable playable artifacts and evidence.
+
+The website is the user-facing product surface. Backend services, AI orchestration, target-specific generators, isolated build/test workers and artifact storage provide the underlying execution. A chat interface by itself is not sufficient: the product must create real files and packages, validate them, and expose the results in the user's project workspace.
+
+This current ChatGPT conversation is a planning and product-design channel only. It is not the deployed Studio website, does not execute the Studio's generation pipeline, and must not be presented as the place where the user will author or run the finished mod.
