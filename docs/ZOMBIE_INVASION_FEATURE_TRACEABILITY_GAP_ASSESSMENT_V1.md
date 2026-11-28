@@ -172,3 +172,4 @@ The group order is a review proposal. It does not make multiplayer, admin, Studi
 ## 8. Implementation boundary
 
 This is a static assessment of the current planning matrix. It does not modify the 232 feature statuses, implement features, validate Java/Bedrock compatibility, or claim tests. The next traceability work must fill feature-level requirements, dependencies, acceptance criteria and target mappings in controlled revisions.
+## 9. Controlled traceability update
