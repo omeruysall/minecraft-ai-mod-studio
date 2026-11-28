@@ -426,3 +426,4 @@ A detailed feature-level specification has been added at `docs/ZOMBIE_INVASION_F
 It defines 12 requirement records, 32 proposed dependency edges, 55 acceptance criteria and 51 test cases, including independent Java 26.3 + Fabric and Bedrock 26.60 + stable Script API 2.11.0 mappings. It also records first-slice runtime boundaries, target-specific dependency resolution, namespaces, configuration/save migration, client/server roles, environment preflight and asset licensing.
 
 This is a detailed design proposal, not a claim that the 12 features are implemented or runtime-verified. Exact toolchain pins and target environment checks remain required at implementation start. The machine-readable feature matrix has not been advanced until dependency-edge and target-status semantics are formalized.
+## 42. Foundation feature traceability matrix v1.2.0
