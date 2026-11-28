@@ -299,3 +299,14 @@ The implementation gate is defined in `docs/ZOMBIE_INVASION_IMPLEMENTATION_READI
 It records the current state as design traceability complete but not ready for full playable implementation. The remaining blockers are: (1) freeze exact first-playable feature IDs in a revisioned manifest; (2) revalidate/pin Fabric and Bedrock toolchains; (3) identify actual test runtimes/devices for both editions; (4) select local/cloud/hybrid build execution and sandbox workflow; and (5) resolve gameplay policies only if they are included in the first slice.
 
 The document proposes W0–W7 for the first playable and W8–W9 for long-term expansions. It does not start source-code implementation or claim a playable mod. Existing user-approved targets and gameplay decisions remain unchanged.
+
+
+## 24. Target toolchain evidence boundary
+
+Current documentation research is recorded in `docs/ZOMBIE_INVASION_TARGET_TOOLCHAIN_COMPATIBILITY_RESEARCH_2026-11.md`.
+
+- Java 26.3: current Fabric Develop selector recommends Loader 0.20.1, Loom 1.19-SNAPSHOT and Fabric API 0.166.0+26.3; Java runtime baseline is 25+. Gradle wrapper version remains unresolved pending the chosen Loom build. These are compatibility candidates, not a completed project build.
+- Bedrock 26.60: the official 2026-10-27 changelog confirms stable `@minecraft/server` 2.11.0. Experimental APIs remain disabled. Pack format and actual import/load remain unverified.
+- The manifest records these candidates and keeps build verification false. Java and Bedrock runtime tests remain separate and not run.
+
+No implementation or compatibility pass is claimed.
