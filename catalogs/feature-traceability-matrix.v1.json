@@ -10,7 +10,7 @@
     "source_status_counts": {
       "planned": 232
     },
-    "traceability_review_required": 45,
+    "traceability_review_required": 0,
     "implementation_claims": "none",
     "target_coverage_status_counts": {
       "java_edition": {
@@ -24,12 +24,12 @@
       }
     },
     "design_status_counts": {
-      "mapped": 187,
-      "needs_traceability_review": 45
+      "mapped": 232,
+      "needs_traceability_review": 0
     },
-    "feature_dependency_edge_count": 385,
-    "acceptance_criteria_defined_feature_count": 187,
-    "test_cases_defined_feature_count": 187,
+    "feature_dependency_edge_count": 486,
+    "acceptance_criteria_defined_feature_count": 232,
+    "test_cases_defined_feature_count": 232,
     "evidence_record_count": 0
   },
   "status_semantics": {
@@ -11262,27 +11262,39 @@
       "inventory_section": 14,
       "inventory_section_title": "Multiplayer and server operations",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Multiplayer & Server Runtime",
-      "primary_specification": "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md",
       "manifest_component_type": "multiplayer",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-MP-001"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-003-TO-MP-001",
+          "DEP-BASE-010-TO-MP-001",
+          "DEP-QA-001-TO-MP-001"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-MP-001-01",
+          "AC-MP-001-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-MP-001-01",
+          "TC-MP-001-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11292,7 +11304,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11309,7 +11321,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "MP-002",
@@ -11317,27 +11333,38 @@
       "inventory_section": 14,
       "inventory_section_title": "Multiplayer and server operations",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Multiplayer & Server Runtime",
-      "primary_specification": "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md",
       "manifest_component_type": "multiplayer",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-MP-002"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-MP-001-TO-MP-002",
+          "DEP-BASE-010-TO-MP-002"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-MP-002-01",
+          "AC-MP-002-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-MP-002-01",
+          "TC-MP-002-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11347,7 +11374,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11364,7 +11391,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "MP-003",
@@ -11372,27 +11403,39 @@
       "inventory_section": 14,
       "inventory_section_title": "Multiplayer and server operations",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Multiplayer & Server Runtime",
-      "primary_specification": "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md",
       "manifest_component_type": "multiplayer",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-MP-003"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-MP-001-TO-MP-003",
+          "DEP-BASE-009-TO-MP-003",
+          "DEP-QA-013-TO-MP-003"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-MP-003-01",
+          "AC-MP-003-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-MP-003-01",
+          "TC-MP-003-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11402,7 +11445,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11419,7 +11462,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "MP-004",
@@ -11427,27 +11474,40 @@
       "inventory_section": 14,
       "inventory_section_title": "Multiplayer and server operations",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Multiplayer & Server Runtime",
-      "primary_specification": "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md",
       "manifest_component_type": "multiplayer",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-MP-004"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-003-TO-MP-004",
+          "DEP-BASE-004-TO-MP-004",
+          "DEP-QA-009-TO-MP-004",
+          "DEP-QA-008-TO-MP-004"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-MP-004-01",
+          "AC-MP-004-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-MP-004-01",
+          "TC-MP-004-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11457,7 +11517,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11474,7 +11534,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "MP-005",
@@ -11482,27 +11546,39 @@
       "inventory_section": 14,
       "inventory_section_title": "Multiplayer and server operations",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Multiplayer & Server Runtime",
-      "primary_specification": "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md",
       "manifest_component_type": "multiplayer",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-MP-005"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-MP-001-TO-MP-005",
+          "DEP-BASE-010-TO-MP-005",
+          "DEP-SOC-004-TO-MP-005"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-MP-005-01",
+          "AC-MP-005-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-MP-005-01",
+          "TC-MP-005-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11512,7 +11588,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11529,7 +11605,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "MP-006",
@@ -11537,27 +11617,38 @@
       "inventory_section": 14,
       "inventory_section_title": "Multiplayer and server operations",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Multiplayer & Server Runtime",
-      "primary_specification": "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md",
       "manifest_component_type": "multiplayer",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-MP-006"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-MP-004-TO-MP-006",
+          "DEP-BASE-003-TO-MP-006"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-MP-006-01",
+          "AC-MP-006-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-MP-006-01",
+          "TC-MP-006-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11567,7 +11658,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11584,7 +11675,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "MP-007",
@@ -11592,27 +11687,38 @@
       "inventory_section": 14,
       "inventory_section_title": "Multiplayer and server operations",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Multiplayer & Server Runtime",
-      "primary_specification": "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md",
       "manifest_component_type": "multiplayer",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-MP-007"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-MP-001-TO-MP-007",
+          "DEP-MP-003-TO-MP-007"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-MP-007-01",
+          "AC-MP-007-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-MP-007-01",
+          "TC-MP-007-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11622,7 +11728,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11639,7 +11745,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "MP-008",
@@ -11647,27 +11757,38 @@
       "inventory_section": 14,
       "inventory_section_title": "Multiplayer and server operations",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Multiplayer & Server Runtime",
-      "primary_specification": "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md",
       "manifest_component_type": "multiplayer",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-MP-008"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-MP-002-TO-MP-008",
+          "DEP-QA-015-TO-MP-008"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-MP-008-01",
+          "AC-MP-008-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-MP-008-01",
+          "TC-MP-008-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11677,7 +11798,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11694,7 +11815,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "MP-009",
@@ -11702,27 +11827,39 @@
       "inventory_section": 14,
       "inventory_section_title": "Multiplayer and server operations",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Multiplayer & Server Runtime",
-      "primary_specification": "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md",
       "manifest_component_type": "multiplayer",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-MP-009"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-009-TO-MP-009",
+          "DEP-MP-003-TO-MP-009",
+          "DEP-QA-013-TO-MP-009"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-MP-009-01",
+          "AC-MP-009-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-MP-009-01",
+          "TC-MP-009-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11732,7 +11869,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11749,7 +11886,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "MP-010",
@@ -11757,27 +11898,38 @@
       "inventory_section": 14,
       "inventory_section_title": "Multiplayer and server operations",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Multiplayer & Server Runtime",
-      "primary_specification": "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md",
       "manifest_component_type": "multiplayer",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-MP-010"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-MP-005-TO-MP-010",
+          "DEP-ADMIN-003-TO-MP-010"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-MP-010-01",
+          "AC-MP-010-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-MP-010-01",
+          "TC-MP-010-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11787,7 +11939,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11804,7 +11956,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "MP-011",
@@ -11812,27 +11968,38 @@
       "inventory_section": 14,
       "inventory_section_title": "Multiplayer and server operations",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Multiplayer & Server Runtime",
-      "primary_specification": "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md",
       "manifest_component_type": "multiplayer",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-MP-011"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-QA-017-TO-MP-011",
+          "DEP-MP-004-TO-MP-011"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-MP-011-01",
+          "AC-MP-011-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-MP-011-01",
+          "TC-MP-011-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11842,7 +12009,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11859,7 +12026,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "MP-012",
@@ -11867,27 +12038,39 @@
       "inventory_section": 14,
       "inventory_section_title": "Multiplayer and server operations",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Multiplayer & Server Runtime",
-      "primary_specification": "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md",
       "manifest_component_type": "multiplayer",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-MP-012"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-001-TO-MP-012",
+          "DEP-BASE-002-TO-MP-012",
+          "DEP-MP-001-TO-MP-012"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-MP-012-01",
+          "AC-MP-012-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-MP-012-01",
+          "TC-MP-012-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11897,7 +12080,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11914,7 +12097,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "UI-001",
@@ -11922,7 +12109,7 @@
       "inventory_section": 15,
       "inventory_section_title": "Interface, controls, and accessibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Studio Interface & Client Workspace",
@@ -11930,19 +12117,29 @@
       "manifest_component_type": "studio_ui",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-UI-001"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-008-TO-UI-001"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-UI-001-01",
+          "AC-UI-001-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-UI-001-01",
+          "TC-UI-001-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -11952,7 +12149,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -11969,7 +12166,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/AI_ASSET_GENERATION_PIPELINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "UI-002",
@@ -11977,7 +12178,7 @@
       "inventory_section": 15,
       "inventory_section_title": "Interface, controls, and accessibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Studio Interface & Client Workspace",
@@ -11985,19 +12186,29 @@
       "manifest_component_type": "studio_ui",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-UI-002"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-UI-001-TO-UI-002"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-UI-002-01",
+          "AC-UI-002-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-UI-002-01",
+          "TC-UI-002-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12007,7 +12218,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12024,7 +12235,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/AI_ASSET_GENERATION_PIPELINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "UI-003",
@@ -12032,7 +12247,7 @@
       "inventory_section": 15,
       "inventory_section_title": "Interface, controls, and accessibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Studio Interface & Client Workspace",
@@ -12040,19 +12255,31 @@
       "manifest_component_type": "studio_ui",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-UI-003"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-007-TO-UI-003",
+          "DEP-ITEM-013-TO-UI-003",
+          "DEP-BASE-010-TO-UI-003"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-UI-003-01",
+          "AC-UI-003-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-UI-003-01",
+          "TC-UI-003-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12062,7 +12289,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12079,7 +12306,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/AI_ASSET_GENERATION_PIPELINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "UI-004",
@@ -12087,7 +12318,7 @@
       "inventory_section": 15,
       "inventory_section_title": "Interface, controls, and accessibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Studio Interface & Client Workspace",
@@ -12095,19 +12326,30 @@
       "manifest_component_type": "studio_ui",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-UI-004"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-CRAFT-004-TO-UI-004",
+          "DEP-VEH-006-TO-UI-004"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-UI-004-01",
+          "AC-UI-004-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-UI-004-01",
+          "TC-UI-004-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12117,7 +12359,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12134,7 +12376,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/AI_ASSET_GENERATION_PIPELINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "UI-005",
@@ -12142,7 +12388,7 @@
       "inventory_section": 15,
       "inventory_section_title": "Interface, controls, and accessibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Studio Interface & Client Workspace",
@@ -12150,19 +12396,31 @@
       "manifest_component_type": "studio_ui",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-UI-005"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-QUEST-001-TO-UI-005",
+          "DEP-STRUCT-010-TO-UI-005",
+          "DEP-PLY-014-TO-UI-005"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-UI-005-01",
+          "AC-UI-005-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-UI-005-01",
+          "TC-UI-005-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12172,7 +12430,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12189,7 +12447,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/AI_ASSET_GENERATION_PIPELINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "UI-006",
@@ -12197,7 +12459,7 @@
       "inventory_section": 15,
       "inventory_section_title": "Interface, controls, and accessibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Studio Interface & Client Workspace",
@@ -12205,19 +12467,29 @@
       "manifest_component_type": "studio_ui",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-UI-006"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-008-TO-UI-006"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-UI-006-01",
+          "AC-UI-006-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-UI-006-01",
+          "TC-UI-006-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12227,7 +12499,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12244,7 +12516,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/AI_ASSET_GENERATION_PIPELINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "UI-007",
@@ -12252,7 +12528,7 @@
       "inventory_section": 15,
       "inventory_section_title": "Interface, controls, and accessibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Studio Interface & Client Workspace",
@@ -12260,19 +12536,30 @@
       "manifest_component_type": "studio_ui",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-UI-007"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-003-TO-UI-007",
+          "DEP-UI-002-TO-UI-007"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-UI-007-01",
+          "AC-UI-007-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-UI-007-01",
+          "TC-UI-007-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12282,7 +12569,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12299,7 +12586,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/AI_ASSET_GENERATION_PIPELINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "UI-008",
@@ -12307,7 +12598,7 @@
       "inventory_section": 15,
       "inventory_section_title": "Interface, controls, and accessibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Studio Interface & Client Workspace",
@@ -12315,19 +12606,30 @@
       "manifest_component_type": "studio_ui",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-UI-008"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-UI-001-TO-UI-008",
+          "DEP-ENT-014-TO-UI-008"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-UI-008-01",
+          "AC-UI-008-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-UI-008-01",
+          "TC-UI-008-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12337,7 +12639,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12354,7 +12656,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/AI_ASSET_GENERATION_PIPELINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "UI-009",
@@ -12362,7 +12668,7 @@
       "inventory_section": 15,
       "inventory_section_title": "Interface, controls, and accessibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Studio Interface & Client Workspace",
@@ -12370,19 +12676,30 @@
       "manifest_component_type": "studio_ui",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-UI-009"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-UI-001-TO-UI-009",
+          "DEP-BASE-003-TO-UI-009"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-UI-009-01",
+          "AC-UI-009-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-UI-009-01",
+          "TC-UI-009-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12392,7 +12709,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12409,7 +12726,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/AI_ASSET_GENERATION_PIPELINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "UI-010",
@@ -12417,7 +12738,7 @@
       "inventory_section": 15,
       "inventory_section_title": "Interface, controls, and accessibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Studio Interface & Client Workspace",
@@ -12425,19 +12746,30 @@
       "manifest_component_type": "studio_ui",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-UI-010"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-UI-001-TO-UI-010",
+          "DEP-ASSET-005-TO-UI-010"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-UI-010-01",
+          "AC-UI-010-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-UI-010-01",
+          "TC-UI-010-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12447,7 +12779,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12464,7 +12796,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/AI_ASSET_GENERATION_PIPELINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "UI-011",
@@ -12472,7 +12808,7 @@
       "inventory_section": 15,
       "inventory_section_title": "Interface, controls, and accessibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Studio Interface & Client Workspace",
@@ -12480,19 +12816,30 @@
       "manifest_component_type": "studio_ui",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-UI-011"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-UI-001-TO-UI-011",
+          "DEP-UI-010-TO-UI-011"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-UI-011-01",
+          "AC-UI-011-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-UI-011-01",
+          "TC-UI-011-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12502,7 +12849,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12519,7 +12866,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/AI_ASSET_GENERATION_PIPELINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "UI-012",
@@ -12527,7 +12878,7 @@
       "inventory_section": 15,
       "inventory_section_title": "Interface, controls, and accessibility",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Studio Interface & Client Workspace",
@@ -12535,19 +12886,30 @@
       "manifest_component_type": "studio_ui",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-UI-012"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-008-TO-UI-012",
+          "DEP-ASSET-005-TO-UI-012"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-UI-012-01",
+          "AC-UI-012-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-UI-012-01",
+          "TC-UI-012-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12557,7 +12919,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12574,7 +12936,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/AI_ASSET_GENERATION_PIPELINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "ASSET-001",
@@ -12582,7 +12948,7 @@
       "inventory_section": 16,
       "inventory_section_title": "Visual, audio, and animation assets",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "AI Asset Generation Pipeline",
@@ -12590,19 +12956,30 @@
       "manifest_component_type": "assets",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ASSET-001"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-012-TO-ASSET-001",
+          "DEP-UI-001-TO-ASSET-001"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ASSET-001-01",
+          "AC-ASSET-001-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ASSET-001-01",
+          "TC-ASSET-001-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12612,7 +12989,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12629,7 +13006,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+        "docs/PUBLISHING_VERSIONING_UPDATE_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "ASSET-002",
@@ -12637,7 +13019,7 @@
       "inventory_section": 16,
       "inventory_section_title": "Visual, audio, and animation assets",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "AI Asset Generation Pipeline",
@@ -12645,19 +13027,30 @@
       "manifest_component_type": "assets",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ASSET-002"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-011-TO-ASSET-002",
+          "DEP-ITEM-016-TO-ASSET-002"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ASSET-002-01",
+          "AC-ASSET-002-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ASSET-002-01",
+          "TC-ASSET-002-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12667,7 +13060,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12684,7 +13077,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+        "docs/PUBLISHING_VERSIONING_UPDATE_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "ASSET-003",
@@ -12692,7 +13090,7 @@
       "inventory_section": 16,
       "inventory_section_title": "Visual, audio, and animation assets",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "AI Asset Generation Pipeline",
@@ -12700,19 +13098,30 @@
       "manifest_component_type": "assets",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ASSET-003"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ENT-001-TO-ASSET-003",
+          "DEP-ENT-016-TO-ASSET-003"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ASSET-003-01",
+          "AC-ASSET-003-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ASSET-003-01",
+          "TC-ASSET-003-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12722,7 +13131,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12739,7 +13148,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+        "docs/PUBLISHING_VERSIONING_UPDATE_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "ASSET-004",
@@ -12747,7 +13161,7 @@
       "inventory_section": 16,
       "inventory_section_title": "Visual, audio, and animation assets",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "AI Asset Generation Pipeline",
@@ -12755,19 +13169,30 @@
       "manifest_component_type": "assets",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ASSET-004"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-VEH-001-TO-ASSET-004",
+          "DEP-VEH-010-TO-ASSET-004"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ASSET-004-01",
+          "AC-ASSET-004-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ASSET-004-01",
+          "TC-ASSET-004-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12777,7 +13202,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12794,7 +13219,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+        "docs/PUBLISHING_VERSIONING_UPDATE_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "ASSET-005",
@@ -12802,7 +13232,7 @@
       "inventory_section": 16,
       "inventory_section_title": "Visual, audio, and animation assets",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "AI Asset Generation Pipeline",
@@ -12810,19 +13240,30 @@
       "manifest_component_type": "assets",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ASSET-005"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-UI-001-TO-ASSET-005",
+          "DEP-BASE-012-TO-ASSET-005"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ASSET-005-01",
+          "AC-ASSET-005-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ASSET-005-01",
+          "TC-ASSET-005-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12832,7 +13273,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12849,7 +13290,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+        "docs/PUBLISHING_VERSIONING_UPDATE_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "ASSET-006",
@@ -12857,7 +13303,7 @@
       "inventory_section": 16,
       "inventory_section_title": "Visual, audio, and animation assets",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "AI Asset Generation Pipeline",
@@ -12865,19 +13311,30 @@
       "manifest_component_type": "assets",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ASSET-006"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-WORLD-009-TO-ASSET-006",
+          "DEP-ENT-003-TO-ASSET-006"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ASSET-006-01",
+          "AC-ASSET-006-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ASSET-006-01",
+          "TC-ASSET-006-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12887,7 +13344,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12904,7 +13361,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+        "docs/PUBLISHING_VERSIONING_UPDATE_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "ASSET-007",
@@ -12912,7 +13374,7 @@
       "inventory_section": 16,
       "inventory_section_title": "Visual, audio, and animation assets",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "AI Asset Generation Pipeline",
@@ -12920,19 +13382,30 @@
       "manifest_component_type": "assets",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ASSET-007"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-WORLD-008-TO-ASSET-007",
+          "DEP-WORLD-009-TO-ASSET-007"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ASSET-007-01",
+          "AC-ASSET-007-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ASSET-007-01",
+          "TC-ASSET-007-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12942,7 +13415,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -12959,7 +13432,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+        "docs/PUBLISHING_VERSIONING_UPDATE_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "ASSET-008",
@@ -12967,7 +13445,7 @@
       "inventory_section": 16,
       "inventory_section_title": "Visual, audio, and animation assets",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "AI Asset Generation Pipeline",
@@ -12975,19 +13453,31 @@
       "manifest_component_type": "assets",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ASSET-008"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-016-TO-ASSET-008",
+          "DEP-COM-004-TO-ASSET-008",
+          "DEP-VEH-001-TO-ASSET-008"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ASSET-008-01",
+          "AC-ASSET-008-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ASSET-008-01",
+          "TC-ASSET-008-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -12997,7 +13487,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -13014,7 +13504,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+        "docs/PUBLISHING_VERSIONING_UPDATE_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "ASSET-009",
@@ -13022,7 +13517,7 @@
       "inventory_section": 16,
       "inventory_section_title": "Visual, audio, and animation assets",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "AI Asset Generation Pipeline",
@@ -13030,19 +13525,30 @@
       "manifest_component_type": "assets",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ASSET-009"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-WORLD-010-TO-ASSET-009",
+          "DEP-BASE-012-TO-ASSET-009"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ASSET-009-01",
+          "AC-ASSET-009-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ASSET-009-01",
+          "TC-ASSET-009-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -13052,7 +13558,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -13069,7 +13575,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+        "docs/PUBLISHING_VERSIONING_UPDATE_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "ASSET-010",
@@ -13077,7 +13588,7 @@
       "inventory_section": 16,
       "inventory_section_title": "Visual, audio, and animation assets",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "AI Asset Generation Pipeline",
@@ -13085,19 +13596,31 @@
       "manifest_component_type": "assets",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ASSET-010"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ASSET-007-TO-ASSET-010",
+          "DEP-ASSET-008-TO-ASSET-010",
+          "DEP-UI-010-TO-ASSET-010"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ASSET-010-01",
+          "AC-ASSET-010-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ASSET-010-01",
+          "TC-ASSET-010-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -13107,7 +13630,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -13124,7 +13647,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+        "docs/PUBLISHING_VERSIONING_UPDATE_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "ASSET-011",
@@ -13132,7 +13660,7 @@
       "inventory_section": 16,
       "inventory_section_title": "Visual, audio, and animation assets",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "AI Asset Generation Pipeline",
@@ -13140,19 +13668,30 @@
       "manifest_component_type": "assets",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ASSET-011"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-012-TO-ASSET-011",
+          "DEP-SHIP-010-TO-ASSET-011"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ASSET-011-01",
+          "AC-ASSET-011-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ASSET-011-01",
+          "TC-ASSET-011-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -13162,7 +13701,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -13179,7 +13718,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+        "docs/PUBLISHING_VERSIONING_UPDATE_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "ASSET-012",
@@ -13187,7 +13731,7 @@
       "inventory_section": 16,
       "inventory_section_title": "Visual, audio, and animation assets",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "AI Asset Generation Pipeline",
@@ -13195,19 +13739,31 @@
       "manifest_component_type": "assets",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ASSET-012"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-004-TO-ASSET-012",
+          "DEP-SHIP-004-TO-ASSET-012",
+          "DEP-QA-004-TO-ASSET-012"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ASSET-012-01",
+          "AC-ASSET-012-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ASSET-012-01",
+          "TC-ASSET-012-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -13217,7 +13773,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -13234,7 +13790,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+        "docs/PUBLISHING_VERSIONING_UPDATE_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "ADMIN-001",
@@ -13242,7 +13803,7 @@
       "inventory_section": 17,
       "inventory_section_title": "Commands, admin, and configuration",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Security & Permissions Engine",
@@ -13250,19 +13811,30 @@
       "manifest_component_type": "administration",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ADMIN-001"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-003-TO-ADMIN-001",
+          "DEP-BASE-010-TO-ADMIN-001"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ADMIN-001-01",
+          "AC-ADMIN-001-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ADMIN-001-01",
+          "TC-ADMIN-001-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -13272,7 +13844,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -13289,7 +13861,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/PUBLISHING_VERSIONING_UPDATE_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "ADMIN-002",
@@ -13297,7 +13873,7 @@
       "inventory_section": 17,
       "inventory_section_title": "Commands, admin, and configuration",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Security & Permissions Engine",
@@ -13305,19 +13881,30 @@
       "manifest_component_type": "administration",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ADMIN-002"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ADMIN-003-TO-ADMIN-002",
+          "DEP-BASE-010-TO-ADMIN-002"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ADMIN-002-01",
+          "AC-ADMIN-002-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ADMIN-002-01",
+          "TC-ADMIN-002-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -13327,7 +13914,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -13344,7 +13931,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/PUBLISHING_VERSIONING_UPDATE_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "ADMIN-003",
@@ -13352,7 +13943,7 @@
       "inventory_section": 17,
       "inventory_section_title": "Commands, admin, and configuration",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Security & Permissions Engine",
@@ -13360,19 +13951,30 @@
       "manifest_component_type": "administration",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ADMIN-003"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-010-TO-ADMIN-003",
+          "DEP-SOC-004-TO-ADMIN-003"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ADMIN-003-01",
+          "AC-ADMIN-003-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ADMIN-003-01",
+          "TC-ADMIN-003-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -13382,7 +13984,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -13399,7 +14001,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/PUBLISHING_VERSIONING_UPDATE_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "ADMIN-004",
@@ -13407,7 +14013,7 @@
       "inventory_section": 17,
       "inventory_section_title": "Commands, admin, and configuration",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Security & Permissions Engine",
@@ -13415,19 +14021,30 @@
       "manifest_component_type": "administration",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ADMIN-004"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-008-TO-ADMIN-004",
+          "DEP-QA-013-TO-ADMIN-004"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ADMIN-004-01",
+          "AC-ADMIN-004-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ADMIN-004-01",
+          "TC-ADMIN-004-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -13437,7 +14054,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -13454,7 +14071,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/PUBLISHING_VERSIONING_UPDATE_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "ADMIN-005",
@@ -13462,7 +14083,7 @@
       "inventory_section": 17,
       "inventory_section_title": "Commands, admin, and configuration",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Security & Permissions Engine",
@@ -13470,19 +14091,31 @@
       "manifest_component_type": "administration",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ADMIN-005"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-003-TO-ADMIN-005",
+          "DEP-WORLD-012-TO-ADMIN-005",
+          "DEP-ENT-012-TO-ADMIN-005"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ADMIN-005-01",
+          "AC-ADMIN-005-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ADMIN-005-01",
+          "TC-ADMIN-005-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -13492,7 +14125,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -13509,7 +14142,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/PUBLISHING_VERSIONING_UPDATE_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "ADMIN-006",
@@ -13517,7 +14154,7 @@
       "inventory_section": 17,
       "inventory_section_title": "Commands, admin, and configuration",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Security & Permissions Engine",
@@ -13525,19 +14162,30 @@
       "manifest_component_type": "administration",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ADMIN-006"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ECON-010-TO-ADMIN-006",
+          "DEP-BASE-010-TO-ADMIN-006"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ADMIN-006-01",
+          "AC-ADMIN-006-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ADMIN-006-01",
+          "TC-ADMIN-006-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -13547,7 +14195,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -13564,7 +14212,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/PUBLISHING_VERSIONING_UPDATE_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "ADMIN-007",
@@ -13572,7 +14224,7 @@
       "inventory_section": 17,
       "inventory_section_title": "Commands, admin, and configuration",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Security & Permissions Engine",
@@ -13580,19 +14232,30 @@
       "manifest_component_type": "administration",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ADMIN-007"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-QA-017-TO-ADMIN-007",
+          "DEP-BASE-010-TO-ADMIN-007"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ADMIN-007-01",
+          "AC-ADMIN-007-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ADMIN-007-01",
+          "TC-ADMIN-007-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -13602,7 +14265,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -13619,7 +14282,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/PUBLISHING_VERSIONING_UPDATE_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "ADMIN-008",
@@ -13627,7 +14294,7 @@
       "inventory_section": 17,
       "inventory_section_title": "Commands, admin, and configuration",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Security & Permissions Engine",
@@ -13635,19 +14302,30 @@
       "manifest_component_type": "administration",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ADMIN-008"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-QA-017-TO-ADMIN-008",
+          "DEP-BASE-012-TO-ADMIN-008"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ADMIN-008-01",
+          "AC-ADMIN-008-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ADMIN-008-01",
+          "TC-ADMIN-008-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -13657,7 +14335,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -13674,7 +14352,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/PUBLISHING_VERSIONING_UPDATE_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "ADMIN-009",
@@ -13682,7 +14364,7 @@
       "inventory_section": 17,
       "inventory_section_title": "Commands, admin, and configuration",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Security & Permissions Engine",
@@ -13690,19 +14372,31 @@
       "manifest_component_type": "administration",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ADMIN-009"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-008-TO-ADMIN-009",
+          "DEP-QA-015-TO-ADMIN-009",
+          "DEP-SHIP-012-TO-ADMIN-009"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ADMIN-009-01",
+          "AC-ADMIN-009-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ADMIN-009-01",
+          "TC-ADMIN-009-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -13712,7 +14406,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. Multiplayer/server and platform-specific UI/asset capabilities remain conditional on target feasibility, scope approval and runtime evidence.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -13729,7 +14423,11 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/PUBLISHING_VERSIONING_UPDATE_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "QA-001",
@@ -20768,6 +21466,1319 @@
         "java",
         "bedrock"
       ]
+    },
+    {
+      "edge_id": "DEP-BASE-003-TO-MP-001",
+      "source_feature_id": "BASE-003",
+      "target_feature_id": "MP-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-001 requires the canonical contract from BASE-003.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-010-TO-MP-001",
+      "source_feature_id": "BASE-010",
+      "target_feature_id": "MP-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-001 requires the canonical contract from BASE-010.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-001-TO-MP-001",
+      "source_feature_id": "QA-001",
+      "target_feature_id": "MP-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-001 requires the canonical contract from QA-001.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-MP-001-TO-MP-002",
+      "source_feature_id": "MP-001",
+      "target_feature_id": "MP-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-002 requires the canonical contract from MP-001.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-010-TO-MP-002",
+      "source_feature_id": "BASE-010",
+      "target_feature_id": "MP-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-002 requires the canonical contract from BASE-010.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-MP-001-TO-MP-003",
+      "source_feature_id": "MP-001",
+      "target_feature_id": "MP-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-003 requires the canonical contract from MP-001.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-009-TO-MP-003",
+      "source_feature_id": "BASE-009",
+      "target_feature_id": "MP-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-003 requires the canonical contract from BASE-009.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-013-TO-MP-003",
+      "source_feature_id": "QA-013",
+      "target_feature_id": "MP-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-003 requires the canonical contract from QA-013.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-003-TO-MP-004",
+      "source_feature_id": "BASE-003",
+      "target_feature_id": "MP-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-004 requires the canonical contract from BASE-003.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-004-TO-MP-004",
+      "source_feature_id": "BASE-004",
+      "target_feature_id": "MP-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-004 requires the canonical contract from BASE-004.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-009-TO-MP-004",
+      "source_feature_id": "QA-009",
+      "target_feature_id": "MP-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-004 requires the canonical contract from QA-009.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-008-TO-MP-004",
+      "source_feature_id": "QA-008",
+      "target_feature_id": "MP-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-004 requires the canonical contract from QA-008.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-MP-001-TO-MP-005",
+      "source_feature_id": "MP-001",
+      "target_feature_id": "MP-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-005 requires the canonical contract from MP-001.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-010-TO-MP-005",
+      "source_feature_id": "BASE-010",
+      "target_feature_id": "MP-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-005 requires the canonical contract from BASE-010.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SOC-004-TO-MP-005",
+      "source_feature_id": "SOC-004",
+      "target_feature_id": "MP-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-005 requires the canonical contract from SOC-004.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-MP-004-TO-MP-006",
+      "source_feature_id": "MP-004",
+      "target_feature_id": "MP-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-006 requires the canonical contract from MP-004.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-003-TO-MP-006",
+      "source_feature_id": "BASE-003",
+      "target_feature_id": "MP-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-006 requires the canonical contract from BASE-003.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-MP-001-TO-MP-007",
+      "source_feature_id": "MP-001",
+      "target_feature_id": "MP-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-007 requires the canonical contract from MP-001.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-MP-003-TO-MP-007",
+      "source_feature_id": "MP-003",
+      "target_feature_id": "MP-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-007 requires the canonical contract from MP-003.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-MP-002-TO-MP-008",
+      "source_feature_id": "MP-002",
+      "target_feature_id": "MP-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-008 requires the canonical contract from MP-002.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-015-TO-MP-008",
+      "source_feature_id": "QA-015",
+      "target_feature_id": "MP-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-008 requires the canonical contract from QA-015.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-009-TO-MP-009",
+      "source_feature_id": "BASE-009",
+      "target_feature_id": "MP-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-009 requires the canonical contract from BASE-009.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-MP-003-TO-MP-009",
+      "source_feature_id": "MP-003",
+      "target_feature_id": "MP-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-009 requires the canonical contract from MP-003.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-013-TO-MP-009",
+      "source_feature_id": "QA-013",
+      "target_feature_id": "MP-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-009 requires the canonical contract from QA-013.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-MP-005-TO-MP-010",
+      "source_feature_id": "MP-005",
+      "target_feature_id": "MP-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-010 requires the canonical contract from MP-005.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ADMIN-003-TO-MP-010",
+      "source_feature_id": "ADMIN-003",
+      "target_feature_id": "MP-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-010 requires the canonical contract from ADMIN-003.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-017-TO-MP-011",
+      "source_feature_id": "QA-017",
+      "target_feature_id": "MP-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-011 requires the canonical contract from QA-017.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-MP-004-TO-MP-011",
+      "source_feature_id": "MP-004",
+      "target_feature_id": "MP-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-011 requires the canonical contract from MP-004.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-001-TO-MP-012",
+      "source_feature_id": "BASE-001",
+      "target_feature_id": "MP-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-012 requires the canonical contract from BASE-001.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-002-TO-MP-012",
+      "source_feature_id": "BASE-002",
+      "target_feature_id": "MP-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-012 requires the canonical contract from BASE-002.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-MP-001-TO-MP-012",
+      "source_feature_id": "MP-001",
+      "target_feature_id": "MP-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "MP-012 requires the canonical contract from MP-001.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-008-TO-UI-001",
+      "source_feature_id": "BASE-008",
+      "target_feature_id": "UI-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "UI-001 requires the canonical contract from BASE-008.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-UI-001-TO-UI-002",
+      "source_feature_id": "UI-001",
+      "target_feature_id": "UI-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "UI-002 requires the canonical contract from UI-001.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-007-TO-UI-003",
+      "source_feature_id": "ITEM-007",
+      "target_feature_id": "UI-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "UI-003 requires the canonical contract from ITEM-007.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-013-TO-UI-003",
+      "source_feature_id": "ITEM-013",
+      "target_feature_id": "UI-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "UI-003 requires the canonical contract from ITEM-013.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-010-TO-UI-003",
+      "source_feature_id": "BASE-010",
+      "target_feature_id": "UI-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "UI-003 requires the canonical contract from BASE-010.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-CRAFT-004-TO-UI-004",
+      "source_feature_id": "CRAFT-004",
+      "target_feature_id": "UI-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "UI-004 requires the canonical contract from CRAFT-004.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-VEH-006-TO-UI-004",
+      "source_feature_id": "VEH-006",
+      "target_feature_id": "UI-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "UI-004 requires the canonical contract from VEH-006.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QUEST-001-TO-UI-005",
+      "source_feature_id": "QUEST-001",
+      "target_feature_id": "UI-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "UI-005 requires the canonical contract from QUEST-001.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-STRUCT-010-TO-UI-005",
+      "source_feature_id": "STRUCT-010",
+      "target_feature_id": "UI-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "UI-005 requires the canonical contract from STRUCT-010.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-014-TO-UI-005",
+      "source_feature_id": "PLY-014",
+      "target_feature_id": "UI-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "UI-005 requires the canonical contract from PLY-014.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-008-TO-UI-006",
+      "source_feature_id": "BASE-008",
+      "target_feature_id": "UI-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "UI-006 requires the canonical contract from BASE-008.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-003-TO-UI-007",
+      "source_feature_id": "BASE-003",
+      "target_feature_id": "UI-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "UI-007 requires the canonical contract from BASE-003.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-UI-002-TO-UI-007",
+      "source_feature_id": "UI-002",
+      "target_feature_id": "UI-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "UI-007 requires the canonical contract from UI-002.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-UI-001-TO-UI-008",
+      "source_feature_id": "UI-001",
+      "target_feature_id": "UI-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "UI-008 requires the canonical contract from UI-001.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-014-TO-UI-008",
+      "source_feature_id": "ENT-014",
+      "target_feature_id": "UI-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "UI-008 requires the canonical contract from ENT-014.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-UI-001-TO-UI-009",
+      "source_feature_id": "UI-001",
+      "target_feature_id": "UI-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "UI-009 requires the canonical contract from UI-001.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-003-TO-UI-009",
+      "source_feature_id": "BASE-003",
+      "target_feature_id": "UI-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "UI-009 requires the canonical contract from BASE-003.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-UI-001-TO-UI-010",
+      "source_feature_id": "UI-001",
+      "target_feature_id": "UI-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "UI-010 requires the canonical contract from UI-001.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ASSET-005-TO-UI-010",
+      "source_feature_id": "ASSET-005",
+      "target_feature_id": "UI-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "UI-010 requires the canonical contract from ASSET-005.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-UI-001-TO-UI-011",
+      "source_feature_id": "UI-001",
+      "target_feature_id": "UI-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "UI-011 requires the canonical contract from UI-001.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-UI-010-TO-UI-011",
+      "source_feature_id": "UI-010",
+      "target_feature_id": "UI-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "UI-011 requires the canonical contract from UI-010.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-008-TO-UI-012",
+      "source_feature_id": "BASE-008",
+      "target_feature_id": "UI-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "UI-012 requires the canonical contract from BASE-008.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ASSET-005-TO-UI-012",
+      "source_feature_id": "ASSET-005",
+      "target_feature_id": "UI-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "UI-012 requires the canonical contract from ASSET-005.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-012-TO-ASSET-001",
+      "source_feature_id": "BASE-012",
+      "target_feature_id": "ASSET-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-001 requires the canonical contract from BASE-012.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-UI-001-TO-ASSET-001",
+      "source_feature_id": "UI-001",
+      "target_feature_id": "ASSET-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-001 requires the canonical contract from UI-001.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-011-TO-ASSET-002",
+      "source_feature_id": "ITEM-011",
+      "target_feature_id": "ASSET-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-002 requires the canonical contract from ITEM-011.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-016-TO-ASSET-002",
+      "source_feature_id": "ITEM-016",
+      "target_feature_id": "ASSET-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-002 requires the canonical contract from ITEM-016.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-001-TO-ASSET-003",
+      "source_feature_id": "ENT-001",
+      "target_feature_id": "ASSET-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-003 requires the canonical contract from ENT-001.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-016-TO-ASSET-003",
+      "source_feature_id": "ENT-016",
+      "target_feature_id": "ASSET-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-003 requires the canonical contract from ENT-016.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-VEH-001-TO-ASSET-004",
+      "source_feature_id": "VEH-001",
+      "target_feature_id": "ASSET-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-004 requires the canonical contract from VEH-001.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-VEH-010-TO-ASSET-004",
+      "source_feature_id": "VEH-010",
+      "target_feature_id": "ASSET-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-004 requires the canonical contract from VEH-010.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-UI-001-TO-ASSET-005",
+      "source_feature_id": "UI-001",
+      "target_feature_id": "ASSET-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-005 requires the canonical contract from UI-001.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-012-TO-ASSET-005",
+      "source_feature_id": "BASE-012",
+      "target_feature_id": "ASSET-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-005 requires the canonical contract from BASE-012.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-009-TO-ASSET-006",
+      "source_feature_id": "WORLD-009",
+      "target_feature_id": "ASSET-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-006 requires the canonical contract from WORLD-009.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-003-TO-ASSET-006",
+      "source_feature_id": "ENT-003",
+      "target_feature_id": "ASSET-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-006 requires the canonical contract from ENT-003.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-008-TO-ASSET-007",
+      "source_feature_id": "WORLD-008",
+      "target_feature_id": "ASSET-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-007 requires the canonical contract from WORLD-008.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-009-TO-ASSET-007",
+      "source_feature_id": "WORLD-009",
+      "target_feature_id": "ASSET-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-007 requires the canonical contract from WORLD-009.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-016-TO-ASSET-008",
+      "source_feature_id": "ITEM-016",
+      "target_feature_id": "ASSET-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-008 requires the canonical contract from ITEM-016.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-COM-004-TO-ASSET-008",
+      "source_feature_id": "COM-004",
+      "target_feature_id": "ASSET-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-008 requires the canonical contract from COM-004.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-VEH-001-TO-ASSET-008",
+      "source_feature_id": "VEH-001",
+      "target_feature_id": "ASSET-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-008 requires the canonical contract from VEH-001.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-010-TO-ASSET-009",
+      "source_feature_id": "WORLD-010",
+      "target_feature_id": "ASSET-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-009 requires the canonical contract from WORLD-010.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-012-TO-ASSET-009",
+      "source_feature_id": "BASE-012",
+      "target_feature_id": "ASSET-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-009 requires the canonical contract from BASE-012.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ASSET-007-TO-ASSET-010",
+      "source_feature_id": "ASSET-007",
+      "target_feature_id": "ASSET-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-010 requires the canonical contract from ASSET-007.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ASSET-008-TO-ASSET-010",
+      "source_feature_id": "ASSET-008",
+      "target_feature_id": "ASSET-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-010 requires the canonical contract from ASSET-008.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-UI-010-TO-ASSET-010",
+      "source_feature_id": "UI-010",
+      "target_feature_id": "ASSET-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-010 requires the canonical contract from UI-010.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-012-TO-ASSET-011",
+      "source_feature_id": "BASE-012",
+      "target_feature_id": "ASSET-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-011 requires the canonical contract from BASE-012.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-010-TO-ASSET-011",
+      "source_feature_id": "SHIP-010",
+      "target_feature_id": "ASSET-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-011 requires the canonical contract from SHIP-010.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-004-TO-ASSET-012",
+      "source_feature_id": "BASE-004",
+      "target_feature_id": "ASSET-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-012 requires the canonical contract from BASE-004.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-004-TO-ASSET-012",
+      "source_feature_id": "SHIP-004",
+      "target_feature_id": "ASSET-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-012 requires the canonical contract from SHIP-004.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-004-TO-ASSET-012",
+      "source_feature_id": "QA-004",
+      "target_feature_id": "ASSET-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ASSET-012 requires the canonical contract from QA-004.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-003-TO-ADMIN-001",
+      "source_feature_id": "BASE-003",
+      "target_feature_id": "ADMIN-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ADMIN-001 requires the canonical contract from BASE-003.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-010-TO-ADMIN-001",
+      "source_feature_id": "BASE-010",
+      "target_feature_id": "ADMIN-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ADMIN-001 requires the canonical contract from BASE-010.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ADMIN-003-TO-ADMIN-002",
+      "source_feature_id": "ADMIN-003",
+      "target_feature_id": "ADMIN-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ADMIN-002 requires the canonical contract from ADMIN-003.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-010-TO-ADMIN-002",
+      "source_feature_id": "BASE-010",
+      "target_feature_id": "ADMIN-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ADMIN-002 requires the canonical contract from BASE-010.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-010-TO-ADMIN-003",
+      "source_feature_id": "BASE-010",
+      "target_feature_id": "ADMIN-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ADMIN-003 requires the canonical contract from BASE-010.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SOC-004-TO-ADMIN-003",
+      "source_feature_id": "SOC-004",
+      "target_feature_id": "ADMIN-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ADMIN-003 requires the canonical contract from SOC-004.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-008-TO-ADMIN-004",
+      "source_feature_id": "BASE-008",
+      "target_feature_id": "ADMIN-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ADMIN-004 requires the canonical contract from BASE-008.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-013-TO-ADMIN-004",
+      "source_feature_id": "QA-013",
+      "target_feature_id": "ADMIN-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ADMIN-004 requires the canonical contract from QA-013.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-003-TO-ADMIN-005",
+      "source_feature_id": "BASE-003",
+      "target_feature_id": "ADMIN-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ADMIN-005 requires the canonical contract from BASE-003.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-012-TO-ADMIN-005",
+      "source_feature_id": "WORLD-012",
+      "target_feature_id": "ADMIN-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ADMIN-005 requires the canonical contract from WORLD-012.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-012-TO-ADMIN-005",
+      "source_feature_id": "ENT-012",
+      "target_feature_id": "ADMIN-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ADMIN-005 requires the canonical contract from ENT-012.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ECON-010-TO-ADMIN-006",
+      "source_feature_id": "ECON-010",
+      "target_feature_id": "ADMIN-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ADMIN-006 requires the canonical contract from ECON-010.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-010-TO-ADMIN-006",
+      "source_feature_id": "BASE-010",
+      "target_feature_id": "ADMIN-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ADMIN-006 requires the canonical contract from BASE-010.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-017-TO-ADMIN-007",
+      "source_feature_id": "QA-017",
+      "target_feature_id": "ADMIN-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ADMIN-007 requires the canonical contract from QA-017.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-010-TO-ADMIN-007",
+      "source_feature_id": "BASE-010",
+      "target_feature_id": "ADMIN-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ADMIN-007 requires the canonical contract from BASE-010.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-017-TO-ADMIN-008",
+      "source_feature_id": "QA-017",
+      "target_feature_id": "ADMIN-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ADMIN-008 requires the canonical contract from QA-017.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-012-TO-ADMIN-008",
+      "source_feature_id": "BASE-012",
+      "target_feature_id": "ADMIN-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ADMIN-008 requires the canonical contract from BASE-012.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-008-TO-ADMIN-009",
+      "source_feature_id": "BASE-008",
+      "target_feature_id": "ADMIN-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ADMIN-009 requires the canonical contract from BASE-008.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-015-TO-ADMIN-009",
+      "source_feature_id": "QA-015",
+      "target_feature_id": "ADMIN-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ADMIN-009 requires the canonical contract from QA-015.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-012-TO-ADMIN-009",
+      "source_feature_id": "SHIP-012",
+      "target_feature_id": "ADMIN-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ADMIN-009 requires the canonical contract from SHIP-012.",
+      "specification_ref": "docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
     }
   ],
   "traceability_update_notes": [
@@ -20779,6 +22790,7 @@
     "PLY-001..PLY-014, ITEM-001..ITEM-016 and CRAFT-001..CRAFT-010 are mapped in docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md. Their balance and first-playable applicability remain controlled by the decision register.",
     "COM-001..COM-012 and ENT-001..ENT-018 are mapped in docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md. First-slice combat and zombie decisions remain distinct from optional explosives, bosses, PvP and future multiplayer scope.",
     "WORLD-001..WORLD-017 and STRUCT-001..STRUCT-010 are mapped in docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md. The approved topology does not prove procedural world-generation feasibility on either target.",
-    "VEH-001..VEH-014, QUEST-001..QUEST-012, ECON-001..ECON-012 and SOC-001..SOC-010 are mapped in docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md. First-slice and multiplayer boundaries remain explicit."
+    "VEH-001..VEH-014, QUEST-001..QUEST-012, ECON-001..ECON-012 and SOC-001..SOC-010 are mapped in docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md. First-slice and multiplayer boundaries remain explicit.",
+    "MP-001..MP-012, UI-001..UI-012, ASSET-001..ASSET-012 and ADMIN-001..ADMIN-009 are mapped in docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md. Multiplayer and target-specific interface capabilities remain conditional."
   ]
 }
