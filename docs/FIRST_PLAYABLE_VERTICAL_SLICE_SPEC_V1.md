@@ -238,3 +238,8 @@ Proposed first-slice acceptance scope:
 - Independent Java and Bedrock build, import/load, gameplay and performance evidence.
 
 This is the selected direction, but detailed first-slice parameters remain subject to user confirmation. The full long-term zombie roster, survivor simulation, advanced survival needs, vehicles, procedural open world and multiplayer are not automatically included in the first playable milestone.
+
+
+## 19. Confirmed first-slice player scope — single-player
+
+The user accepted a single-player first playable release. All first-slice gameplay acceptance tests are performed with one player in each target edition. Cooperative multiplayer, dedicated-server operation, player synchronization, shared inventories and revive mechanics are deferred and are not release blockers for this milestone. Future multiplayer remains a possible later expansion and must receive its own design and test gate.
