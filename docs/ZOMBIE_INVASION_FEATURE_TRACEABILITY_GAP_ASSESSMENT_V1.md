@@ -235,3 +235,19 @@ Current matrix v1.2.0 state:
 - All implementation statuses remain `not_implemented_verified`; no build, import, runtime or gameplay evidence was created.
 
 The mapping preserves scope boundaries: Walker/Runner/Brute and melee/firearms are approved first-slice decisions; explosives, PvP, exact boss roster, special zombie variants, multiplayer and dedicated-server support remain optional, unresolved or later-stage. NPC dialogue is required to read actual game state and must not invent injuries or diagnoses. The graph check validates only the recorded dependency structure.
+
+
+## 13. World and structure traceability batch
+
+A fifth mapping batch is recorded in `docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md`, covering WORLD-001..WORLD-017 and STRUCT-001..STRUCT-010.
+
+Current matrix v1.2.0 state:
+- 139 mapped features: BASE 12, QA 18, SHIP 12, PLY 14, ITEM 16, CRAFT 10, COM 12, ENT 18, WORLD 17 and STRUCT 10.
+- 93 features remain in traceability review.
+- 309 feature-specific acceptance criteria and 304 unique test case IDs are recorded.
+- 277 proposed feature-to-feature dependency edges are recorded.
+- The full 232-node graph passed a static topological cycle check in this revision.
+- Java, Bedrock and parity remain `not_assessed` for all 232 features.
+- All implementation statuses remain `not_implemented_verified`; no world generation, pack import, runtime or gameplay evidence was created.
+
+The approved topology is a continuous regionally organized world with authored landmarks and deterministic procedural expansion. This does not prove that both editions expose equivalent runtime terrain-generation APIs. The design explicitly retains authored/prebuilt world bundles as a fallback, keeps first playable compact, and protects player-built/discovered state during expansion.
