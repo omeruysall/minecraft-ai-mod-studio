@@ -539,3 +539,8 @@ No implementation or compatibility pass is claimed.
 The draft manifest is `schemas/zombie-invasion.project-manifest.v2.draft.json`; its review and structural validation record is `docs/ZOMBIE_INVASION_PROJECT_MANIFEST_V2_DRAFT_REVIEW_V1.md`.
 
 The draft has 18 project requirements, 9 proposed components, 8 unresolved component dependency edges, 14 target-specific validation plans and 8 planned deliverable definitions. It contains 84 candidate first-slice feature IDs, all present in the 232-feature catalog. The candidate list is explicitly `proposed_not_approved`; the manifest has no approval records or test evidence. Production remains blocked until the user approves the exact feature-ID scope and remaining implementation prerequisites.
+
+
+## 52. Readable first-slice feature scope review
+
+The 84 candidate feature IDs are expanded by family and rationale in `docs/ZOMBIE_INVASION_FIRST_SLICE_FEATURE_SCOPE_REVIEW_V1.md`. This is a readable review aid only; every candidate remains `proposed_not_approved`. The user must approve or revise the exact list before production.
