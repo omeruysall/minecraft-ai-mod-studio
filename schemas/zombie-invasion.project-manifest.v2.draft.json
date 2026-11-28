@@ -17,9 +17,9 @@
   },
   "revision": {
     "number": 1,
-    "id": "draft-revision-1",
+    "id": "00000000-0000-4000-8000-000000000001",
     "parent_digest": null,
-    "digest": "30e5b1cebde21239dabb1b84c0b2c00ff086149a7a849c29812c425aeee25e95",
+    "digest": "5721f54972d3eba0234ebd191ecadedd8688cb256c43e60b44fd2bd42f56774c",
     "created_at": "2026-11-28T19:00:00+03:00",
     "migration": null
   },
