@@ -195,3 +195,17 @@ A staged roster proposal has been added in `docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_D
 The proposed first-slice choice is Option C (Walker + Runner + Brute), with strict encounter-budget limits and solo-player balance tests. This is a recommendation only. The user has not yet approved the roster or the inclusion of special archetypes.
 
 The next required decision is to select Option A (Walker only), Option B (Walker + Runner) or Option C (Walker + Runner + Brute). No roster implementation is authorized by this proposal.
+
+
+## 20. User-approved first-slice zombie roster (2026-11-28)
+
+**Decision: Option C — Walker + Runner + Brute.**
+
+- Walker: baseline common enemy.
+- Runner: fast, less durable pressure enemy.
+- Brute: slow, durable threat that pressures defence positions.
+- Screamer, Exploder, Poisoner, Crawler and Armored variants remain deferred.
+
+The roster scope is approved. Exact health, speed, damage, spawn counts, encounter timings and balance values remain open for implementation-time tuning and repeatable solo-player tests. The approved design is documented in `docs/ZOMBIE_INVASION_ZOMBIE_ROSTER_DESIGN_V1.md`.
+
+This decision does not mean the roster has been implemented or tested in-game.
