@@ -152,3 +152,12 @@ The following are not yet confirmed by the user: first-map theme, single-player 
 - Cooperative multiplayer and dedicated-server support: deferred to a later milestone.
 - This does not permanently exclude multiplayer from the product roadmap.
 - The first-slice architecture should remain reasonably extensible, without implementing multiplayer infrastructure prematurely.
+
+
+## 16. User decision — first map direction (2026-11-28)
+
+**Decision: Abandoned, expandable town.**
+
+The planned town landmark set includes residential houses, hospital, police station, market, gas station, military checkpoint and underground shelter. The first playable build uses a compact authored subset centred on the safehouse; later districts and fully interactive landmarks are staged expansions.
+
+Detailed map layout and acceptance criteria: `docs/ZOMBIE_INVASION_MAP_DESIGN_V1.md`.
