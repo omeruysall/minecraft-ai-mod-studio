@@ -10,7 +10,7 @@
     "source_status_counts": {
       "planned": 232
     },
-    "traceability_review_required": 190,
+    "traceability_review_required": 150,
     "implementation_claims": "none",
     "target_coverage_status_counts": {
       "java_edition": {
@@ -24,12 +24,12 @@
       }
     },
     "design_status_counts": {
-      "mapped": 42,
-      "needs_traceability_review": 190
+      "mapped": 82,
+      "needs_traceability_review": 150
     },
-    "feature_dependency_edge_count": 95,
-    "acceptance_criteria_defined_feature_count": 42,
-    "test_cases_defined_feature_count": 42,
+    "feature_dependency_edge_count": 161,
+    "acceptance_criteria_defined_feature_count": 82,
+    "test_cases_defined_feature_count": 82,
     "evidence_record_count": 0
   },
   "status_semantics": {
@@ -916,27 +916,38 @@
       "inventory_section": 3,
       "inventory_section_title": "Player, character, and progression",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Professions & Player Progression Engine",
-      "primary_specification": "docs/PROFESSIONS_SKILLS_PLAYER_PROGRESSION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "player_progression",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-PLY-001"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-007-TO-PLY-001",
+          "DEP-BASE-008-TO-PLY-001"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-PLY-001-01",
+          "AC-PLY-001-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-PLY-001-01",
+          "TC-PLY-001-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -946,7 +957,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -963,7 +974,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "PLY-002",
@@ -971,27 +987,37 @@
       "inventory_section": 3,
       "inventory_section_title": "Player, character, and progression",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Professions & Player Progression Engine",
-      "primary_specification": "docs/PROFESSIONS_SKILLS_PLAYER_PROGRESSION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "player_progression",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-PLY-002"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-009-TO-PLY-002"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-PLY-002-01",
+          "AC-PLY-002-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-PLY-002-01",
+          "TC-PLY-002-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -1001,7 +1027,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -1018,7 +1044,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "PLY-003",
@@ -1026,27 +1057,38 @@
       "inventory_section": 3,
       "inventory_section_title": "Player, character, and progression",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Professions & Player Progression Engine",
-      "primary_specification": "docs/PROFESSIONS_SKILLS_PLAYER_PROGRESSION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "player_progression",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-PLY-003"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-PLY-001-TO-PLY-003",
+          "DEP-PLY-002-TO-PLY-003"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-PLY-003-01",
+          "AC-PLY-003-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-PLY-003-01",
+          "TC-PLY-003-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -1056,7 +1098,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -1073,7 +1115,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "PLY-004",
@@ -1081,27 +1128,39 @@
       "inventory_section": 3,
       "inventory_section_title": "Player, character, and progression",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Professions & Player Progression Engine",
-      "primary_specification": "docs/PROFESSIONS_SKILLS_PLAYER_PROGRESSION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "player_progression",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-PLY-004"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-PLY-002-TO-PLY-004",
+          "DEP-PLY-003-TO-PLY-004",
+          "DEP-ITEM-003-TO-PLY-004"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-PLY-004-01",
+          "AC-PLY-004-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-PLY-004-01",
+          "TC-PLY-004-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -1111,7 +1170,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -1128,7 +1187,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "PLY-005",
@@ -1136,27 +1200,38 @@
       "inventory_section": 3,
       "inventory_section_title": "Player, character, and progression",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Professions & Player Progression Engine",
-      "primary_specification": "docs/PROFESSIONS_SKILLS_PLAYER_PROGRESSION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "player_progression",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-PLY-005"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-PLY-001-TO-PLY-005",
+          "DEP-PLY-003-TO-PLY-005"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-PLY-005-01",
+          "AC-PLY-005-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-PLY-005-01",
+          "TC-PLY-005-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -1166,7 +1241,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -1183,7 +1258,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "PLY-006",
@@ -1191,27 +1271,38 @@
       "inventory_section": 3,
       "inventory_section_title": "Player, character, and progression",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Professions & Player Progression Engine",
-      "primary_specification": "docs/PROFESSIONS_SKILLS_PLAYER_PROGRESSION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "player_progression",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-PLY-006"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-PLY-002-TO-PLY-006",
+          "DEP-PLY-003-TO-PLY-006"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-PLY-006-01",
+          "AC-PLY-006-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-PLY-006-01",
+          "TC-PLY-006-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -1221,7 +1312,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -1238,7 +1329,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "PLY-007",
@@ -1246,27 +1342,38 @@
       "inventory_section": 3,
       "inventory_section_title": "Player, character, and progression",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Professions & Player Progression Engine",
-      "primary_specification": "docs/PROFESSIONS_SKILLS_PLAYER_PROGRESSION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "player_progression",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-PLY-007"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-001-TO-PLY-007",
+          "DEP-ITEM-007-TO-PLY-007"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-PLY-007-01",
+          "AC-PLY-007-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-PLY-007-01",
+          "TC-PLY-007-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -1276,7 +1383,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -1293,7 +1400,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "PLY-008",
@@ -1301,27 +1413,37 @@
       "inventory_section": 3,
       "inventory_section_title": "Player, character, and progression",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Professions & Player Progression Engine",
-      "primary_specification": "docs/PROFESSIONS_SKILLS_PLAYER_PROGRESSION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "player_progression",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-PLY-008"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-PLY-001-TO-PLY-008"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-PLY-008-01",
+          "AC-PLY-008-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-PLY-008-01",
+          "TC-PLY-008-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -1331,7 +1453,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -1348,7 +1470,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "PLY-009",
@@ -1356,27 +1483,37 @@
       "inventory_section": 3,
       "inventory_section_title": "Player, character, and progression",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Professions & Player Progression Engine",
-      "primary_specification": "docs/PROFESSIONS_SKILLS_PLAYER_PROGRESSION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "player_progression",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-PLY-009"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-PLY-001-TO-PLY-009"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-PLY-009-01",
+          "AC-PLY-009-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-PLY-009-01",
+          "TC-PLY-009-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -1386,7 +1523,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -1403,7 +1540,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "PLY-010",
@@ -1411,27 +1553,39 @@
       "inventory_section": 3,
       "inventory_section_title": "Player, character, and progression",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Professions & Player Progression Engine",
-      "primary_specification": "docs/PROFESSIONS_SKILLS_PLAYER_PROGRESSION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "player_progression",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-PLY-010"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-PLY-002-TO-PLY-010",
+          "DEP-PLY-014-TO-PLY-010",
+          "DEP-QA-013-TO-PLY-010"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-PLY-010-01",
+          "AC-PLY-010-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-PLY-010-01",
+          "TC-PLY-010-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -1441,7 +1595,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -1458,7 +1612,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "PLY-011",
@@ -1466,27 +1625,38 @@
       "inventory_section": 3,
       "inventory_section_title": "Player, character, and progression",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Professions & Player Progression Engine",
-      "primary_specification": "docs/PROFESSIONS_SKILLS_PLAYER_PROGRESSION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "player_progression",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-PLY-011"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-PLY-002-TO-PLY-011",
+          "DEP-ITEM-003-TO-PLY-011"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-PLY-011-01",
+          "AC-PLY-011-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-PLY-011-01",
+          "TC-PLY-011-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -1496,7 +1666,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -1513,7 +1683,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "PLY-012",
@@ -1521,27 +1696,37 @@
       "inventory_section": 3,
       "inventory_section_title": "Player, character, and progression",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Professions & Player Progression Engine",
-      "primary_specification": "docs/PROFESSIONS_SKILLS_PLAYER_PROGRESSION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "player_progression",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-PLY-012"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-PLY-008-TO-PLY-012"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-PLY-012-01",
+          "AC-PLY-012-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-PLY-012-01",
+          "TC-PLY-012-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -1551,7 +1736,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -1568,7 +1753,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "PLY-013",
@@ -1576,27 +1766,37 @@
       "inventory_section": 3,
       "inventory_section_title": "Player, character, and progression",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Professions & Player Progression Engine",
-      "primary_specification": "docs/PROFESSIONS_SKILLS_PLAYER_PROGRESSION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "player_progression",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-PLY-013"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-PLY-008-TO-PLY-013"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-PLY-013-01",
+          "AC-PLY-013-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-PLY-013-01",
+          "TC-PLY-013-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -1606,7 +1806,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -1623,7 +1823,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "PLY-014",
@@ -1631,27 +1836,38 @@
       "inventory_section": 3,
       "inventory_section_title": "Player, character, and progression",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Professions & Player Progression Engine",
-      "primary_specification": "docs/PROFESSIONS_SKILLS_PLAYER_PROGRESSION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "player_progression",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-PLY-014"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-009-TO-PLY-014",
+          "DEP-QA-013-TO-PLY-014"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-PLY-014-01",
+          "AC-PLY-014-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-PLY-014-01",
+          "TC-PLY-014-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -1661,7 +1877,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -1678,7 +1894,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ITEM-001",
@@ -1686,27 +1907,37 @@
       "inventory_section": 4,
       "inventory_section_title": "Items, materials, blocks, and equipment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Items, Equipment & Loot Engine",
-      "primary_specification": "docs/ITEMS_EQUIPMENT_LOOT_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md",
       "manifest_component_type": "items_equipment",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ITEM-001"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-007-TO-ITEM-001"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ITEM-001-01",
+          "AC-ITEM-001-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ITEM-001-01",
+          "TC-ITEM-001-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -1716,7 +1947,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -1733,7 +1964,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ITEM-002",
@@ -1741,27 +1978,37 @@
       "inventory_section": 4,
       "inventory_section_title": "Items, materials, blocks, and equipment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Items, Equipment & Loot Engine",
-      "primary_specification": "docs/ITEMS_EQUIPMENT_LOOT_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md",
       "manifest_component_type": "items_equipment",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ITEM-002"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-007-TO-ITEM-002"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ITEM-002-01",
+          "AC-ITEM-002-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ITEM-002-01",
+          "TC-ITEM-002-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -1771,7 +2018,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -1788,7 +2035,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ITEM-003",
@@ -1796,27 +2049,38 @@
       "inventory_section": 4,
       "inventory_section_title": "Items, materials, blocks, and equipment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Items, Equipment & Loot Engine",
-      "primary_specification": "docs/ITEMS_EQUIPMENT_LOOT_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md",
       "manifest_component_type": "items_equipment",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ITEM-003"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-001-TO-ITEM-003",
+          "DEP-CRAFT-001-TO-ITEM-003"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ITEM-003-01",
+          "AC-ITEM-003-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ITEM-003-01",
+          "TC-ITEM-003-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -1826,7 +2090,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -1843,7 +2107,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ITEM-004",
@@ -1851,27 +2121,37 @@
       "inventory_section": 4,
       "inventory_section_title": "Items, materials, blocks, and equipment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Items, Equipment & Loot Engine",
-      "primary_specification": "docs/ITEMS_EQUIPMENT_LOOT_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md",
       "manifest_component_type": "items_equipment",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ITEM-004"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-CRAFT-001-TO-ITEM-004"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ITEM-004-01",
+          "AC-ITEM-004-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ITEM-004-01",
+          "TC-ITEM-004-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -1881,7 +2161,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -1898,7 +2178,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ITEM-005",
@@ -1906,27 +2192,38 @@
       "inventory_section": 4,
       "inventory_section_title": "Items, materials, blocks, and equipment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Items, Equipment & Loot Engine",
-      "primary_specification": "docs/ITEMS_EQUIPMENT_LOOT_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md",
       "manifest_component_type": "items_equipment",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ITEM-005"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-001-TO-ITEM-005",
+          "DEP-CRAFT-001-TO-ITEM-005"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ITEM-005-01",
+          "AC-ITEM-005-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ITEM-005-01",
+          "TC-ITEM-005-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -1936,7 +2233,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -1953,7 +2250,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ITEM-006",
@@ -1961,27 +2264,37 @@
       "inventory_section": 4,
       "inventory_section_title": "Items, materials, blocks, and equipment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Items, Equipment & Loot Engine",
-      "primary_specification": "docs/ITEMS_EQUIPMENT_LOOT_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md",
       "manifest_component_type": "items_equipment",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ITEM-006"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-PLY-002-TO-ITEM-006"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ITEM-006-01",
+          "AC-ITEM-006-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ITEM-006-01",
+          "TC-ITEM-006-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -1991,7 +2304,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -2008,7 +2321,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ITEM-007",
@@ -2016,27 +2335,37 @@
       "inventory_section": 4,
       "inventory_section_title": "Items, materials, blocks, and equipment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Items, Equipment & Loot Engine",
-      "primary_specification": "docs/ITEMS_EQUIPMENT_LOOT_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md",
       "manifest_component_type": "items_equipment",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ITEM-007"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-001-TO-ITEM-007"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ITEM-007-01",
+          "AC-ITEM-007-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ITEM-007-01",
+          "TC-ITEM-007-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -2046,7 +2375,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -2063,7 +2392,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ITEM-008",
@@ -2071,27 +2406,37 @@
       "inventory_section": 4,
       "inventory_section_title": "Items, materials, blocks, and equipment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Items, Equipment & Loot Engine",
-      "primary_specification": "docs/ITEMS_EQUIPMENT_LOOT_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md",
       "manifest_component_type": "items_equipment",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ITEM-008"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-PLY-013-TO-ITEM-008"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ITEM-008-01",
+          "AC-ITEM-008-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ITEM-008-01",
+          "TC-ITEM-008-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -2101,7 +2446,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -2118,7 +2463,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ITEM-009",
@@ -2126,27 +2477,37 @@
       "inventory_section": 4,
       "inventory_section_title": "Items, materials, blocks, and equipment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Items, Equipment & Loot Engine",
-      "primary_specification": "docs/ITEMS_EQUIPMENT_LOOT_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md",
       "manifest_component_type": "items_equipment",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ITEM-009"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-001-TO-ITEM-009"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ITEM-009-01",
+          "AC-ITEM-009-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ITEM-009-01",
+          "TC-ITEM-009-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -2156,7 +2517,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -2173,7 +2534,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ITEM-010",
@@ -2181,27 +2548,38 @@
       "inventory_section": 4,
       "inventory_section_title": "Items, materials, blocks, and equipment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Items, Equipment & Loot Engine",
-      "primary_specification": "docs/ITEMS_EQUIPMENT_LOOT_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md",
       "manifest_component_type": "items_equipment",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ITEM-010"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-PLY-008-TO-ITEM-010",
+          "DEP-CRAFT-009-TO-ITEM-010"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ITEM-010-01",
+          "AC-ITEM-010-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ITEM-010-01",
+          "TC-ITEM-010-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -2211,7 +2589,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -2228,7 +2606,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ITEM-011",
@@ -2236,27 +2620,38 @@
       "inventory_section": 4,
       "inventory_section_title": "Items, materials, blocks, and equipment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Items, Equipment & Loot Engine",
-      "primary_specification": "docs/ITEMS_EQUIPMENT_LOOT_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md",
       "manifest_component_type": "items_equipment",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ITEM-011"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-004-TO-ITEM-011",
+          "DEP-SHIP-004-TO-ITEM-011"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ITEM-011-01",
+          "AC-ITEM-011-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ITEM-011-01",
+          "TC-ITEM-011-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -2266,7 +2661,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -2283,7 +2678,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ITEM-012",
@@ -2291,27 +2692,38 @@
       "inventory_section": 4,
       "inventory_section_title": "Items, materials, blocks, and equipment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Items, Equipment & Loot Engine",
-      "primary_specification": "docs/ITEMS_EQUIPMENT_LOOT_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md",
       "manifest_component_type": "items_equipment",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ITEM-012"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-011-TO-ITEM-012",
+          "DEP-ITEM-004-TO-ITEM-012"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ITEM-012-01",
+          "AC-ITEM-012-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ITEM-012-01",
+          "TC-ITEM-012-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -2321,7 +2733,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -2338,7 +2750,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ITEM-013",
@@ -2346,27 +2764,37 @@
       "inventory_section": 4,
       "inventory_section_title": "Items, materials, blocks, and equipment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Items, Equipment & Loot Engine",
-      "primary_specification": "docs/ITEMS_EQUIPMENT_LOOT_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md",
       "manifest_component_type": "items_equipment",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ITEM-013"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-011-TO-ITEM-013"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ITEM-013-01",
+          "AC-ITEM-013-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ITEM-013-01",
+          "TC-ITEM-013-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -2376,7 +2804,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -2393,7 +2821,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ITEM-014",
@@ -2401,27 +2835,37 @@
       "inventory_section": 4,
       "inventory_section_title": "Items, materials, blocks, and equipment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Items, Equipment & Loot Engine",
-      "primary_specification": "docs/ITEMS_EQUIPMENT_LOOT_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md",
       "manifest_component_type": "items_equipment",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ITEM-014"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-001-TO-ITEM-014"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ITEM-014-01",
+          "AC-ITEM-014-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ITEM-014-01",
+          "TC-ITEM-014-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -2431,7 +2875,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -2448,7 +2892,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ITEM-015",
@@ -2456,27 +2906,37 @@
       "inventory_section": 4,
       "inventory_section_title": "Items, materials, blocks, and equipment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Items, Equipment & Loot Engine",
-      "primary_specification": "docs/ITEMS_EQUIPMENT_LOOT_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md",
       "manifest_component_type": "items_equipment",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ITEM-015"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-011-TO-ITEM-015"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ITEM-015-01",
+          "AC-ITEM-015-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ITEM-015-01",
+          "TC-ITEM-015-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -2486,7 +2946,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -2503,7 +2963,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ITEM-016",
@@ -2511,27 +2977,38 @@
       "inventory_section": 4,
       "inventory_section_title": "Items, materials, blocks, and equipment",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Items, Equipment & Loot Engine",
-      "primary_specification": "docs/ITEMS_EQUIPMENT_LOOT_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md",
       "manifest_component_type": "items_equipment",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ITEM-016"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-012-TO-ITEM-016",
+          "DEP-SHIP-004-TO-ITEM-016"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ITEM-016-01",
+          "AC-ITEM-016-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ITEM-016-01",
+          "TC-ITEM-016-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -2541,7 +3018,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -2558,7 +3035,13 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_INJURY_AMPUTATION_AND_BIONIC_PROSTHETICS_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "CRAFT-001",
@@ -2566,27 +3049,39 @@
       "inventory_section": 5,
       "inventory_section_title": "Crafting, processing, and resource loops",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Crafting & Resource Production Engine",
-      "primary_specification": "docs/CRAFTING_RESOURCE_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "crafting",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-CRAFT-001"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-001-TO-CRAFT-001",
+          "DEP-ITEM-002-TO-CRAFT-001",
+          "DEP-BASE-007-TO-CRAFT-001"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-CRAFT-001-01",
+          "AC-CRAFT-001-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-CRAFT-001-01",
+          "TC-CRAFT-001-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -2596,7 +3091,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -2613,7 +3108,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/CRAFTING_RESOURCE_PRODUCTION_ENGINE_SPEC.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "CRAFT-002",
@@ -2621,27 +3121,38 @@
       "inventory_section": 5,
       "inventory_section_title": "Crafting, processing, and resource loops",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Crafting & Resource Production Engine",
-      "primary_specification": "docs/CRAFTING_RESOURCE_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "crafting",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-CRAFT-002"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-003-TO-CRAFT-002",
+          "DEP-ITEM-014-TO-CRAFT-002"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-CRAFT-002-01",
+          "AC-CRAFT-002-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-CRAFT-002-01",
+          "TC-CRAFT-002-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -2651,7 +3162,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -2668,7 +3179,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/CRAFTING_RESOURCE_PRODUCTION_ENGINE_SPEC.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "CRAFT-003",
@@ -2676,27 +3192,38 @@
       "inventory_section": 5,
       "inventory_section_title": "Crafting, processing, and resource loops",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Crafting & Resource Production Engine",
-      "primary_specification": "docs/CRAFTING_RESOURCE_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "crafting",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-CRAFT-003"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-CRAFT-002-TO-CRAFT-003",
+          "DEP-ITEM-013-TO-CRAFT-003"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-CRAFT-003-01",
+          "AC-CRAFT-003-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-CRAFT-003-01",
+          "TC-CRAFT-003-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -2706,7 +3233,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -2723,7 +3250,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/CRAFTING_RESOURCE_PRODUCTION_ENGINE_SPEC.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "CRAFT-004",
@@ -2731,27 +3263,38 @@
       "inventory_section": 5,
       "inventory_section_title": "Crafting, processing, and resource loops",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Crafting & Resource Production Engine",
-      "primary_specification": "docs/CRAFTING_RESOURCE_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "crafting",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-CRAFT-004"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-CRAFT-001-TO-CRAFT-004",
+          "DEP-ITEM-013-TO-CRAFT-004"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-CRAFT-004-01",
+          "AC-CRAFT-004-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-CRAFT-004-01",
+          "TC-CRAFT-004-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -2761,7 +3304,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -2778,7 +3321,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/CRAFTING_RESOURCE_PRODUCTION_ENGINE_SPEC.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "CRAFT-005",
@@ -2786,27 +3334,37 @@
       "inventory_section": 5,
       "inventory_section_title": "Crafting, processing, and resource loops",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Crafting & Resource Production Engine",
-      "primary_specification": "docs/CRAFTING_RESOURCE_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "crafting",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-CRAFT-005"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-014-TO-CRAFT-005"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-CRAFT-005-01",
+          "AC-CRAFT-005-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-CRAFT-005-01",
+          "TC-CRAFT-005-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -2816,7 +3374,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -2833,7 +3391,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/CRAFTING_RESOURCE_PRODUCTION_ENGINE_SPEC.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "CRAFT-006",
@@ -2841,27 +3404,38 @@
       "inventory_section": 5,
       "inventory_section_title": "Crafting, processing, and resource loops",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Crafting & Resource Production Engine",
-      "primary_specification": "docs/CRAFTING_RESOURCE_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "crafting",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-CRAFT-006"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-009-TO-CRAFT-006",
+          "DEP-ITEM-002-TO-CRAFT-006"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-CRAFT-006-01",
+          "AC-CRAFT-006-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-CRAFT-006-01",
+          "TC-CRAFT-006-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -2871,7 +3445,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -2888,7 +3462,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/CRAFTING_RESOURCE_PRODUCTION_ENGINE_SPEC.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "CRAFT-007",
@@ -2896,27 +3475,38 @@
       "inventory_section": 5,
       "inventory_section_title": "Crafting, processing, and resource loops",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Crafting & Resource Production Engine",
-      "primary_specification": "docs/CRAFTING_RESOURCE_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "crafting",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-CRAFT-007"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-002-TO-CRAFT-007",
+          "DEP-ITEM-003-TO-CRAFT-007"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-CRAFT-007-01",
+          "AC-CRAFT-007-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-CRAFT-007-01",
+          "TC-CRAFT-007-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -2926,7 +3516,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -2943,7 +3533,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/CRAFTING_RESOURCE_PRODUCTION_ENGINE_SPEC.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "CRAFT-008",
@@ -2951,27 +3546,37 @@
       "inventory_section": 5,
       "inventory_section_title": "Crafting, processing, and resource loops",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Crafting & Resource Production Engine",
-      "primary_specification": "docs/CRAFTING_RESOURCE_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "crafting",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-CRAFT-008"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-002-TO-CRAFT-008"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-CRAFT-008-01",
+          "AC-CRAFT-008-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-CRAFT-008-01",
+          "TC-CRAFT-008-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -2981,7 +3586,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -2998,7 +3603,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/CRAFTING_RESOURCE_PRODUCTION_ENGINE_SPEC.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "CRAFT-009",
@@ -3006,27 +3616,37 @@
       "inventory_section": 5,
       "inventory_section_title": "Crafting, processing, and resource loops",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Crafting & Resource Production Engine",
-      "primary_specification": "docs/CRAFTING_RESOURCE_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "crafting",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-CRAFT-009"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-PLY-008-TO-CRAFT-009"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-CRAFT-009-01",
+          "AC-CRAFT-009-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-CRAFT-009-01",
+          "TC-CRAFT-009-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -3036,7 +3656,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -3053,7 +3673,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/CRAFTING_RESOURCE_PRODUCTION_ENGINE_SPEC.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "CRAFT-010",
@@ -3061,27 +3686,39 @@
       "inventory_section": 5,
       "inventory_section_title": "Crafting, processing, and resource loops",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Crafting & Resource Production Engine",
-      "primary_specification": "docs/CRAFTING_RESOURCE_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md",
       "manifest_component_type": "crafting",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-CRAFT-010"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-001-TO-CRAFT-010",
+          "DEP-ITEM-002-TO-CRAFT-010",
+          "DEP-ITEM-003-TO-CRAFT-010"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-CRAFT-010-01",
+          "AC-CRAFT-010-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-CRAFT-010-01",
+          "TC-CRAFT-010-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -3091,7 +3728,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level traceability is mapped in the player/items/crafting specification. First-slice applicability and balance values remain separately controlled; implementation and target runtime evidence are absent.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -3108,7 +3745,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/CRAFTING_RESOURCE_PRODUCTION_ENGINE_SPEC.md",
+        "docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ENT-001",
@@ -14627,6 +15269,864 @@
         "java",
         "bedrock"
       ]
+    },
+    {
+      "edge_id": "DEP-BASE-007-TO-PLY-001",
+      "source_feature_id": "BASE-007",
+      "target_feature_id": "PLY-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-001 requires the canonical contract from BASE-007.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-008-TO-PLY-001",
+      "source_feature_id": "BASE-008",
+      "target_feature_id": "PLY-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-001 requires the canonical contract from BASE-008.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-009-TO-PLY-002",
+      "source_feature_id": "BASE-009",
+      "target_feature_id": "PLY-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-002 requires the canonical contract from BASE-009.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-001-TO-PLY-003",
+      "source_feature_id": "PLY-001",
+      "target_feature_id": "PLY-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-003 requires the canonical contract from PLY-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-002-TO-PLY-003",
+      "source_feature_id": "PLY-002",
+      "target_feature_id": "PLY-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-003 requires the canonical contract from PLY-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-002-TO-PLY-004",
+      "source_feature_id": "PLY-002",
+      "target_feature_id": "PLY-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-004 requires the canonical contract from PLY-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-003-TO-PLY-004",
+      "source_feature_id": "PLY-003",
+      "target_feature_id": "PLY-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-004 requires the canonical contract from PLY-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-003-TO-PLY-004",
+      "source_feature_id": "ITEM-003",
+      "target_feature_id": "PLY-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-004 requires the canonical contract from ITEM-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-001-TO-PLY-005",
+      "source_feature_id": "PLY-001",
+      "target_feature_id": "PLY-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-005 requires the canonical contract from PLY-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-003-TO-PLY-005",
+      "source_feature_id": "PLY-003",
+      "target_feature_id": "PLY-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-005 requires the canonical contract from PLY-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-002-TO-PLY-006",
+      "source_feature_id": "PLY-002",
+      "target_feature_id": "PLY-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-006 requires the canonical contract from PLY-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-003-TO-PLY-006",
+      "source_feature_id": "PLY-003",
+      "target_feature_id": "PLY-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-006 requires the canonical contract from PLY-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-001-TO-PLY-007",
+      "source_feature_id": "ITEM-001",
+      "target_feature_id": "PLY-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-007 requires the canonical contract from ITEM-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-007-TO-PLY-007",
+      "source_feature_id": "ITEM-007",
+      "target_feature_id": "PLY-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-007 requires the canonical contract from ITEM-007.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-001-TO-PLY-008",
+      "source_feature_id": "PLY-001",
+      "target_feature_id": "PLY-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-008 requires the canonical contract from PLY-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-001-TO-PLY-009",
+      "source_feature_id": "PLY-001",
+      "target_feature_id": "PLY-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-009 requires the canonical contract from PLY-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-002-TO-PLY-010",
+      "source_feature_id": "PLY-002",
+      "target_feature_id": "PLY-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-010 requires the canonical contract from PLY-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-014-TO-PLY-010",
+      "source_feature_id": "PLY-014",
+      "target_feature_id": "PLY-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-010 requires the canonical contract from PLY-014.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-013-TO-PLY-010",
+      "source_feature_id": "QA-013",
+      "target_feature_id": "PLY-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-010 requires the canonical contract from QA-013.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-002-TO-PLY-011",
+      "source_feature_id": "PLY-002",
+      "target_feature_id": "PLY-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-011 requires the canonical contract from PLY-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-003-TO-PLY-011",
+      "source_feature_id": "ITEM-003",
+      "target_feature_id": "PLY-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-011 requires the canonical contract from ITEM-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-008-TO-PLY-012",
+      "source_feature_id": "PLY-008",
+      "target_feature_id": "PLY-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-012 requires the canonical contract from PLY-008.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-008-TO-PLY-013",
+      "source_feature_id": "PLY-008",
+      "target_feature_id": "PLY-013",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-013 requires the canonical contract from PLY-008.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-009-TO-PLY-014",
+      "source_feature_id": "BASE-009",
+      "target_feature_id": "PLY-014",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-014 requires the canonical contract from BASE-009.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-013-TO-PLY-014",
+      "source_feature_id": "QA-013",
+      "target_feature_id": "PLY-014",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "PLY-014 requires the canonical contract from QA-013.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-007-TO-ITEM-001",
+      "source_feature_id": "BASE-007",
+      "target_feature_id": "ITEM-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ITEM-001 requires the canonical contract from BASE-007.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-007-TO-ITEM-002",
+      "source_feature_id": "BASE-007",
+      "target_feature_id": "ITEM-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ITEM-002 requires the canonical contract from BASE-007.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-001-TO-ITEM-003",
+      "source_feature_id": "ITEM-001",
+      "target_feature_id": "ITEM-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ITEM-003 requires the canonical contract from ITEM-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-CRAFT-001-TO-ITEM-003",
+      "source_feature_id": "CRAFT-001",
+      "target_feature_id": "ITEM-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ITEM-003 requires the canonical contract from CRAFT-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-CRAFT-001-TO-ITEM-004",
+      "source_feature_id": "CRAFT-001",
+      "target_feature_id": "ITEM-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ITEM-004 requires the canonical contract from CRAFT-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-001-TO-ITEM-005",
+      "source_feature_id": "ITEM-001",
+      "target_feature_id": "ITEM-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ITEM-005 requires the canonical contract from ITEM-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-CRAFT-001-TO-ITEM-005",
+      "source_feature_id": "CRAFT-001",
+      "target_feature_id": "ITEM-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ITEM-005 requires the canonical contract from CRAFT-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-002-TO-ITEM-006",
+      "source_feature_id": "PLY-002",
+      "target_feature_id": "ITEM-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ITEM-006 requires the canonical contract from PLY-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-001-TO-ITEM-007",
+      "source_feature_id": "ITEM-001",
+      "target_feature_id": "ITEM-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ITEM-007 requires the canonical contract from ITEM-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-013-TO-ITEM-008",
+      "source_feature_id": "PLY-013",
+      "target_feature_id": "ITEM-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ITEM-008 requires the canonical contract from PLY-013.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-001-TO-ITEM-009",
+      "source_feature_id": "ITEM-001",
+      "target_feature_id": "ITEM-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ITEM-009 requires the canonical contract from ITEM-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-008-TO-ITEM-010",
+      "source_feature_id": "PLY-008",
+      "target_feature_id": "ITEM-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ITEM-010 requires the canonical contract from PLY-008.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-CRAFT-009-TO-ITEM-010",
+      "source_feature_id": "CRAFT-009",
+      "target_feature_id": "ITEM-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ITEM-010 requires the canonical contract from CRAFT-009.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-004-TO-ITEM-011",
+      "source_feature_id": "BASE-004",
+      "target_feature_id": "ITEM-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ITEM-011 requires the canonical contract from BASE-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-004-TO-ITEM-011",
+      "source_feature_id": "SHIP-004",
+      "target_feature_id": "ITEM-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ITEM-011 requires the canonical contract from SHIP-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-011-TO-ITEM-012",
+      "source_feature_id": "ITEM-011",
+      "target_feature_id": "ITEM-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ITEM-012 requires the canonical contract from ITEM-011.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-004-TO-ITEM-012",
+      "source_feature_id": "ITEM-004",
+      "target_feature_id": "ITEM-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ITEM-012 requires the canonical contract from ITEM-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-011-TO-ITEM-013",
+      "source_feature_id": "ITEM-011",
+      "target_feature_id": "ITEM-013",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ITEM-013 requires the canonical contract from ITEM-011.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-001-TO-ITEM-014",
+      "source_feature_id": "ITEM-001",
+      "target_feature_id": "ITEM-014",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ITEM-014 requires the canonical contract from ITEM-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-011-TO-ITEM-015",
+      "source_feature_id": "ITEM-011",
+      "target_feature_id": "ITEM-015",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ITEM-015 requires the canonical contract from ITEM-011.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-012-TO-ITEM-016",
+      "source_feature_id": "BASE-012",
+      "target_feature_id": "ITEM-016",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ITEM-016 requires the canonical contract from BASE-012.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SHIP-004-TO-ITEM-016",
+      "source_feature_id": "SHIP-004",
+      "target_feature_id": "ITEM-016",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ITEM-016 requires the canonical contract from SHIP-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-001-TO-CRAFT-001",
+      "source_feature_id": "ITEM-001",
+      "target_feature_id": "CRAFT-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "CRAFT-001 requires the canonical contract from ITEM-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-002-TO-CRAFT-001",
+      "source_feature_id": "ITEM-002",
+      "target_feature_id": "CRAFT-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "CRAFT-001 requires the canonical contract from ITEM-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-007-TO-CRAFT-001",
+      "source_feature_id": "BASE-007",
+      "target_feature_id": "CRAFT-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "CRAFT-001 requires the canonical contract from BASE-007.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-003-TO-CRAFT-002",
+      "source_feature_id": "ITEM-003",
+      "target_feature_id": "CRAFT-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "CRAFT-002 requires the canonical contract from ITEM-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-014-TO-CRAFT-002",
+      "source_feature_id": "ITEM-014",
+      "target_feature_id": "CRAFT-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "CRAFT-002 requires the canonical contract from ITEM-014.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-CRAFT-002-TO-CRAFT-003",
+      "source_feature_id": "CRAFT-002",
+      "target_feature_id": "CRAFT-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "CRAFT-003 requires the canonical contract from CRAFT-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-013-TO-CRAFT-003",
+      "source_feature_id": "ITEM-013",
+      "target_feature_id": "CRAFT-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "CRAFT-003 requires the canonical contract from ITEM-013.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-CRAFT-001-TO-CRAFT-004",
+      "source_feature_id": "CRAFT-001",
+      "target_feature_id": "CRAFT-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "CRAFT-004 requires the canonical contract from CRAFT-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-013-TO-CRAFT-004",
+      "source_feature_id": "ITEM-013",
+      "target_feature_id": "CRAFT-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "CRAFT-004 requires the canonical contract from ITEM-013.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-014-TO-CRAFT-005",
+      "source_feature_id": "ITEM-014",
+      "target_feature_id": "CRAFT-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "CRAFT-005 requires the canonical contract from ITEM-014.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-009-TO-CRAFT-006",
+      "source_feature_id": "ITEM-009",
+      "target_feature_id": "CRAFT-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "CRAFT-006 requires the canonical contract from ITEM-009.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-002-TO-CRAFT-006",
+      "source_feature_id": "ITEM-002",
+      "target_feature_id": "CRAFT-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "CRAFT-006 requires the canonical contract from ITEM-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-002-TO-CRAFT-007",
+      "source_feature_id": "ITEM-002",
+      "target_feature_id": "CRAFT-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "CRAFT-007 requires the canonical contract from ITEM-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-003-TO-CRAFT-007",
+      "source_feature_id": "ITEM-003",
+      "target_feature_id": "CRAFT-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "CRAFT-007 requires the canonical contract from ITEM-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-002-TO-CRAFT-008",
+      "source_feature_id": "ITEM-002",
+      "target_feature_id": "CRAFT-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "CRAFT-008 requires the canonical contract from ITEM-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-008-TO-CRAFT-009",
+      "source_feature_id": "PLY-008",
+      "target_feature_id": "CRAFT-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "CRAFT-009 requires the canonical contract from PLY-008.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-001-TO-CRAFT-010",
+      "source_feature_id": "ITEM-001",
+      "target_feature_id": "CRAFT-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "CRAFT-010 requires the canonical contract from ITEM-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-002-TO-CRAFT-010",
+      "source_feature_id": "ITEM-002",
+      "target_feature_id": "CRAFT-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "CRAFT-010 requires the canonical contract from ITEM-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-003-TO-CRAFT-010",
+      "source_feature_id": "ITEM-003",
+      "target_feature_id": "CRAFT-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "CRAFT-010 requires the canonical contract from ITEM-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
     }
   ],
   "traceability_update_notes": [
@@ -14634,6 +16134,7 @@
     "The 15 feature-to-feature dependency edges are proposed and require review; they do not constitute implementation dependencies verified in code.",
     "Java Edition, Bedrock Edition and parity remain not_assessed until target-specific builds, runtime tests and evidence exist.",
     "All 232 implementation statuses remain not_implemented_verified; no evidence records were created by this documentation update.",
-    "QA-001..QA-018 and SHIP-001..SHIP-012 are mapped to feature-specific requirements, acceptance criteria, test cases and proposed dependency edges in docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md."
+    "QA-001..QA-018 and SHIP-001..SHIP-012 are mapped to feature-specific requirements, acceptance criteria, test cases and proposed dependency edges in docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md.",
+    "PLY-001..PLY-014, ITEM-001..ITEM-016 and CRAFT-001..CRAFT-010 are mapped in docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md. Their balance and first-playable applicability remain controlled by the decision register."
   ]
 }
