@@ -514,3 +514,10 @@ The implementation gate is defined in `docs/ZOMBIE_INVASION_IMPLEMENTATION_READI
 It records the current state as design traceability complete but not ready for full playable implementation. The remaining blockers are: (1) freeze exact first-playable feature IDs in a revisioned manifest; (2) revalidate/pin Fabric and Bedrock toolchains; (3) identify actual test runtimes/devices for both editions; (4) select local/cloud/hybrid build execution and sandbox workflow; and (5) resolve gameplay policies only if they are included in the first slice.
 
 The document proposes W0–W7 for the first playable and W8–W9 for long-term expansions. It does not start source-code implementation or claim a playable mod. Existing user-approved targets and gameplay decisions remain unchanged.
+
+
+## 49. First-playable specification consolidation (2026-11-28)
+
+The first-playable specification now consolidates the explicit user-approved Zombie Invasion requirements: Java 26.3 + Fabric, Bedrock 26.60 + stable Script API 2.11.0, experimental APIs off, single-player, abandoned expandable town, functional Market/Hospital/Police Station, Walker/Runner/Brute, melee + firearms, bounded gunfire noise, durability, finite ammunition, backpack variety and staged crafting with vanilla Crafting Table first.
+
+The consolidated scope is in `docs/FIRST_PLAYABLE_VERTICAL_SLICE_SPEC_V1.md` sections 22–23. Exact first-slice feature IDs and additional survival/medical/crafting details still need a revisioned manifest freeze; long-term systems do not automatically enter the first release.
