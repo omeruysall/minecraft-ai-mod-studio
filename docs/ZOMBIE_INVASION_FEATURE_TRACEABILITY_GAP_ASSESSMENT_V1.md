@@ -173,3 +173,17 @@ The group order is a review proposal. It does not make multiplayer, admin, Studi
 
 This is a static assessment of the current planning matrix. It does not modify the 232 feature statuses, implement features, validate Java/Bedrock compatibility, or claim tests. The next traceability work must fill feature-level requirements, dependencies, acceptance criteria and target mappings in controlled revisions.
 ## 9. Controlled traceability update
+
+The matrix has since been updated in a controlled revision to `catalogs/feature-traceability-matrix.v1.json` v1.2.0. The earlier section 2–4 figures above describe the v1.1.0 snapshot and remain historical, not the current matrix state.
+
+Current state:
+- 232 total feature records remain in the catalog.
+- BASE-001 through BASE-012 now have detailed feature-level mappings and `design_status: mapped`.
+- 220 features remain `needs_traceability_review`.
+- The 12 mapped features link to 12 requirement IDs, 55 acceptance criteria and 50 unique test case IDs in `docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md`.
+- 15 feature-to-feature dependency edges are recorded with `status: proposed`; they are not yet approved dependency decisions.
+- The edge object contract is defined in `schemas/feature-dependency-edge.v1.schema.json`.
+- Java, Bedrock and parity remain `not_assessed` for all 232 features.
+- All 232 implementation statuses remain `not_implemented_verified`; evidence record count remains zero.
+
+The matrix update records design traceability only. It does not claim toolchain compatibility, a successful build, runtime load, gameplay behavior or executed tests. The 16 dependency relations described in the human-readable foundation specification include cross-cutting engine/test/pipeline prerequisites; 15 of these are feature-to-feature edges and therefore appear in the machine-readable feature graph.
