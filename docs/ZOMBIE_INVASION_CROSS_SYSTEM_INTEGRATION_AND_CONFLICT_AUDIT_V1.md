@@ -117,3 +117,23 @@ If optional multiplayer is approved, the server becomes the authoritative writer
 - The single-player path uses the same gameplay contracts without requiring a network server.
 
 Detailed multiplayer rules, proposed modes and open policy decisions are in `docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md`. This extension is a proposal only until the user approves multiplayer and its policies.
+
+
+## 11. Ecosystem and environmental simulation integration
+
+The comprehensive contract is `docs/ZOMBIE_INVASION_ECOSYSTEM_BIOMES_WILDLIFE_AND_ENVIRONMENT_SIMULATION_DESIGN_V1.md`.
+
+Additional integration rules:
+- World/region service owns biome, habitat and climate identity; ecology must not independently infer a different biome for the same location.
+- Weather service owns the authoritative clock and weather snapshot; farming, wildlife, fire, water, power and zombie perception consume that snapshot.
+- Ecology owns wild populations and natural resource patches; farming owns cultivated crops and claimed livestock; item/loot services own resulting item creation and quality.
+- Hunting/fishing/gathering uses a single idempotent harvest transaction. Ecology updates population/resource quantity; loot creates the item output exactly once.
+- Water service owns water quantity and quality. Farming and wildlife may consume water only through its contract; disease reads contamination/exposure events and cannot independently mutate water quality.
+- Environmental hazard service owns fire/flood/drought/pollution propagation; ecology receives habitat-damage events and updates regional suitability/population summaries.
+- Disease service owns exposure and disease state. Zombie infection remains a distinct system unless a deliberately approved story rule links it.
+- Wildlife/zombie interactions are explicit, bounded events. Animals do not automatically become infected, and wildlife cannot bypass encounter budgets.
+- NPC simulation owns profession, needs and tasks. Farming/ecology provide valid work contracts; dialogue reads resulting state but cannot fabricate completed work.
+- Active, near-region and distant simulation use different fidelity levels; distant simulation never loads chunks just to tick entities.
+- Stable IDs, event idempotency, save migrations and Java/Bedrock independent evidence are mandatory.
+
+This integration audit is architectural analysis only. No simulation, performance or compatibility test is claimed.
