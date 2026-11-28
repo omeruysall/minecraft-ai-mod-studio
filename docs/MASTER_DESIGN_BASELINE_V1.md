@@ -203,18 +203,26 @@ Approval of this baseline does not authorize every catalog feature for immediate
 
 ## 11. Open decisions blocking first implementation
 
-1. First playable vertical slice: which experience and which component combination?
-2. First target: Java or Bedrock?
-3. If Java: exact Minecraft version and loader?
-4. If Bedrock: exact target version and supported APIs?
-5. First execution model: local-first, cloud-assisted or hybrid for the initial slice?
-6. First AI provider strategy and minimum provider-independent capability?
-7. Initial authentication and local/offline identity behavior?
-8. Which role can approve a plan in a single-user project and in a team project?
-9. Which validation gates are mandatory for the first deliverable?
-10. Which first-release community/publishing capabilities are deferred?
+The user has selected both Java and Bedrock and the mod/world bundle scope. The earlier platform-choice questions are resolved and superseded.
 
-These questions must be resolved or explicitly deferred with documented consequences before implementation of affected areas.
+Remaining blockers:
+1. Exact Java Minecraft version and loader.
+2. Exact Bedrock version and stable/experimental API policy.
+3. Small shared gameplay feature set and measurable playable loop.
+4. Whether the target tracks are developed sequentially or in parallel.
+5. Test devices/environments available for both editions.
+6. Local/cloud/hybrid execution model for generation and builds.
+7. Initial AI provider, privacy, budget and offline fallback policy.
+8. First-slice identity and team approval details.
+
+Items 1–5 directly affect first-slice implementation. Items 6–8 may be explicitly deferred if the selected architecture and security gates remain sufficient.
+
+References:
+- `docs/FIRST_PLAYABLE_VERTICAL_SLICE_SPEC_V1.md`
+- `docs/FIRST_PLAYABLE_DECISION_REGISTER_V1.md`
+- `catalogs/feature-traceability-matrix.v1.json`
+
+
 
 ## 12. Known limitations and risks
 
