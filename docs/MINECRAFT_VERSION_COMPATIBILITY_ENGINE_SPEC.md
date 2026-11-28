@@ -343,3 +343,14 @@ The 2026-11-28 research note proposes Java 26.3 + Fabric and Bedrock 26.60 + sta
 Reference: `docs/FIRST_SLICE_COMPATIBILITY_RECOMMENDATION_2026-11.md`.
 
 These values are dated recommendations, not universal compatibility declarations. The registry must revalidate exact game, loader, API and toolchain versions from authoritative sources at implementation start and bind test evidence to the actual target profile.
+
+
+## Current Zombie Invasion target profile research (2026-11-28)
+
+The current Zombie Invasion project target profile is Java Edition 26.3 + Fabric and Bedrock Edition 26.60 + stable `@minecraft/server` 2.11.0, with Bedrock experimental APIs disabled.
+
+For Java 26.3, the current Fabric Develop selector lists Fabric Loader 0.20.1, Fabric Loom 1.19-SNAPSHOT and Fabric API 0.166.0+26.3. Java runtime baseline is 25+. Gradle wrapper selection remains an explicit compatibility-resolution step; do not copy the older release-day Loom 1.17 / Gradle 9.6.0 / Loader 0.19.5 values as current pins without checking the selected Loom build.
+
+For Bedrock 26.60, the official 2026-10-27 changelog confirms `@minecraft/server` 2.11.0 as released stable and identifies 2.12.0-beta separately. The target pack format, peer dependencies and actual import/load behavior must still be verified.
+
+References and evidence boundaries are maintained in `docs/ZOMBIE_INVASION_TARGET_TOOLCHAIN_COMPATIBILITY_RESEARCH_2026-11.md`. These are current documentation recommendations, not build/runtime evidence.
