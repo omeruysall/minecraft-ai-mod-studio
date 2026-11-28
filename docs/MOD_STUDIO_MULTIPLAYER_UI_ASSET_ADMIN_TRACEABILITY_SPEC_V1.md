@@ -227,7 +227,7 @@ The first playable game remains single-player. Multiplayer, dedicated servers, p
 - TC-UI-001-01: TC-UI-001-01 HUD data matches authoritative state
 - TC-UI-001-02: TC-UI-001-02 critical warning visibility and configuration
 
-**Prerequisite feature IDs:** BASE-008, ASSET-005.
+**Prerequisite feature IDs:** BASE-008.
 
 ### UI-002 — Menus, screens, tabs, navigation
 
