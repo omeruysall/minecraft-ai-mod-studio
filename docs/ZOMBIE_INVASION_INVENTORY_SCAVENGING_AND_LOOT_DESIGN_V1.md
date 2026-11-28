@@ -1,6 +1,6 @@
 # Zombie Invasion — Inventory, Scavenging and Loot Design V1
 
-Status: **DESIGN PROPOSAL — inventory limits and survival depth awaiting user approval**
+Status: **PARTIALLY USER-APPROVED — backpack variety required; remaining inventory rules are proposals**
 Date: 2026-11-28
 
 ## 1. Purpose
@@ -87,6 +87,32 @@ Seeded randomization is a proposal for optional variation, not a confirmed requi
 
 ## 6. Inventory behavior
 
+The user explicitly requires **multiple backpack varieties in the first playable release**. Backpacks are a core survival feature, not cosmetic-only content. The base Minecraft inventory remains the foundation; backpacks add separately managed storage capacity and may have different intended roles.
+
+### 6.1 First-slice backpack family (design baseline)
+
+The following family is proposed as the minimum meaningful variety. Names, exact slot counts, rarity, spawn weights and any special effects remain subject to detailed balancing:
+
+- **Small daypack:** modest extra storage; relatively common; early-game utility.
+- **Hiking backpack:** larger general-purpose capacity; uncommon; balanced all-rounder.
+- **Tactical backpack:** combat/supply-oriented identity; rare; associated with police or military-style loot locations where those exist.
+- **Medical backpack:** specialist identity for medical supplies; rare; associated with the Hospital.
+- **Large expedition backpack:** highest general storage capacity; very rare; late/advanced scavenging reward.
+
+Visual models/textures must clearly distinguish the variants. Each backpack must have a stable item ID, inventory/storage schema version, capacity definition, acquisition source, rarity and compatibility metadata. Do not grant unapproved gameplay bonuses (armor, speed, damage resistance, extra ammo, healing) merely because a bag is specialized.
+
+### 6.2 Backpack rules and safeguards
+
+- Backpacks are physical items the player can find, carry, equip/open and store, subject to the final interaction design.
+- Contents must remain attached to the correct backpack identity; swapping, dropping, picking up, death, restart and save/load must not mix or duplicate contents.
+- A backpack must not be placed inside another backpack unless nested storage is explicitly approved; default proposal is **no nesting**.
+- Capacity is slot-based in the first-slice proposal; no weight/encumbrance simulation is assumed.
+- The player must receive clear feedback when a backpack is full, incompatible or unavailable.
+- Backpacks and contents must persist correctly through save/reload and must follow the still-unresolved death/restart policy.
+- Java/Fabric and Bedrock implementations may differ internally, but must preserve equivalent player-facing storage behavior. Bedrock custom container behavior must be validated against the selected stable API and platform restrictions before implementation.
+
+### 6.3 Required inventory capabilities
+
 The first-slice inventory must support:
 - Picking up and dropping supported items.
 - Stack limits and item compatibility.
@@ -169,16 +195,20 @@ Run independently on both editions:
 
 Tests not executed must be marked NOT_RUN. Package build success is not evidence of in-game inventory correctness.
 
-## 12. Open user decisions
+## 12. Confirmed decision and remaining user decisions
 
-1. Inventory interface: native Minecraft inventory or custom survival inventory?
-2. Carry limit: unlimited normal slots or weight/capacity system?
-3. Safehouse storage: should the player be able to store supplies between phases?
-4. Loot model: fixed authored loot or seeded random variation?
-5. Hunger: native Minecraft hunger, custom hunger, or no hunger mechanic?
-6. Scenario restart inventory: reset to starting kit, retain selected items, or retain full inventory? This depends on the still-unapproved death/restart policy.
+**Confirmed:** multiple backpack varieties are mandatory in the first playable release. This decision is recorded as a product requirement; exact capacities and balancing remain open.
 
-Recommended first-slice scope: use the native inventory, no weight system, curated fixed loot and no custom thirst/infection mechanics. Treat safehouse storage and between-attempt persistence as separate decisions.
+Still unresolved:
+1. Should backpack contents open through a dedicated backpack container screen, or should backpacks provide extra slots integrated into the normal inventory?
+2. Should the player equip only one backpack at a time? Recommended: yes.
+3. Should backpacks be droppable/lootable physical items with their contents preserved? Recommended: yes.
+4. Safehouse storage: should the player be able to store supplies between scenario phases?
+5. Loot model: fixed authored loot or seeded random variation?
+6. Hunger: native Minecraft hunger, custom hunger, or no hunger mechanic?
+7. Scenario restart inventory: reset to starting kit, retain selected items, or retain full inventory? This depends on the still-unapproved death/restart policy.
+
+Recommended first-slice defaults: retain the native Minecraft inventory, add one equipped backpack with its own slot-based storage, disallow nested backpacks, use curated fixed loot and omit custom thirst/infection mechanics. These defaults remain recommendations except for the requirement to include multiple backpack varieties.
 
 ## 13. Implementation boundary
 
