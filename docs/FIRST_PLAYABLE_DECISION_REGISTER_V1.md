@@ -216,3 +216,18 @@ This decision does not mean the roster has been implemented or tested in-game.
 A cross-edition combat design proposal is recorded in `docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md`. It covers melee and ranged weapon models, optional firearms, ammunition scarcity, reload behavior, damage resolution, zombie-specific counterplay, noise interaction, inventory integration, exploit prevention and Java/Bedrock acceptance tests.
 
 The user has not yet approved whether the first playable slice includes melee only, melee plus non-firearm ranged weapons, or melee plus firearms. Weapon noise, durability and ammunition policy also remain open. No weapon or combat implementation is authorized by the proposal.
+
+
+## 22. User-approved first-slice combat decisions (2026-11-28)
+
+The user approved the following:
+- **Weapons:** Option C — melee weapons and firearms.
+- **Weapon noise:** enabled; gunfire generates a bounded event that can alert/investigate nearby zombies.
+- **Durability:** enabled; weapons degrade through use.
+- **Ammunition:** limited and finite; it must be acquired through gameplay.
+
+Melee remains a viable fallback when firearm ammunition is exhausted. Noise must not spawn unlimited zombies or bypass encounter budgets. Reloading, durability, inventory, death and restart interactions require duplication/loss prevention tests.
+
+Exact weapon catalogue, damage, fire rate, magazine capacity, reload timing, durability values, noise radius, ammunition stack sizes, loot quantities and repair rules remain open for detailed design and balance testing.
+
+Approved scope specification: `docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md`. This approval is a design decision, not evidence of implementation or in-game testing.
