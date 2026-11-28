@@ -60,3 +60,11 @@ Use regional simulation, event budgets, distance-based detail levels and determi
 
 ## 8. Open decisions
 Horde size, siege duration, breach rate, fire spread cadence, disease catalog, infection transmission, wildlife species, population density and first-slice event selection remain unresolved.
+
+
+## 9. Comprehensive ecosystem specification
+
+The concise wildlife and environmental ownership rules in this document are expanded by the integrated specification:
+`docs/ZOMBIE_INVASION_ECOSYSTEM_BIOMES_WILDLIFE_AND_ENVIRONMENT_SIMULATION_DESIGN_V1.md`.
+
+That specification is the detailed source for biome/habitat profiles, wildlife species data, food webs, regional populations, animal AI, hunting, fishing, wild plants, farming, livestock, seasons, water/environmental quality, disease, hazards, NPC work, crafting integration, distant simulation, shared event contracts and Java/Bedrock parity. In case of overlap, this document retains the high-level ownership boundaries; the comprehensive specification supplies the detailed feature contracts. No implementation is implied.
