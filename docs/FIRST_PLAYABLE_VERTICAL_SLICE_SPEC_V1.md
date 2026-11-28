@@ -53,7 +53,7 @@ Expected artifact classes:
 - Dependency metadata and installation instructions.
 - Target profile recording exact Minecraft version, loader, runtime requirements and dependency pins.
 
-The first release must select one exact Minecraft version and one mod loader. Fabric, Forge and NeoForge must not be treated as interchangeable. The loader choice remains unresolved until a compatibility review and user decision.
+The user selected Minecraft Java Edition 26.3 with Fabric. Current Fabric documentation candidates and remaining build-pin work are recorded in `docs/ZOMBIE_INVASION_TARGET_TOOLCHAIN_COMPATIBILITY_RESEARCH_2026-11.md`. Fabric, Forge and NeoForge remain non-interchangeable; the project must use the selected Fabric target and must not silently switch loaders.
 
 Validation gates:
 - Source/schema/static validation.
@@ -75,7 +75,7 @@ Expected artifact classes:
 - Script API module only when necessary and supported by the selected target.
 - Manifest UUID/dependency metadata and installation instructions.
 
-The first release must select an exact Bedrock version and decide whether experimental APIs are excluded, allowed only by explicit opt-in, or included in a controlled test profile. Stable API support is preferred for the default playable path.
+The user selected Bedrock 26.60, stable `@minecraft/server` 2.11.0 where scripting is required, and disabled experimental APIs. Pack format, peer dependencies and actual import/load behavior still require verification.
 
 Validation gates:
 - Manifest/schema validation.
@@ -184,10 +184,10 @@ Unless explicitly approved later:
 
 ## 14. Mandatory decisions before implementation
 
-1. Exact Java Minecraft version.
-2. Exact Java loader: Fabric, Forge or NeoForge.
-3. Exact Bedrock target version.
-4. Stable-only versus controlled experimental API policy.
+1. **Confirmed:** Java Edition 26.3.
+2. **Confirmed:** Fabric loader family; exact Loader/Loom/Gradle/API pins require compatibility resolution and build verification.
+3. **Confirmed:** Bedrock Edition 26.60.
+4. **Confirmed:** stable `@minecraft/server` 2.11.0 where required; experimental APIs disabled.
 5. Small shared gameplay feature set for both editions.
 6. Whether Java and Bedrock tracks are built sequentially or in parallel.
 7. Test environments and device/OS availability for both editions.
@@ -226,18 +226,7 @@ These target selections are confirmed. Exact build tool/runtime patch versions m
 
 ## 18. User-selected gameplay direction — Zombie Invasion (2026-11-28)
 
-The user selected Zombie Invasion as the shared gameplay concept. The detailed authoritative gameplay specification is `docs/ZOMBIE_INVASION_GAMEPLAY_DESIGN_V1.md`.
-
-Proposed first-slice acceptance scope:
-- One compact settlement map and one safehouse defence objective per edition.
-- Scavenging from a small set of authored supply points.
-- A limited, testable defence repair/reinforcement mechanic.
-- One basic zombie archetype.
-- Three escalating invasion phases with warnings and recovery transitions.
-- Clear victory/defeat conditions and reliable replay/reset.
-- Independent Java and Bedrock build, import/load, gameplay and performance evidence.
-
-This is the selected direction, but detailed first-slice parameters remain subject to user confirmation. The full long-term zombie roster, survivor simulation, advanced survival needs, vehicles, procedural open world and multiplayer are not automatically included in the first playable milestone.
+The user selected Zombie Invasion as the shared gameplay concept. The detailed authoritative gameplay specification is `docs/ZOMBIE_INVASION_GAMEPLAY_DESIGN_V1.md`. The user later approved the first-slice zombie roster as Walker, Runner and Brute, and approved melee plus firearms, weapon noise attraction, durability and finite ammunition. A one-basic-zombie scope and a three-phase/three-night extraction scenario are superseded proposals, not the current approved roster or an approved campaign. Exact first-slice feature IDs, victory/defeat policy, death/restart behavior and balance remain to be frozen in the manifest.
 
 
 ## 19. Confirmed first-slice player scope — single-player
@@ -247,7 +236,7 @@ The user accepted a single-player first playable release. All first-slice gamepl
 
 ## 20. Confirmed first-map direction — abandoned expandable town
 
-The user approved an abandoned, expandable town. First-slice map scope is a compact authored safehouse district, a small residential section, at least one functional supply location and two validated attack lanes. The hospital, police station, gas station, military checkpoint and underground shelter are part of the planned landmark set, but may remain simplified, locked or deferred in the first playable build. Java and Bedrock maps must pass independent load, navigation, spawn-safety, gameplay and reset checks.
+The user approved an abandoned, expandable town. The current first-slice landmark baseline requires a safehouse, residential section, functional Market, functional Hospital and functional Police Station, plus two validated attack lanes. Gas station, military checkpoint and underground shelter remain expansion landmarks unless separately promoted. Java and Bedrock maps must pass independent load, navigation, spawn-safety, gameplay and reset checks.
 
 See `docs/ZOMBIE_INVASION_MAP_DESIGN_V1.md` for the detailed map design.
 
