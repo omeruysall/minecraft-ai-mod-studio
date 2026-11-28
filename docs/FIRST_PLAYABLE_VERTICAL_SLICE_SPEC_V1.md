@@ -250,3 +250,18 @@ The user accepted a single-player first playable release. All first-slice gamepl
 The user approved an abandoned, expandable town. First-slice map scope is a compact authored safehouse district, a small residential section, at least one functional supply location and two validated attack lanes. The hospital, police station, gas station, military checkpoint and underground shelter are part of the planned landmark set, but may remain simplified, locked or deferred in the first playable build. Java and Bedrock maps must pass independent load, navigation, spawn-safety, gameplay and reset checks.
 
 See `docs/ZOMBIE_INVASION_MAP_DESIGN_V1.md` for the detailed map design.
+
+
+## 21. Confirmed first-slice functional buildings
+
+The user selected all three proposed buildings: **Market, Hospital and Police Station**. Each is a required functional location in both Java and Bedrock first-slice maps.
+
+Required acceptance:
+- Market: player can enter, search identified supply points, collect food/general supplies and observe empty/looted state.
+- Hospital: player can enter, search medical supply points and use at least one medical/recovery item or interaction supported by the first-slice survival rules.
+- Police Station: player can enter, search tactical supply points and collect combat/defence supplies within the approved combat scope.
+- Each location has a navigable route from the safehouse and a resettable, testable loot state.
+- Equivalent gameplay roles and intended rewards are present in both editions.
+- No custom firearm system is implied or approved by the Police Station decision.
+
+The first-slice map now includes a functional safehouse, residential section, market, hospital and police station, plus two validated attack lanes. The gas station, military checkpoint and underground shelter remain planned expansion landmarks unless separately promoted.
