@@ -181,3 +181,10 @@ The user's selected first milestone targets both Java Edition and Bedrock Editio
 - **Delivery/Export:** produces separate target bundles plus a combined project export containing both target bundles and shared source/specification references.
 
 A single shared feature ID may map to different target-specific implementations. Each target mapping must state support status, adaptation notes, dependency IDs and acceptance evidence. Cross-platform parity remains an explicit per-feature result, never an assumption.
+
+
+## 12. Zombie Invasion dependency-map integration
+
+The project-specific feature/dependency map is `docs/ZOMBIE_INVASION_MASTER_FEATURE_DEPENDENCY_AND_IMPLEMENTATION_MAP_V1.md`.
+
+The map specializes this ownership matrix for the Zombie Invasion project by mapping each gameplay family to one authoritative owner, prerequisite domains, consumers/integrations, platform-target evidence and open status. It preserves this matrix's rule that logical ownership does not require one microservice per feature. Java and Bedrock components remain separate, and the evidence registry must retain independent target-specific results.
