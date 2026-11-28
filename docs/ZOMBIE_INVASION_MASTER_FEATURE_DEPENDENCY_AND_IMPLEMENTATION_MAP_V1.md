@@ -310,3 +310,4 @@ The first 12 feature records in the Project Foundation and Compatibility invento
 The specification defines REQ-BASE-001..012, 32 proposed dependency edges, 55 feature-specific acceptance criteria and 51 test cases. It maps the confirmed Java 26.3 + Fabric and Bedrock 26.60 + stable Script API 2.11.0 target profiles, while keeping runtime/toolchain verification and all implementation claims evidence-gated.
 
 This closes a detailed design-documentation gap for BASE-001..BASE-012; it does not automatically advance the source matrix statuses. The matrix remains unchanged until its machine-readable edge vocabulary and target status semantics are formally validated. No implementation, build, load or gameplay test is claimed.
+## 17. Foundation traceability matrix v1.2.0
