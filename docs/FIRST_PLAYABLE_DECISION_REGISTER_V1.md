@@ -458,3 +458,19 @@ Current matrix v1.2.0 state:
 - All implementation statuses remain `not_implemented_verified`; no runtime/build/test evidence was created.
 
 The mapping preserves unresolved decisions: death/restart policy, encumbrance, exact hunger/thirst rates, character creation scope, item/recipe quantities, loot weights and first-slice farming scope. The graph check validates only the declared dependency DAG; it does not validate gameplay or Minecraft APIs. The 40 features are mapped for design traceability, not all automatically included in the first playable milestone.
+
+
+## 45. Combat, entity and NPC feature traceability (2026-11-28)
+
+A fourth mapping batch is recorded in `docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md`, covering COM-001..COM-012 and ENT-001..ENT-018.
+
+Current matrix v1.2.0 state:
+- 112 mapped features: BASE 12, QA 18, SHIP 12, PLY 14, ITEM 16, CRAFT 10, COM 12 and ENT 18.
+- 120 features remain in traceability review.
+- 255 feature-specific acceptance criteria and 250 unique test case IDs are recorded.
+- 225 proposed feature-to-feature dependency edges are recorded.
+- The full 232-node graph passed a static topological cycle check in this revision.
+- Java, Bedrock and parity remain `not_assessed` for all 232 features.
+- All implementation statuses remain `not_implemented_verified`; no build, import, runtime or gameplay evidence was created.
+
+The mapping preserves scope boundaries: Walker/Runner/Brute and melee/firearms are approved first-slice decisions; explosives, PvP, exact boss roster, special zombie variants, multiplayer and dedicated-server support remain optional, unresolved or later-stage. NPC dialogue is required to read actual game state and must not invent injuries or diagnoses. The graph check validates only the recorded dependency structure.
