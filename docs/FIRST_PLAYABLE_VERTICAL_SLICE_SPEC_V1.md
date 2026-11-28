@@ -212,3 +212,13 @@ Unless explicitly approved later:
 ## 16. Implementation boundary
 
 This document defines a proposed first playable milestone. It does not mean that Java/Bedrock generation, world creation, pack assembly, runtime testing or delivery functionality currently exists. Implementation remains blocked by the master design baseline approval and the unresolved decisions listed above.
+
+
+## 17. User-approved target profiles (2026-11-28)
+
+The user approved the following first-slice compatibility targets:
+- Java Edition 26.3 with Fabric.
+- Bedrock Edition 26.60 with stable `@minecraft/server` 2.11.0 when scripting is required.
+- Experimental Bedrock APIs are disabled.
+
+These target selections are confirmed. Exact build tool/runtime patch versions must be revalidated and pinned before implementation. The target-specific acceptance gates in this specification remain independent and mandatory.
