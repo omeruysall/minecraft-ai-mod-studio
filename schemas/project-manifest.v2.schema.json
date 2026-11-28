@@ -1,0 +1,914 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://minecraft-ai-mod-studio.local/schemas/project-manifest.v2.schema.json",
+  "title": "Minecraft AI Mod Studio Project Manifest v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "manifest_version",
+    "project",
+    "revision",
+    "targets",
+    "workflow",
+    "requirements",
+    "components",
+    "dependency_graph",
+    "assets",
+    "generation",
+    "approvals",
+    "validation",
+    "deliverables",
+    "extensions"
+  ],
+  "properties": {
+    "manifest_version": {
+      "const": "2.0.0"
+    },
+    "project": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "created_at",
+        "updated_at"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_-]{2,63}$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "description": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "origin": {
+          "type": "string",
+          "enum": [
+            "studio",
+            "imported",
+            "community",
+            "migrated_v1"
+          ]
+        }
+      }
+    },
+    "revision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "number",
+        "digest"
+      ],
+      "properties": {
+        "number": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "parent_digest": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "digest": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "migration": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": false,
+          "required": [
+            "from_schema",
+            "migration_id"
+          ],
+          "properties": {
+            "from_schema": {
+              "type": "string"
+            },
+            "migration_id": {
+              "type": "string"
+            },
+            "source_digest": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "warnings": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "targets": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "edition",
+          "version"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9_-]{1,63}$"
+          },
+          "edition": {
+            "type": "string",
+            "enum": [
+              "java",
+              "bedrock"
+            ]
+          },
+          "version": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "selection"
+            ],
+            "properties": {
+              "selection": {
+                "type": "string",
+                "enum": [
+                  "exact",
+                  "range",
+                  "user_selected",
+                  "unresolved"
+                ]
+              },
+              "exact": {
+                "type": "string"
+              },
+              "minimum": {
+                "type": "string"
+              },
+              "maximum": {
+                "type": "string"
+              }
+            }
+          },
+          "runtime": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "loader": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "fabric",
+              "forge",
+              "neoforge",
+              "vanilla",
+              "paper",
+              "spigot",
+              "bukkit",
+              "bedrock",
+              "other",
+              null
+            ]
+          },
+          "java_runtime": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "deployment_roles": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "client",
+                "server",
+                "singleplayer",
+                "realm",
+                "dedicated_server"
+              ]
+            },
+            "uniqueItems": true
+          },
+          "constraints": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "workflow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "stage",
+        "approval_required",
+        "blockers"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "analyzing",
+            "planning",
+            "awaiting_approval",
+            "approved",
+            "in_progress",
+            "integrating",
+            "testing",
+            "repairing",
+            "delivered",
+            "completed",
+            "blocked",
+            "failed",
+            "cancelled"
+          ]
+        },
+        "stage": {
+          "type": "string",
+          "enum": [
+            "conversation",
+            "analysis",
+            "planning",
+            "awaiting_approval",
+            "production",
+            "integration",
+            "testing",
+            "repair",
+            "delivery",
+            "completed"
+          ]
+        },
+        "approval_required": {
+          "const": true
+        },
+        "active_plan_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "approved_revision_digest": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "blockers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "code",
+              "message"
+            ],
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              },
+              "owner": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "description",
+          "status",
+          "provenance"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category": {
+            "type": "string"
+          },
+          "priority": {
+            "type": "string",
+            "enum": [
+              "critical",
+              "high",
+              "medium",
+              "low",
+              "unspecified"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "proposed",
+              "clarifying",
+              "confirmed",
+              "approved",
+              "implemented",
+              "tested",
+              "blocked",
+              "rejected"
+            ]
+          },
+          "provenance": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind"
+            ],
+            "properties": {
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "user",
+                  "ai_extracted",
+                  "imported",
+                  "system"
+                ]
+              },
+              "reference_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "confidence": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0,
+                "maximum": 1
+              }
+            }
+          },
+          "acceptance_criteria": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "component_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "type",
+          "name",
+          "status",
+          "revision",
+          "target_ids",
+          "engine_owner"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9_-]{1,63}$"
+          },
+          "type": {
+            "type": "string",
+            "minLength": 2
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "proposed",
+              "planned",
+              "awaiting_approval",
+              "approved",
+              "queued",
+              "generating",
+              "generated",
+              "building",
+              "built",
+              "validating",
+              "tested",
+              "integrated",
+              "delivered",
+              "failed",
+              "blocked",
+              "cancelled"
+            ]
+          },
+          "revision": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "target_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "engine_owner": {
+            "type": "string"
+          },
+          "requirement_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "dependency_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source_artifact_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "output_artifact_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "configuration": {
+            "type": "object"
+          },
+          "validation_summary": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "supersedes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "dependency_graph": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "edges"
+      ],
+      "properties": {
+        "edges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "from",
+              "to",
+              "kind",
+              "status"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "from": {
+                "type": "string"
+              },
+              "to": {
+                "type": "string"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "requires",
+                  "references",
+                  "generates",
+                  "packages_with",
+                  "conflicts_with",
+                  "loads_before",
+                  "tests",
+                  "replaces"
+                ]
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "unresolved",
+                  "resolved",
+                  "conflict",
+                  "blocked",
+                  "not_applicable"
+                ]
+              },
+              "optional": {
+                "type": "boolean"
+              },
+              "version_constraint": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "provenance": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "version_id",
+          "sha256",
+          "media_type"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "version_id": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "media_type": {
+            "type": "string"
+          },
+          "provenance": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "license": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "generation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "plan_id",
+        "engine_versions"
+      ],
+      "properties": {
+        "plan_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "plan_digest": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "engine_versions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "profile": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "seed": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "configuration_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "approvals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "revision_digest",
+          "scope_digest",
+          "decision",
+          "actor_id",
+          "decided_at"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "revision_digest": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "scope_digest": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "approved",
+              "rejected",
+              "revoked"
+            ]
+          },
+          "actor_id": {
+            "type": "string"
+          },
+          "decided_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "comment_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "plans",
+        "evidence"
+      ],
+      "properties": {
+        "plans": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "test_type",
+              "target_id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "test_type": {
+                "type": "string"
+              },
+              "target_id": {
+                "type": "string"
+              },
+              "required": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "test_type",
+              "result",
+              "component_revision"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "test_type": {
+                "type": "string"
+              },
+              "result": {
+                "type": "string",
+                "enum": [
+                  "passed",
+                  "failed",
+                  "blocked",
+                  "skipped",
+                  "not_run"
+                ]
+              },
+              "component_revision": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "tool_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "executed_at": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "date-time"
+              },
+              "artifact_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "summary": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "deliverables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "format",
+          "status",
+          "source_component_ids"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "format": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "planned",
+              "assembling",
+              "ready",
+              "failed",
+              "blocked",
+              "not_applicable"
+            ]
+          },
+          "artifact_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sha256": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "source_component_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "target_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "collaboration": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "membership_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "visibility": {
+          "type": "string",
+          "enum": [
+            "private",
+            "unlisted",
+            "public"
+          ]
+        }
+      }
+    },
+    "extensions": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}
