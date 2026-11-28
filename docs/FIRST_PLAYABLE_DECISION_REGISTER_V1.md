@@ -266,3 +266,22 @@ The user requires broad crafting across the mod and explicitly requires the norm
 Design specification: `docs/ZOMBIE_INVASION_CRAFTING_AND_WORKSTATION_PROGRESSION_DESIGN_V1.md`.
 
 The full workstation list, unlocks, recipes, station placement and which stations are included in the first playable slice remain open for detailed design. This is a design requirement, not an implementation claim.
+
+
+## 27. User-requested NPC dialogue and fourth-wall narrative (2026-11-28)
+
+The user wants in-game characters to converse with the player and selected characters to break the fourth wall by addressing the player directly. This is recorded as a requested design pillar. Character memory, free-text/voice dialogue, narrative tone, trigger rules and first-slice scope remain open. The design must not imply access to real-world personal data.
+
+## 28. User-requested 3D weapon models (2026-11-28)
+
+The user requires 3D weapon models. The design covers distinct weapon models, supported first/third-person presentation, reload/fire animations and visible compatible attachments. Java and Bedrock require separate target-specific model/animation outputs under a shared logical weapon definition. Exact visual quality and asset pipeline remain open.
+
+## 29. User-requested vehicle manufacturing, modification and mobile living spaces (2026-11-28)
+
+The user wants vehicles manufactured inside factories/facilities and subsequently modifiable. The bicycle is explicitly the simplest starting vehicle. The requested vehicle family includes larger vehicles such as buses. A manufactured bus should be usable as an interior living space. A bicycle may tow a small attached living/cargo module (for example, a compact trailer or small pod); this must not be assumed to be a full-size walk-in caravan. Cars/trucks may support larger caravans/campers in later progression.
+
+The normal Crafting Table remains the initial crafting station; complete vehicles and advanced vehicle assemblies require staged manufacturing facilities. Exact vehicle catalogue, factory access, recipes, interior implementation, towing and balance remain open.
+
+Detailed specification: `docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md`.
+
+These are design requirements only; no NPC AI, 3D assets, vehicles, factories or interiors are implemented or runtime-tested by this entry.
