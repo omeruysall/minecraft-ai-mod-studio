@@ -1,5 +1,5 @@
 {
-  "matrix_version": "1.2.0",
+  "matrix_version": "1.3.0",
   "status": "draft_not_approved",
   "source_catalog": "catalogs/mod-system-inventory.v0.2.json",
   "source_catalog_version": "0.2.0",
@@ -22791,6 +22791,7 @@
     "COM-001..COM-012 and ENT-001..ENT-018 are mapped in docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md. First-slice combat and zombie decisions remain distinct from optional explosives, bosses, PvP and future multiplayer scope.",
     "WORLD-001..WORLD-017 and STRUCT-001..STRUCT-010 are mapped in docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md. The approved topology does not prove procedural world-generation feasibility on either target.",
     "VEH-001..VEH-014, QUEST-001..QUEST-012, ECON-001..ECON-012 and SOC-001..SOC-010 are mapped in docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md. First-slice and multiplayer boundaries remain explicit.",
-    "MP-001..MP-012, UI-001..UI-012, ASSET-001..ASSET-012 and ADMIN-001..ADMIN-009 are mapped in docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md. Multiplayer and target-specific interface capabilities remain conditional."
+    "MP-001..MP-012, UI-001..UI-012, ASSET-001..ASSET-012 and ADMIN-001..ADMIN-009 are mapped in docs/MOD_STUDIO_MULTIPLAYER_UI_ASSET_ADMIN_TRACEABILITY_SPEC_V1.md. Multiplayer and target-specific interface capabilities remain conditional.",
+    "All 232 catalog feature IDs now have requirement links, feature-specific acceptance criteria, test case IDs and proposed dependency edges where applicable. This closes design traceability mapping only; all Java/Bedrock/parity statuses remain not_assessed and all implementation statuses remain not_implemented_verified."
   ]
 }
