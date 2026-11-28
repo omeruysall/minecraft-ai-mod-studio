@@ -301,3 +301,12 @@ This is a planning and architecture map only. It does not implement the mod, Stu
 The family-level map is supplemented by `docs/ZOMBIE_INVASION_FEATURE_TRACEABILITY_GAP_ASSESSMENT_V1.md`, based on the current 232-entry matrix. The assessment records 232/232 features as planned and requiring review, with 0 explicit dependency edges, 0 acceptance criteria marked defined, 0 test cases marked defined, and no Java/Bedrock/parity assessment for any entry.
 
 The L0–L12 layers and family-level matrix in this document must not be mistaken for feature-level dependency closure. Each feature ID still requires applicability, requirement provenance, exact specification mapping, owner confirmation, dependency edges, target-specific acceptance criteria and evidence.
+
+
+## 16. Foundation compatibility feature-level specification
+
+The first 12 feature records in the Project Foundation and Compatibility inventory are expanded in `docs/ZOMBIE_INVASION_FOUNDATION_COMPATIBILITY_AND_TRACEABILITY_SPEC_V1.md`.
+
+The specification defines REQ-BASE-001..012, 32 proposed dependency edges, 55 feature-specific acceptance criteria and 51 test cases. It maps the confirmed Java 26.3 + Fabric and Bedrock 26.60 + stable Script API 2.11.0 target profiles, while keeping runtime/toolchain verification and all implementation claims evidence-gated.
+
+This closes a detailed design-documentation gap for BASE-001..BASE-012; it does not automatically advance the source matrix statuses. The matrix remains unchanged until its machine-readable edge vocabulary and target status semantics are formally validated. No implementation, build, load or gameplay test is claimed.
