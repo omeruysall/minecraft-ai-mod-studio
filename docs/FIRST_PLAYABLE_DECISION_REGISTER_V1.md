@@ -360,3 +360,26 @@ The compact abandoned town remains the first playable map. The long-term world c
 Detailed architecture and constraints: `docs/ZOMBIE_INVASION_WORLD_MAP_BIOMES_AND_EXPLORATION_DESIGN_V1.md`.
 
 This is a design decision only. No terrain generation, region streaming, world expansion or playable artifact has been implemented or tested.
+
+
+## 36. Comprehensive ecosystem architecture — design baseline added (2026-11-28)
+
+The user instructed that the ecosystem design be completed as one integrated scope rather than delivered as small isolated topics. A comprehensive design specification has been added:
+
+`docs/ZOMBIE_INVASION_ECOSYSTEM_BIOMES_WILDLIFE_AND_ENVIRONMENT_SIMULATION_DESIGN_V1.md`.
+
+It covers:
+- Biomes, habitats, climate bands and region-specific resources.
+- Wildlife families, species data, animal behavior, population dynamics and food webs.
+- Hunting, trapping, fishing, gathering and harvesting.
+- Wild plants, mushrooms, trees, regrowth and reforestation.
+- Farming, orchards, greenhouses, soil, crops and livestock.
+- Weather, day/night, seasons and their cross-system effects.
+- Water quality, pollution, waste and environmental quality.
+- Food spoilage, foodborne/waterborne/animal-borne disease and separation from zombie infection.
+- Fire, drought, flood, storms, habitat damage and player countermeasures.
+- Wildlife/zombie interaction under explicit bounded rules.
+- NPC professions and tasks, faction policy, crafting, storage, economy and transport dependencies.
+- Active/near/distant simulation fidelity, persistence, shared event contracts, manifest fields and Java/Bedrock parity.
+
+The architecture is approved as the detailed design treatment of the already user-approved long-term wildlife/ecology scope. Exact species roster, balance values, environmental severity and first ecosystem vertical-slice content remain open for later design and testing. The first playable abandoned-town milestone is not automatically expanded. No code, mod, world, entity, asset or runtime test is claimed.
