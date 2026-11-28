@@ -324,3 +324,12 @@ The user approved:
 These selections close the earlier open questions about target game versions, Java loader and Bedrock API stability policy. The compatibility recommendation is now a confirmed target decision, not a proposal. Toolchain patch versions, runtime requirements and current official metadata still require verification immediately before implementation.
 
 Remaining major first-slice decisions include the common gameplay feature set, target-track development order, test environments, execution model and AI provider policy.
+
+
+## 19. User-selected first gameplay concept — Zombie Invasion (2026-11-28)
+
+The user selected Zombie Invasion and requested a highly detailed design. The authoritative gameplay document is `docs/ZOMBIE_INVASION_GAMEPLAY_DESIGN_V1.md`.
+
+The concept is a cross-edition survival, scavenging and base-defence experience with escalating attacks. The first playable proposal is a compact settlement and safehouse, authored supply points, limited repairs, a basic zombie archetype and three escalating attacks. Java 26.3 + Fabric and Bedrock 26.60 + stable Script API 2.11.0 remain the approved target profiles; experimental Bedrock APIs remain disabled.
+
+The concept selection does not by itself approve every long-term system or open the coding gate. Multiplayer scope, map theme, death/restart, victory condition, loot policy, construction freedom and first-slice combat scope still require resolution or explicit deferral.
