@@ -102,3 +102,8 @@ A change after approval creates a new manifest revision and invalidates approval
 - `docs/ZOMBIE_INVASION_IMPLEMENTATION_READINESS_AND_CODE_ENTRY_GATE_V1.md`
 - `docs/ZOMBIE_INVASION_TARGET_TOOLCHAIN_COMPATIBILITY_RESEARCH_2026-11.md`
 - `docs/FIRST_PLAYABLE_VERTICAL_SLICE_SPEC_V1.md`
+
+
+## 10. Readable first-slice feature scope review
+
+The 84 candidate feature IDs are expanded by family and rationale in `docs/ZOMBIE_INVASION_FIRST_SLICE_FEATURE_SCOPE_REVIEW_V1.md`. This is a readable review aid only; every candidate remains `proposed_not_approved`. The user must approve or revise the exact list before production.
