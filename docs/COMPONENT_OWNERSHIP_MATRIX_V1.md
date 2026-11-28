@@ -164,3 +164,20 @@ This matrix defines proposed responsibility boundaries only. It does not establi
 
 ## 17. Related specifications
 Master Integration Audit, Architecture, API Contract v2, Project Manifest v2, Project Architect Decision Engine, all production-engine specifications, Security/Permissions/Moderation, Publishing/Versioning and Backup/Recovery.
+
+## 18. Cross-platform first-slice ownership clarification
+
+The user's selected first milestone targets both Java Edition and Bedrock Edition. The following ownership boundary is mandatory:
+
+- **Project Architect / Manifest Service:** owns shared project intent, requirements, revisions, approvals and target declarations.
+- **Compatibility Engine:** owns separate Java and Bedrock target evaluation; it must not infer parity from shared requirements.
+- **Java Mod Production Engine:** owns Java mod source and JAR build outputs.
+- **Bedrock Add-on Production Engine:** owns behavior/resource pack and add-on package outputs.
+- **Map/World Production Engine:** owns world source and world artifacts, using platform-specific adapters and validation.
+- **Datapack Production Engine:** owns Java datapack artifacts; it must report not_applicable for a Bedrock target unless a separately specified equivalent exists.
+- **Resource Pack Production Engine:** owns resource assets and pack outputs, with independent Java and Bedrock packaging/adapters.
+- **Integration Engine:** validates cross-component references within each target. It does not merge Java and Bedrock runtime artifacts.
+- **Evidence Registry:** stores target-specific test evidence; a Java test result cannot satisfy a Bedrock acceptance criterion or vice versa.
+- **Delivery/Export:** produces separate target bundles plus a combined project export containing both target bundles and shared source/specification references.
+
+A single shared feature ID may map to different target-specific implementations. Each target mapping must state support status, adaptation notes, dependency IDs and acceptance evidence. Cross-platform parity remains an explicit per-feature result, never an assumption.
