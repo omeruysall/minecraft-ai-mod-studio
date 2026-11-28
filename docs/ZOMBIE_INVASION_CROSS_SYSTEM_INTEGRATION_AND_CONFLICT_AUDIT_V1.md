@@ -211,3 +211,4 @@ Integration constraints:
 - The 32 dependency edges, 55 acceptance criteria and 51 tests in the new specification are design artifacts; they have not been executed.
 
 The feature traceability matrix remains at its prior review state pending formalization of machine-readable edge and target-status semantics. No implementation or compatibility test is claimed.
+## 17. Foundation traceability matrix v1.2.0
