@@ -231,3 +231,10 @@ Melee remains a viable fallback when firearm ammunition is exhausted. Noise must
 Exact weapon catalogue, damage, fire rate, magazine capacity, reload timing, durability values, noise radius, ammunition stack sizes, loot quantities and repair rules remain open for detailed design and balance testing.
 
 Approved scope specification: `docs/ZOMBIE_INVASION_COMBAT_AND_WEAPON_SYSTEM_DESIGN_V1.md`. This approval is a design decision, not evidence of implementation or in-game testing.
+
+
+## 23. Inventory, scavenging and loot — next design proposal (2026-11-28)
+
+A detailed cross-edition proposal has been added in `docs/ZOMBIE_INVASION_INVENTORY_SCAVENGING_AND_LOOT_DESIGN_V1.md`. It defines the distinct loot identities of Market (food/general supplies), Hospital (medical supplies), Police Station (tactical/defence supplies), residential buildings and safehouse; it also covers finite ammunition, durability, reload integrity, container ownership, scenario reset and acceptance tests.
+
+Recommended first-slice defaults are native Minecraft inventory, no weight/encumbrance system, curated fixed loot, and no custom thirst/infection mechanics. These are recommendations only. Inventory UI, carry limits, safehouse storage, loot variation, hunger behavior and inventory persistence across attempts remain unresolved. No inventory or loot implementation is authorized by this proposal.
