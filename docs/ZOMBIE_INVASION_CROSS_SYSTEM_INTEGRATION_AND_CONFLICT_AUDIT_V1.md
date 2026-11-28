@@ -189,3 +189,8 @@ Additional controls consolidated in that map:
 - Test gates cover transaction integrity, save migration, gameplay state, regional performance and independent target validation.
 
 This is a design-level consolidation, not runtime validation.
+
+
+## 15. Feature traceability completeness status
+
+The current 232-entry feature matrix was assessed in `docs/ZOMBIE_INVASION_FEATURE_TRACEABILITY_GAP_ASSESSMENT_V1.md`. At this snapshot all 232 entries remain planned / needs traceability review; no per-feature dependency edges, acceptance criteria or test cases are marked defined, and Java, Bedrock and parity statuses remain not assessed. The master dependency map is therefore an architecture-level guide only, not proof of completed feature-level mapping.
