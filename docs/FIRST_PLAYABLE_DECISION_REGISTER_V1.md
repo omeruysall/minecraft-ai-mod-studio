@@ -285,3 +285,12 @@ The normal Crafting Table remains the initial crafting station; complete vehicle
 Detailed specification: `docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md`.
 
 These are design requirements only; no NPC AI, 3D assets, vehicles, factories or interiors are implemented or runtime-tested by this entry.
+
+
+## 30. User clarification — NPCs address player by chosen name and react to live game state (2026-11-28)
+
+The user clarified that NPCs should naturally use the player's chosen in-game name (example: "Ömer") and comment on actual events and conditions. Example requested lines include "Ömer, böyle olmaz" and a medic saying "Ömer, kemiğin kırılmış" when the game has recorded a fracture.
+
+This is more specific than generic dialogue or fourth-wall breaking. NPCs must receive reliable game-state facts (injuries, resources, vehicle condition, actions and quest history), use the chosen in-game display name naturally, and never invent diagnoses or events. Ordinary NPC dialogue addresses the in-world player; selected fourth-wall characters may separately address the human player directly.
+
+Detailed requirements and acceptance tests are in `docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md`. This is a design requirement only; no conversational AI or in-game dialogue implementation is claimed.
