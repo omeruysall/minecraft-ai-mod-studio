@@ -301,3 +301,27 @@ Detailed requirements and acceptance tests are in `docs/ZOMBIE_INVASION_NPC_DIAL
 The user requested a solar power system, wind turbine system, storable energy and gasoline storage. The design expands this into a coherent electricity and fuel infrastructure: solar panels, wind turbines, fuel-powered generators, portable and fixed battery storage, gasoline/diesel containers and tanks, pumps and transfer, electrical distribution, base consumers, power priorities, maintenance and safety risks. It must integrate with base infrastructure, vehicle fuel, the bus mobile base, weather/day-night/season systems, loot and NPC contextual dialogue.
 
 This is a recorded feature requirement. Numerical balance, exact recipes, capacities, rates and detailed implementation choices remain open. See `docs/ZOMBIE_INVASION_POWER_GENERATION_STORAGE_AND_FUEL_INFRASTRUCTURE_DESIGN_V1.md`.
+
+
+## 32. User-approved expanded zombie apocalypse systems (2026-11-28)
+
+The user explicitly approved adding the following systems to the long-term Zombie Invasion mod scope:
+- Water cycle and sanitation: rain collection, wells, treatment, storage, pipes, pumps, distribution, showers, toilets and sewage.
+- Base building and operations: free construction, claiming/occupying abandoned buildings, defense, traps, security, and power/water/automation integration.
+- Survivors and factions: rescue/recruitment, NPC professions, tasks, schedules, NPC-to-NPC interaction, faction relations, alliances and hostilities.
+- World simulation: zombie hordes and base sieges, fire, disease/outbreak events, wildlife and ecology.
+- Communications and narrative: radio, research, laboratories and story.
+- Player progression and economy: skills, trade, finite stock, scarcity and regional markets.
+- Expanded transport: convoys, trains, boats and helicopters, integrated with the existing vehicle/fuel system.
+
+Detailed design proposals and acceptance criteria are recorded in the following documents:
+- `docs/ZOMBIE_INVASION_WATER_CYCLE_AND_SANITATION_DESIGN_V1.md`
+- `docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md`
+- `docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md`
+- `docs/ZOMBIE_INVASION_HORDE_FIRE_DISEASE_ECOLOGY_DESIGN_V1.md`
+- `docs/ZOMBIE_INVASION_RADIO_RESEARCH_AND_STORY_DESIGN_V1.md`
+- `docs/ZOMBIE_INVASION_CHARACTER_PROGRESSION_AND_ECONOMY_DESIGN_V1.md`
+- `docs/ZOMBIE_INVASION_EXPANDED_TRANSPORT_NETWORK_DESIGN_V1.md`
+- `docs/ZOMBIE_INVASION_CROSS_SYSTEM_INTEGRATION_AND_CONFLICT_AUDIT_V1.md`
+
+Approval applies to inclusion in the long-term design scope, not automatic inclusion in the first playable vertical slice. Detailed balance, feature sequencing, exact recipes, populations, simulation rates, and edition-specific implementation remain open. No implementation or playtest is claimed.
