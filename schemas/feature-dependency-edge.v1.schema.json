@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://minecraft-ai-mod-studio.local/schemas/feature-dependency-edge.v1.schema.json",
+  "title": "Minecraft AI Mod Studio Feature Dependency Edge v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "edge_id",
+    "source_feature_id",
+    "target_feature_id",
+    "relationship",
+    "status",
+    "rationale",
+    "specification_ref"
+  ],
+  "properties": {
+    "edge_id": {
+      "type": "string",
+      "pattern": "^[A-Z0-9-]+$"
+    },
+    "source_feature_id": {
+      "type": "string",
+      "pattern": "^[A-Z0-9-]+$"
+    },
+    "target_feature_id": {
+      "type": "string",
+      "pattern": "^[A-Z0-9-]+$"
+    },
+    "relationship": {
+      "type": "string",
+      "enum": ["requires", "constrains", "provides_contract_to", "migrates"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["proposed", "reviewed", "approved", "blocked", "not_applicable"]
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 1
+    },
+    "specification_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target_scope": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["java", "bedrock", "shared"]
+      },
+      "uniqueItems": true
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}
