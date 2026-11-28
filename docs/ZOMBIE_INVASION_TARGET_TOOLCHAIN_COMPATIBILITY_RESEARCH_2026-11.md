@@ -72,3 +72,10 @@ Sources:
 ## 6. Implementation boundary
 
 This research narrows toolchain selection. It does not prove that the project compiles, that Fabric supports every selected feature, that Bedrock exposes equivalent capabilities, or that a generated package loads. These claims require a reproducible build and target runtime evidence for each edition.
+
+
+## 3.1 Java 26.3 pack formats
+
+Mojang's official Java 26.3 release notes specify **Data Pack version 121.0** and **Resource Pack version 97.1**. The Java world/data and resource-pack generators must emit metadata for these formats and validate against the selected 26.3 runtime.
+
+Source: https://www.minecraft.net/en-us/article/minecraft-java-edition-26-3
