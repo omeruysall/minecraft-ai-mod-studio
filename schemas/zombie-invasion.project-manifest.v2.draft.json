@@ -19,7 +19,7 @@
     "number": 1,
     "id": "00000000-0000-4000-8000-000000000001",
     "parent_digest": null,
-    "digest": "325cfc7b73b6923ff9dd9f1904d99c30de00486ad3ef0b1a010fb92c5dc730ca",
+    "digest": "5071dfbe8a808bf5aba8c995d8bf1321a4a1826e39af67020b7dccca82f53da2",
     "created_at": "2026-11-28T19:00:00+03:00",
     "migration": null
   },
@@ -33,13 +33,14 @@
       },
       "runtime": null,
       "loader": "fabric",
-      "java_runtime": null,
+      "java_runtime": "Java SE 25+ (Minecraft 26.3 runtime baseline)",
       "deployment_roles": [
         "client",
         "singleplayer"
       ],
       "constraints": [
-        "Fabric Loader, Loom, mappings and Java runtime versions must be verified and pinned before generation."
+        "Fabric Loader, Loom, mappings and Java runtime versions must be verified and pinned before generation.",
+        "Current Fabric documentation lists Loader 0.20.1, Loom 1.19-SNAPSHOT and Fabric API 0.166.0+26.3 for Minecraft 26.3; use as compatibility candidates, not as a successful build pin."
       ]
     },
     {
@@ -58,7 +59,8 @@
       ],
       "constraints": [
         "Experimental APIs disabled.",
-        "Pack format and stable API support must be verified on the actual target runtime."
+        "Pack format and stable API support must be verified on the actual target runtime.",
+        "Official Bedrock 26.60 changelog confirms @minecraft/server 2.11.0 is released/stable; actual pack manifest and import/load still require verification."
       ]
     }
   ],
@@ -74,8 +76,8 @@
         "message": "Exact first-playable feature IDs, recipes, item roster and survival values are not yet approved."
       },
       {
-        "code": "JAVA_TOOLCHAIN_NOT_PINNED",
-        "message": "Fabric Loader, Loom, mappings and Java runtime patch versions require compatibility verification."
+        "code": "JAVA_TOOLCHAIN_BUILD_NOT_VERIFIED",
+        "message": "Current Fabric compatibility candidates are recorded, but exact Gradle pinning and a clean target build remain unverified."
       },
       {
         "code": "BEDROCK_PACK_FORMAT_NOT_VERIFIED",
@@ -515,8 +517,13 @@
       "configuration": {
         "minecraft": "26.3",
         "loader": "fabric",
-        "loader_version": "UNRESOLVED",
-        "java_runtime": "UNRESOLVED"
+        "loader_version": "0.20.1",
+        "java_runtime": "25+",
+        "loom_version": "1.19-SNAPSHOT",
+        "fabric_api_version": "0.166.0+26.3",
+        "gradle_version": "UNRESOLVED_VERIFY_WITH_LOOM_1_19",
+        "toolchain_source": "https://fabricmc.net/develop/",
+        "toolchain_verified_build": false
       }
     },
     {
@@ -616,8 +623,9 @@
       ],
       "configuration": {
         "experimental_apis": false,
-        "stable_script_api": "2.11.0_if_required",
-        "pack_format": "UNRESOLVED"
+        "stable_script_api": "2.11.0_if_required_confirmed_stable",
+        "pack_format": "UNRESOLVED",
+        "script_api_source": "https://feedback.minecraft.net/hc/en-us/articles/49852828563853-Minecraft-Bedrock-Edition-26-60-Changelog"
       }
     },
     {
@@ -1140,6 +1148,26 @@
         "WORLD-014..WORLD-017"
       ],
       "note": "This candidate list is a planning proposal derived from confirmed gameplay requirements and required delivery gates. It does not approve these feature IDs for generation; the user must approve the final exact set."
+    },
+    "toolchain_research": {
+      "researched_at": "2026-11-28",
+      "java": {
+        "minecraft": "26.3",
+        "java_runtime": "25+",
+        "fabric_loader": "0.20.1",
+        "loom": "1.19-SNAPSHOT",
+        "fabric_api": "0.166.0+26.3",
+        "gradle": "unresolved_pending_loom_resolution",
+        "status": "current_documentation_recommendation_not_build_verified",
+        "source": "https://fabricmc.net/develop/"
+      },
+      "bedrock": {
+        "minecraft": "26.60",
+        "script_api": "@minecraft/server 2.11.0",
+        "experimental_apis": false,
+        "status": "official_changelog_confirms_stable_api_release; target pack/runtime still not tested",
+        "source": "https://feedback.minecraft.net/hc/en-us/articles/49852828563853-Minecraft-Bedrock-Edition-26-60-Changelog"
+      }
     }
   }
 }
