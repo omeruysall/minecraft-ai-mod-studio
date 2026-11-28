@@ -10,7 +10,7 @@
     "source_status_counts": {
       "planned": 232
     },
-    "traceability_review_required": 93,
+    "traceability_review_required": 45,
     "implementation_claims": "none",
     "target_coverage_status_counts": {
       "java_edition": {
@@ -24,12 +24,12 @@
       }
     },
     "design_status_counts": {
-      "mapped": 139,
-      "needs_traceability_review": 93
+      "mapped": 187,
+      "needs_traceability_review": 45
     },
-    "feature_dependency_edge_count": 277,
-    "acceptance_criteria_defined_feature_count": 139,
-    "test_cases_defined_feature_count": 139,
+    "feature_dependency_edge_count": 385,
+    "acceptance_criteria_defined_feature_count": 187,
+    "test_cases_defined_feature_count": 187,
     "evidence_record_count": 0
   },
   "status_semantics": {
@@ -5910,27 +5910,39 @@
       "inventory_section": 8,
       "inventory_section_title": "Vehicles, mounts, and machinery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Transportation, Logistics & Infrastructure Engine",
-      "primary_specification": "docs/TRANSPORTATION_LOGISTICS_INFRASTRUCTURE_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md",
       "manifest_component_type": "transportation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-VEH-001"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-007-TO-VEH-001",
+          "DEP-ITEM-001-TO-VEH-001",
+          "DEP-WORLD-001-TO-VEH-001"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-VEH-001-01",
+          "AC-VEH-001-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-VEH-001-01",
+          "TC-VEH-001-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -5940,7 +5952,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -5957,7 +5969,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_EXPANDED_TRANSPORT_NETWORK_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "VEH-002",
@@ -5965,27 +5982,39 @@
       "inventory_section": 8,
       "inventory_section_title": "Vehicles, mounts, and machinery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Transportation, Logistics & Infrastructure Engine",
-      "primary_specification": "docs/TRANSPORTATION_LOGISTICS_INFRASTRUCTURE_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md",
       "manifest_component_type": "transportation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-VEH-002"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-VEH-001-TO-VEH-002",
+          "DEP-ITEM-001-TO-VEH-002",
+          "DEP-CRAFT-001-TO-VEH-002"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-VEH-002-01",
+          "AC-VEH-002-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-VEH-002-01",
+          "TC-VEH-002-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -5995,7 +6024,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -6012,7 +6041,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_EXPANDED_TRANSPORT_NETWORK_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "VEH-003",
@@ -6020,27 +6054,37 @@
       "inventory_section": 8,
       "inventory_section_title": "Vehicles, mounts, and machinery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Transportation, Logistics & Infrastructure Engine",
-      "primary_specification": "docs/TRANSPORTATION_LOGISTICS_INFRASTRUCTURE_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md",
       "manifest_component_type": "transportation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-VEH-003"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-VEH-001-TO-VEH-003"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-VEH-003-01",
+          "AC-VEH-003-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-VEH-003-01",
+          "TC-VEH-003-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -6050,7 +6094,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -6067,7 +6111,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_EXPANDED_TRANSPORT_NETWORK_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "VEH-004",
@@ -6075,27 +6124,38 @@
       "inventory_section": 8,
       "inventory_section_title": "Vehicles, mounts, and machinery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Transportation, Logistics & Infrastructure Engine",
-      "primary_specification": "docs/TRANSPORTATION_LOGISTICS_INFRASTRUCTURE_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md",
       "manifest_component_type": "transportation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-VEH-004"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-VEH-001-TO-VEH-004",
+          "DEP-WORLD-008-TO-VEH-004"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-VEH-004-01",
+          "AC-VEH-004-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-VEH-004-01",
+          "TC-VEH-004-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -6105,7 +6165,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -6122,7 +6182,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_EXPANDED_TRANSPORT_NETWORK_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "VEH-005",
@@ -6130,27 +6195,38 @@
       "inventory_section": 8,
       "inventory_section_title": "Vehicles, mounts, and machinery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Transportation, Logistics & Infrastructure Engine",
-      "primary_specification": "docs/TRANSPORTATION_LOGISTICS_INFRASTRUCTURE_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md",
       "manifest_component_type": "transportation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-VEH-005"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-VEH-001-TO-VEH-005",
+          "DEP-WORLD-005-TO-VEH-005"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-VEH-005-01",
+          "AC-VEH-005-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-VEH-005-01",
+          "TC-VEH-005-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -6160,7 +6236,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -6177,7 +6253,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_EXPANDED_TRANSPORT_NETWORK_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "VEH-006",
@@ -6185,27 +6266,38 @@
       "inventory_section": 8,
       "inventory_section_title": "Vehicles, mounts, and machinery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Transportation, Logistics & Infrastructure Engine",
-      "primary_specification": "docs/TRANSPORTATION_LOGISTICS_INFRASTRUCTURE_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md",
       "manifest_component_type": "transportation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-VEH-006"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-VEH-001-TO-VEH-006",
+          "DEP-ENT-004-TO-VEH-006"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-VEH-006-01",
+          "AC-VEH-006-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-VEH-006-01",
+          "TC-VEH-006-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -6215,7 +6307,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -6232,7 +6324,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_EXPANDED_TRANSPORT_NETWORK_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "VEH-007",
@@ -6240,27 +6337,38 @@
       "inventory_section": 8,
       "inventory_section_title": "Vehicles, mounts, and machinery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Transportation, Logistics & Infrastructure Engine",
-      "primary_specification": "docs/TRANSPORTATION_LOGISTICS_INFRASTRUCTURE_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md",
       "manifest_component_type": "transportation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-VEH-007"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-CRAFT-005-TO-VEH-007",
+          "DEP-ITEM-014-TO-VEH-007"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-VEH-007-01",
+          "AC-VEH-007-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-VEH-007-01",
+          "TC-VEH-007-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -6270,7 +6378,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -6287,7 +6395,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_EXPANDED_TRANSPORT_NETWORK_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "VEH-008",
@@ -6295,27 +6408,38 @@
       "inventory_section": 8,
       "inventory_section_title": "Vehicles, mounts, and machinery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Transportation, Logistics & Infrastructure Engine",
-      "primary_specification": "docs/TRANSPORTATION_LOGISTICS_INFRASTRUCTURE_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md",
       "manifest_component_type": "transportation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-VEH-008"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-VEH-001-TO-VEH-008",
+          "DEP-ITEM-009-TO-VEH-008"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-VEH-008-01",
+          "AC-VEH-008-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-VEH-008-01",
+          "TC-VEH-008-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -6325,7 +6449,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -6342,7 +6466,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_EXPANDED_TRANSPORT_NETWORK_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "VEH-009",
@@ -6350,27 +6479,39 @@
       "inventory_section": 8,
       "inventory_section_title": "Vehicles, mounts, and machinery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Transportation, Logistics & Infrastructure Engine",
-      "primary_specification": "docs/TRANSPORTATION_LOGISTICS_INFRASTRUCTURE_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md",
       "manifest_component_type": "transportation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-VEH-009"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-VEH-001-TO-VEH-009",
+          "DEP-ITEM-007-TO-VEH-009",
+          "DEP-ITEM-013-TO-VEH-009"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-VEH-009-01",
+          "AC-VEH-009-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-VEH-009-01",
+          "TC-VEH-009-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -6380,7 +6521,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -6397,7 +6538,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_EXPANDED_TRANSPORT_NETWORK_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "VEH-010",
@@ -6405,27 +6551,39 @@
       "inventory_section": 8,
       "inventory_section_title": "Vehicles, mounts, and machinery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Transportation, Logistics & Infrastructure Engine",
-      "primary_specification": "docs/TRANSPORTATION_LOGISTICS_INFRASTRUCTURE_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md",
       "manifest_component_type": "transportation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-VEH-010"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-VEH-001-TO-VEH-010",
+          "DEP-WORLD-003-TO-VEH-010",
+          "DEP-STRUCT-006-TO-VEH-010"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-VEH-010-01",
+          "AC-VEH-010-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-VEH-010-01",
+          "TC-VEH-010-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -6435,7 +6593,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -6452,7 +6610,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_EXPANDED_TRANSPORT_NETWORK_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "VEH-011",
@@ -6460,27 +6623,38 @@
       "inventory_section": 8,
       "inventory_section_title": "Vehicles, mounts, and machinery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Transportation, Logistics & Infrastructure Engine",
-      "primary_specification": "docs/TRANSPORTATION_LOGISTICS_INFRASTRUCTURE_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md",
       "manifest_component_type": "transportation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-VEH-011"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-VEH-001-TO-VEH-011",
+          "DEP-COM-004-TO-VEH-011"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-VEH-011-01",
+          "AC-VEH-011-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-VEH-011-01",
+          "TC-VEH-011-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -6490,7 +6664,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -6507,7 +6681,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_EXPANDED_TRANSPORT_NETWORK_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "VEH-012",
@@ -6515,27 +6694,39 @@
       "inventory_section": 8,
       "inventory_section_title": "Vehicles, mounts, and machinery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Transportation, Logistics & Infrastructure Engine",
-      "primary_specification": "docs/TRANSPORTATION_LOGISTICS_INFRASTRUCTURE_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md",
       "manifest_component_type": "transportation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-VEH-012"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-VEH-001-TO-VEH-012",
+          "DEP-CRAFT-004-TO-VEH-012",
+          "DEP-ITEM-009-TO-VEH-012"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-VEH-012-01",
+          "AC-VEH-012-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-VEH-012-01",
+          "TC-VEH-012-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -6545,7 +6736,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -6562,7 +6753,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_EXPANDED_TRANSPORT_NETWORK_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "VEH-013",
@@ -6570,27 +6766,38 @@
       "inventory_section": 8,
       "inventory_section_title": "Vehicles, mounts, and machinery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Transportation, Logistics & Infrastructure Engine",
-      "primary_specification": "docs/TRANSPORTATION_LOGISTICS_INFRASTRUCTURE_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md",
       "manifest_component_type": "transportation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-VEH-013"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-003-TO-VEH-013",
+          "DEP-QA-012-TO-VEH-013"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-VEH-013-01",
+          "AC-VEH-013-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-VEH-013-01",
+          "TC-VEH-013-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -6600,7 +6807,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -6617,7 +6824,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_EXPANDED_TRANSPORT_NETWORK_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "VEH-014",
@@ -6625,27 +6837,39 @@
       "inventory_section": 8,
       "inventory_section_title": "Vehicles, mounts, and machinery",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Transportation, Logistics & Infrastructure Engine",
-      "primary_specification": "docs/TRANSPORTATION_LOGISTICS_INFRASTRUCTURE_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_NPC_DIALOGUE_3D_WEAPONS_AND_VEHICLE_MANUFACTURING_DESIGN_V1.md",
       "manifest_component_type": "transportation",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-VEH-014"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-013-TO-VEH-014",
+          "DEP-CRAFT-003-TO-VEH-014",
+          "DEP-CRAFT-005-TO-VEH-014"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-VEH-014-01",
+          "AC-VEH-014-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-VEH-014-01",
+          "TC-VEH-014-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -6655,7 +6879,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -6672,7 +6896,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_EXPANDED_TRANSPORT_NETWORK_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_BASE_BUILDING_CLAIM_DEFENSE_AUTOMATION_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "WORLD-001",
@@ -8612,27 +8841,38 @@
       "inventory_section": 11,
       "inventory_section_title": "Quests, narrative, and events",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Quest & Story Production Engine",
-      "primary_specification": "docs/QUEST_STORY_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_RADIO_RESEARCH_AND_STORY_DESIGN_V1.md",
       "manifest_component_type": "quests",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QUEST-001"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-007-TO-QUEST-001",
+          "DEP-PLY-014-TO-QUEST-001"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QUEST-001-01",
+          "AC-QUEST-001-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QUEST-001-01",
+          "TC-QUEST-001-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -8642,7 +8882,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -8659,7 +8899,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "QUEST-002",
@@ -8667,27 +8912,38 @@
       "inventory_section": 11,
       "inventory_section_title": "Quests, narrative, and events",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Quest & Story Production Engine",
-      "primary_specification": "docs/QUEST_STORY_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_RADIO_RESEARCH_AND_STORY_DESIGN_V1.md",
       "manifest_component_type": "quests",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QUEST-002"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-QUEST-001-TO-QUEST-002",
+          "DEP-WORLD-001-TO-QUEST-002"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QUEST-002-01",
+          "AC-QUEST-002-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QUEST-002-01",
+          "TC-QUEST-002-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -8697,7 +8953,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -8714,7 +8970,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "QUEST-003",
@@ -8722,27 +8983,38 @@
       "inventory_section": 11,
       "inventory_section_title": "Quests, narrative, and events",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Quest & Story Production Engine",
-      "primary_specification": "docs/QUEST_STORY_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_RADIO_RESEARCH_AND_STORY_DESIGN_V1.md",
       "manifest_component_type": "quests",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QUEST-003"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-QUEST-001-TO-QUEST-003",
+          "DEP-ENT-014-TO-QUEST-003"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QUEST-003-01",
+          "AC-QUEST-003-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QUEST-003-01",
+          "TC-QUEST-003-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -8752,7 +9024,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -8769,7 +9041,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "QUEST-004",
@@ -8777,27 +9054,37 @@
       "inventory_section": 11,
       "inventory_section_title": "Quests, narrative, and events",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Quest & Story Production Engine",
-      "primary_specification": "docs/QUEST_STORY_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_RADIO_RESEARCH_AND_STORY_DESIGN_V1.md",
       "manifest_component_type": "quests",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QUEST-004"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ENT-014-TO-QUEST-004"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QUEST-004-01",
+          "AC-QUEST-004-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QUEST-004-01",
+          "TC-QUEST-004-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -8807,7 +9094,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -8824,7 +9111,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "QUEST-005",
@@ -8832,27 +9124,39 @@
       "inventory_section": 11,
       "inventory_section_title": "Quests, narrative, and events",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Quest & Story Production Engine",
-      "primary_specification": "docs/QUEST_STORY_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_RADIO_RESEARCH_AND_STORY_DESIGN_V1.md",
       "manifest_component_type": "quests",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QUEST-005"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-QUEST-001-TO-QUEST-005",
+          "DEP-ITEM-001-TO-QUEST-005",
+          "DEP-ENT-003-TO-QUEST-005"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QUEST-005-01",
+          "AC-QUEST-005-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QUEST-005-01",
+          "TC-QUEST-005-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -8862,7 +9166,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -8879,7 +9183,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "QUEST-006",
@@ -8887,27 +9196,38 @@
       "inventory_section": 11,
       "inventory_section_title": "Quests, narrative, and events",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Quest & Story Production Engine",
-      "primary_specification": "docs/QUEST_STORY_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_RADIO_RESEARCH_AND_STORY_DESIGN_V1.md",
       "manifest_component_type": "quests",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QUEST-006"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-QUEST-001-TO-QUEST-006",
+          "DEP-PLY-013-TO-QUEST-006"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QUEST-006-01",
+          "AC-QUEST-006-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QUEST-006-01",
+          "TC-QUEST-006-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -8917,7 +9237,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -8934,7 +9254,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "QUEST-007",
@@ -8942,27 +9267,39 @@
       "inventory_section": 11,
       "inventory_section_title": "Quests, narrative, and events",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Quest & Story Production Engine",
-      "primary_specification": "docs/QUEST_STORY_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_RADIO_RESEARCH_AND_STORY_DESIGN_V1.md",
       "manifest_component_type": "quests",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QUEST-007"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-QUEST-001-TO-QUEST-007",
+          "DEP-ECON-001-TO-QUEST-007",
+          "DEP-SOC-003-TO-QUEST-007"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QUEST-007-01",
+          "AC-QUEST-007-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QUEST-007-01",
+          "TC-QUEST-007-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -8972,7 +9309,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -8989,7 +9326,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "QUEST-008",
@@ -8997,27 +9339,38 @@
       "inventory_section": 11,
       "inventory_section_title": "Quests, narrative, and events",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Quest & Story Production Engine",
-      "primary_specification": "docs/QUEST_STORY_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_RADIO_RESEARCH_AND_STORY_DESIGN_V1.md",
       "manifest_component_type": "quests",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QUEST-008"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-QUEST-001-TO-QUEST-008",
+          "DEP-STRUCT-010-TO-QUEST-008"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QUEST-008-01",
+          "AC-QUEST-008-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QUEST-008-01",
+          "TC-QUEST-008-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -9027,7 +9380,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -9044,7 +9397,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "QUEST-009",
@@ -9052,27 +9410,38 @@
       "inventory_section": 11,
       "inventory_section_title": "Quests, narrative, and events",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Quest & Story Production Engine",
-      "primary_specification": "docs/QUEST_STORY_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_RADIO_RESEARCH_AND_STORY_DESIGN_V1.md",
       "manifest_component_type": "quests",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QUEST-009"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-WORLD-010-TO-QUEST-009",
+          "DEP-QUEST-001-TO-QUEST-009"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QUEST-009-01",
+          "AC-QUEST-009-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QUEST-009-01",
+          "TC-QUEST-009-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -9082,7 +9451,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -9099,7 +9468,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "QUEST-010",
@@ -9107,27 +9481,39 @@
       "inventory_section": 11,
       "inventory_section_title": "Quests, narrative, and events",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Quest & Story Production Engine",
-      "primary_specification": "docs/QUEST_STORY_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_RADIO_RESEARCH_AND_STORY_DESIGN_V1.md",
       "manifest_component_type": "quests",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QUEST-010"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ENT-003-TO-QUEST-010",
+          "DEP-ENT-012-TO-QUEST-010",
+          "DEP-WORLD-009-TO-QUEST-010"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QUEST-010-01",
+          "AC-QUEST-010-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QUEST-010-01",
+          "TC-QUEST-010-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -9137,7 +9523,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -9154,7 +9540,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "QUEST-011",
@@ -9162,27 +9553,38 @@
       "inventory_section": 11,
       "inventory_section_title": "Quests, narrative, and events",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Quest & Story Production Engine",
-      "primary_specification": "docs/QUEST_STORY_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_RADIO_RESEARCH_AND_STORY_DESIGN_V1.md",
       "manifest_component_type": "quests",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QUEST-011"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-QUEST-001-TO-QUEST-011",
+          "DEP-WORLD-010-TO-QUEST-011"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QUEST-011-01",
+          "AC-QUEST-011-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QUEST-011-01",
+          "TC-QUEST-011-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -9192,7 +9594,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -9209,7 +9611,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "QUEST-012",
@@ -9217,27 +9624,38 @@
       "inventory_section": 11,
       "inventory_section_title": "Quests, narrative, and events",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Quest & Story Production Engine",
-      "primary_specification": "docs/QUEST_STORY_PRODUCTION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_RADIO_RESEARCH_AND_STORY_DESIGN_V1.md",
       "manifest_component_type": "quests",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-QUEST-012"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-003-TO-QUEST-012",
+          "DEP-QUEST-001-TO-QUEST-012"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-QUEST-012-01",
+          "AC-QUEST-012-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-QUEST-012-01",
+          "TC-QUEST-012-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -9247,7 +9665,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -9264,7 +9682,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_PLAYER_JOURNEY_CAMPAIGN_AND_LONG_TERM_PROGRESSION_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ECON-001",
@@ -9272,27 +9695,38 @@
       "inventory_section": 12,
       "inventory_section_title": "Economy, trade, and ownership",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Economy & Trade Simulation Engine",
-      "primary_specification": "docs/ECONOMY_TRADE_SIMULATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_CHARACTER_PROGRESSION_AND_ECONOMY_DESIGN_V1.md",
       "manifest_component_type": "economy",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ECON-001"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ITEM-008-TO-ECON-001",
+          "DEP-BASE-007-TO-ECON-001"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ECON-001-01",
+          "AC-ECON-001-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ECON-001-01",
+          "TC-ECON-001-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -9302,7 +9736,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -9319,7 +9753,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ECON-002",
@@ -9327,27 +9766,39 @@
       "inventory_section": 12,
       "inventory_section_title": "Economy, trade, and ownership",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Economy & Trade Simulation Engine",
-      "primary_specification": "docs/ECONOMY_TRADE_SIMULATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_CHARACTER_PROGRESSION_AND_ECONOMY_DESIGN_V1.md",
       "manifest_component_type": "economy",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ECON-002"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ECON-001-TO-ECON-002",
+          "DEP-ENT-014-TO-ECON-002",
+          "DEP-ITEM-008-TO-ECON-002"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ECON-002-01",
+          "AC-ECON-002-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ECON-002-01",
+          "TC-ECON-002-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -9357,7 +9808,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -9374,7 +9825,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ECON-003",
@@ -9382,27 +9838,38 @@
       "inventory_section": 12,
       "inventory_section_title": "Economy, trade, and ownership",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Economy & Trade Simulation Engine",
-      "primary_specification": "docs/ECONOMY_TRADE_SIMULATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_CHARACTER_PROGRESSION_AND_ECONOMY_DESIGN_V1.md",
       "manifest_component_type": "economy",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ECON-003"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-003-TO-ECON-003",
+          "DEP-ECON-001-TO-ECON-003"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ECON-003-01",
+          "AC-ECON-003-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ECON-003-01",
+          "TC-ECON-003-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -9412,7 +9879,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -9429,7 +9896,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ECON-004",
@@ -9437,27 +9909,38 @@
       "inventory_section": 12,
       "inventory_section_title": "Economy, trade, and ownership",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Economy & Trade Simulation Engine",
-      "primary_specification": "docs/ECONOMY_TRADE_SIMULATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_CHARACTER_PROGRESSION_AND_ECONOMY_DESIGN_V1.md",
       "manifest_component_type": "economy",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ECON-004"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ECON-001-TO-ECON-004",
+          "DEP-ECON-002-TO-ECON-004"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ECON-004-01",
+          "AC-ECON-004-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ECON-004-01",
+          "TC-ECON-004-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -9467,7 +9950,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -9484,7 +9967,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ECON-005",
@@ -9492,27 +9980,38 @@
       "inventory_section": 12,
       "inventory_section_title": "Economy, trade, and ownership",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Economy & Trade Simulation Engine",
-      "primary_specification": "docs/ECONOMY_TRADE_SIMULATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_CHARACTER_PROGRESSION_AND_ECONOMY_DESIGN_V1.md",
       "manifest_component_type": "economy",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ECON-005"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ECON-001-TO-ECON-005",
+          "DEP-WORLD-010-TO-ECON-005"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ECON-005-01",
+          "AC-ECON-005-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ECON-005-01",
+          "TC-ECON-005-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -9522,7 +10021,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -9539,7 +10038,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ECON-006",
@@ -9547,27 +10051,38 @@
       "inventory_section": 12,
       "inventory_section_title": "Economy, trade, and ownership",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Economy & Trade Simulation Engine",
-      "primary_specification": "docs/ECONOMY_TRADE_SIMULATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_CHARACTER_PROGRESSION_AND_ECONOMY_DESIGN_V1.md",
       "manifest_component_type": "economy",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ECON-006"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-CRAFT-010-TO-ECON-006",
+          "DEP-ITEM-001-TO-ECON-006"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ECON-006-01",
+          "AC-ECON-006-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ECON-006-01",
+          "TC-ECON-006-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -9577,7 +10092,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -9594,7 +10109,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ECON-007",
@@ -9602,27 +10122,38 @@
       "inventory_section": 12,
       "inventory_section_title": "Economy, trade, and ownership",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Economy & Trade Simulation Engine",
-      "primary_specification": "docs/ECONOMY_TRADE_SIMULATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_CHARACTER_PROGRESSION_AND_ECONOMY_DESIGN_V1.md",
       "manifest_component_type": "economy",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ECON-007"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-WORLD-012-TO-ECON-007",
+          "DEP-STRUCT-001-TO-ECON-007"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ECON-007-01",
+          "AC-ECON-007-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ECON-007-01",
+          "TC-ECON-007-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -9632,7 +10163,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -9649,7 +10180,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ECON-008",
@@ -9657,27 +10193,38 @@
       "inventory_section": 12,
       "inventory_section_title": "Economy, trade, and ownership",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Economy & Trade Simulation Engine",
-      "primary_specification": "docs/ECONOMY_TRADE_SIMULATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_CHARACTER_PROGRESSION_AND_ECONOMY_DESIGN_V1.md",
       "manifest_component_type": "economy",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ECON-008"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ECON-007-TO-ECON-008",
+          "DEP-ECON-001-TO-ECON-008"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ECON-008-01",
+          "AC-ECON-008-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ECON-008-01",
+          "TC-ECON-008-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -9687,7 +10234,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -9704,7 +10251,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ECON-009",
@@ -9712,27 +10264,38 @@
       "inventory_section": 12,
       "inventory_section_title": "Economy, trade, and ownership",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Economy & Trade Simulation Engine",
-      "primary_specification": "docs/ECONOMY_TRADE_SIMULATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_CHARACTER_PROGRESSION_AND_ECONOMY_DESIGN_V1.md",
       "manifest_component_type": "economy",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ECON-009"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-SOC-002-TO-ECON-009",
+          "DEP-SOC-003-TO-ECON-009"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ECON-009-01",
+          "AC-ECON-009-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ECON-009-01",
+          "TC-ECON-009-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -9742,7 +10305,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -9759,7 +10322,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ECON-010",
@@ -9767,27 +10335,38 @@
       "inventory_section": 12,
       "inventory_section_title": "Economy, trade, and ownership",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Economy & Trade Simulation Engine",
-      "primary_specification": "docs/ECONOMY_TRADE_SIMULATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_CHARACTER_PROGRESSION_AND_ECONOMY_DESIGN_V1.md",
       "manifest_component_type": "economy",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ECON-010"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ECON-001-TO-ECON-010",
+          "DEP-QA-015-TO-ECON-010"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ECON-010-01",
+          "AC-ECON-010-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ECON-010-01",
+          "TC-ECON-010-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -9797,7 +10376,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -9814,7 +10393,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ECON-011",
@@ -9822,27 +10406,38 @@
       "inventory_section": 12,
       "inventory_section_title": "Economy, trade, and ownership",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Economy & Trade Simulation Engine",
-      "primary_specification": "docs/ECONOMY_TRADE_SIMULATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_CHARACTER_PROGRESSION_AND_ECONOMY_DESIGN_V1.md",
       "manifest_component_type": "economy",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ECON-011"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ECON-001-TO-ECON-011",
+          "DEP-BASE-010-TO-ECON-011"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ECON-011-01",
+          "AC-ECON-011-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ECON-011-01",
+          "TC-ECON-011-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -9852,7 +10447,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -9869,7 +10464,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "ECON-012",
@@ -9877,27 +10477,39 @@
       "inventory_section": 12,
       "inventory_section_title": "Economy, trade, and ownership",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Economy & Trade Simulation Engine",
-      "primary_specification": "docs/ECONOMY_TRADE_SIMULATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_CHARACTER_PROGRESSION_AND_ECONOMY_DESIGN_V1.md",
       "manifest_component_type": "economy",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-ECON-012"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-ECON-001-TO-ECON-012",
+          "DEP-BASE-009-TO-ECON-012",
+          "DEP-QA-013-TO-ECON-012"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-ECON-012-01",
+          "AC-ECON-012-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-ECON-012-01",
+          "TC-ECON-012-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -9907,7 +10519,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -9924,7 +10536,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_WORLD_SIMULATION_RESOURCE_CYCLES_AND_DYNAMIC_WORLD_DESIGN_V1.md",
+        "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md"
+      ]
     },
     {
       "feature_id": "SOC-001",
@@ -9932,27 +10549,38 @@
       "inventory_section": 13,
       "inventory_section_title": "Factions, teams, and social systems",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Collaboration & Social Systems",
-      "primary_specification": "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "social",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-SOC-001"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-003-TO-SOC-001",
+          "DEP-ENT-004-TO-SOC-001"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-SOC-001-01",
+          "AC-SOC-001-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-SOC-001-01",
+          "TC-SOC-001-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -9962,7 +10590,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -9979,7 +10607,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md",
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "SOC-002",
@@ -9987,27 +10620,38 @@
       "inventory_section": 13,
       "inventory_section_title": "Factions, teams, and social systems",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Collaboration & Social Systems",
-      "primary_specification": "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "social",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-SOC-002"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-SOC-001-TO-SOC-002",
+          "DEP-ENT-004-TO-SOC-002"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-SOC-002-01",
+          "AC-SOC-002-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-SOC-002-01",
+          "TC-SOC-002-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -10017,7 +10661,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -10034,7 +10678,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md",
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "SOC-003",
@@ -10042,27 +10691,38 @@
       "inventory_section": 13,
       "inventory_section_title": "Factions, teams, and social systems",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Collaboration & Social Systems",
-      "primary_specification": "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "social",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-SOC-003"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-SOC-002-TO-SOC-003",
+          "DEP-ENT-014-TO-SOC-003"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-SOC-003-01",
+          "AC-SOC-003-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-SOC-003-01",
+          "TC-SOC-003-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -10072,7 +10732,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -10089,7 +10749,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md",
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "SOC-004",
@@ -10097,27 +10762,38 @@
       "inventory_section": 13,
       "inventory_section_title": "Factions, teams, and social systems",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Collaboration & Social Systems",
-      "primary_specification": "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "social",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-SOC-004"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-SOC-001-TO-SOC-004",
+          "DEP-BASE-010-TO-SOC-004"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-SOC-004-01",
+          "AC-SOC-004-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-SOC-004-01",
+          "TC-SOC-004-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -10127,7 +10803,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -10144,7 +10820,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md",
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "SOC-005",
@@ -10152,27 +10833,38 @@
       "inventory_section": 13,
       "inventory_section_title": "Factions, teams, and social systems",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Collaboration & Social Systems",
-      "primary_specification": "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "social",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-SOC-005"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-SOC-001-TO-SOC-005",
+          "DEP-BASE-010-TO-SOC-005"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-SOC-005-01",
+          "AC-SOC-005-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-SOC-005-01",
+          "TC-SOC-005-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -10182,7 +10874,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -10199,7 +10891,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md",
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "SOC-006",
@@ -10207,27 +10904,38 @@
       "inventory_section": 13,
       "inventory_section_title": "Factions, teams, and social systems",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Collaboration & Social Systems",
-      "primary_specification": "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "social",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-SOC-006"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-SOC-001-TO-SOC-006",
+          "DEP-BASE-003-TO-SOC-006"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-SOC-006-01",
+          "AC-SOC-006-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-SOC-006-01",
+          "TC-SOC-006-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -10237,7 +10945,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -10254,7 +10962,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md",
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "SOC-007",
@@ -10262,27 +10975,39 @@
       "inventory_section": 13,
       "inventory_section_title": "Factions, teams, and social systems",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Collaboration & Social Systems",
-      "primary_specification": "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "social",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-SOC-007"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-SOC-001-TO-SOC-007",
+          "DEP-STRUCT-001-TO-SOC-007",
+          "DEP-WORLD-012-TO-SOC-007"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-SOC-007-01",
+          "AC-SOC-007-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-SOC-007-01",
+          "TC-SOC-007-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -10292,7 +11017,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -10309,7 +11034,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md",
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "SOC-008",
@@ -10317,27 +11047,38 @@
       "inventory_section": 13,
       "inventory_section_title": "Factions, teams, and social systems",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Collaboration & Social Systems",
-      "primary_specification": "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "social",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-SOC-008"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-SOC-001-TO-SOC-008",
+          "DEP-QUEST-001-TO-SOC-008"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-SOC-008-01",
+          "AC-SOC-008-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-SOC-008-01",
+          "TC-SOC-008-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -10347,7 +11088,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -10364,7 +11105,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md",
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "SOC-009",
@@ -10372,27 +11118,39 @@
       "inventory_section": 13,
       "inventory_section_title": "Factions, teams, and social systems",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Collaboration & Social Systems",
-      "primary_specification": "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "social",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-SOC-009"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-SOC-002-TO-SOC-009",
+          "DEP-SOC-007-TO-SOC-009",
+          "DEP-WORLD-012-TO-SOC-009"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-SOC-009-01",
+          "AC-SOC-009-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-SOC-009-01",
+          "TC-SOC-009-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -10402,7 +11160,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -10419,7 +11177,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md",
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "SOC-010",
@@ -10427,27 +11190,39 @@
       "inventory_section": 13,
       "inventory_section_title": "Factions, teams, and social systems",
       "current_status": "planned",
-      "design_status": "needs_traceability_review",
+      "design_status": "mapped",
       "implementation_status": "not_implemented_verified",
       "applicability": "project_dependent",
       "logical_owner": "Collaboration & Social Systems",
-      "primary_specification": "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md",
+      "primary_specification": "docs/ZOMBIE_INVASION_SURVIVOR_NPC_FACTIONS_AND_SETTLEMENT_DESIGN_V1.md",
       "manifest_component_type": "social",
       "requirement_link": {
         "required": true,
-        "requirement_id": null
+        "requirement_id": "REQ-SOC-010"
       },
       "dependency_links": {
         "required": true,
-        "edge_ids": []
+        "edge_ids": [
+          "DEP-BASE-003-TO-SOC-010",
+          "DEP-BASE-012-TO-SOC-010",
+          "DEP-QA-015-TO-SOC-010"
+        ]
       },
       "acceptance_criteria": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "criteria_ids": [
+          "AC-SOC-010-01",
+          "AC-SOC-010-02"
+        ]
       },
       "test_cases": {
         "required": true,
-        "defined": false
+        "defined": true,
+        "case_ids": [
+          "TC-SOC-010-01",
+          "TC-SOC-010-02"
+        ]
       },
       "evidence": {
         "required": true,
@@ -10457,7 +11232,7 @@
         "required": true,
         "revision_bound": true
       },
-      "notes": "Owner/spec mapping is a proposed traceability assignment and requires design-baseline review. First playable targets are Java and Bedrock; per-feature target mapping remains pending.",
+      "notes": "Feature-level mapping exists. First-slice applicability and balance remain separately controlled; multiplayer and server capabilities are not implied by single-player design.",
       "target_coverage": {
         "java_edition": {
           "status": "not_assessed",
@@ -10474,7 +11249,12 @@
           "evidence_refs": []
         },
         "parity_status": "not_assessed"
-      }
+      },
+      "traceability_specification": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "supporting_specifications": [
+        "docs/ZOMBIE_INVASION_MULTIPLAYER_COOPERATION_AND_SERVER_DESIGN_V1.md",
+        "docs/SECURITY_PERMISSIONS_MODERATION_ENGINE_SPEC.md"
+      ]
     },
     {
       "feature_id": "MP-001",
@@ -18584,6 +19364,1410 @@
         "java",
         "bedrock"
       ]
+    },
+    {
+      "edge_id": "DEP-BASE-007-TO-VEH-001",
+      "source_feature_id": "BASE-007",
+      "target_feature_id": "VEH-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-001 requires the canonical contract from BASE-007.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-001-TO-VEH-001",
+      "source_feature_id": "ITEM-001",
+      "target_feature_id": "VEH-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-001 requires the canonical contract from ITEM-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-001-TO-VEH-001",
+      "source_feature_id": "WORLD-001",
+      "target_feature_id": "VEH-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-001 requires the canonical contract from WORLD-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-VEH-001-TO-VEH-002",
+      "source_feature_id": "VEH-001",
+      "target_feature_id": "VEH-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-002 requires the canonical contract from VEH-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-001-TO-VEH-002",
+      "source_feature_id": "ITEM-001",
+      "target_feature_id": "VEH-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-002 requires the canonical contract from ITEM-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-CRAFT-001-TO-VEH-002",
+      "source_feature_id": "CRAFT-001",
+      "target_feature_id": "VEH-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-002 requires the canonical contract from CRAFT-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-VEH-001-TO-VEH-003",
+      "source_feature_id": "VEH-001",
+      "target_feature_id": "VEH-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-003 requires the canonical contract from VEH-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-VEH-001-TO-VEH-004",
+      "source_feature_id": "VEH-001",
+      "target_feature_id": "VEH-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-004 requires the canonical contract from VEH-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-008-TO-VEH-004",
+      "source_feature_id": "WORLD-008",
+      "target_feature_id": "VEH-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-004 requires the canonical contract from WORLD-008.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-VEH-001-TO-VEH-005",
+      "source_feature_id": "VEH-001",
+      "target_feature_id": "VEH-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-005 requires the canonical contract from VEH-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-005-TO-VEH-005",
+      "source_feature_id": "WORLD-005",
+      "target_feature_id": "VEH-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-005 requires the canonical contract from WORLD-005.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-VEH-001-TO-VEH-006",
+      "source_feature_id": "VEH-001",
+      "target_feature_id": "VEH-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-006 requires the canonical contract from VEH-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-004-TO-VEH-006",
+      "source_feature_id": "ENT-004",
+      "target_feature_id": "VEH-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-006 requires the canonical contract from ENT-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-CRAFT-005-TO-VEH-007",
+      "source_feature_id": "CRAFT-005",
+      "target_feature_id": "VEH-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-007 requires the canonical contract from CRAFT-005.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-014-TO-VEH-007",
+      "source_feature_id": "ITEM-014",
+      "target_feature_id": "VEH-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-007 requires the canonical contract from ITEM-014.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-VEH-001-TO-VEH-008",
+      "source_feature_id": "VEH-001",
+      "target_feature_id": "VEH-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-008 requires the canonical contract from VEH-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-009-TO-VEH-008",
+      "source_feature_id": "ITEM-009",
+      "target_feature_id": "VEH-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-008 requires the canonical contract from ITEM-009.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-VEH-001-TO-VEH-009",
+      "source_feature_id": "VEH-001",
+      "target_feature_id": "VEH-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-009 requires the canonical contract from VEH-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-007-TO-VEH-009",
+      "source_feature_id": "ITEM-007",
+      "target_feature_id": "VEH-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-009 requires the canonical contract from ITEM-007.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-013-TO-VEH-009",
+      "source_feature_id": "ITEM-013",
+      "target_feature_id": "VEH-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-009 requires the canonical contract from ITEM-013.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-VEH-001-TO-VEH-010",
+      "source_feature_id": "VEH-001",
+      "target_feature_id": "VEH-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-010 requires the canonical contract from VEH-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-003-TO-VEH-010",
+      "source_feature_id": "WORLD-003",
+      "target_feature_id": "VEH-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-010 requires the canonical contract from WORLD-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-STRUCT-006-TO-VEH-010",
+      "source_feature_id": "STRUCT-006",
+      "target_feature_id": "VEH-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-010 requires the canonical contract from STRUCT-006.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-VEH-001-TO-VEH-011",
+      "source_feature_id": "VEH-001",
+      "target_feature_id": "VEH-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-011 requires the canonical contract from VEH-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-COM-004-TO-VEH-011",
+      "source_feature_id": "COM-004",
+      "target_feature_id": "VEH-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-011 requires the canonical contract from COM-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-VEH-001-TO-VEH-012",
+      "source_feature_id": "VEH-001",
+      "target_feature_id": "VEH-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-012 requires the canonical contract from VEH-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-CRAFT-004-TO-VEH-012",
+      "source_feature_id": "CRAFT-004",
+      "target_feature_id": "VEH-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-012 requires the canonical contract from CRAFT-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-009-TO-VEH-012",
+      "source_feature_id": "ITEM-009",
+      "target_feature_id": "VEH-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-012 requires the canonical contract from ITEM-009.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-003-TO-VEH-013",
+      "source_feature_id": "BASE-003",
+      "target_feature_id": "VEH-013",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-013 requires the canonical contract from BASE-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-012-TO-VEH-013",
+      "source_feature_id": "QA-012",
+      "target_feature_id": "VEH-013",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-013 requires the canonical contract from QA-012.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-013-TO-VEH-014",
+      "source_feature_id": "ITEM-013",
+      "target_feature_id": "VEH-014",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-014 requires the canonical contract from ITEM-013.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-CRAFT-003-TO-VEH-014",
+      "source_feature_id": "CRAFT-003",
+      "target_feature_id": "VEH-014",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-014 requires the canonical contract from CRAFT-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-CRAFT-005-TO-VEH-014",
+      "source_feature_id": "CRAFT-005",
+      "target_feature_id": "VEH-014",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "VEH-014 requires the canonical contract from CRAFT-005.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-007-TO-QUEST-001",
+      "source_feature_id": "BASE-007",
+      "target_feature_id": "QUEST-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-001 requires the canonical contract from BASE-007.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-014-TO-QUEST-001",
+      "source_feature_id": "PLY-014",
+      "target_feature_id": "QUEST-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-001 requires the canonical contract from PLY-014.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QUEST-001-TO-QUEST-002",
+      "source_feature_id": "QUEST-001",
+      "target_feature_id": "QUEST-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-002 requires the canonical contract from QUEST-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-001-TO-QUEST-002",
+      "source_feature_id": "WORLD-001",
+      "target_feature_id": "QUEST-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-002 requires the canonical contract from WORLD-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QUEST-001-TO-QUEST-003",
+      "source_feature_id": "QUEST-001",
+      "target_feature_id": "QUEST-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-003 requires the canonical contract from QUEST-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-014-TO-QUEST-003",
+      "source_feature_id": "ENT-014",
+      "target_feature_id": "QUEST-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-003 requires the canonical contract from ENT-014.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-014-TO-QUEST-004",
+      "source_feature_id": "ENT-014",
+      "target_feature_id": "QUEST-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-004 requires the canonical contract from ENT-014.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QUEST-001-TO-QUEST-005",
+      "source_feature_id": "QUEST-001",
+      "target_feature_id": "QUEST-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-005 requires the canonical contract from QUEST-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-001-TO-QUEST-005",
+      "source_feature_id": "ITEM-001",
+      "target_feature_id": "QUEST-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-005 requires the canonical contract from ITEM-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-003-TO-QUEST-005",
+      "source_feature_id": "ENT-003",
+      "target_feature_id": "QUEST-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-005 requires the canonical contract from ENT-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QUEST-001-TO-QUEST-006",
+      "source_feature_id": "QUEST-001",
+      "target_feature_id": "QUEST-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-006 requires the canonical contract from QUEST-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-PLY-013-TO-QUEST-006",
+      "source_feature_id": "PLY-013",
+      "target_feature_id": "QUEST-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-006 requires the canonical contract from PLY-013.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QUEST-001-TO-QUEST-007",
+      "source_feature_id": "QUEST-001",
+      "target_feature_id": "QUEST-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-007 requires the canonical contract from QUEST-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ECON-001-TO-QUEST-007",
+      "source_feature_id": "ECON-001",
+      "target_feature_id": "QUEST-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-007 requires the canonical contract from ECON-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SOC-003-TO-QUEST-007",
+      "source_feature_id": "SOC-003",
+      "target_feature_id": "QUEST-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-007 requires the canonical contract from SOC-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QUEST-001-TO-QUEST-008",
+      "source_feature_id": "QUEST-001",
+      "target_feature_id": "QUEST-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-008 requires the canonical contract from QUEST-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-STRUCT-010-TO-QUEST-008",
+      "source_feature_id": "STRUCT-010",
+      "target_feature_id": "QUEST-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-008 requires the canonical contract from STRUCT-010.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-010-TO-QUEST-009",
+      "source_feature_id": "WORLD-010",
+      "target_feature_id": "QUEST-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-009 requires the canonical contract from WORLD-010.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QUEST-001-TO-QUEST-009",
+      "source_feature_id": "QUEST-001",
+      "target_feature_id": "QUEST-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-009 requires the canonical contract from QUEST-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-003-TO-QUEST-010",
+      "source_feature_id": "ENT-003",
+      "target_feature_id": "QUEST-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-010 requires the canonical contract from ENT-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-012-TO-QUEST-010",
+      "source_feature_id": "ENT-012",
+      "target_feature_id": "QUEST-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-010 requires the canonical contract from ENT-012.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-009-TO-QUEST-010",
+      "source_feature_id": "WORLD-009",
+      "target_feature_id": "QUEST-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-010 requires the canonical contract from WORLD-009.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QUEST-001-TO-QUEST-011",
+      "source_feature_id": "QUEST-001",
+      "target_feature_id": "QUEST-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-011 requires the canonical contract from QUEST-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-010-TO-QUEST-011",
+      "source_feature_id": "WORLD-010",
+      "target_feature_id": "QUEST-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-011 requires the canonical contract from WORLD-010.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-003-TO-QUEST-012",
+      "source_feature_id": "BASE-003",
+      "target_feature_id": "QUEST-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-012 requires the canonical contract from BASE-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QUEST-001-TO-QUEST-012",
+      "source_feature_id": "QUEST-001",
+      "target_feature_id": "QUEST-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "QUEST-012 requires the canonical contract from QUEST-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-008-TO-ECON-001",
+      "source_feature_id": "ITEM-008",
+      "target_feature_id": "ECON-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-001 requires the canonical contract from ITEM-008.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-007-TO-ECON-001",
+      "source_feature_id": "BASE-007",
+      "target_feature_id": "ECON-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-001 requires the canonical contract from BASE-007.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ECON-001-TO-ECON-002",
+      "source_feature_id": "ECON-001",
+      "target_feature_id": "ECON-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-002 requires the canonical contract from ECON-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-014-TO-ECON-002",
+      "source_feature_id": "ENT-014",
+      "target_feature_id": "ECON-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-002 requires the canonical contract from ENT-014.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-008-TO-ECON-002",
+      "source_feature_id": "ITEM-008",
+      "target_feature_id": "ECON-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-002 requires the canonical contract from ITEM-008.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-003-TO-ECON-003",
+      "source_feature_id": "BASE-003",
+      "target_feature_id": "ECON-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-003 requires the canonical contract from BASE-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ECON-001-TO-ECON-003",
+      "source_feature_id": "ECON-001",
+      "target_feature_id": "ECON-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-003 requires the canonical contract from ECON-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ECON-001-TO-ECON-004",
+      "source_feature_id": "ECON-001",
+      "target_feature_id": "ECON-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-004 requires the canonical contract from ECON-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ECON-002-TO-ECON-004",
+      "source_feature_id": "ECON-002",
+      "target_feature_id": "ECON-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-004 requires the canonical contract from ECON-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ECON-001-TO-ECON-005",
+      "source_feature_id": "ECON-001",
+      "target_feature_id": "ECON-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-005 requires the canonical contract from ECON-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-010-TO-ECON-005",
+      "source_feature_id": "WORLD-010",
+      "target_feature_id": "ECON-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-005 requires the canonical contract from WORLD-010.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-CRAFT-010-TO-ECON-006",
+      "source_feature_id": "CRAFT-010",
+      "target_feature_id": "ECON-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-006 requires the canonical contract from CRAFT-010.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ITEM-001-TO-ECON-006",
+      "source_feature_id": "ITEM-001",
+      "target_feature_id": "ECON-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-006 requires the canonical contract from ITEM-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-012-TO-ECON-007",
+      "source_feature_id": "WORLD-012",
+      "target_feature_id": "ECON-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-007 requires the canonical contract from WORLD-012.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-STRUCT-001-TO-ECON-007",
+      "source_feature_id": "STRUCT-001",
+      "target_feature_id": "ECON-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-007 requires the canonical contract from STRUCT-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ECON-007-TO-ECON-008",
+      "source_feature_id": "ECON-007",
+      "target_feature_id": "ECON-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-008 requires the canonical contract from ECON-007.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ECON-001-TO-ECON-008",
+      "source_feature_id": "ECON-001",
+      "target_feature_id": "ECON-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-008 requires the canonical contract from ECON-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SOC-002-TO-ECON-009",
+      "source_feature_id": "SOC-002",
+      "target_feature_id": "ECON-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-009 requires the canonical contract from SOC-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SOC-003-TO-ECON-009",
+      "source_feature_id": "SOC-003",
+      "target_feature_id": "ECON-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-009 requires the canonical contract from SOC-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ECON-001-TO-ECON-010",
+      "source_feature_id": "ECON-001",
+      "target_feature_id": "ECON-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-010 requires the canonical contract from ECON-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-015-TO-ECON-010",
+      "source_feature_id": "QA-015",
+      "target_feature_id": "ECON-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-010 requires the canonical contract from QA-015.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ECON-001-TO-ECON-011",
+      "source_feature_id": "ECON-001",
+      "target_feature_id": "ECON-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-011 requires the canonical contract from ECON-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-010-TO-ECON-011",
+      "source_feature_id": "BASE-010",
+      "target_feature_id": "ECON-011",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-011 requires the canonical contract from BASE-010.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ECON-001-TO-ECON-012",
+      "source_feature_id": "ECON-001",
+      "target_feature_id": "ECON-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-012 requires the canonical contract from ECON-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-009-TO-ECON-012",
+      "source_feature_id": "BASE-009",
+      "target_feature_id": "ECON-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-012 requires the canonical contract from BASE-009.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-013-TO-ECON-012",
+      "source_feature_id": "QA-013",
+      "target_feature_id": "ECON-012",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "ECON-012 requires the canonical contract from QA-013.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-003-TO-SOC-001",
+      "source_feature_id": "BASE-003",
+      "target_feature_id": "SOC-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SOC-001 requires the canonical contract from BASE-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-004-TO-SOC-001",
+      "source_feature_id": "ENT-004",
+      "target_feature_id": "SOC-001",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SOC-001 requires the canonical contract from ENT-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SOC-001-TO-SOC-002",
+      "source_feature_id": "SOC-001",
+      "target_feature_id": "SOC-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SOC-002 requires the canonical contract from SOC-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-004-TO-SOC-002",
+      "source_feature_id": "ENT-004",
+      "target_feature_id": "SOC-002",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SOC-002 requires the canonical contract from ENT-004.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SOC-002-TO-SOC-003",
+      "source_feature_id": "SOC-002",
+      "target_feature_id": "SOC-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SOC-003 requires the canonical contract from SOC-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-ENT-014-TO-SOC-003",
+      "source_feature_id": "ENT-014",
+      "target_feature_id": "SOC-003",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SOC-003 requires the canonical contract from ENT-014.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SOC-001-TO-SOC-004",
+      "source_feature_id": "SOC-001",
+      "target_feature_id": "SOC-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SOC-004 requires the canonical contract from SOC-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-010-TO-SOC-004",
+      "source_feature_id": "BASE-010",
+      "target_feature_id": "SOC-004",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SOC-004 requires the canonical contract from BASE-010.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SOC-001-TO-SOC-005",
+      "source_feature_id": "SOC-001",
+      "target_feature_id": "SOC-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SOC-005 requires the canonical contract from SOC-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-010-TO-SOC-005",
+      "source_feature_id": "BASE-010",
+      "target_feature_id": "SOC-005",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SOC-005 requires the canonical contract from BASE-010.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SOC-001-TO-SOC-006",
+      "source_feature_id": "SOC-001",
+      "target_feature_id": "SOC-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SOC-006 requires the canonical contract from SOC-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-003-TO-SOC-006",
+      "source_feature_id": "BASE-003",
+      "target_feature_id": "SOC-006",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SOC-006 requires the canonical contract from BASE-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SOC-001-TO-SOC-007",
+      "source_feature_id": "SOC-001",
+      "target_feature_id": "SOC-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SOC-007 requires the canonical contract from SOC-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-STRUCT-001-TO-SOC-007",
+      "source_feature_id": "STRUCT-001",
+      "target_feature_id": "SOC-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SOC-007 requires the canonical contract from STRUCT-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-012-TO-SOC-007",
+      "source_feature_id": "WORLD-012",
+      "target_feature_id": "SOC-007",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SOC-007 requires the canonical contract from WORLD-012.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SOC-001-TO-SOC-008",
+      "source_feature_id": "SOC-001",
+      "target_feature_id": "SOC-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SOC-008 requires the canonical contract from SOC-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QUEST-001-TO-SOC-008",
+      "source_feature_id": "QUEST-001",
+      "target_feature_id": "SOC-008",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SOC-008 requires the canonical contract from QUEST-001.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SOC-002-TO-SOC-009",
+      "source_feature_id": "SOC-002",
+      "target_feature_id": "SOC-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SOC-009 requires the canonical contract from SOC-002.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-SOC-007-TO-SOC-009",
+      "source_feature_id": "SOC-007",
+      "target_feature_id": "SOC-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SOC-009 requires the canonical contract from SOC-007.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-WORLD-012-TO-SOC-009",
+      "source_feature_id": "WORLD-012",
+      "target_feature_id": "SOC-009",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SOC-009 requires the canonical contract from WORLD-012.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-003-TO-SOC-010",
+      "source_feature_id": "BASE-003",
+      "target_feature_id": "SOC-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SOC-010 requires the canonical contract from BASE-003.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-BASE-012-TO-SOC-010",
+      "source_feature_id": "BASE-012",
+      "target_feature_id": "SOC-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SOC-010 requires the canonical contract from BASE-012.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
+    },
+    {
+      "edge_id": "DEP-QA-015-TO-SOC-010",
+      "source_feature_id": "QA-015",
+      "target_feature_id": "SOC-010",
+      "relationship": "requires",
+      "status": "proposed",
+      "rationale": "SOC-010 requires the canonical contract from QA-015.",
+      "specification_ref": "docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md",
+      "target_scope": [
+        "java",
+        "bedrock"
+      ]
     }
   ],
   "traceability_update_notes": [
@@ -18594,6 +20778,7 @@
     "QA-001..QA-018 and SHIP-001..SHIP-012 are mapped to feature-specific requirements, acceptance criteria, test cases and proposed dependency edges in docs/ZOMBIE_INVASION_QA_BUILD_AND_DELIVERY_TRACEABILITY_SPEC_V1.md.",
     "PLY-001..PLY-014, ITEM-001..ITEM-016 and CRAFT-001..CRAFT-010 are mapped in docs/ZOMBIE_INVASION_PLAYER_ITEMS_CRAFTING_TRACEABILITY_SPEC_V1.md. Their balance and first-playable applicability remain controlled by the decision register.",
     "COM-001..COM-012 and ENT-001..ENT-018 are mapped in docs/ZOMBIE_INVASION_COMBAT_ENTITY_NPC_TRACEABILITY_SPEC_V1.md. First-slice combat and zombie decisions remain distinct from optional explosives, bosses, PvP and future multiplayer scope.",
-    "WORLD-001..WORLD-017 and STRUCT-001..STRUCT-010 are mapped in docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md. The approved topology does not prove procedural world-generation feasibility on either target."
+    "WORLD-001..WORLD-017 and STRUCT-001..STRUCT-010 are mapped in docs/ZOMBIE_INVASION_WORLD_STRUCTURE_TRACEABILITY_SPEC_V1.md. The approved topology does not prove procedural world-generation feasibility on either target.",
+    "VEH-001..VEH-014, QUEST-001..QUEST-012, ECON-001..ECON-012 and SOC-001..SOC-010 are mapped in docs/ZOMBIE_INVASION_VEHICLES_QUESTS_ECONOMY_SOCIAL_TRACEABILITY_SPEC_V1.md. First-slice and multiplayer boundaries remain explicit."
   ]
 }
